@@ -170,6 +170,10 @@ $$\vec s = \vec v_1 + \vec v_2$$
 
 Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali. 
 I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati dagli estremi dall'origine e gli estremi $V_1$ e $V_2$. 
+
+$$\vec v_1 = \vec{OV_1}$$ 
+$$\vec v_2 = \vec{OV_2}$$ 
+
 Ogni vettore è infatti rappresentato da un modulo (lunghezza), una direzione (la retta su cui poggia) ed un verso.
 
 È inoltre presente una terza freccia, vettore, di colore viola. Questo vettore $\vec s$ è dato dalla somma dei due precedenti vettori, ovvero:
