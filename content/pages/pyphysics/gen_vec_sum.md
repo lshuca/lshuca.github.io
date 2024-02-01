@@ -1,8 +1,7 @@
 +++
 menus = ['main', 'footer']
-title = '1 - Somma di vettori'
+title = 'Somma di vettori'
 date = 2024-01-09T15:55:42+01:00
-mermaid = true
 +++
 
 $$\vec s = \vec v_1 + \vec v_2$$

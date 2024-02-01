@@ -1,8 +1,7 @@
 +++
 menus = ['main', 'footer']
-title = '2 - Differenza di vettori interi'
+title = 'Differenza di vettori interi'
 date = 2024-01-09T15:55:42+01:00
-mermaid = true
 +++
 
 $$\vec d = \vec v_1 - \vec v_2$$
