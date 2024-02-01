@@ -18,8 +18,8 @@ title = "La scienza ha un cuore antico"                                  # websi
 
 
 [author]
-    email = "brbr.davide@gmail.com" # your email
-    name = "Davide Barbieri"          # your name
+    email = "barbierid@msis002003.onmicrosoft.com" # your email
+    name = "barbierid"          # your name
 
 # https://gohugo.io/getting-started/configuration-markup
 [markup]
