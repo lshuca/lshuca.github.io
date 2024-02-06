@@ -1,5 +1,5 @@
 +++
-menus = ['main', 'footer']
+menus = []
 title = 'Somma di vettori'
 date = 2024-01-09T15:55:42+01:00
 +++
@@ -147,7 +147,7 @@ $$\vec s = \vec v_1 + \vec v_2$$
         // Plot the vectors
         plotVector(context, vector1, 'red', "v1");
         plotVector(context, vector2, 'blue', "v2");
-        plotVector(context, sumVector, 'green', "w");
+        plotVector(context, sumVector, 'green', "s");
 
         context.font = "12px Arial";
         context.fillStyle = "red";
@@ -157,7 +157,7 @@ $$\vec s = \vec v_1 + \vec v_2$$
         context.fillText("v2 = " + vector2.x*10 + " i " + -vector2.y*10 + " j", 10, 50); 
         
         context.fillStyle = "green";
-        context.fillText("w = " + sumVector.x*10 + " i " + -sumVector.y*10 + " j", 10, 390); 
+        context.fillText("s = " + sumVector.x*10 + " i " + -sumVector.y*10 + " j", 10, 390); 
     </script>
 </body>
 </html>
@@ -168,7 +168,7 @@ $$\vec s = \vec v_1 + \vec v_2$$
 </p>
 
 Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali. 
-I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati dagli estremi dall'origine e gli estremi $V_1$ e $V_2$. 
+I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati agli estremi dall'origine e dai punti $V_1$ e $V_2$.
 
 $$\vec v_1 = \vec{OV_1}$$ 
 $$\vec v_2 = \vec{OV_2}$$ 

@@ -1,16 +1,14 @@
 +++
 menus = []
-title = 'Differenza di vettori'
+title = 'Introduzione ai vettori'
 date = 2024-01-09T15:55:42+01:00
 +++
 
-$$\vec d = \vec v_1 - \vec v_2$$
-
 <p>
 
-{{< rawhtml >}}
+<!-- {{< rawhtml >}}
 
-    <!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -142,13 +140,12 @@ $$\vec d = \vec v_1 - \vec v_2$$
         var vector2 = generateUnitVector();
 
         // Calculate the sum and sub vector
-        var subVector12 = subtractVectors(vector1, vector2);
-        var subVector21 = subtractVectors(vector2, vector1);
+        var sumVector = addVectors(vector1, vector2);
 
         // Plot the vectors
         plotVector(context, vector1, 'red', "v1");
         plotVector(context, vector2, 'blue', "v2");
-        plotVector(context, subVector12, 'purple', "d");
+        plotVector(context, sumVector, 'green', "w");
 
         context.font = "12px Arial";
         context.fillStyle = "red";
@@ -157,31 +154,47 @@ $$\vec d = \vec v_1 - \vec v_2$$
         context.fillStyle = "blue";
         context.fillText("v2 = " + vector2.x*10 + " i " + -vector2.y*10 + " j", 10, 50); 
         
-        context.fillStyle = "purple";
-        context.fillText("s = " + subVector21.x*10 + " i " + -subVector21.y*10 + " j", 10, 390); 
+        context.fillStyle = "green";
+        context.fillText("w = " + sumVector.x*10 + " i " + -sumVector.y*10 + " j", 10, 390); 
     </script>
 </body>
 </html>
 
 
-{{< /rawhtml >}}
+{{< /rawhtml >}} -->
 
 </p>
 
-Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali. 
-I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati agli estremi dall'origine e dai punti $V_1$ e $V_2$.
+I vettori rappresentano uno degli strumenti matematici fondamentali, vengono infatti utilizzati per descrivere spostamenti, forze e altre grandezze fisiche dove *un numero* non è sufficiente.
 
-$$\vec v_1 = \vec{OV_1}$$ 
-$$\vec v_2 = \vec{OV_2}$$ 
+In matematica e fisica, un _vettore_ è un concetto che rappresenta una quantità caratterizzata non solo dalla sua _magnitudine_ (o grandezza), ma anche dalla sua _direzione_ e _verso_. In altre parole, un vettore è un oggetto matematico che ha un **modulo** (o lunghezza), una **direzione** e un **verso** specifici. 
 
-Ogni vettore è infatti rappresentato da un modulo (lunghezza), una direzione (la retta su cui poggia) ed un verso.
+Possiamo quindi facilmente identificare un vettore sul foglio come un segmento orientato, ovvero una linea che unisce due punti identificandone uno come primo (punto di applicazione).
 
-È inoltre presente una terza freccia, vettore, di colore viola. Questo vettore $\vec d$ è dato dalla differenza dei due precedenti vettori, ovvero:
+![vettore_def](/static/img/vector_def.jpg "Definizione grafica di vettore")
 
-$$\vec d = \vec v_1 - \vec v_2$$
+Dal grafico si possono identificare facilmente tutte e tre le proprietà del vettore:
 
-Si può notare come il vettore $\vec d$ sia delimitato dal'origine e il punto $D$ identificato dalla differenza delle coordinate di $V_1$ e $V_2$.
+1) **modulo**: $|| \vec v || = v$, il valore (scalare) che rappresenta la lunghezza del vettore.
+2) **direzione**: lungo la retta $r$
+3) **verso**: uscente dal punto di applicazione
 
-$$\vec d = \vec {OD}$$
+I vettori, e quindi anche le grandezze vettoriali, possono essere riconosciute immediatamente anche senza l'ausilio di un supporto grafico, vengono infatti scritti in corsivo o tramite l'ausilio di una piccola freccia sopra il simbolo.
 
-Esercitati, ricaricando la pagina, a calcolare le somme tra vari vettori.
+$$ \vec v \neq v \, v \neq \text{v}$$
+
+È importante notare che un vettore non è equivalente ad un segmento generico, ma il vettore che unisce i punti $A$ a $B$ è opposto al vettore che unisce $B$ ad $A$.
+
+$$ \vec {AB} = - \vec {BA} \rightarrow \vec {AB} + \vec {BA} = \vec {0} $$
+
+Con $\vec 0$ abbiamo potuto introdurre il concetto di vettore nullo: uno spostamento totale nullo, una forza con modulo 0 ecc...
+
+![vettore_null](/static/img/vec_null.gif#center)
+
+Per maggiori info sulle operazioni con i vettori fare riferimento a:
+
+* [Somma di vettori]({{< ref "/pages/pyphysics/gen_vec_sum" >}}  "Somma di vettori")
+* [Differenza di vettori]({{< ref "/pages/pyphysics/gen_vec_sub" >}}  "Differenza di vettori")
+
+Esploreremo le operazioni fondamentali come la somma e la moltiplicazione per uno scalare, apprendendo come applicare tali concetti sia in ambito geometrico che algebrico. Attraverso l'analisi dei vettori, svilupperemo una nuova prospettiva matematica che ci accompagnerà nella risoluzione di problemi complessi e nella comprensione più approfondita della natura delle grandezze fisiche che ci circondano.
+

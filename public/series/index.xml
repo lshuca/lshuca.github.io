@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on La scienza ha un cuore antico</title>
+    <link>http://localhost:1313/series/</link>
+    <description>Recent content in Series on La scienza ha un cuore antico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <managingEditor>barbierid@msis002003.onmicrosoft.com (barbierid)</managingEditor>
+    <webMaster>barbierid@msis002003.onmicrosoft.com (barbierid)</webMaster><atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
