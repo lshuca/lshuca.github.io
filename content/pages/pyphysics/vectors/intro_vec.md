@@ -27,20 +27,20 @@ $$ \vec v \neq \text{v} \, v \neq \text{v}$$
 $$ \vec {AB} = - \vec {BA} \rightarrow \vec {AB} + \vec {BA} = \vec {0} $$
 
 Con $\vec 0$ abbiamo potuto introdurre il concetto di **vettore nullo**: l'elemento neutro dell'operazione di addizione tra vettori. 
-Il vettore nullo è un elemento necessario per poter definire uno spazio vettoriale, una struttura algebrica meglio descritta nell'approfondimento specifico [spazio vettoriale]({{< ref "/pages/pyphysics/vec_space" >}}  "Struttura algebrica").
+Il vettore nullo è un elemento necessario per poter definire uno spazio vettoriale, una struttura algebrica meglio descritta nell'approfondimento specifico [spazio vettoriale]({{< ref "/pages/pyphysics/vectors/vec_space" >}}  "Struttura algebrica").
 
 ![vettore_null](/static/img/vec_null.gif#center)
 
 Per maggiori info sui vettori:
 
-* [Versori]({{< ref "/pages/pyphysics/vec_unit" >}}  "Versori")
-* [Scomposizione di un vettore]({{< ref "/pages/pyphysics/vec_scomp" >}}  "Scomposizione di un vettore")
-* [Somma di vettori]({{< ref "/pages/pyphysics/gen_vec_sum" >}}  "Somma di vettori")
-* [Differenza di vettori]({{< ref "/pages/pyphysics/gen_vec_sub" >}}  "Differenza di vettori")
+* [Versori]({{< ref "/pages/pyphysics/vectors/vec_unit" >}}  "Versori")
+* [Scomposizione di un vettore]({{< ref "/pages/pyphysics/vectors/vec_scomp" >}}  "Scomposizione di un vettore")
+* [Somma di vettori]({{< ref "/pages/pyphysics/vectors/gen_vec_sum" >}}  "Somma di vettori")
+* [Differenza di vettori]({{< ref "/pages/pyphysics/vectors/gen_vec_sub" >}}  "Differenza di vettori")
 * [Moltiplicazione per uno scalare]
 
 
 
 Approfondimenti:
 
-* [Spazio vettoriale]({{< ref "/pages/pyphysics/vec_space" >}}  "Spazio vettoriale")
+* [Spazio vettoriale]({{< ref "/pages/pyphysics/vectors/vec_space" >}}  "Spazio vettoriale")
