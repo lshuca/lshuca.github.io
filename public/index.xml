@@ -8,7 +8,74 @@
     <language>it</language>
     <managingEditor>barbierid@msis002003.onmicrosoft.com (barbierid)</managingEditor>
     <webMaster>barbierid@msis002003.onmicrosoft.com (barbierid)</webMaster>
-    <lastBuildDate>Tue, 09 Jan 2024 15:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Mar 2024 15:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Equilibrio di un corpo</title>
+      <link>http://localhost:1313/pages/pyphysics/eq_prova/</link>
+      <pubDate>Fri, 08 Mar 2024 15:55:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pyphysics/eq_prova/</guid>
+      
+      <description>&lt;p&gt;prova&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Differenza di vettori</title>
+      <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</link>
+      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</guid>
+      
+      <description>&lt;p&gt;L&amp;rsquo;equilibrio delle forze, in dinamica e in statica, è la condizione per cui la risultante delle forze agenti su un corpo è nulla.&lt;/p&gt;
+&lt;p&gt;Una forza è una grandezza vettoriale, quindi caraterizzata da un modulo, direzione e verso. (Si rimanda ai capitoli &lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/intro_vec/&#34; title=&#34;Introduzione ai vettori&#34;&gt;Introduzione ai vettori&lt;/a&gt; e &lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt; per maggiori informazioni).&lt;/p&gt;
+&lt;p&gt;Possiamo distinguere tra due tipi di equilibrio:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Equilibrio statico&lt;/strong&gt;: nel caso in cui il corpo dovesse mantenere velocità nulla (ovvero rimane fermo)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equilibrio dinamico&lt;/strong&gt;: nel caso in cui il corpo dovesse muoversi con velocità costante (ovvero che si muove per inerzia)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Queste due definizioni permettono di introdurre il primo principio della dinamica, o &lt;em&gt;prima legge di Newton&lt;/em&gt;:&lt;/p&gt;
+&lt;center&gt;&lt;em&gt;Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus à viribus impressis cogitur statum illum mutare.&lt;/em&gt;&lt;/center&gt;
+&lt;p&gt;Dunque, la condizione per cui un corpo sia in equilibrio è che la risultante delle forze, agenti su di esso, sia nulla, ovvero:&lt;/p&gt;
+&lt;p&gt;$$ \vec{F}_{ris} = 0 $$&lt;/p&gt;
+&lt;p&gt;Ricordando la definizione di forza risultante, cioè data dalla somma vettoriale delle forze agenti su un corpo, possiamo anche scrivere:&lt;/p&gt;
+&lt;p&gt;$$ \sum_i \vec F_i = 0 $$&lt;/p&gt;
+&lt;p&gt;Il simbolo $ \sum $ si legge come &amp;ldquo;sommatoria&amp;rdquo; ovver la somma di tutte le possibili forze.&lt;/p&gt;
+&lt;p&gt;Noto che la condizione di equilibrio necessita lo studio delle forze, può essere utile ricordare come si definisce una forza.&lt;/p&gt;
+&lt;p&gt;È importante, nel caso&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/eq_ex_1/&#34; title=&#34;Esempio sacchetto spesa&#34;&gt;Esempio sacchetto spesa&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Esempio sacchetto spesa</title>
+      <link>http://localhost:1313/pages/pyphysics/equilibrium/eq_ex_1/</link>
+      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pyphysics/equilibrium/eq_ex_1/</guid>
+      
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Introduzione alle forze</title>
+      <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/</link>
+      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/</guid>
+      
+      <description>&lt;p&gt;In meccanica una forza è una grandezza vettoriale in grado di indurre una variazione allo stato di quiete o di moto di un corpo o di applicarne una distorsione.&lt;/p&gt;
+&lt;p&gt;La forza viene definita matematicamente dal secondo principio della dinamica, o &lt;em&gt;seconda legge di Newton&lt;/em&gt;.&lt;/p&gt;
+&lt;center&gt;&lt;em&gt;Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.&lt;/em&gt;&lt;/center&gt;
+&lt;p&gt;L&amp;rsquo;unità di misura della forza, nel SI, è il Newton ed è definito come la forza necessaria per imporre ad una massa di un $\text{kg}$ una accelerazione di un $\dfrac{\text{m}}{\text{s}^2}$, cioè:&lt;/p&gt;
+&lt;p&gt;$$ N = \dfrac{\text{kg} \cdot \text{m}}{\text{s}^2} $$&lt;/p&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Appunti di Fisica</title>
       <link>http://localhost:1313/pages/pyphysics/pyphysics/</link>
@@ -18,9 +85,12 @@
       
       <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della fisica.&lt;/p&gt;
 &lt;h2&gt;Vettori&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/intro_vec/&#34; title=&#34;Introduzione ai  vettori&#34;&gt;Introduzione ai vettori&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/gen_vec_sum/&#34; title=&#34;Somma di vettori&#34;&gt;Somma di vettori&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/gen_vec_sub/&#34; title=&#34;Differenza di vettori&#34;&gt;Differenza di vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/intro_vec/&#34; title=&#34;Introduzione ai  vettori&#34;&gt;Introduzione ai vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/&#34; title=&#34;Somma di vettori&#34;&gt;Somma di vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/&#34; title=&#34;Differenza di vettori&#34;&gt;Differenza di vettori&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Equilibrio&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/&#34; title=&#34;Condizione di equilibrio&#34;&gt;Condizione di equilibrio&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -39,10 +109,10 @@
     
     <item>
       <title>Differenza di vettori</title>
-      <link>http://localhost:1313/pages/pyphysics/gen_vec_sub/</link>
+      <link>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/</link>
       <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
       <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/gen_vec_sub/</guid>
+      <guid>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/</guid>
       
       <description>&lt;p&gt;$$\vec d = \vec v_1 - \vec v_2$$&lt;/p&gt;
 &lt;p&gt;
@@ -220,182 +290,50 @@ $$\vec v_2 = \vec{OV_2}$$&lt;/p&gt;
     
     <item>
       <title>Introduzione ai vettori</title>
-      <link>http://localhost:1313/pages/pyphysics/intro_vec/</link>
+      <link>http://localhost:1313/pages/pyphysics/vectors/intro_vec/</link>
       <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
       <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/intro_vec/</guid>
+      <guid>http://localhost:1313/pages/pyphysics/vectors/intro_vec/</guid>
       
-      <description>&lt;p&gt;
-&lt;!-- 
-
-	&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34;&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-    &lt;title&gt;Random Vectors Plot&lt;/title&gt;
-    &lt;style&gt;
-        canvas {
-            border: 1px solid #000;
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;canvas id=&#34;plotCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
-
-    &lt;script&gt;
-        // Function to generate a random vector with modulus 1 starting from the origin
-        function generateUnitVector() {
-            return {
-                x: Math.round(Math.random()*20 - 10)/10,
-                y: Math.round(Math.random()*20 - 10)/10
-            };
-        }
-
-        // Function to add two vectors
-        function addVectors(vector1, vector2) {
-            return {
-                x: Math.round((vector1.x + vector2.x)*1000)/1000,
-                y: Math.round((vector1.y + vector2.y)*1000)/1000
-            };
-        }
-
-        function subtractVectors(vector1, vector2) {
-            return {
-                x: Math.round((vector1.x - vector2.x)*1000)/1000,
-                y: Math.round((vector1.y - vector2.y)*1000)/1000
-            };
-        }
-
-        // Function to plot a vector as an arrow on the canvas
-        function plotVector(context, vector, color, name) {
-            context.strokeStyle = color;
-            context.fillStyle = color;
-
-            // Arrow properties
-            const arrowLength = 100;
-            const arrowWidth = 15;
-            const textSpacing = 1.2;
-            const arrowThickness = 0.85;
-
-            // Calculate arrowhead points
-            const arrowHead1 = {
-                x: arrowLength * vector.x * arrowThickness - arrowWidth * vector.y * arrowThickness,
-                y: arrowLength * vector.y * arrowThickness + arrowWidth * vector.x * arrowThickness
-            };
-
-            const arrowHead2 = {
-                x: arrowLength * vector.x * arrowThickness + arrowWidth * vector.y * arrowThickness,
-                y: arrowLength * vector.y * arrowThickness - arrowWidth * vector.x * arrowThickness
-            };
-
-            // Draw arrow line
-            context.beginPath();
-            context.moveTo(canvas.width / 2, canvas.height / 2);
-            context.lineTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineWidth = 2;
-
-            context.stroke();
-
-            // Draw arrowhead
-            context.beginPath();
-            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineTo(canvas.width / 2 + arrowHead1.x, canvas.height / 2 + arrowHead1.y);
-            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineTo(canvas.width / 2 + arrowHead2.x, canvas.height / 2 + arrowHead2.y);
-            context.lineWidth = 2;
-            context.stroke();
-
-            context.fillText(name, canvas.width / 2 + arrowHead2.x * textSpacing, canvas.height / 2 + arrowHead2.y * textSpacing); 
-        }
-
-        // Function to draw x and y axes
-        function drawAxes(context, canvasWidth, canvasHeight) {
-            // Draw x-axis
-            context.beginPath();
-            context.moveTo(0, canvasHeight / 2);
-            context.lineTo(canvasWidth, canvasHeight / 2);
-            context.stroke();
-
-            // Draw y-axis
-            context.beginPath();
-            context.moveTo(canvasWidth / 2, 0);
-            context.lineTo(canvasWidth / 2, canvasHeight);
-            context.stroke();
-
-
-            // Draw horizontal grid lines
-            for (let y = 0; y &lt; canvasHeight; y += 10) {
-                context.beginPath();
-                context.moveTo(0, y);
-                context.lineTo(canvasWidth, y);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-
-            // Draw vertical grid lines
-            for (let x = 0; x &lt; canvasWidth; x += 10) {
-                context.beginPath();
-                context.moveTo(x, 0);
-                context.lineTo(x, canvasHeight);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-        }
-
-        // Get the canvas and its 2d rendering context
-        var canvas = document.getElementById(&#39;plotCanvas&#39;);
-        var context = canvas.getContext(&#39;2d&#39;);
-
-        // Draw x and y axes
-        drawAxes(context, canvas.width, canvas.height, );
-
-        // Generate two random vectors as arrows with modulus 1 starting from the center
-        var vector1 = generateUnitVector();
-        var vector2 = generateUnitVector();
-
-        // Calculate the sum and sub vector
-        var sumVector = addVectors(vector1, vector2);
-
-        // Plot the vectors
-        plotVector(context, vector1, &#39;red&#39;, &#34;v1&#34;);
-        plotVector(context, vector2, &#39;blue&#39;, &#34;v2&#34;);
-        plotVector(context, sumVector, &#39;green&#39;, &#34;w&#34;);
-
-        context.font = &#34;12px Arial&#34;;
-        context.fillStyle = &#34;red&#34;;
-        context.fillText(&#34;v1 = &#34; + vector1.x*10 + &#34; i &#34; + -vector1.y*10 + &#34; j&#34;, 10, 30); 
-        
-        context.fillStyle = &#34;blue&#34;;
-        context.fillText(&#34;v2 = &#34; + vector2.x*10 + &#34; i &#34; + -vector2.y*10 + &#34; j&#34;, 10, 50); 
-        
-        context.fillStyle = &#34;green&#34;;
-        context.fillText(&#34;w = &#34; + sumVector.x*10 + &#34; i &#34; + -sumVector.y*10 + &#34; j&#34;, 10, 390); 
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-
- --&gt;
-&lt;/p&gt;
-&lt;p&gt;I vettori rappresentano uno degli strumenti matematici fondamentali, vengono infatti utilizzati per descrivere spostamenti, forze e altre grandezze fisiche dove &lt;em&gt;un numero&lt;/em&gt; non è sufficiente.&lt;/p&gt;
-&lt;p&gt;In matematica e fisica, un &lt;em&gt;vettore&lt;/em&gt; è un concetto che rappresenta una quantità caratterizzata non solo dalla sua &lt;em&gt;magnitudine&lt;/em&gt; (o grandezza), ma anche dalla sua &lt;em&gt;direzione&lt;/em&gt; e &lt;em&gt;verso&lt;/em&gt;. In altre parole, un vettore è un oggetto matematico che ha un &lt;strong&gt;modulo&lt;/strong&gt; (o lunghezza), una &lt;strong&gt;direzione&lt;/strong&gt; e un &lt;strong&gt;verso&lt;/strong&gt; specifici.&lt;/p&gt;
-&lt;p&gt;Esploreremo le operazioni fondamentali come la somma e la moltiplicazione per uno scalare, apprendendo come applicare tali concetti sia in ambito geometrico che algebrico. Attraverso l&amp;rsquo;analisi dei vettori, svilupperemo una nuova prospettiva matematica che ci accompagnerà nella risoluzione di problemi complessi e nella comprensione più approfondita della natura delle grandezze fisiche che ci circondano.&lt;/p&gt;
+      <description>&lt;p&gt;I vettori rappresentano uno degli strumenti matematici fondamentali in fisica. I vettori vengono infatti utilizzati per descrivere spostamenti, forze e altre grandezze fisiche dove &lt;em&gt;un numero&lt;/em&gt; (ovver uno scalare) non è sufficiente.&lt;/p&gt;
+&lt;p&gt;In matematica e fisica, un &lt;em&gt;vettore&lt;/em&gt; è un concetto che rappresenta una quantità caratterizzata non solo dalla sua &lt;em&gt;magnitudine&lt;/em&gt; (o grandezza), ma anche dai suoi &lt;em&gt;direzione&lt;/em&gt; e &lt;em&gt;verso&lt;/em&gt;. In altre parole, un vettore è un oggetto matematico che ha un &lt;strong&gt;modulo&lt;/strong&gt; (o lunghezza), una &lt;strong&gt;direzione&lt;/strong&gt; e un &lt;strong&gt;verso&lt;/strong&gt; specifici.&lt;/p&gt;
+&lt;p&gt;Possiamo quindi facilmente identificare un vettore sul foglio come un segmento orientato, ovvero una linea che unisce due punti identificandone uno come primo (punto di applicazione).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vector_def.jpg&#34; alt=&#34;vettore_def&#34; title=&#34;Definizione grafica di vettore&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dal grafico si possono visualizzare facilmente tutte e tre le proprietà del vettore:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;modulo&lt;/strong&gt;: $|| \vec v || = v$, il valore (scalare) che rappresenta la lunghezza del vettore.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;direzione&lt;/strong&gt;: lungo la retta $r$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;verso&lt;/strong&gt;: uscente dal punto di applicazione&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I vettori, e quindi anche le grandezze vettoriali, possono essere riconosciute immediatamente anche senza l&amp;rsquo;ausilio di un supporto grafico, vengono riportati in corsivo o tramite l&amp;rsquo;ausilio di una piccola freccia che sovrasta il simbolo.&lt;/p&gt;
+&lt;p&gt;$$ \vec v \neq \text{v} , v \neq \text{v}$$&lt;/p&gt;
+&lt;p&gt;È importante notare che un vettore non è equivalente ad un segmento generico: il vettore che unisce i punti $A$ a $B$ è opposto al vettore che unisce $B$ ad $A$. Ciò significa che fare un passo verso destra o uno verso sinistra sono due operazioni distinte: in questo caso opposte.&lt;/p&gt;
+&lt;p&gt;$$ \vec {AB} = - \vec {BA} \rightarrow \vec {AB} + \vec {BA} = \vec {0} $$&lt;/p&gt;
+&lt;p&gt;Con $\vec 0$ abbiamo potuto introdurre il concetto di &lt;strong&gt;vettore nullo&lt;/strong&gt;: l&amp;rsquo;elemento neutro dell&amp;rsquo;operazione di addizione tra vettori.
+Il vettore nullo è un elemento necessario per poter definire uno spazio vettoriale, una struttura algebrica meglio descritta nell&amp;rsquo;approfondimento specifico &lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Struttura algebrica&#34;&gt;spazio vettoriale&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vec_null.gif#center&#34; alt=&#34;vettore_null&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Per maggiori info sui vettori:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_unit/&#34; title=&#34;Versori&#34;&gt;Versori&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_scomp/&#34; title=&#34;Scomposizione di un vettore&#34;&gt;Scomposizione di un vettore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/&#34; title=&#34;Somma di vettori&#34;&gt;Somma di vettori&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/&#34; title=&#34;Differenza di vettori&#34;&gt;Differenza di vettori&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Moltiplicazione per uno scalare]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Approfondimenti:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Spazio vettoriale&#34;&gt;Spazio vettoriale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>
     
     <item>
       <title>Somma di vettori</title>
-      <link>http://localhost:1313/pages/pyphysics/gen_vec_sum/</link>
+      <link>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/</link>
       <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
       <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/gen_vec_sum/</guid>
+      <guid>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/</guid>
       
       <description>&lt;p&gt;$$\vec s = \vec v_1 + \vec v_2$$&lt;/p&gt;
 &lt;p&gt;
@@ -566,6 +504,192 @@ $$\vec v_2 = \vec{OV_2}$$&lt;/p&gt;
 &lt;p&gt;Si può notare come il vettore $\vec s$ sia delimitato dal&amp;rsquo;origine e il punto $S$ identificato dalla somma delle coordinate di $V_1$ e $V_2$.&lt;/p&gt;
 &lt;p&gt;$$\vec s = \vec {OS}$$&lt;/p&gt;
 &lt;p&gt;Esercitati, ricaricando la pagina, a calcolare le somme tra vari vettori.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/vec_scomp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_scomp/</guid>
+      
+      <description>&lt;p&gt;La scomposizione di un vettore è, in un certo senso, l&amp;rsquo;operazione inversa della somma: l&amp;rsquo;obiettivo della scomposizione è infatti quello di trovare due vettori tali che, ognuno con una sua direzione sommati, possano risultare il vettore di partenza.&lt;/p&gt;
+&lt;p&gt;Dato un vettore $\vec d$ e due rette $s$ e $r$ non parallele, vogliamo ottenere le componenti $\vec d_s$ e $\vec d_r$ tali che:&lt;/p&gt;
+&lt;p&gt;$$ \vec d = \vec d_s + \vec d_r $$&lt;/p&gt;
+&lt;p&gt;Graficamente possiamo facilmente notare che le componenti $\vec d_s$ e $\vec d_r$ rappresentano le proiezioni del vettore $\vec d$ rispettivamente sulle rette $s$ e $r$.&lt;/p&gt;
+&lt;p&gt;Finora non abbiamo, in nessun modo, posto alcuna condizione sull&amp;rsquo;angolo tra le due rette: è infatti possibile scomporre un vettore lungo due direzioni generiche.&lt;/p&gt;
+&lt;p&gt;Molto spesso è utile proiettare un vettore su due rette perpendicolari tra loro: l&amp;rsquo;esempio più evidente è il caso delle rette $x$ e $y$ costituenti il piano cartesiano.&lt;/p&gt;
+&lt;p&gt;Dato un vettore $\vec a$ che unisce l&amp;rsquo;origine $O$ e il punto $A$ possiamo facilmente definirne le componenti $\vec a_x$ e $\vec a_y$ come i vettori proiettati rispettivamente su $x$ e $y$.&lt;/p&gt;
+&lt;p&gt;Possiamo, altrettanto facilmente, ricavare il modulo del vettore $||\vec a||$ sfruttando il teorema di Pitagora (i triangoli $\overset{\triangle}{OAA_x}$ e $\overset{\triangle}{OAA_y}$ sono infatti rettangoli per definizione).&lt;/p&gt;
+&lt;p&gt;$$ ||\vec a|| = \sqrt{ OA_x ^ 2 + OA_y ^ 2} = \sqrt{ || \vec a_x || ^ 2 + || \vec a_y || ^ 2}$$&lt;/p&gt;
+&lt;p&gt;Lo sturmento in calce permette di visualizzare immediatamente le componenti $x$ e $y$ di un generico vettore $v$ generato casualmente.&lt;/p&gt;
+
+
+	&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;Scomposizione di vettore&lt;/title&gt;
+    &lt;style&gt;
+        canvas {
+            border: 1px solid #000;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id=&#34;plotCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
+
+    &lt;script&gt;
+        // Function to generate a random vector with modulus 1 starting from the origin
+        function generateUnitVector() {
+            return {
+                x: Math.round(Math.random()*20 - 10)/10,
+                y: Math.round(Math.random()*20 - 10)/10
+            };
+        }
+
+        // Function to plot a vector as an arrow on the canvas
+        function plotVector(context, vector, color, name) {
+            context.strokeStyle = color;
+            context.fillStyle = color;
+
+            // Arrow properties
+            const arrowLength = 100;
+            const arrowWidth = 15;
+            const textSpacing = 1.2;
+            const arrowThickness = 0.85;
+
+            // Calculate arrowhead points
+            const arrowHead1 = {
+                x: arrowLength * vector.x * arrowThickness - arrowWidth * vector.y * arrowThickness,
+                y: arrowLength * vector.y * arrowThickness + arrowWidth * vector.x * arrowThickness
+            };
+
+            const arrowHead2 = {
+                x: arrowLength * vector.x * arrowThickness + arrowWidth * vector.y * arrowThickness,
+                y: arrowLength * vector.y * arrowThickness - arrowWidth * vector.x * arrowThickness
+            };
+
+            // Draw arrow line
+            context.beginPath();
+            context.moveTo(canvas.width / 2, canvas.height / 2);
+            context.lineTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineWidth = 2;
+
+            context.stroke();
+
+            // Draw arrowhead
+            context.beginPath();
+            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineTo(canvas.width / 2 + arrowHead1.x, canvas.height / 2 + arrowHead1.y);
+            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineTo(canvas.width / 2 + arrowHead2.x, canvas.height / 2 + arrowHead2.y);
+            context.lineWidth = 2;
+            context.stroke();
+
+            context.fillText(name, canvas.width / 2 + arrowHead2.x * textSpacing, canvas.height / 2 + arrowHead2.y * textSpacing); 
+        }
+
+        // Function to draw x and y axes
+        function drawAxes(context, canvasWidth, canvasHeight) {
+            // Draw x-axis
+            context.beginPath();
+            context.moveTo(0, canvasHeight / 2);
+            context.lineTo(canvasWidth, canvasHeight / 2);
+            context.stroke();
+
+            // Draw y-axis
+            context.beginPath();
+            context.moveTo(canvasWidth / 2, 0);
+            context.lineTo(canvasWidth / 2, canvasHeight);
+            context.stroke();
+
+
+            // Draw horizontal grid lines
+            for (let y = 0; y &lt; canvasHeight; y += 10) {
+                context.beginPath();
+                context.moveTo(0, y);
+                context.lineTo(canvasWidth, y);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+
+            // Draw vertical grid lines
+            for (let x = 0; x &lt; canvasWidth; x += 10) {
+                context.beginPath();
+                context.moveTo(x, 0);
+                context.lineTo(x, canvasHeight);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+        }
+
+        // Get the canvas and its 2d rendering context
+        var canvas = document.getElementById(&#39;plotCanvas&#39;);
+        var context = canvas.getContext(&#39;2d&#39;);
+
+        // Draw x and y axes
+        drawAxes(context, canvas.width, canvas.height, );
+
+        // Generate two random vectors as arrows with modulus 1 starting from the center
+        var vector = generateUnitVector();
+
+        // Plot the vectors
+        plotVector(context, vector, &#39;purple&#39;, &#34;a&#34;);
+
+        // Function to add two vectors
+        function yComponent(vector_in) {
+            return {
+                x: 0,
+                y: Math.round((vector.y)*1000)/1000
+            };
+        }
+
+        yVector = yComponent(vector)
+        plotVector(context, yVector, &#39;blue&#39;, &#34;ay&#34;);
+
+        // Function to add two vectors
+        function xComponent(vector_in) {
+            return {
+                x: Math.round((vector.x)*1000)/1000,
+                y: 0
+            };
+        }
+
+        xVector = xComponent(vector)
+        plotVector(context, xVector, &#39;red&#39;, &#34;ax&#34;);
+
+
+
+        context.font = &#34;12px Arial&#34;;
+        context.fillStyle = &#34;purple&#34;;
+        context.fillText(&#34;a = &#34; + vector.x*10 + &#34; i &#34; + -vector.y*10 + &#34; j&#34;, 10, 30); 
+        
+        context.font = &#34;12px Arial&#34;;
+        context.fillStyle = &#34;red&#34;;
+        context.fillText(&#34;ax = &#34; + vector.x*10 + &#34; i &#34; + 0 + &#34; j&#34;, 10, 50); 
+        
+        context.font = &#34;12px Arial&#34;;
+        context.fillStyle = &#34;blue&#34;;
+        context.fillText(&#34;ay = &#34; + 0 + &#34; i &#34; + vector.y*10 + &#34; j&#34;, 10, 70); 
+
+        context.font = &#34;12px Arial&#34;;
+        context.fillStyle = &#34;purple&#34;;
+        context.fillText(&#34;a = &#34; + Math.round(((vector.x * 10)**2 + (vector.y * 10)**2)**(1/2)*100)/100 , 10, 350); 
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
 </description>
       
     </item>
