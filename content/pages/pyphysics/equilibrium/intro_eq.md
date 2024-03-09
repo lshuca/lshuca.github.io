@@ -30,7 +30,7 @@ $$ \sum_i \vec F_i = 0 $$
 Il simbolo $ \sum $ si legge come "sommatoria" ovver la somma di tutte le possibili forze.
 
 Noto che la condizione di equilibrio necessita lo studio delle forze, può essere utile ricordare come si definisce una forza.
-
+<!-- 
 È importante, nel caso 
 
-[Esempio sacchetto spesa]({{< ref "/pages/pyphysics/equilibrium/eq_ex_1" >}}  "Esempio sacchetto spesa")
+[Esempio sacchetto spesa]({{< ref "/pages/pyphysics/equilibrium/eq_ex_1" >}}  "Esempio sacchetto spesa") -->
