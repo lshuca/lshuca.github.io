@@ -16,9 +16,54 @@
       <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
       <guid>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</guid>
       
-      <description>&lt;p&gt;$$\vec d = \vec v_1 - \vec v_2$$&lt;/p&gt;
-&lt;p&gt;Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali.
-I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati agli estremi dall&amp;rsquo;origine e dai punti $V_1$ e $V_2$.&lt;/p&gt;
+      <description>&lt;p&gt;Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vec_rectangle.png&#34; alt=&#34;vec_rectangle&#34; title=&#34;Triangolo rettangolo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Possiamo facilmente identificare l&amp;rsquo;angolo $\theta$ come l&amp;rsquo;angolo opposto alla componente $y$ del vettore, il terzo angolo risulterà quindi $\gamma = \dfrac{\pi}{2} - \theta$ per il teorema della somma degli angoli interni di un triangolo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2&gt;Funzioni goniometriche&lt;/h2&gt;
+&lt;p&gt;Le funzioni goniometriche sono delle funzioni matematiche che ci permettono, tramite la loro definizione, di calcolare le lunghezze dei vari lati e quindi delle componenti del vettore.&lt;/p&gt;
+&lt;h3&gt;Coseno&lt;/h3&gt;
+&lt;p&gt;La funzione coseno di un angolo $\theta$ (simbolo $cos\theta$) è definita come il rapporto tra la lunghezza del cateto adiacente all&amp;rsquo;angolo e la lunghezza dell&amp;rsquo;ipotenusa.&lt;/p&gt;
+&lt;p&gt;$$ cos \theta = \dfrac{c_1}{I} \rightarrow c_1 = I cos \theta $$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ cos \gamma = \dfrac{c_2}{I} $$&lt;/p&gt;
+&lt;h3&gt;Seno&lt;/h3&gt;
+&lt;p&gt;La funzione seno di un angolo $\theta$ (simbolo $sin\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&amp;rsquo;angolo e la lunghezza dell&amp;rsquo;ipotenusa.&lt;/p&gt;
+&lt;p&gt;$$ sin \theta = \dfrac{c_2}{I} \rightarrow c_2 = I sin \theta$$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ sin \gamma = \dfrac{c_1}{I} $$&lt;/p&gt;
+&lt;h3&gt;Tangente&lt;/h3&gt;
+&lt;p&gt;La funzione tangente di un angolo $\theta$ (simbolo $tan\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&amp;rsquo;angolo e la lunghezza del cateto adiacente.&lt;/p&gt;
+&lt;p&gt;$$ tan \theta = \dfrac{c_2}{c_1} \rightarrow c_2 = c_1 tan \theta$$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ tan \gamma = \dfrac{c_2}{c_1} $$&lt;/p&gt;
+&lt;h3&gt;Relazioni tra funzioni&lt;/h3&gt;
+&lt;h4&gt;Somma dei quadrati&lt;/h4&gt;
+&lt;p&gt;Il teorema di Pitagora ci permette di scrivere la relazione tra ipotenusa e cateti.&lt;/p&gt;
+&lt;p&gt;$$ I^2 = c_1^2 + c_2^2 $$&lt;/p&gt;
+&lt;p&gt;Andando quindi a sostituire le definizioni di $c_1$ e $c_2$ possiamo facilmente ottenere che.&lt;/p&gt;
+&lt;p&gt;$$ I^2 = (I cos \theta)^2 + (I sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;$$ I^2 = I ^2 (cos \theta)^2 + I^2 (sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;$$ I^2 = I ^2 [(cos \theta)^2 + (sin \theta)^2] $$&lt;/p&gt;
+&lt;p&gt;$$ 1 = (cos \theta)^2 + (sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;Cioè la somma del quadrato dei valori di seno e coseno, per lo stesso angolo $\theta$ è uguale a 1.&lt;/p&gt;
+&lt;h4&gt;Angoli complementari&lt;/h4&gt;
+&lt;p&gt;Due angoli sono detti complementari se, sommati, compongono un angolo retto $\pi/2$.&lt;/p&gt;
+&lt;p&gt;$$ \theta + \gamma = \dfrac{\pi}{2}$$&lt;/p&gt;
+&lt;p&gt;Riprendendo le relazioni precedenti, e ricordando che stiamo trattando triangoli rettangoli, possiamo notare che:&lt;/p&gt;
+&lt;p&gt;$$ c_1 = I cos\theta \leftrightarrow c_1 = I sin \gamma $$&lt;/p&gt;
+&lt;p&gt;Per la proprietà transitiva &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;$$ c_1 = I cos\theta \leftrightarrow c_1 = I sin \gamma $$&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;La somma degli angoli di un triangolo è congruente a un angolo piatto (180°).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Se $A = B$ e $B = C$ allora $A = C$.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
       
     </item>

@@ -1,6 +1,6 @@
 +++
 menus = []
-title = 'Differenza di vettori'
+title = 'Equilibrio delle forze'
 date = 2024-01-09T15:56:42+01:00
 +++
 
@@ -16,8 +16,6 @@ Possiamo distinguere tra due tipi di equilibrio:
 Queste due definizioni permettono di introdurre il primo principio della dinamica, o *prima legge di Newton*:
 
 <center><em>Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus à viribus impressis cogitur statum illum mutare.</em></center>
-
-
 
 Dunque, la condizione per cui un corpo sia in equilibrio è che la risultante delle forze, agenti su di esso, sia nulla, ovvero:
 

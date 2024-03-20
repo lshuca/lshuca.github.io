@@ -16,9 +16,76 @@
       <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
       <guid>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</guid>
       
-      <description>&lt;p&gt;$$\vec d = \vec v_1 - \vec v_2$$&lt;/p&gt;
-&lt;p&gt;Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali.
-I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati agli estremi dall&amp;rsquo;origine e dai punti $V_1$ e $V_2$.&lt;/p&gt;
+      <description>&lt;p&gt;Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vec_rectangle.png&#34; alt=&#34;vec_rectangle&#34; title=&#34;Triangolo rettangolo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Possiamo facilmente identificare l&amp;rsquo;angolo $\theta$ come l&amp;rsquo;angolo opposto alla componente $y$ del vettore, il terzo angolo risulterà quindi $\gamma = \dfrac{\pi}{2} - \theta$ per il teorema della somma degli angoli interni di un triangolo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2&gt;Funzioni goniometriche&lt;/h2&gt;
+&lt;p&gt;Le funzioni goniometriche sono delle funzioni matematiche che ci permettono, tramite la loro definizione, di calcolare le lunghezze dei vari lati e quindi delle componenti del vettore.&lt;/p&gt;
+&lt;h3&gt;Coseno&lt;/h3&gt;
+&lt;p&gt;La funzione coseno di un angolo $\theta$ (simbolo $cos\theta$) è definita come il rapporto tra la lunghezza del cateto adiacente all&amp;rsquo;angolo e la lunghezza dell&amp;rsquo;ipotenusa.&lt;/p&gt;
+&lt;p&gt;$$ cos \theta = \dfrac{c_1}{I} \rightarrow c_1 = I cos \theta $$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ cos \gamma = \dfrac{c_2}{I} $$&lt;/p&gt;
+&lt;h3&gt;Seno&lt;/h3&gt;
+&lt;p&gt;La funzione seno di un angolo $\theta$ (simbolo $sin\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&amp;rsquo;angolo e la lunghezza dell&amp;rsquo;ipotenusa.&lt;/p&gt;
+&lt;p&gt;$$ sin \theta = \dfrac{c_2}{I} \rightarrow c_2 = I sin \theta$$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ sin \gamma = \dfrac{c_1}{I} $$&lt;/p&gt;
+&lt;h3&gt;Tangente&lt;/h3&gt;
+&lt;p&gt;La funzione tangente di un angolo $\theta$ (simbolo $tan\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&amp;rsquo;angolo e la lunghezza del cateto adiacente.&lt;/p&gt;
+&lt;p&gt;$$ tan \theta = \dfrac{c_2}{c_1} \rightarrow c_2 = c_1 tan \theta$$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ tan \gamma = \dfrac{c_2}{c_1} $$&lt;/p&gt;
+&lt;p&gt;Per maggiori informazioni tra le funzioni goniometriche rifarsi al link in calce.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/&#34; title=&#34;Relazioni tra funzioni goniometriche&#34;&gt;Relazioni tra funzioni goniometriche&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;La somma degli angoli di un triangolo è congruente a un angolo piatto (180°).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Relazioni tra funzioni goniometriche</title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/</link>
+      <pubDate>Wed, 20 Mar 2024 10:38:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/</guid>
+      
+      <description>&lt;h3&gt;Relazioni tra funzioni&lt;/h3&gt;
+&lt;h4&gt;Somma dei quadrati&lt;/h4&gt;
+&lt;p&gt;Il teorema di Pitagora ci permette di scrivere la relazione tra ipotenusa e cateti.&lt;/p&gt;
+&lt;p&gt;$$ I^2 = c_1^2 + c_2^2 $$&lt;/p&gt;
+&lt;p&gt;Andando quindi a sostituire le definizioni di $c_1$ e $c_2$ possiamo facilmente ottenere che.&lt;/p&gt;
+&lt;p&gt;$$ I^2 = (I cos \theta)^2 + (I sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;$$ I^2 = I ^2 (cos \theta)^2 + I^2 (sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;$$ I^2 = I ^2 [(cos \theta)^2 + (sin \theta)^2] $$&lt;/p&gt;
+&lt;p&gt;$$ 1 = (cos \theta)^2 + (sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;Cioè la somma del quadrato dei valori di seno e coseno, per lo stesso angolo $\theta$ è uguale a 1.&lt;/p&gt;
+&lt;h4&gt;Angoli complementari&lt;/h4&gt;
+&lt;p&gt;Due angoli sono detti complementari se, sommati, compongono un angolo retto $\pi/2$.&lt;/p&gt;
+&lt;p&gt;$$ \theta + \gamma = \dfrac{\pi}{2}$$&lt;/p&gt;
+&lt;p&gt;Riprendendo le relazioni precedenti, e ricordando che stiamo trattando triangoli rettangoli, possiamo notare che:&lt;/p&gt;
+&lt;p&gt;$$ c_1 = I cos\theta \leftrightarrow c_1 = I sin \gamma $$&lt;/p&gt;
+&lt;p&gt;$$ \dfrac{c_1}{I} = cos\theta \leftrightarrow \dfrac{c_1}{I} = I sin \gamma $$&lt;/p&gt;
+&lt;p&gt;Per la proprietà transitiva &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;$$ cos \theta = sin \gamma $$&lt;/p&gt;
+&lt;p&gt;Ricordando che $\theta$ e $\gamma$ sono complementari.&lt;/p&gt;
+&lt;p&gt;$$ cos \theta = sin \left( \dfrac{\pi}{2} - \gamma \right) $$&lt;/p&gt;
+&lt;p&gt;Questo ci permette di utilizzare, con grande disinvoltura, gli angoli più comodi nello studio delle relazioni vettoriali.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Se $A = B$ e $B = C$ allora $A = C$.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
       
     </item>
@@ -36,7 +103,7 @@ I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati 
     </item>
     
     <item>
-      <title>Differenza di vettori</title>
+      <title>Equilibrio delle forze</title>
       <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</link>
       <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
       <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
@@ -101,8 +168,10 @@ I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati 
       <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della fisica.&lt;/p&gt;
 &lt;h2&gt;Vettori&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/intro_vec/&#34; title=&#34;Introduzione ai  vettori&#34;&gt;Introduzione ai vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/&#34; title=&#34;Scomposizione di un vettore con funzioni goniometriche&#34;&gt;Scomposizione di un vettore con funzioni goniometriche&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Equilibrio&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/&#34; title=&#34;Introduzione all&#39;equilibrio&#34;&gt;Introduzione all&amp;rsquo;equilibrio&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -336,186 +405,6 @@ Il vettore nullo è un elemento necessario per poter definire uno spazio vettori
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Spazio vettoriale&#34;&gt;Spazio vettoriale&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Somma di vettori</title>
-      <link>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/</link>
-      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/</guid>
-      
-      <description>&lt;p&gt;$$\vec s = \vec v_1 + \vec v_2$$&lt;/p&gt;
-&lt;p&gt;
-
-
-	&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34;&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-    &lt;title&gt;Random Vectors Plot&lt;/title&gt;
-    &lt;style&gt;
-        canvas {
-            border: 1px solid #000;
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;canvas id=&#34;plotCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
-
-    &lt;script&gt;
-        // Function to generate a random vector with modulus 1 starting from the origin
-        function generateUnitVector() {
-            return {
-                x: Math.round(Math.random()*20 - 10)/10,
-                y: Math.round(Math.random()*20 - 10)/10
-            };
-        }
-
-        // Function to add two vectors
-        function addVectors(vector1, vector2) {
-            return {
-                x: Math.round((vector1.x + vector2.x)*1000)/1000,
-                y: Math.round((vector1.y + vector2.y)*1000)/1000
-            };
-        }
-
-        function subtractVectors(vector1, vector2) {
-            return {
-                x: Math.round((vector1.x - vector2.x)*1000)/1000,
-                y: Math.round((vector1.y - vector2.y)*1000)/1000
-            };
-        }
-
-        // Function to plot a vector as an arrow on the canvas
-        function plotVector(context, vector, color, name) {
-            context.strokeStyle = color;
-            context.fillStyle = color;
-
-            // Arrow properties
-            const arrowLength = 100;
-            const arrowWidth = 15;
-            const textSpacing = 1.2;
-            const arrowThickness = 0.85;
-
-            // Calculate arrowhead points
-            const arrowHead1 = {
-                x: arrowLength * vector.x * arrowThickness - arrowWidth * vector.y * arrowThickness,
-                y: arrowLength * vector.y * arrowThickness + arrowWidth * vector.x * arrowThickness
-            };
-
-            const arrowHead2 = {
-                x: arrowLength * vector.x * arrowThickness + arrowWidth * vector.y * arrowThickness,
-                y: arrowLength * vector.y * arrowThickness - arrowWidth * vector.x * arrowThickness
-            };
-
-            // Draw arrow line
-            context.beginPath();
-            context.moveTo(canvas.width / 2, canvas.height / 2);
-            context.lineTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineWidth = 2;
-
-            context.stroke();
-
-            // Draw arrowhead
-            context.beginPath();
-            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineTo(canvas.width / 2 + arrowHead1.x, canvas.height / 2 + arrowHead1.y);
-            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineTo(canvas.width / 2 + arrowHead2.x, canvas.height / 2 + arrowHead2.y);
-            context.lineWidth = 2;
-            context.stroke();
-
-            context.fillText(name, canvas.width / 2 + arrowHead2.x * textSpacing, canvas.height / 2 + arrowHead2.y * textSpacing); 
-        }
-
-        // Function to draw x and y axes
-        function drawAxes(context, canvasWidth, canvasHeight) {
-            // Draw x-axis
-            context.beginPath();
-            context.moveTo(0, canvasHeight / 2);
-            context.lineTo(canvasWidth, canvasHeight / 2);
-            context.stroke();
-
-            // Draw y-axis
-            context.beginPath();
-            context.moveTo(canvasWidth / 2, 0);
-            context.lineTo(canvasWidth / 2, canvasHeight);
-            context.stroke();
-
-
-            // Draw horizontal grid lines
-            for (let y = 0; y &lt; canvasHeight; y += 10) {
-                context.beginPath();
-                context.moveTo(0, y);
-                context.lineTo(canvasWidth, y);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-
-            // Draw vertical grid lines
-            for (let x = 0; x &lt; canvasWidth; x += 10) {
-                context.beginPath();
-                context.moveTo(x, 0);
-                context.lineTo(x, canvasHeight);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-        }
-
-        // Get the canvas and its 2d rendering context
-        var canvas = document.getElementById(&#39;plotCanvas&#39;);
-        var context = canvas.getContext(&#39;2d&#39;);
-
-        // Draw x and y axes
-        drawAxes(context, canvas.width, canvas.height, );
-
-        // Generate two random vectors as arrows with modulus 1 starting from the center
-        var vector1 = generateUnitVector();
-        var vector2 = generateUnitVector();
-
-        // Calculate the sum and sub vector
-        var sumVector = addVectors(vector1, vector2);
-
-        // Plot the vectors
-        plotVector(context, vector1, &#39;red&#39;, &#34;v1&#34;);
-        plotVector(context, vector2, &#39;blue&#39;, &#34;v2&#34;);
-        plotVector(context, sumVector, &#39;green&#39;, &#34;s&#34;);
-
-        context.font = &#34;12px Arial&#34;;
-        context.fillStyle = &#34;red&#34;;
-        context.fillText(&#34;v1 = &#34; + vector1.x*10 + &#34; i &#34; + -vector1.y*10 + &#34; j&#34;, 10, 30); 
-        
-        context.fillStyle = &#34;blue&#34;;
-        context.fillText(&#34;v2 = &#34; + vector2.x*10 + &#34; i &#34; + -vector2.y*10 + &#34; j&#34;, 10, 50); 
-        
-        context.fillStyle = &#34;green&#34;;
-        context.fillText(&#34;s = &#34; + sumVector.x*10 + &#34; i &#34; + -sumVector.y*10 + &#34; j&#34;, 10, 390); 
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-
-
-&lt;/p&gt;
-&lt;p&gt;Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali.
-I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati agli estremi dall&amp;rsquo;origine e dai punti $V_1$ e $V_2$.&lt;/p&gt;
-&lt;p&gt;$$\vec v_1 = \vec{OV_1}$$
-$$\vec v_2 = \vec{OV_2}$$&lt;/p&gt;
-&lt;p&gt;Ogni vettore è infatti rappresentato da un modulo (lunghezza), una direzione (la retta su cui poggia) ed un verso.&lt;/p&gt;
-&lt;p&gt;È inoltre presente una terza freccia, vettore, di colore viola. Questo vettore $\vec s$ è dato dalla somma dei due precedenti vettori, ovvero:&lt;/p&gt;
-&lt;p&gt;$$\vec s = \vec v_1 + \vec v_2$$&lt;/p&gt;
-&lt;p&gt;Si può notare come il vettore $\vec s$ sia delimitato dal&amp;rsquo;origine e il punto $S$ identificato dalla somma delle coordinate di $V_1$ e $V_2$.&lt;/p&gt;
-&lt;p&gt;$$\vec s = \vec {OS}$$&lt;/p&gt;
-&lt;p&gt;Esercitati, ricaricando la pagina, a calcolare le somme tra vari vettori.&lt;/p&gt;
 </description>
       
     </item>

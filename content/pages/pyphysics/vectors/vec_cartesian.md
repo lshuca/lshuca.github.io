@@ -44,24 +44,8 @@ Analogamente possiamo vedere che.
 
 $$ tan \gamma = \dfrac{c_2}{c_1} $$
 
-<h3>Relazioni tra funzioni</h3>
+Per maggiori informazioni tra le funzioni goniometriche rifarsi al link in calce.
 
-Il teorema di Pitagora ci permette di scrivere una relazione tra ipotenusa e cateti.
-
-$$ I^2 = c_1^2 + c_2^2 $$
-
-Andando quindi a sostituire le definizioni di $c_1$ e $c_2$ possiamo facilmente ottenere che.
-
-$$ I^2 = (I cos \theta)^2 + (I sin \theta)^2 $$
-
-$$ I^2 = I ^2 (cos \theta)^2 + I^2 (sin \theta)^2 $$
-
-$$ I^2 = I ^2 [(cos \theta)^2 + (sin \theta)^2] $$
-
-$$ 1 = (cos \theta)^2 + (sin \theta)^2 $$
-
-Cioè la somma del quadrato dei valori di seno e coseno, per lo stesso angolo $\theta$ è uguale a 1.
-
-
+[Relazioni tra funzioni goniometriche]({{< ref "/pages/pyphysics/vectors/vec_goniometry" >}}  "Relazioni tra funzioni goniometriche")
 
 [^1]: La somma degli angoli di un triangolo è congruente a un angolo piatto (180°).
