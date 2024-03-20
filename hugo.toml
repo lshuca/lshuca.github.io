@@ -31,16 +31,10 @@ title = "La scienza ha un cuore antico"                                  # websi
 
 # https://gohugo.io/content-management/menus/
 [[menu.main]]
-    # identifier = "Generatore Vettori"    # section id
-    # name = "Generatore Vettori"          # section display title
-    # url = "/pages/pyphysics/about"         # path to the section
-    # weight = 1              # order of sections
-
-# [[menu.main]]
-#     identifier = "PyPhysics"    # section id
-#     name = "PyPhysics"          # section display title
-#     url = "/pages/pyphysics/test"         # path to the section
-#     weight = 1              # order of sections
+identifier = "home" # section id
+name = "Home"       # section display title
+url = "/"           # path to the section
+weight = 1          # order of sections
 
 # [[menu.main]]
 #     identifier = "PyMath"    # section id
