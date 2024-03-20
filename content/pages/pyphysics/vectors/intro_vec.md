@@ -37,7 +37,7 @@ Per maggiori info sui vettori:
 * [Scomposizione di un vettore]({{< ref "/pages/pyphysics/vectors/vec_scomp" >}}  "Scomposizione di un vettore")
 * [Somma di vettori]({{< ref "/pages/pyphysics/vectors/gen_vec_sum" >}}  "Somma di vettori")
 * [Differenza di vettori]({{< ref "/pages/pyphysics/vectors/gen_vec_sub" >}}  "Differenza di vettori")
-* [Moltiplicazione per uno scalare]
+* [Componenti cartesiane di un vettore]({{< ref "/pages/pyphysics/vectors/vec_cartesian" >}}  "Componenti cartesiane di un vettore")
 
 
 
