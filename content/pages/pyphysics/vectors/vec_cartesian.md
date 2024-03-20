@@ -60,6 +60,8 @@ $$ I^2 = I ^2 [(cos \theta)^2 + (sin \theta)^2] $$
 
 $$ 1 = (cos \theta)^2 + (sin \theta)^2 $$
 
-Cioè la somma in quadratura delle funzioni seno e coseno
+Cioè la somma del quadrato dei valori di seno e coseno, per lo stesso angolo $\theta$ è uguale a 1.
+
+
 
 [^1]: La somma degli angoli di un triangolo è congruente a un angolo piatto (180°).
