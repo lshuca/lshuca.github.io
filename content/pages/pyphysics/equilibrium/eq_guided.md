@@ -21,7 +21,7 @@ I dati del problema sono riferiti alle specifiche del piano inclinato (lunghezza
 <h5>Dati</h5>
 
 * Lunghezza $l = 1255$ m
-* Dislivello $h = 1255$ m
+* Dislivello $h = 448$ m
 * Massa dello sciatore $m = 80$ kg
 
 <h5>Incognite</h5>
