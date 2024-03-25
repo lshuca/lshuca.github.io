@@ -124,21 +124,7 @@
 &lt;p&gt;$$ \sum_i \vec F_i = 0 $$&lt;/p&gt;
 &lt;p&gt;Il simbolo $ \sum $ si legge come &amp;ldquo;sommatoria&amp;rdquo; ovver la somma di tutte le possibili forze.&lt;/p&gt;
 &lt;p&gt;Noto che la condizione di equilibrio necessita lo studio delle forze, può essere utile ricordare come si definisce una forza.&lt;/p&gt;
-&lt;!-- 
-È importante, nel caso 
-
-[Esempio sacchetto spesa](http://localhost:1313/pages/pyphysics/equilibrium/eq_ex_1/  &#34;Esempio sacchetto spesa&#34;) --&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Esempio sacchetto spesa</title>
-      <link>http://localhost:1313/pages/pyphysics/equilibrium/eq_ex_1/</link>
-      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/equilibrium/eq_ex_1/</guid>
-      
-      <description></description>
+</description>
       
     </item>
     
@@ -159,6 +145,73 @@
     </item>
     
     <item>
+      <title>Risoluzione guidata di un esercizio di equilibrio</title>
+      <link>http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/</link>
+      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/</guid>
+      
+      <description>&lt;h2&gt;Testo del problema&lt;/h2&gt;
+&lt;p&gt;Uno sciatore è appoggiato ad una pista inclinata tale che in una lunghezza di $1255 $ m supera un dislivello di $448 $m.&lt;/p&gt;
+&lt;p&gt;Ipotizzando che la pista risulti con una pendenza uniforme, studiare il caso di uno sciatore di massa $m = 80$ kg in equilibrio. Calcolare il valore della forza svolta dallo sciatore per evitare di scivolare sul piano inclinato.&lt;/p&gt;
+&lt;h2&gt;Impostazione&lt;/h2&gt;
+&lt;p&gt;Per impostare il problema dobbiamo prima capire i dati.&lt;/p&gt;
+&lt;h3&gt;Dati e incognite&lt;/h3&gt;
+&lt;p&gt;I dati del problema sono riferiti alle specifiche del piano inclinato (lunghezza e dislivello) e alla massa dello sciatore.&lt;/p&gt;
+&lt;h5&gt;Dati&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Lunghezza $l = 1255$ m&lt;/li&gt;
+&lt;li&gt;Dislivello $h = 1255$ m&lt;/li&gt;
+&lt;li&gt;Massa dello sciatore $m = 80$ kg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Incognite&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Forza esercitata dallo sciatore per mantenere l&amp;rsquo;equilibrio $\vec F$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Disegno&lt;/h3&gt;
+&lt;p&gt;Per tracciare il disegno vogliamo inizialmente capire come è composto il sistema studiato.&lt;/p&gt;
+&lt;p&gt;Sappiamo che la pista è approssimabile ad uniforme, cioè possiamo ipotizzare che non ci siano variazioni di pendenza in tutto il suo percorso.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_triangle.png&#34; alt=&#34;eq_triangle&#34; title=&#34;Piano inclinato&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Vogliamo quindi studiare le forze agenti sullo sciatore, rappresentato da un puntino sul piano inclinato.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier.png&#34; alt=&#34;eq_skier&#34; title=&#34;Sciatore&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Lo sciatore ha modo di esercitare una forza parallela alla pendenza e, logicamente, con verso opposto alla discesa.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier_1.png&#34; alt=&#34;eq_skier_1&#34; title=&#34;Sciatore frena&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Osservando queste immagini possiamo subito notare che, per come sono disegnate e rappresentate le forze in questo momento, lo sciatore non risulta in equilibrio.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;equilibrio statico necessita infatti che la risultante delle forze, cioè la somma, vettoriale, di tutte le forze agenti su un oggetto sia nulla.&lt;/p&gt;
+&lt;p&gt;Sommando le due forze presenti sul grafico non otteniamo un vettore nullo! Manca infatti la forza normale, una delle forze vincolari più conosciute, che impedisce allo sciatore di sprofondare nel pendio!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier_2.png&#34; alt=&#34;eq_skier_2&#34; title=&#34;Sciatore frena e normale&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Adottando l&amp;rsquo;approssimazione di punto materiale andiamo a disegnare le forze in gioco, agenti sullo sciatore, in uno schema ad hoc.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema.png&#34; alt=&#34;eq_schema&#34; title=&#34;Schema di corpo libero&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Per poter terminare l&amp;rsquo;impostazione del problema dobbiamo riportare, vettorialmente, la condizione di equilibrio: ovvero che la somma di tutte le forze sia nulla.&lt;/p&gt;
+&lt;p&gt;$$ \vec R = \vec F + \vec N + \vec P = \vec 0 $$&lt;/p&gt;
+&lt;h2&gt;Risoluzione&lt;/h2&gt;
+&lt;p&gt;La parte fisica del problema è praticamente terminata. Ogni prossimo passo richiede infatti di fare considerazioni di tipo geometrico o algebrico.&lt;/p&gt;
+&lt;p&gt;Prima di tutto dobbiamo studiare la condizione di equilibrio: abbiamo informazioni vettoriali, difficili da gestire perché non allineate.&lt;/p&gt;
+&lt;p&gt;Il primo passo è quello di scegliere un sistema di riferimento di assi $x$ e $y$ e disegnare le componenti delle forze studiate finora.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema_xy.png&#34; alt=&#34;eq_schema_xy&#34; title=&#34;Schema di corpo libero componenti&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sfruttando le conoscenze di goniometria e di relazioni tra angoli e funzioni goniometriche, troviamo facilmente che le componenti di $\vec F$ e $\vec N$ risultano essere:&lt;/p&gt;
+&lt;p&gt;$$\vec F_x = \vec F \cos \alpha $$
+$$\vec F_y = \vec F \sin \alpha $$&lt;/p&gt;
+&lt;p&gt;$$\vec N_x = \vec N \cos \left(\dfrac{\pi}{2} - \alpha \right) = \vec N \sin \alpha $$
+$$\vec N_y = \vec N \sin \left(\dfrac{\pi}{2} - \alpha \right) = \vec N \cos \alpha $$&lt;/p&gt;
+&lt;p&gt;Dobbiamo fare particolarmente attenzione a quale angolo stiamo usando, infatti nel caso della forza normale l&amp;rsquo;angolo $\alpha$ non è adiacente a $\vec F$ e $\vec F_x$ imponendo quindi il cambio di funzione goniometrica.&lt;/p&gt;
+&lt;p&gt;Per quanto concerne $\vec P$ invece sappiamo che &amp;ldquo;cade a filo a piombo&amp;rdquo;, cioè la sua componente $x$, per questo sistema di riferimento, è nulla.&lt;/p&gt;
+&lt;p&gt;Risulta molto comodo quindi riconsiderare la condizione di equilibrio lungo le due direzioni $x$ e $y$.&lt;/p&gt;
+&lt;p&gt;$$ \vec R_x = \vec F_x + \vec N_x = \vec 0 $$
+$$ \vec R_y = \vec F_y + \vec N_y + \vec P = \vec 0 $$&lt;/p&gt;
+&lt;p&gt;Passando quindi a considerare le intensità delle forze sull&amp;rsquo;asse y.&lt;/p&gt;
+&lt;p&gt;$$ R_y = F_y + N_y - P = 0 $$&lt;/p&gt;
+&lt;p&gt;Sostituendo le informazioni ottenute in precedenza.&lt;/p&gt;
+&lt;p&gt;$$ F \sin \alpha + N \cos \alpha - P = 0 $$&lt;/p&gt;
+&lt;p&gt;Ricordiamo che la forza peso $\vec P$ è data dalla moltiplicazione della massa del corpo per l&amp;rsquo;accelerazione di gravità.&lt;/p&gt;
+&lt;p&gt;$$ F \sin \alpha + N \cos \alpha - mg = 0 $$&lt;/p&gt;
+&lt;p&gt;Questa risulta ancora essere un&amp;rsquo;equazione in due incognite ($ F$ e $N$)&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/equilibrium_slope.jpg&#34; alt=&#34;gran_risa&#34; title=&#34;Gran Risa&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>Appunti di Fisica</title>
       <link>http://localhost:1313/pages/pyphysics/pyphysics/</link>
       <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
@@ -172,6 +225,7 @@
 &lt;h2&gt;Equilibrio&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/&#34; title=&#34;Introduzione all&#39;equilibrio&#34;&gt;Introduzione all&amp;rsquo;equilibrio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/&#34; title=&#34;Risoluzione guidata di un esercizio di equilibrio&#34;&gt;Risoluzione guidata di un esercizio di equilibrio&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>

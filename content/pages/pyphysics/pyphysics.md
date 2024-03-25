@@ -17,3 +17,7 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 [Introduzione alle forze]({{< ref "/pages/pyphysics/equilibrium/intro_forces" >}}  "Introduzione alle forze")
 
 [Introduzione all'equilibrio]({{< ref "/pages/pyphysics/equilibrium/intro_eq" >}}  "Introduzione all'equilibrio")
+
+[Risoluzione guidata di un esercizio di equilibrio]({{< ref "/pages/pyphysics/equilibrium/eq_guided" >}}  "Risoluzione guidata di un esercizio di equilibrio")
+
+
