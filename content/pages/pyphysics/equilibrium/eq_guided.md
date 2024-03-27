@@ -113,11 +113,11 @@ Sostituendo nella prima:
 
 $$ F \sin \alpha + (-F \dfrac{\cos \alpha}{\sin \alpha}) \cos \alpha - mg = 0 $$
 
-$$ F (\sin \alpha)^2 + -F(\cos \alpha)^2 - mg = 0 $$
+$$ F (\sin \alpha)^2 + -F(\cos \alpha)^2 - mg (\sin \alpha) = 0 $$
 
-$$ F [(\sin \alpha)^2 -(\cos \alpha)^2] = mg $$
+$$ F [(\sin \alpha)^2 -(\cos \alpha)^2] = mg (\sin \alpha) $$
 
-$$ F = \dfrac{mg}{[(\sin \alpha)^2 -(\cos \alpha)^2]} $$
+$$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 -(\cos \alpha)^2]} $$
 
 Manca solo da conoscere il valore di $\alpha$, ma questo può essere facilmente ottenuto dalle relazioni goniometriche sfruttando la lunghezza ed il dislivello della pista:
 
