@@ -161,7 +161,7 @@
 &lt;h5&gt;Dati&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Lunghezza $l = 1255$ m&lt;/li&gt;
-&lt;li&gt;Dislivello $h = 1255$ m&lt;/li&gt;
+&lt;li&gt;Dislivello $h = 448$ m&lt;/li&gt;
 &lt;li&gt;Massa dello sciatore $m = 80$ kg&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5&gt;Incognite&lt;/h5&gt;
@@ -205,7 +205,21 @@ $$ \vec R_y = \vec F_y + \vec N_y + \vec P = \vec 0 $$&lt;/p&gt;
 &lt;p&gt;$$ F \sin \alpha + N \cos \alpha - P = 0 $$&lt;/p&gt;
 &lt;p&gt;Ricordiamo che la forza peso $\vec P$ è data dalla moltiplicazione della massa del corpo per l&amp;rsquo;accelerazione di gravità.&lt;/p&gt;
 &lt;p&gt;$$ F \sin \alpha + N \cos \alpha - mg = 0 $$&lt;/p&gt;
-&lt;p&gt;Questa risulta ancora essere un&amp;rsquo;equazione in due incognite ($ F$ e $N$)&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Questa risulta ancora essere un&amp;rsquo;equazione in due incognite ($ F$ e $N$), è quindi necessario trovare un modo per identificare il valore di $N$.&lt;/p&gt;
+&lt;p&gt;Prendendo la condizione di equilibrio sull&amp;rsquo;asse x possiamo notare che:&lt;/p&gt;
+&lt;p&gt;$$ \vec R_x = \vec F_x + \vec N_x = \vec 0 $$&lt;/p&gt;
+&lt;p&gt;$$ F \cos \alpha = -N \sin \alpha $$&lt;/p&gt;
+&lt;p&gt;$$ N = -F \dfrac{\cos \alpha}{\sin \alpha} $$&lt;/p&gt;
+&lt;p&gt;Sostituendo nella prima:&lt;/p&gt;
+&lt;p&gt;$$ F \sin \alpha + (-F \dfrac{\cos \alpha}{\sin \alpha}) \cos \alpha - mg = 0 $$&lt;/p&gt;
+&lt;p&gt;$$ F (\sin \alpha)^2 + -F(\cos \alpha)^2 - mg (\sin \alpha) = 0 $$&lt;/p&gt;
+&lt;p&gt;$$ F [(\sin \alpha)^2 -(\cos \alpha)^2] = mg (\sin \alpha) $$&lt;/p&gt;
+&lt;p&gt;$$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 -(\cos \alpha)^2]} $$&lt;/p&gt;
+&lt;p&gt;Manca solo da conoscere il valore di $\alpha$, ma questo può essere facilmente ottenuto dalle relazioni goniometriche sfruttando la lunghezza ed il dislivello della pista:&lt;/p&gt;
+&lt;p&gt;$$ \sin \alpha = \dfrac{h}{l} $$&lt;/p&gt;
+&lt;p&gt;$$ \alpha = \sin ^{-1} \left( \dfrac{h}{l} \right) \approx 21*{\circle} $$&lt;/p&gt;
+&lt;p&gt;Quindi.&lt;/p&gt;
+&lt;p&gt;$$ F = 80 \text{kg} 9.81 \dfrac{\text{m}}{\text{s}^2} \dfrac{(\sin 21)}{[(\sin 21)^2 -(\cos 21)^2]} $$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/equilibrium_slope.jpg&#34; alt=&#34;gran_risa&#34; title=&#34;Gran Risa&#34;&gt;&lt;/p&gt;
 </description>
       

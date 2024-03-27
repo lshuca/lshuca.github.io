@@ -73,7 +73,7 @@ Impostazione Per impostare il problema dobbiamo prima capire i dati." />
 Ipotizzando che la pista risulti con una pendenza uniforme, studiare il caso di uno sciatore di massa $m = 80$ kg in equilibrio. Calcolare il valore della forza svolta dallo sciatore per evitare di scivolare sul piano inclinato.
 Impostazione Per impostare il problema dobbiamo prima capire i dati."><meta itemprop="datePublished" content="2024-01-09T15:56:42+01:00" />
 <meta itemprop="dateModified" content="2024-01-09T15:56:42+01:00" />
-<meta itemprop="wordCount" content="796">
+<meta itemprop="wordCount" content="821">
 <meta itemprop="keywords" content="" />
 
   
@@ -131,7 +131,7 @@ Impostazione Per impostare il problema dobbiamo prima capire i dati."/>
 <h5>Dati</h5>
 <ul>
 <li>Lunghezza $l = 1255$ m</li>
-<li>Dislivello $h = 1255$ m</li>
+<li>Dislivello $h = 448$ m</li>
 <li>Massa dello sciatore $m = 80$ kg</li>
 </ul>
 <h5>Incognite</h5>
@@ -182,12 +182,14 @@ $$ \vec R_y = \vec F_y + \vec N_y + \vec P = \vec 0 $$</p>
 <p>$$ N = -F \dfrac{\cos \alpha}{\sin \alpha} $$</p>
 <p>Sostituendo nella prima:</p>
 <p>$$ F \sin \alpha + (-F \dfrac{\cos \alpha}{\sin \alpha}) \cos \alpha - mg = 0 $$</p>
-<p>$$ F (\sin \alpha)^2 + -F(\cos \alpha)^2 - mg = 0 $$</p>
-<p>$$ F [(\sin \alpha)^2 -(\cos \alpha)^2] = mg $$</p>
-<p>$$ F = \dfrac{mg}{[(\sin \alpha)^2 -(\cos \alpha)^2]} $$</p>
+<p>$$ F (\sin \alpha)^2 + -F(\cos \alpha)^2 - mg (\sin \alpha) = 0 $$</p>
+<p>$$ F [(\sin \alpha)^2 -(\cos \alpha)^2] = mg (\sin \alpha) $$</p>
+<p>$$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 -(\cos \alpha)^2]} $$</p>
 <p>Manca solo da conoscere il valore di $\alpha$, ma questo può essere facilmente ottenuto dalle relazioni goniometriche sfruttando la lunghezza ed il dislivello della pista:</p>
-<p>$$ \cos \alpha = \dfrac{l}{d} $$</p>
-<p>$$ \alpha = \cos ^{-1} \left( \dfrac{l}{d} \right) $$</p>
+<p>$$ \sin \alpha = \dfrac{h}{l} $$</p>
+<p>$$ \alpha = \sin ^{-1} \left( \dfrac{h}{l} \right) \approx 21^{\circ} $$</p>
+<p>Quindi.</p>
+<p>$$ F \approx 80 \cdot 9.81 \dfrac{(\sin 21^{\circ})}{[(\sin 21^{\circ})^2 -(\cos 21^{\circ})^2]} \text{Ñ} \approx 323 N $$</p>
 <p><img src="/static/img/equilibrium_guided/equilibrium_slope.jpg" alt="gran_risa" title="Gran Risa"></p>
 
   </article>

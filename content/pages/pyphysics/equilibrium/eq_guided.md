@@ -121,8 +121,13 @@ $$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 -(\cos \alpha)^2]} $$
 
 Manca solo da conoscere il valore di $\alpha$, ma questo può essere facilmente ottenuto dalle relazioni goniometriche sfruttando la lunghezza ed il dislivello della pista:
 
-$$ \cos \alpha = \dfrac{l}{d} $$
+$$ \sin \alpha = \dfrac{h}{l} $$
 
-$$ \alpha = \cos ^{-1} \left( \dfrac{l}{d} \right) $$
+$$ \alpha = \sin ^{-1} \left( \dfrac{h}{l} \right) \approx 21^{\circ} $$
+
+Quindi.
+
+$$ F \approx 80 \cdot 9.81 \dfrac{(\sin 21^{\circ})}{[(\sin 21^{\circ})^2 -(\cos 21^{\circ})^2]} \text{Ñ} \approx 323 N $$
+
 
 ![gran_risa](/static/img/equilibrium_guided/equilibrium_slope.jpg "Gran Risa")
