@@ -105,29 +105,77 @@ Prendendo la condizione di equilibrio sull'asse x possiamo notare che:
 
 $$ \vec R_x = \vec F_x + \vec N_x = \vec 0 $$
 
-$$ F \cos \alpha = -N \sin \alpha $$
+$$ F \cos \alpha = N \sin \alpha $$
 
-$$ N = -F \dfrac{\cos \alpha}{\sin \alpha} $$
+$$ N = F \dfrac{\cos \alpha}{\sin \alpha} $$
 
 Sostituendo nella prima:
 
-$$ F \sin \alpha + (-F \dfrac{\cos \alpha}{\sin \alpha}) \cos \alpha - mg = 0 $$
+$$ F \sin \alpha + (F \dfrac{\cos \alpha}{\sin \alpha}) \cos \alpha - mg = 0 $$
 
-$$ F (\sin \alpha)^2 + -F(\cos \alpha)^2 - mg (\sin \alpha) = 0 $$
+$$ F (\sin \alpha)^2 + F(\cos \alpha)^2 - mg (\sin \alpha) = 0 $$
 
-$$ F [(\sin \alpha)^2 -(\cos \alpha)^2] = mg (\sin \alpha) $$
+$$ F [(\sin \alpha)^2 +(\cos \alpha)^2] = mg (\sin \alpha) $$
 
-$$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 -(\cos \alpha)^2]} $$
+$$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 + (\cos \alpha)^2]} = mg \dfrac{(\sin \alpha)}{1} =  mg \sin \alpha $$
 
 Manca solo da conoscere il valore di $\alpha$, ma questo può essere facilmente ottenuto dalle relazioni goniometriche sfruttando la lunghezza ed il dislivello della pista:
 
 $$ \sin \alpha = \dfrac{h}{l} $$
 
-$$ \alpha = \sin ^{-1} \left( \dfrac{h}{l} \right) \approx 21^{\circ} $$
-
 Quindi.
 
-$$ F \approx 80 \cdot 9.81 \dfrac{(\sin 21^{\circ})}{[(\sin 21^{\circ})^2 -(\cos 21^{\circ})^2]} \text{Ñ} \approx 323 N $$
+$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$
 
 
 ![gran_risa](/static/img/equilibrium_guided/equilibrium_slope.jpg "Gran Risa")
+
+<h2>Risoluzione con diverso Sistema di Riferimento</h2>
+
+Possiamo affrontare il problema adoperando una scelta "più furba" per quanto riguarda il sistema di riferimento.
+
+Osservando un piano inclinato possiamo infatti valutarlo, come fatto nel caso precedente, rispetto a due assi $x$ e $y$, perpendicolari tra loro, in cui l'$y$ è solidale alla direzione del "filo a piombo" (cioè diretto verso il centro della terra). Come abbiamo visto questa scelta comporta la scomposizione su questi assi di tutte le forze che non risultano essere orientate come $x$ e $y$: rispettivamente la forza normale e la forza con cui lo sciatore frena.
+
+Questa scelta, seppur corretta, potrebbe comportare però calcoli più complicati qualora le forze in gioco non dovessero essere solo tre (per esempio presenza di attrito, di una tensione o il carico dovuto alla presenza di uno zaino).
+
+Possiamo quindi fare una scelta più "consapevole" e decidere che, per lo studio del problema, il sistema di riferimento $x'$ e $y'$ siano orientati perpendicolarmente e lungo la pendenza.
+Questa scelta comporterebbe il dover scomporre la forza peso lungo i due assi solidali alla pendenza, ma le altre forze saranno già utilizzabili.
+
+![eq_alt](/static/img/equilibrium_guided/eq_schema_alt.png "Schema alternativo")
+
+Studiando questo schema la lettura fisica rimane invariata rispetto a prima: tre forze che agiscono su uno stesso corpo, tre forze la cui risultante è nulla.
+Cambia invece l'analisi matematica del problema, rendendo necessario scomporre un solo vettore lungo le due direzioni.
+
+In prima battuta possiamo notare che l'unico angolo a nostra disposizione non è più $\alpha$ ma, con un po' di trigonometria, riconosciamo facilmente che 
+
+$$\beta = \dfrac{\pi}{2} - \alpha$$
+
+Per cui, le due componenti risultano essere.
+
+$$ P_{x'} = P \cos \beta = P \cos \left( \dfrac{\pi}{2} - \alpha \right) = P \sin \alpha $$
+$$ P_{y'} = P \sin \beta = P \sin \left( \dfrac{\pi}{2} - \alpha \right) = P \cos \alpha $$
+
+Studiando le condizioni di equilibrio lungo i due assi otteniamo che:
+
+$$ \vec R_x = \vec F + \vec P_{x'} = \vec 0 $$
+$$ \vec R_y = \vec N + \vec P_{y'} = \vec 0 $$
+
+Ovvero
+
+$$ R_x = - F + \vec P_{x'} = 0 $$
+$$ R_y = N - P_{y'} = 0 $$
+
+Per cui possiamo ricalcolare sostituendo i valori ottenuti prima
+
+$$ - F + P \sin \alpha = 0 $$
+$$ N - P \cos \alpha = 0 $$
+
+Possiamo notare immediatamente che non è, in questo caso, necessario risolvere le due equazioni in quanto abbiamo immediatamente una relazione risolubile per via numerica:
+
+
+$$ F = m g \sin \alpha = m g \dfrac{h}{l} $$
+
+Esattamente come ottenuto, con calcoli più complicati, in precedenza.
+Sostituendo dunque i valori numerici si ottiene lo stesso risultato.
+
+$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$

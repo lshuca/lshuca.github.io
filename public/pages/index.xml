@@ -217,10 +217,33 @@ $$ \vec R_y = \vec F_y + \vec N_y + \vec P = \vec 0 $$&lt;/p&gt;
 &lt;p&gt;$$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 -(\cos \alpha)^2]} $$&lt;/p&gt;
 &lt;p&gt;Manca solo da conoscere il valore di $\alpha$, ma questo può essere facilmente ottenuto dalle relazioni goniometriche sfruttando la lunghezza ed il dislivello della pista:&lt;/p&gt;
 &lt;p&gt;$$ \sin \alpha = \dfrac{h}{l} $$&lt;/p&gt;
-&lt;p&gt;$$ \alpha = \sin ^{-1} \left( \dfrac{h}{l} \right) \approx 21*{\circle} $$&lt;/p&gt;
+&lt;p&gt;$$ \alpha = \sin ^{-1} \left( \dfrac{h}{l} \right) \approx 21^{\circ} $$&lt;/p&gt;
 &lt;p&gt;Quindi.&lt;/p&gt;
-&lt;p&gt;$$ F = 80 \text{kg} 9.81 \dfrac{\text{m}}{\text{s}^2} \dfrac{(\sin 21)}{[(\sin 21)^2 -(\cos 21)^2]} $$&lt;/p&gt;
+&lt;p&gt;$$ F \approx 80 \cdot 9.81 \dfrac{(\sin 21^{\circ})}{[(\sin 21^{\circ})^2 -(\cos 21^{\circ})^2]} \text{Ñ} \approx 323 N $$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/equilibrium_slope.jpg&#34; alt=&#34;gran_risa&#34; title=&#34;Gran Risa&#34;&gt;&lt;/p&gt;
+&lt;h2&gt;Risoluzione con diverso Sistema di Riferimento&lt;/h2&gt;
+&lt;p&gt;Possiamo affrontare il problema adoperando una scelta &amp;ldquo;più furba&amp;rdquo; per quanto riguarda il sistema di riferimento.&lt;/p&gt;
+&lt;p&gt;Osservando un piano inclinato possiamo infatti valutarlo, come fatto nel caso precedente, rispetto a due assi $x$ e $y$, perpendicolari tra loro, in cui l&amp;rsquo;$y$ è solidale alla direzione del &amp;ldquo;filo a piombo&amp;rdquo; (cioè diretto verso il centro della terra). Come abbiamo visto questa scelta comporta la scomposizione su questi assi di tutte le forze che non risultano essere orientate come $x$ e $y$: rispettivamente la forza normale e la forza con cui lo sciatore frena.&lt;/p&gt;
+&lt;p&gt;Questa scelta, seppur corretta, potrebbe comportare però calcoli più complicati qualora le forze in gioco non dovessero essere solo tre (per esempio presenza di attrito, di una tensione o il carico dovuto alla presenza di uno zaino).&lt;/p&gt;
+&lt;p&gt;Possiamo quindi fare una scelta più &amp;ldquo;consapevole&amp;rdquo; e decidere che, per lo studio del problema, il sistema di riferimento $x&amp;rsquo;$ e $y&amp;rsquo;$ siano orientati perpendicolarmente e lungo la pendenza.
+Questa scelta comporterebbe il dover scomporre la forza peso lungo i due assi solidali alla pendenza, ma le altre forze saranno già utilizzabili.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema_alt.png&#34; alt=&#34;eq_alt&#34; title=&#34;Schema alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Studiando questo schema la lettura fisica rimane invariata rispetto a prima: tre forze che agiscono su uno stesso corpo, tre forze la cui risultante è nulla.
+Cambia invece l&amp;rsquo;analisi matematica del problema, rendendo necessario scomporre un solo vettore lungo le due direzioni.&lt;/p&gt;
+&lt;p&gt;In prima battuta possiamo notare che l&amp;rsquo;unico angolo a nostra disposizione non è più $\alpha$ ma, con un po&amp;rsquo; di trigonometria, riconosciamo facilmente che&lt;/p&gt;
+&lt;p&gt;$$\beta = \dfrac{pi}{2} - \alpha$$&lt;/p&gt;
+&lt;p&gt;Per cui, le due componenti risultano essere.&lt;/p&gt;
+&lt;p&gt;$$ P_{x&amp;rsquo;} = P \cos \beta = P \cos \left( \dfrac{pi}{2} - \alpha \right) = P \sin \alpha $$
+$$ P_{y&amp;rsquo;} = P \sin \beta = P \sin \left( \dfrac{pi}{2} - \alpha \right) = P \cos \alpha $$&lt;/p&gt;
+&lt;p&gt;Studiando le condizioni di equilibrio lungo i due assi otteniamo che:&lt;/p&gt;
+&lt;p&gt;$$ \vec R_x = \vec F + \vec P_{x&amp;rsquo;} = \vec 0 $$
+$$ \vec R_y = \vec N + \vec P_{y&amp;rsquo;} = \vec 0 $$&lt;/p&gt;
+&lt;p&gt;Ovvero&lt;/p&gt;
+&lt;p&gt;$$ R_x = - F + \vec P_{x&amp;rsquo;} = 0 $$
+$$ R_y = N - P_{y&amp;rsquo;} = 0 $$&lt;/p&gt;
+&lt;p&gt;Per cui possiamo ricalcolare sostituendo i valori ottenuti prima&lt;/p&gt;
+&lt;p&gt;$$ - F + P \sin \alpha = 0 $$
+$$ N - P \cos \alpha = 0 $$&lt;/p&gt;
 </description>
       
     </item>
