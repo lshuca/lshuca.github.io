@@ -127,9 +127,6 @@ Quindi.
 
 $$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$
 
-
-![gran_risa](/static/img/equilibrium_guided/equilibrium_slope.jpg "Gran Risa")
-
 <h2>Risoluzione con diverso Sistema di Riferimento</h2>
 
 Possiamo affrontare il problema adoperando una scelta "più furba" per quanto riguarda il sistema di riferimento.
@@ -179,3 +176,5 @@ Esattamente come ottenuto, con calcoli più complicati, in precedenza.
 Sostituendo dunque i valori numerici si ottiene lo stesso risultato.
 
 $$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$
+
+![gran_risa](/static/img/equilibrium_guided/equilibrium_slope.jpg "Gran Risa")
