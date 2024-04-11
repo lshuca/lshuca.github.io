@@ -30,12 +30,14 @@
 &lt;p&gt;La funzione seno di un angolo $\theta$ (simbolo $sin\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&amp;rsquo;angolo e la lunghezza dell&amp;rsquo;ipotenusa.&lt;/p&gt;
 &lt;p&gt;$$ sin \theta = \dfrac{c_2}{I} \rightarrow c_2 = I sin \theta$$&lt;/p&gt;
 &lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
-&lt;p&gt;$$ sin \gamma = \dfrac{c_1}{I} $$&lt;/p&gt;
+&lt;p&gt;$$ sin \theta = \dfrac{c_1}{I} $$&lt;/p&gt;
 &lt;h3&gt;Tangente&lt;/h3&gt;
 &lt;p&gt;La funzione tangente di un angolo $\theta$ (simbolo $tan\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&amp;rsquo;angolo e la lunghezza del cateto adiacente.&lt;/p&gt;
 &lt;p&gt;$$ tan \theta = \dfrac{c_2}{c_1} \rightarrow c_2 = c_1 tan \theta$$&lt;/p&gt;
 &lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
-&lt;p&gt;$$ tan \gamma = \dfrac{c_2}{c_1} $$&lt;/p&gt;
+&lt;p&gt;$$ tan \theta = \dfrac{c_2}{c_1} $$&lt;/p&gt;
+&lt;p&gt;Possiamo fare riferimento alle definizioni di $\sin$ e $\cos$ per notare che&lt;/p&gt;
+&lt;p&gt;$$ tan \theta = \dfrac{c_2}{c_1} = \dfrac{I \sin \theta}{I \cos \theta} = \dfrac{\sin \theta}{\cos \theta} $$&lt;/p&gt;
 &lt;p&gt;Per maggiori informazioni tra le funzioni goniometriche rifarsi al link in calce.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/&#34; title=&#34;Relazioni tra funzioni goniometriche&#34;&gt;Relazioni tra funzioni goniometriche&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
@@ -219,7 +221,6 @@ $$ \vec R_y = \vec F_y + \vec N_y + \vec P = \vec 0 $$&lt;/p&gt;
 &lt;p&gt;$$ \sin \alpha = \dfrac{h}{l} $$&lt;/p&gt;
 &lt;p&gt;Quindi.&lt;/p&gt;
 &lt;p&gt;$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/equilibrium_slope.jpg&#34; alt=&#34;gran_risa&#34; title=&#34;Gran Risa&#34;&gt;&lt;/p&gt;
 &lt;h2&gt;Risoluzione con diverso Sistema di Riferimento&lt;/h2&gt;
 &lt;p&gt;Possiamo affrontare il problema adoperando una scelta &amp;ldquo;più furba&amp;rdquo; per quanto riguarda il sistema di riferimento.&lt;/p&gt;
 &lt;p&gt;Osservando un piano inclinato possiamo infatti valutarlo, come fatto nel caso precedente, rispetto a due assi $x$ e $y$, perpendicolari tra loro, in cui l&amp;rsquo;$y$ è solidale alla direzione del &amp;ldquo;filo a piombo&amp;rdquo; (cioè diretto verso il centro della terra). Come abbiamo visto questa scelta comporta la scomposizione su questi assi di tutte le forze che non risultano essere orientate come $x$ e $y$: rispettivamente la forza normale e la forza con cui lo sciatore frena.&lt;/p&gt;
@@ -248,6 +249,7 @@ $$ N - P \cos \alpha = 0 $$&lt;/p&gt;
 &lt;p&gt;Esattamente come ottenuto, con calcoli più complicati, in precedenza.
 Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
 &lt;p&gt;$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/equilibrium_slope.jpg&#34; alt=&#34;gran_risa&#34; title=&#34;Gran Risa&#34;&gt;&lt;/p&gt;
 </description>
       
     </item>

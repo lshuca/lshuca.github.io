@@ -32,7 +32,7 @@ $$ sin \theta = \dfrac{c_2}{I} \rightarrow c_2 = I sin \theta$$
 
 Analogamente possiamo vedere che.
 
-$$ sin \gamma = \dfrac{c_1}{I} $$
+$$ sin \theta = \dfrac{c_1}{I} $$
 
 <h3>Tangente</h3>
 
@@ -42,7 +42,12 @@ $$ tan \theta = \dfrac{c_2}{c_1} \rightarrow c_2 = c_1 tan \theta$$
 
 Analogamente possiamo vedere che.
 
-$$ tan \gamma = \dfrac{c_2}{c_1} $$
+$$ tan \theta = \dfrac{c_2}{c_1} $$
+
+Possiamo fare riferimento alle definizioni di $\sin$ e $\cos$ per notare che
+
+$$ tan \theta = \dfrac{c_2}{c_1} = \dfrac{I \sin \theta}{I \cos \theta} = \dfrac{\sin \theta}{\cos \theta} $$
+
 
 Per maggiori informazioni tra le funzioni goniometriche rifarsi al link in calce.
 
