@@ -72,11 +72,11 @@ Il primo passo è quello di scegliere un sistema di riferimento di assi $x$ e $y
 
 Sfruttando le conoscenze di goniometria e di relazioni tra angoli e funzioni goniometriche, troviamo facilmente che le componenti di $\vec F$ e $\vec N$ risultano essere:
 
-$$\vec F_x = \vec F \cos \alpha $$
-$$\vec F_y = \vec F \sin \alpha $$
+$$ F_x =  F \cos \alpha $$
+$$ F_y =  F \sin \alpha $$
 
-$$\vec N_x = \vec N \cos \left(\dfrac{\pi}{2} - \alpha \right) = \vec N \sin \alpha $$
-$$\vec N_y = \vec N \sin \left(\dfrac{\pi}{2} - \alpha \right) = \vec N \cos \alpha $$
+$$ N_x =  N \cos \left(\dfrac{\pi}{2} - \alpha \right) =  N \sin \alpha $$
+$$ N_y =  N \sin \left(\dfrac{\pi}{2} - \alpha \right) =  N \cos \alpha $$
 
 Dobbiamo fare particolarmente attenzione a quale angolo stiamo usando, infatti nel caso della forza normale l'angolo $\alpha$ non è adiacente a $\vec F$ e $\vec F_x$ imponendo quindi il cambio di funzione goniometrica.
 
