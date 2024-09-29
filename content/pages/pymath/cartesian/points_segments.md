@@ -192,7 +192,7 @@ Si può notare come la distanza tra due punti sia indifferentemente calcolata a 
             var distance = calculateDistance(A, B);
 
             // Ad esempio, per visualizzare il punto medio M nel disegno:
-			context.fillText("M (" + displayFraction(M.x) + ", " + displayFraction(M.y) + ")", M.x.num / M.x.den + 10, M.y.num / M.y.den + 10);
+			// context.fillText("M (" + displayFraction(M.x) + ", " + displayFraction(M.y) + ")", M.x.num / M.x.den + 10, M.y.num / M.y.den + 10);
 
 			// Per visualizzare la distanza sotto il canvas
 			context.fillText("Distanza tra A e B: " + calculateDistance(A, B), 10, canvas.height - 10);
