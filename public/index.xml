@@ -192,10 +192,10 @@
 &lt;p&gt;Il primo passo è quello di scegliere un sistema di riferimento di assi $x$ e $y$ e disegnare le componenti delle forze studiate finora.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema_xy.png&#34; alt=&#34;eq_schema_xy&#34; title=&#34;Schema di corpo libero componenti&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sfruttando le conoscenze di goniometria e di relazioni tra angoli e funzioni goniometriche, troviamo facilmente che le componenti di $\vec F$ e $\vec N$ risultano essere:&lt;/p&gt;
-&lt;p&gt;$$\vec F_x = \vec F \cos \alpha $$
-$$\vec F_y = \vec F \sin \alpha $$&lt;/p&gt;
-&lt;p&gt;$$\vec N_x = \vec N \cos \left(\dfrac{\pi}{2} - \alpha \right) = \vec N \sin \alpha $$
-$$\vec N_y = \vec N \sin \left(\dfrac{\pi}{2} - \alpha \right) = \vec N \cos \alpha $$&lt;/p&gt;
+&lt;p&gt;$$ F_x =  F \cos \alpha $$
+$$ F_y =  F \sin \alpha $$&lt;/p&gt;
+&lt;p&gt;$$ N_x =  N \cos \left(\dfrac{\pi}{2} - \alpha \right) =  N \sin \alpha $$
+$$ N_y =  N \sin \left(\dfrac{\pi}{2} - \alpha \right) =  N \cos \alpha $$&lt;/p&gt;
 &lt;p&gt;Dobbiamo fare particolarmente attenzione a quale angolo stiamo usando, infatti nel caso della forza normale l&amp;rsquo;angolo $\alpha$ non è adiacente a $\vec F$ e $\vec F_x$ imponendo quindi il cambio di funzione goniometrica.&lt;/p&gt;
 &lt;p&gt;Per quanto concerne $\vec P$ invece sappiamo che &amp;ldquo;cade a filo a piombo&amp;rdquo;, cioè la sua componente $x$, per questo sistema di riferimento, è nulla.&lt;/p&gt;
 &lt;p&gt;Risulta molto comodo quindi riconsiderare la condizione di equilibrio lungo le due direzioni $x$ e $y$.&lt;/p&gt;
