@@ -38,9 +38,16 @@ weight = 1          # order of sections
 
 # [[menu.main]]
 #     identifier = "PyMath"    # section id
-#     name = "PyMath"          # section display title
-#     url = "/pages/pymath/test"         # path to the section
+#     name = "Appunti di Matematica"          # section display title
+#     url = "/pages/pymath/pymath"         # path to the section
 #     weight = 2              # order of sections
+
+# [[menu.main]]
+#     identifier = "PyPhysics"    # section id
+#     name = "Appunti di Fisica"          # section display title
+#     url = "/pages/pyphysics/pyphysics"         # path to the section
+#     weight = 2              # order of sections
+
 
 # https://gohugo.io/content-management/taxonomies#configure-taxonomies
     [taxonomies]

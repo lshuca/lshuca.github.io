@@ -8,7 +8,20 @@
     <language>it</language>
     <managingEditor>barbierid@msis002003.onmicrosoft.com (barbierid)</managingEditor>
     <webMaster>barbierid@msis002003.onmicrosoft.com (barbierid)</webMaster>
-    <lastBuildDate>Wed, 20 Mar 2024 10:38:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Sep 2024 15:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Appunti di Matematica</title>
+      <link>http://localhost:1313/pages/pymath/pymath/</link>
+      <pubDate>Sat, 28 Sep 2024 15:55:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/pymath/</guid>
+      
+      <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della matematica.&lt;/p&gt;
+&lt;h2&gt;Piano cartesiano&lt;/h2&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Componenti cartesiane di un vettore</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</link>
@@ -269,18 +282,6 @@ Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/&#34; title=&#34;Introduzione all&#39;equilibrio&#34;&gt;Introduzione all&amp;rsquo;equilibrio&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/&#34; title=&#34;Risoluzione guidata di un esercizio di equilibrio&#34;&gt;Risoluzione guidata di un esercizio di equilibrio&lt;/a&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Appunti di Matematica</title>
-      <link>http://localhost:1313/pages/pymath/pymath/</link>
-      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pymath/pymath/</guid>
-      
-      <description>&lt;p&gt;Work in progress&lt;/p&gt;
 </description>
       
     </item>
