@@ -8,7 +8,32 @@
     <language>it</language>
     <managingEditor>barbierid@msis002003.onmicrosoft.com (barbierid)</managingEditor>
     <webMaster>barbierid@msis002003.onmicrosoft.com (barbierid)</webMaster>
-    <lastBuildDate>Sat, 28 Sep 2024 15:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Sep 2024 17:56:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rette</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/rette/</link>
+      <pubDate>Sun, 29 Sep 2024 17:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/cartesian/rette/</guid>
+      
+      <description>&lt;p&gt;Una retta è definita come il luogo geometrico dei punti allineati lungo una specifica direzione.&lt;/p&gt;
+&lt;p&gt;In geometria analitica significa poter definire l&amp;rsquo;insieme dei punti che rispettano una determinata condizione che ne lega le coordinate, nel caso del piano cartesiano allora $y$ a $x$, rispettivamente ordinata e ascissa generiche.&lt;/p&gt;
+&lt;h2&gt;Forma implicita&lt;/h2&gt;
+&lt;p&gt;La forma implicita della retta è rappresentata e determinata da tre parametri $a$, $b$ e $c$.&lt;/p&gt;
+&lt;p&gt;$$ ax + by + c = 0 $$&lt;/p&gt;
+&lt;h2&gt;Forma esplicita&lt;/h2&gt;
+&lt;p&gt;La forma esplicita della retta permette di ricavare immediatamente il valore della coordinata $y$ (variabile dipendente) in funzione della $x$ (variabile indipendente).&lt;/p&gt;
+&lt;p&gt;$$ y = mx + q $$&lt;/p&gt;
+&lt;p&gt;Nel caso della forma esplicita sono di immediato riconoscimento i parametri $m$ e $q$, tuttavia le rette parallele all&amp;rsquo;asse $y$ non possono essere rappresentate in questa forma.&lt;/p&gt;
+&lt;h3&gt;Termine noto&lt;/h3&gt;
+&lt;p&gt;Il termine noto o quota $q$ rappresenta la coordinata $y$ che la retta assume nel punto di ascissa $0$. Questa informazione è utile per poter ricavare immediatamente un&amp;rsquo;informazione geometrica del punto $(0, y_p)$ appartenente alla retta.&lt;/p&gt;
+&lt;iframe src=&#34;https://www.desmos.com/calculator/nmadjgzbgv?embed&#34; width=&#34;500&#34; height=&#34;500&#34; style=&#34;border: 1px solid #ccc&#34; frameborder=0&gt;&lt;/iframe&gt;
+&lt;h3&gt;Coefficiente angolare&lt;/h3&gt;
+&lt;p&gt;Il coefficiente angolare $m$ è un parametro associato alla pendenza della retta studiata. Maggiore è $m$ maggiore sarà il divario, date due rette $r$ e $s$, tra le coordinate $y$ a parità di $x$.&lt;/p&gt;
+&lt;iframe src=&#34;https://www.desmos.com/calculator/1dnackvxu8?embed&#34; width=&#34;500&#34; height=&#34;500&#34; style=&#34;border: 1px solid #ccc&#34; frameborder=0&gt;&lt;/iframe&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Appunti di Matematica</title>
       <link>http://localhost:1313/pages/pymath/pymath/</link>
@@ -17,7 +42,240 @@
       <guid>http://localhost:1313/pages/pymath/pymath/</guid>
       
       <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della matematica.&lt;/p&gt;
-&lt;h2&gt;Piano cartesiano&lt;/h2&gt;
+&lt;h2&gt;Geometria analitica&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/intro_cart/&#34; title=&#34;Introduzione al piano cartesiano&#34;&gt;Introduzione al piano cartesiano&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Punti, segmenti e rette&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/intro_cart/&#34; title=&#34;Introduzione al piano cartesiano&#34;&gt;Introduzione al piano cartesiano&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/&#34; title=&#34;Rette&#34;&gt;Rette&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Punti e segmenti</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/points_segments/</link>
+      <pubDate>Fri, 27 Sep 2024 17:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/cartesian/points_segments/</guid>
+      
+      <description>&lt;p&gt;Ogni punto sul piano cartesiano è determinato dalle sue coordinate, relativamente all&amp;rsquo;asse delle &lt;em&gt;ascisse&lt;/em&gt; $x$ e a quello delle &lt;em&gt;ordinate&lt;/em&gt; $y$.&lt;/p&gt;
+&lt;p&gt;$$ P(x_p, y_p) $$&lt;/p&gt;
+&lt;h3&gt;Punto medio&lt;/h3&gt;
+&lt;p&gt;Dati due punti $A$ e $B$, identificati da due set di coordinate $(x_a, y_a)$ e $(x_b, y_b)$, è possibile calcolarne il punto medio $M$, ovver il punto che suddivide il segmento $\overline{AB}$ in due segmenti congruenti $\overline{AM}$ $\overline{MB}$.
+$$ M \left(\dfrac{x_A + x_B}{2}, : \dfrac{y_A + y_B}{2} \right) $$&lt;/p&gt;
+&lt;h3&gt;Distanza tra due punti&lt;/h3&gt;
+&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolarne la distanza, ovvero la lunghezza del segmento che ha come estremi $A$ e $B$, sfruttando applicando il teorema di Pitagora su sul triangolo avente come cateti le differenze di coordinate sulle ascisse e ordinate dei due punti.&lt;/p&gt;
+&lt;p&gt;$$ d = \left| \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2} \right| $$&lt;/p&gt;
+&lt;p&gt;Si può notare come la distanza tra due punti sia indifferentemente calcolata a partire da $A$ o da $B$ e che sarà sempre definita positiva dalla presenza del valore assoluto.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;it&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;Segmento con Punto Medio&lt;/title&gt;
+    &lt;style&gt;
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 20px auto;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;canvas id=&#34;segmentCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
+
+    &lt;script&gt;
+
+    // Function to draw x and y axes
+        function drawAxes(context, canvasWidth, canvasHeight) {
+            // Draw x-axis
+            context.beginPath();
+            context.moveTo(0, canvasHeight / 2);
+            context.lineTo(canvasWidth, canvasHeight / 2);
+            context.stroke();
+
+            // Draw y-axis
+            context.beginPath();
+            context.moveTo(canvasWidth / 2, 0);
+            context.lineTo(canvasWidth / 2, canvasHeight);
+            context.stroke();
+
+
+            // Draw horizontal grid lines
+            for (let y = 0; y &lt; canvasHeight; y += 10) {
+                context.beginPath();
+                context.moveTo(0, y);
+                context.lineTo(canvasWidth, y);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+
+            // Draw vertical grid lines
+            for (let x = 0; x &lt; canvasWidth; x += 10) {
+                context.beginPath();
+                context.moveTo(x, 0);
+                context.lineTo(x, canvasHeight);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+        }
+
+        // Funzione per generare un punto casuale sul canvas
+        function generateRandomPoint() {
+		    return {
+		        x: Math.floor(Math.random() * 41) - 20,  // Intervallo [-20, 20]
+		        y: Math.floor(Math.random() * 41) - 20   // Intervallo [-20, 20]
+		    };
+		}
+
+		// Funzione per convertire le coordinate matematiche [-20, 20] in coordinate pixel del canvas [0, 400]
+		function mapToCanvasCoordinates(point, canvasWidth, canvasHeight) {
+		    return {
+		        x: (point.x + 20) * (canvasWidth / 40),  // Mappa da [-20, 20] a [0, canvasWidth]
+		        y: canvasHeight - ((point.y + 20) * (canvasHeight / 40))  // Mappa da [-20, 20] a [0, canvasHeight] e inverte y
+		    };
+		}
+
+        // Funzione per calcolare il punto medio tra due punti
+        // Funzione per calcolare il punto medio tra due punti, restituendo una frazione
+		function calculateMidPoint(A, B) {
+		    return {
+		        x: { num: A.x + B.x, den: 2 },  // Punto medio in forma di frazione
+		        y: { num: A.y + B.y, den: 2 }
+		    };
+		}
+
+		// Funzione per mostrare il risultato del punto medio come frazione
+		function displayFraction(fraction) {
+		    // Se il numeratore è divisibile per il denominatore, restituisci il numero intero
+		    if (fraction.num % fraction.den === 0) {
+		        return (fraction.num / fraction.den).toString();
+		    } else {
+		        // Altrimenti, restituisci la frazione
+		        return fraction.num + &#34;/&#34; + fraction.den;
+		    }
+		}
+
+
+		// Funzione per calcolare la distanza tra due punti e restituire la rappresentazione con radice
+		function calculateDistance(A, B) {
+		    const deltaX = B.x - A.x;
+		    const deltaY = B.y - A.y;
+
+		    // Calcola il quadrato della distanza
+		    const distanceSquared = deltaX * deltaX + deltaY * deltaY;
+
+		    // Calcola la radice quadrata approssimata
+		    const sqrtDistance = Math.sqrt(distanceSquared);
+
+		    // Se la radice quadrata è un numero intero, restituiscilo come tale
+		    if (Number.isInteger(sqrtDistance)) {
+		        return sqrtDistance.toString();
+		    } else {
+		        // Altrimenti, restituisci la rappresentazione con la radice quadrata
+		        return &#34;√(&#34; + distanceSquared + &#34;)&#34;;
+		    }
+		}
+
+
+
+        // Funzione per disegnare un segmento e i punti sul canvas
+        function drawSegment(context, A, B, M, canvasWidth, canvasHeight) {
+		    // Mappiamo i punti A, B, M alle coordinate del canvas
+		    const ACanvas = mapToCanvasCoordinates(A, canvasWidth, canvasHeight);
+		    const BCanvas = mapToCanvasCoordinates(B, canvasWidth, canvasHeight);
+		    const MCanvas = mapToCanvasCoordinates(M, canvasWidth, canvasHeight);
+
+		    // Disegna il segmento tra A e B
+		    context.beginPath();
+		    context.moveTo(ACanvas.x, ACanvas.y);
+		    context.lineTo(BCanvas.x, BCanvas.y);
+		    context.strokeStyle = &#39;black&#39;;
+		    context.lineWidth = 2;
+		    context.stroke();
+
+		    // Disegna il punto A
+		    context.beginPath();
+		    context.arc(ACanvas.x, ACanvas.y, 5, 0, 2 * Math.PI);
+		    context.fillStyle = &#39;red&#39;;
+		    context.fill();
+		    context.fillText(&#34;A (&#34; + A.x + &#34;, &#34; + A.y + &#34;)&#34;, ACanvas.x + 10, ACanvas.y - 10);
+
+		    // Disegna il punto B
+		    context.beginPath();
+		    context.arc(BCanvas.x, BCanvas.y, 5, 0, 2 * Math.PI);
+		    context.fillStyle = &#39;blue&#39;;
+		    context.fill();
+		    context.fillText(&#34;B (&#34; + B.x + &#34;, &#34; + B.y + &#34;)&#34;, BCanvas.x + 10, BCanvas.y - 10);
+
+		    // Disegna il punto medio M
+		    context.beginPath();
+		    context.arc(MCanvas.x, MCanvas.y, 5, 0, 2 * Math.PI);
+		    context.fillStyle = &#39;green&#39;;
+		    context.fill();
+		    context.fillText(&#34;M (&#34; + M.x.toFixed(2) + &#34;, &#34; + M.y.toFixed(2) + &#34;)&#34;, MCanvas.x + 10, MCanvas.y + 10);
+		}
+
+        // Funzione principale per eseguire il disegno
+        function main() {
+            var canvas = document.getElementById(&#39;segmentCanvas&#39;);
+            var context = canvas.getContext(&#39;2d&#39;);
+
+        	drawAxes(context, canvas.width, canvas.height, );
+
+            // Genera due punti casuali A e B
+            var A = generateRandomPoint(canvas.width, canvas.height);
+            var B = generateRandomPoint(canvas.width, canvas.height);
+
+            // Calcola il punto medio M
+            var M = calculateMidPoint(A, B);
+
+            // Calcola la distanza tra A e B
+            var distance = calculateDistance(A, B);
+
+            // Ad esempio, per visualizzare il punto medio M nel disegno:
+			// context.fillText(&#34;M (&#34; + displayFraction(M.x) + &#34;, &#34; + displayFraction(M.y) + &#34;)&#34;, M.x.num / M.x.den + 10, M.y.num / M.y.den + 10);
+
+			// Per visualizzare la distanza sotto il canvas
+			context.fillText(&#34;Distanza tra A e B: &#34; + calculateDistance(A, B), 10, canvas.height - 10);
+
+		    // Disegna il segmento e i punti sul canvas
+		    drawSegment(context, A, B, M, canvas.width, canvas.height);
+
+            // Mostra la distanza sotto il canvas
+            context.font = &#34;16px Arial&#34;;
+            context.fillStyle = &#34;black&#34;;
+            context.fillText(&#34;Distanza tra A e B: &#34; + distance.toFixed(2), 10, canvas.height - 10);
+        }
+
+        // Esegui la funzione principale quando la pagina viene caricata
+        window.onload = main;
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Introduzione al piano cartesiano</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/intro_cart/</link>
+      <pubDate>Fri, 27 Sep 2024 15:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/cartesian/intro_cart/</guid>
+      
+      <description>&lt;p&gt;Il piano cartesiano, caso particolare dei più generici &amp;ldquo;sistemi di riferimento cartesiani&amp;rdquo;, è uno strumento matematico fondamentale per rappresentare graficamente relazioni e funzioni.&lt;/p&gt;
+&lt;p&gt;Introdotto da René Descartes (italianizzato in Renato Cartesio), il piano cartesiano permette di descrivere la posizione di punti nello spazio attraverso due coordinate: l&amp;rsquo;ascissa $x$ e l&amp;rsquo;ordinata $y$ intersecatisi in un punto detto origine $O$.
+Questo concetto viene generalizzato nel caso di spazi $N$ dimensionali con l&amp;rsquo;utilizzo di $N$ rette ortogonali.&lt;/p&gt;
+&lt;!-- &lt;center&gt;&lt;em&gt;Quoties duo numeri cognoscuntur, potest eorum locus in plano definiri per intersectionem duarum rectarum.&lt;/em&gt;&lt;/center&gt; --&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/points_segments/&#34; title=&#34;Punti e segmenti&#34;&gt;Punti e segmenti&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -263,246 +521,6 @@ $$ N - P \cos \alpha = 0 $$&lt;/p&gt;
 Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
 &lt;p&gt;$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/equilibrium_slope.jpg&#34; alt=&#34;gran_risa&#34; title=&#34;Gran Risa&#34;&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Appunti di Fisica</title>
-      <link>http://localhost:1313/pages/pyphysics/pyphysics/</link>
-      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/pyphysics/</guid>
-      
-      <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della fisica.&lt;/p&gt;
-&lt;h2&gt;Vettori&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/intro_vec/&#34; title=&#34;Introduzione ai  vettori&#34;&gt;Introduzione ai vettori&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/&#34; title=&#34;Scomposizione di un vettore con funzioni goniometriche&#34;&gt;Scomposizione di un vettore con funzioni goniometriche&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Equilibrio&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/&#34; title=&#34;Introduzione all&#39;equilibrio&#34;&gt;Introduzione all&amp;rsquo;equilibrio&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/&#34; title=&#34;Risoluzione guidata di un esercizio di equilibrio&#34;&gt;Risoluzione guidata di un esercizio di equilibrio&lt;/a&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Differenza di vettori</title>
-      <link>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/</link>
-      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/</guid>
-      
-      <description>&lt;p&gt;$$\vec d = \vec v_1 - \vec v_2$$&lt;/p&gt;
-&lt;p&gt;
-
-
-    &lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34;&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-    &lt;title&gt;Random Vectors Plot&lt;/title&gt;
-    &lt;style&gt;
-        canvas {
-            border: 1px solid #000;
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;canvas id=&#34;plotCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
-
-    &lt;script&gt;
-        // Function to generate a random vector with modulus 1 starting from the origin
-        function generateUnitVector() {
-            return {
-                x: Math.round(Math.random()*20 - 10)/10,
-                y: Math.round(Math.random()*20 - 10)/10
-            };
-        }
-
-        // Function to add two vectors
-        function addVectors(vector1, vector2) {
-            return {
-                x: Math.round((vector1.x + vector2.x)*1000)/1000,
-                y: Math.round((vector1.y + vector2.y)*1000)/1000
-            };
-        }
-
-        function subtractVectors(vector1, vector2) {
-            return {
-                x: Math.round((vector1.x - vector2.x)*1000)/1000,
-                y: Math.round((vector1.y - vector2.y)*1000)/1000
-            };
-        }
-
-        // Function to plot a vector as an arrow on the canvas
-        function plotVector(context, vector, color, name) {
-            context.strokeStyle = color;
-            context.fillStyle = color;
-
-            // Arrow properties
-            const arrowLength = 100;
-            const arrowWidth = 15;
-            const textSpacing = 1.2;
-            const arrowThickness = 0.85;
-
-            // Calculate arrowhead points
-            const arrowHead1 = {
-                x: arrowLength * vector.x * arrowThickness - arrowWidth * vector.y * arrowThickness,
-                y: arrowLength * vector.y * arrowThickness + arrowWidth * vector.x * arrowThickness
-            };
-
-            const arrowHead2 = {
-                x: arrowLength * vector.x * arrowThickness + arrowWidth * vector.y * arrowThickness,
-                y: arrowLength * vector.y * arrowThickness - arrowWidth * vector.x * arrowThickness
-            };
-
-            // Draw arrow line
-            context.beginPath();
-            context.moveTo(canvas.width / 2, canvas.height / 2);
-            context.lineTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineWidth = 2;
-
-            context.stroke();
-
-            // Draw arrowhead
-            context.beginPath();
-            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineTo(canvas.width / 2 + arrowHead1.x, canvas.height / 2 + arrowHead1.y);
-            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineTo(canvas.width / 2 + arrowHead2.x, canvas.height / 2 + arrowHead2.y);
-            context.lineWidth = 2;
-            context.stroke();
-
-            context.fillText(name, canvas.width / 2 + arrowHead2.x * textSpacing, canvas.height / 2 + arrowHead2.y * textSpacing); 
-        }
-
-        // Function to draw x and y axes
-        function drawAxes(context, canvasWidth, canvasHeight) {
-            // Draw x-axis
-            context.beginPath();
-            context.moveTo(0, canvasHeight / 2);
-            context.lineTo(canvasWidth, canvasHeight / 2);
-            context.stroke();
-
-            // Draw y-axis
-            context.beginPath();
-            context.moveTo(canvasWidth / 2, 0);
-            context.lineTo(canvasWidth / 2, canvasHeight);
-            context.stroke();
-
-
-            // Draw horizontal grid lines
-            for (let y = 0; y &lt; canvasHeight; y += 10) {
-                context.beginPath();
-                context.moveTo(0, y);
-                context.lineTo(canvasWidth, y);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-
-            // Draw vertical grid lines
-            for (let x = 0; x &lt; canvasWidth; x += 10) {
-                context.beginPath();
-                context.moveTo(x, 0);
-                context.lineTo(x, canvasHeight);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-        }
-
-        // Get the canvas and its 2d rendering context
-        var canvas = document.getElementById(&#39;plotCanvas&#39;);
-        var context = canvas.getContext(&#39;2d&#39;);
-
-        // Draw x and y axes
-        drawAxes(context, canvas.width, canvas.height, );
-
-        // Generate two random vectors as arrows with modulus 1 starting from the center
-        var vector1 = generateUnitVector();
-        var vector2 = generateUnitVector();
-
-        // Calculate the sum and sub vector
-        var subVector12 = subtractVectors(vector1, vector2);
-        var subVector21 = subtractVectors(vector2, vector1);
-
-        // Plot the vectors
-        plotVector(context, vector1, &#39;red&#39;, &#34;v1&#34;);
-        plotVector(context, vector2, &#39;blue&#39;, &#34;v2&#34;);
-        plotVector(context, subVector12, &#39;purple&#39;, &#34;d&#34;);
-
-        context.font = &#34;12px Arial&#34;;
-        context.fillStyle = &#34;red&#34;;
-        context.fillText(&#34;v1 = &#34; + vector1.x*10 + &#34; i &#34; + -vector1.y*10 + &#34; j&#34;, 10, 30); 
-        
-        context.fillStyle = &#34;blue&#34;;
-        context.fillText(&#34;v2 = &#34; + vector2.x*10 + &#34; i &#34; + -vector2.y*10 + &#34; j&#34;, 10, 50); 
-        
-        context.fillStyle = &#34;purple&#34;;
-        context.fillText(&#34;s = &#34; + subVector21.x*10 + &#34; i &#34; + -subVector21.y*10 + &#34; j&#34;, 10, 390); 
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-
-
-&lt;/p&gt;
-&lt;p&gt;Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali.
-I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati agli estremi dall&amp;rsquo;origine e dai punti $V_1$ e $V_2$.&lt;/p&gt;
-&lt;p&gt;$$\vec v_1 = \vec{OV_1}$$
-$$\vec v_2 = \vec{OV_2}$$&lt;/p&gt;
-&lt;p&gt;Ogni vettore è infatti rappresentato da un modulo (lunghezza), una direzione (la retta su cui poggia) ed un verso.&lt;/p&gt;
-&lt;p&gt;È inoltre presente una terza freccia, vettore, di colore viola. Questo vettore $\vec d$ è dato dalla differenza dei due precedenti vettori, ovvero:&lt;/p&gt;
-&lt;p&gt;$$\vec d = \vec v_1 - \vec v_2$$&lt;/p&gt;
-&lt;p&gt;Si può notare come il vettore $\vec d$ sia delimitato dal&amp;rsquo;origine e il punto $D$ identificato dalla differenza delle coordinate di $V_1$ e $V_2$.&lt;/p&gt;
-&lt;p&gt;$$\vec d = \vec {OD}$$&lt;/p&gt;
-&lt;p&gt;Esercitati, ricaricando la pagina, a calcolare le somme tra vari vettori.&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Introduzione ai vettori</title>
-      <link>http://localhost:1313/pages/pyphysics/vectors/intro_vec/</link>
-      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/vectors/intro_vec/</guid>
-      
-      <description>&lt;p&gt;I vettori rappresentano uno degli strumenti matematici fondamentali in fisica. I vettori vengono infatti utilizzati per descrivere spostamenti, forze e altre grandezze fisiche dove &lt;em&gt;un numero&lt;/em&gt; (ovver uno scalare) non è sufficiente.&lt;/p&gt;
-&lt;p&gt;In matematica e fisica, un &lt;em&gt;vettore&lt;/em&gt; è un concetto che rappresenta una quantità caratterizzata non solo dalla sua &lt;em&gt;magnitudine&lt;/em&gt; (o grandezza), ma anche dai suoi &lt;em&gt;direzione&lt;/em&gt; e &lt;em&gt;verso&lt;/em&gt;. In altre parole, un vettore è un oggetto matematico che ha un &lt;strong&gt;modulo&lt;/strong&gt; (o lunghezza), una &lt;strong&gt;direzione&lt;/strong&gt; e un &lt;strong&gt;verso&lt;/strong&gt; specifici.&lt;/p&gt;
-&lt;p&gt;Possiamo quindi facilmente identificare un vettore sul foglio come un segmento orientato, ovvero una linea che unisce due punti identificandone uno come primo (punto di applicazione).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vector_def.jpg&#34; alt=&#34;vettore_def&#34; title=&#34;Definizione grafica di vettore&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Dal grafico si possono visualizzare facilmente tutte e tre le proprietà del vettore:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;modulo&lt;/strong&gt;: $|| \vec v || = v$, il valore (scalare) che rappresenta la lunghezza del vettore.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;direzione&lt;/strong&gt;: lungo la retta $r$&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;verso&lt;/strong&gt;: uscente dal punto di applicazione&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I vettori, e quindi anche le grandezze vettoriali, possono essere riconosciute immediatamente anche senza l&amp;rsquo;ausilio di un supporto grafico, vengono riportati in corsivo o tramite l&amp;rsquo;ausilio di una piccola freccia che sovrasta il simbolo.&lt;/p&gt;
-&lt;p&gt;$$ \vec v \neq \text{v} , v \neq \text{v}$$&lt;/p&gt;
-&lt;p&gt;È importante notare che un vettore non è equivalente ad un segmento generico: il vettore che unisce i punti $A$ a $B$ è opposto al vettore che unisce $B$ ad $A$. Ciò significa che fare un passo verso destra o uno verso sinistra sono due operazioni distinte: in questo caso opposte.&lt;/p&gt;
-&lt;p&gt;$$ \vec {AB} = - \vec {BA} \rightarrow \vec {AB} + \vec {BA} = \vec {0} $$&lt;/p&gt;
-&lt;p&gt;Con $\vec 0$ abbiamo potuto introdurre il concetto di &lt;strong&gt;vettore nullo&lt;/strong&gt;: l&amp;rsquo;elemento neutro dell&amp;rsquo;operazione di addizione tra vettori.
-Il vettore nullo è un elemento necessario per poter definire uno spazio vettoriale, una struttura algebrica meglio descritta nell&amp;rsquo;approfondimento specifico &lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Struttura algebrica&#34;&gt;spazio vettoriale&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vec_null.gif#center&#34; alt=&#34;vettore_null&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Per maggiori info sui vettori:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_unit/&#34; title=&#34;Versori&#34;&gt;Versori&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_scomp/&#34; title=&#34;Scomposizione di un vettore&#34;&gt;Scomposizione di un vettore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/&#34; title=&#34;Somma di vettori&#34;&gt;Somma di vettori&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/&#34; title=&#34;Differenza di vettori&#34;&gt;Differenza di vettori&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/&#34; title=&#34;Componenti cartesiane di un vettore&#34;&gt;Componenti cartesiane di un vettore&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Approfondimenti:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Spazio vettoriale&#34;&gt;Spazio vettoriale&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
       
     </item>
