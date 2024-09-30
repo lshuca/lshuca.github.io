@@ -8,13 +8,115 @@
     <language>it</language>
     <managingEditor>barbierid@msis002003.onmicrosoft.com (barbierid)</managingEditor>
     <webMaster>barbierid@msis002003.onmicrosoft.com (barbierid)</webMaster>
-    <lastBuildDate>Sun, 29 Sep 2024 17:56:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Sep 2024 22:56:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rette</title>
-      <link>http://localhost:1313/pages/pymath/cartesian/rette/</link>
+      <link>http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/</link>
+      <pubDate>Sun, 29 Sep 2024 22:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/</guid>
+      
+      <description>&lt;p&gt;Una circonferenza è definita come il luogo geometrico dei punti equidistanti da un punto detto &lt;em&gt;centro&lt;/em&gt; e la cui distanza è denominata &lt;em&gt;raggio&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In geometria analitica significa poter definire l&amp;rsquo;insieme dei punti che rispettano una determinata condizione che ne lega le coordinate, nel caso del piano cartesiano allora $y$ a $x$, rispettivamente ordinata e ascissa generiche.&lt;/p&gt;
+&lt;h2&gt;Equazione della circonferenza&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;equazione della circonferenza deriva dalla definizione di distanza tra due punti, uno generico $P(x, y)$ ed uno specifico detto centro $C(x_c, y_c)$.&lt;/p&gt;
+&lt;p&gt;$$ d_{PC} = | \sqrt{(x - x_c)^2 + (y - y_c)^2}  |$$&lt;/p&gt;
+&lt;p&gt;Definendo $d_{PC} = r$ e elevando al quadrato:&lt;/p&gt;
+&lt;p&gt;$$ (x - x_c)^2 + (y - y_c)^2 = r^2 $$&lt;/p&gt;
+&lt;p&gt;Sviluppandone i binomi possiamo riscrivere una seconda formulazione della circonferenza più compatta.&lt;/p&gt;
+&lt;p&gt;$$ x^2 - 2x_c x + x_c^2 + y^2 - 2y_c y + y_c^2 = r^2 $$&lt;/p&gt;
+&lt;p&gt;$$ x^2 + y^2 - 2x_c x - 2y_c y + x_c^2 + y_c^2 - r^2 = 0 $$&lt;/p&gt;
+&lt;p&gt;Utilizzando tre parametri $a$, $b$ e $c$ possiamo definire, quasi sempre, una circonferenza come riportato in calce.&lt;/p&gt;
+&lt;p&gt;$$  x^2 + y^2 + ax + by + c = 0 $$&lt;/p&gt;
+&lt;p&gt;Da cui risulta evidente come sia possibile legare i parametri $a$, $b$ e $c$ alle coordinate del centro ed il raggio.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+a = -2 x_c \rightarrow x_c = -\dfrac{a}{2} \newline \newline
+b = -2 y_c \rightarrow y_c = -\dfrac{b}{2} \newline \newline
+c = x_c^2 + y_c^2 - r^2 = \rightarrow r = \sqrt{x_c^2 + y_c^2 - c}
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;ultima condizione rende necessario analizzare la condizione di esistenza della figura, infatti:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} &amp;gt; 0$ la circonferenza esiste;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} = 0$ la circonferenza esiste ma si dice degenere, ovvero &amp;ldquo;degenera&amp;rdquo; in un singolo punto;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} &amp;lt; 0$ la circonferenza non esiste in quanto non esiste un $r \in \mathbb{R}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Esempi&lt;/h2&gt;
+&lt;h3&gt;Determina l&#39;equazione della circonferenza&lt;/h3&gt;
+&lt;p&gt;Determina l&amp;rsquo;equazione della circonferenza di raggio $3$ e centro $C(1, 1)$.&lt;/p&gt;
+&lt;h4&gt;Utilizzando la definizione&lt;/h4&gt;
+&lt;p&gt;$$ (x - 1)^2 + (y - 1)^2 = 9 $$&lt;/p&gt;
+&lt;p&gt;Risolvendo&lt;/p&gt;
+&lt;p&gt;$$ x^2 - 2x + 1 + y^2 - 2y +1 = 9 $$&lt;/p&gt;
+&lt;p&gt;$$ x^2 + y^2 - 2x - 2y - 7 = 0 $$&lt;/p&gt;
+&lt;h4&gt;Utilizzando i parametri&lt;/h4&gt;
+&lt;p&gt;$$
+\begin{cases}
+a = -2 x_c \rightarrow a = -2 \cdot 1 = -2 \newline \newline
+b = -2 y_c \rightarrow b = -2 \cdot 1 = -2 \newline \newline
+c = x_c^2 + y_c^2 - r^2 = \rightarrow c = 1 + 1 - 9 = -7
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;equazione della circonferenza risulta essere:&lt;/p&gt;
+&lt;p&gt;$$ x^2 + y^2 - 2x - 2y - 7 = 0 $$&lt;/p&gt;
+&lt;h3&gt;Ricava i parametri della circonferenza&lt;/h3&gt;
+&lt;p&gt;Determina le coordinate del centro ed il raggio della circonferenza di equazione $ x^2 + y^2 + 25 = 0 $.&lt;/p&gt;
+&lt;h4&gt;Utilizzando i parametri&lt;/h4&gt;
+&lt;p&gt;Possiamo immediatamente notare come la circonferenza in oggetto non abbia centro nell&amp;rsquo;origine, infatti non presenta termini in $x$ ed $y$, ovvero i parametri $a$ e $b$ sono nulli.&lt;/p&gt;
+&lt;p&gt;Possiamo quindi calcolarne il raggio tramite l&amp;rsquo;apposita relazione:&lt;/p&gt;
+&lt;p&gt;$$ r = \sqrt{x_c^2 + y_c^2 - c} $$&lt;/p&gt;
+&lt;p&gt;$$ r = \sqrt{0^2 + 0^2 - (25)} = \sqrt{- 25}$$&lt;/p&gt;
+&lt;p&gt;Otteniamo un radicale pari con argomento negativo, questa relazione non ha soluzione nei numeri reali dunque non può esistere una circonferenza di equazione $ x^2 + y^2 + 25 = 0 $.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Relazione tra forma esplicita ed implicita</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/</link>
+      <pubDate>Sun, 29 Sep 2024 18:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/</guid>
+      
+      <description>&lt;p&gt;La stessa retta può essere rappresentata in entrambe le forme indifferentemente e possiamo trovare relazioni che leghino i vari parametri.&lt;/p&gt;
+&lt;p&gt;$$ ax + by + c = 0 $$
+$$ by = -ax - c $$
+$$ y = \dfrac{-ax - c}{b} $$
+$$ y = -\dfrac{a}{b}x -\dfrac{c}{b} $$&lt;/p&gt;
+&lt;p&gt;Ovvero è possibile notare che, escluso il caso di $b = 0$ come già anticipato una retta parallela all&amp;rsquo;asse $y$, i parametri $m$ e $q$ possono essere letti come rapporti di $a$, $b$ e $c$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+m = -\dfrac{a}{b} \newline \newline
+q = -\dfrac{c}{b}
+\end{cases}
+$$&lt;/p&gt;
+&lt;h2&gt;Esempio&lt;/h2&gt;
+&lt;p&gt;La retta, riportata in forma implicita, $ 2x - y + 1 = 0 $ può essere facilmente analizzata notando che:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+m = -\dfrac{2}{-1} = 2 \newline \newline
+q = -\dfrac{1}{-1} = 1
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;ovvero&lt;/p&gt;
+&lt;p&gt;$$ y = 2x + 1 $$&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Rette</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/</link>
       <pubDate>Sun, 29 Sep 2024 17:56:42 +0100</pubDate>
       <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pymath/cartesian/rette/</guid>
+      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/</guid>
       
       <description>&lt;p&gt;Una retta è definita come il luogo geometrico dei punti allineati lungo una specifica direzione.&lt;/p&gt;
 &lt;p&gt;In geometria analitica significa poter definire l&amp;rsquo;insieme dei punti che rispettano una determinata condizione che ne lega le coordinate, nel caso del piano cartesiano allora $y$ a $x$, rispettivamente ordinata e ascissa generiche.&lt;/p&gt;
@@ -45,8 +147,14 @@
 &lt;h2&gt;Geometria analitica&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/intro_cart/&#34; title=&#34;Introduzione al piano cartesiano&#34;&gt;Introduzione al piano cartesiano&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Punti, segmenti e rette&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/intro_cart/&#34; title=&#34;Introduzione al piano cartesiano&#34;&gt;Introduzione al piano cartesiano&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/&#34; title=&#34;Rette&#34;&gt;Rette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/&#34; title=&#34;Rette&#34;&gt;Rette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/&#34; title=&#34;Relazione tra forma esplicita ed implicita&#34;&gt;Relazione tra forma esplicita ed implicita&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_eser/&#34; title=&#34;Operazioni con rette&#34;&gt;Operazioni con rette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_fasci/&#34; title=&#34;Fasci di rette&#34;&gt;Fasci di rette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_form/&#34; title=&#34;Formulario&#34;&gt;Formulario&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Parabola&lt;/h3&gt;
+&lt;h3&gt;Circonferenza&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/&#34; title=&#34;Circonferenza&#34;&gt;Circonferenza&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -281,6 +389,111 @@ Questo concetto viene generalizzato nel caso di spazi $N$ dimensionali con l&amp
     </item>
     
     <item>
+      <title>Fasci di rette</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_form/</link>
+      <pubDate>Thu, 12 Sep 2024 22:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_form/</guid>
+      
+      <description>&lt;p&gt;Tutte le informazioni precedenti sono sufficienti per poter affrontare quasi qualsiasi problema di geometria analitica che riguardi rette o punti.&lt;/p&gt;
+&lt;p&gt;Esistono tuttavia alcune scorciatoie per agevolarci nella risoluzione e risparmiare tempo prezioso.&lt;/p&gt;
+&lt;h2&gt;Coefficiente angolare della retta passante per due punti&lt;/h2&gt;
+&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolare il coefficiente angolare della retta che li unisce.&lt;/p&gt;
+&lt;p&gt;$$ m_{AB} = \dfrac{y_A - y_B}{x_A - x_B}$$&lt;/p&gt;
+&lt;p&gt;Come nel caso del punto medio o della distanza tra due punti, la scelta del punto $A$ o $B$ come primo o secondo termine è indifferente. È invece importante mantenere lo stesso ordine al numeratore ed al denominatore (prima $A$ poi $B$ o viceversa).&lt;/p&gt;
+&lt;h2&gt;Retta passante per due punti&lt;/h2&gt;
+&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolare immediatamente la retta che li unisce.&lt;/p&gt;
+&lt;p&gt;$$ \dfrac{y - y_A}{y_B - y_A} = \dfrac{x - x_A}{x_B - x_A} $$&lt;/p&gt;
+&lt;p&gt;Questa equazione deriva dalla risoluzione del sistema contenente il fascio di rette passante per il primo e il secondo punto, oppure del fascio di rette avente il coefficiente angolare della retta passante per $\overline{AB}$ forzandolo per $A$ o $B$.&lt;/p&gt;
+&lt;h2&gt;Distanza punto retta&lt;/h2&gt;
+&lt;p&gt;Dato un punto $P$ ed una retta $r$ possiamo definire la distanza tra i due enti come la lunghezza del segmento minimo che li unisce. Questa definizione porta a identificare la distanza nella lunghezza del segmento con estremi il punto $P$ ed il punto $H$, intersezione della retta che cade perpendicolarmente alla retta $r$ e passa per il punto $P$.&lt;/p&gt;
+&lt;p&gt;$$ P( \bm{X_p}, : \bm{Y_p}) $$&lt;/p&gt;
+&lt;p&gt;$$ r: : y= m_r x + q_r \rightarrow a_r x + b_r y + c_r = 0$$&lt;/p&gt;
+&lt;p&gt;Anche in questo caso esiste una formula molto comoda che richiede tuttavia di scrivere la retta $r$ in forma implicita.&lt;/p&gt;
+&lt;p&gt;$$ d = \dfrac{\left| a_r \bm{X_p} + b_r \bm{Y_p} + c_r \right|}{\sqrt{a_r^2 + b_r^2}} $$&lt;/p&gt;
+&lt;p&gt;Si può facilmente notare come la distanza dipenda sia dai &lt;em&gt;parametri&lt;/em&gt; della retta che dalle &lt;b&gt;COORDINATE&lt;/b&gt; del punto.&lt;/p&gt;
+&lt;p&gt;Tramite questa utile formula è facile calcolare i lati di un poligono regolare o la distanza tra due rette parallele.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Fasci di rette</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_fasci/</link>
+      <pubDate>Thu, 12 Sep 2024 21:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_fasci/</guid>
+      
+      <description>&lt;p&gt;A volte risulta utile non pensare ad una retta singola ma ragionare su tutte le rette che possano soddisfare una specifica condizione: per esempio che risultino parallele ad una retta data o che passino per uno stesso punto.&lt;/p&gt;
+&lt;h2&gt;Fascio proprio&lt;/h2&gt;
+&lt;p&gt;Il fascio proprio di rette ci permette di identificare velocemente tutte le possibili rette che passino per un punto $P$ tramite l&amp;rsquo;equazione.&lt;/p&gt;
+&lt;p&gt;$$ y - y_P = m (x - x_P) $$&lt;/p&gt;
+&lt;p&gt;Al variare del parametro $m$ possiamo identificare le varie soluzioni (che si incontrano nel punto $P$).&lt;/p&gt;
+&lt;h2&gt;Fascio improprio&lt;/h2&gt;
+&lt;p&gt;Il fascio improprio di rette ci permette di identificare velocemente tutte le possibili rette che risultino parallele ad una retta data, ovvero che presentino lo stesso $m_r$.&lt;/p&gt;
+&lt;p&gt;$$ y = m_r x + q $$&lt;/p&gt;
+&lt;p&gt;Al variare del parametro $q$ possiamo identificare le varie soluzioni (che hanno lo stesso $m_r$).&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Operazioni con rette</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_eser/</link>
+      <pubDate>Thu, 12 Sep 2024 20:56:42 +0100</pubDate>
+      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_eser/</guid>
+      
+      <description>&lt;h2&gt;Appartenenza di un punto ad una retta&lt;/h2&gt;
+&lt;p&gt;Un punto $P$ appartiene ad una retta quando, sostituendone le coordinate $x_p$ e $y_p$ nell&amp;rsquo;equazione della retta, si ottiene una identità.&lt;/p&gt;
+&lt;p&gt;$$ y_p = m x_p + q \rightarrow \text{Risulta verificata}$$
+$$ a x_p + b y_p + c = 0 \rightarrow \text{Risulta verificata}$$&lt;/p&gt;
+&lt;h2&gt;Posizioni reciproche tra rette&lt;/h2&gt;
+&lt;p&gt;Due rette possono essere definite, una rispetto all&amp;rsquo;altra, come parallele (ovvero due rette che non hanno punti in comuni o che sono coincidenti) oppure incidenti. Possiamo discriminare i vari casi tramite lo studio dei rispettivi coefficienti angolari.&lt;/p&gt;
+&lt;p&gt;Prendiamo il caso di due rette generiche $r$ e $s$ di equazioni rispettivamente:&lt;/p&gt;
+&lt;p&gt;$$ r: : y= m_r x + q_r $$
+$$ s: : y= m_s x + q_s $$&lt;/p&gt;
+&lt;h3&gt;Rette parallele&lt;/h3&gt;
+&lt;p&gt;Due rette si dicono parallele se i due coefficienti angolari sono uguali.&lt;/p&gt;
+&lt;p&gt;$$ m_r = m_s $$&lt;/p&gt;
+&lt;p&gt;In tutti gli altri casi le rette si dicono incidenti o oblique.&lt;/p&gt;
+&lt;h3&gt;Rette perpendicolari&lt;/h3&gt;
+&lt;p&gt;Due rette perpendicolari sono due rette incidenti molto particolari: definiscono infatti quattro angoli retti nel punto di intersezione. Si può quindi dimostrare che per due rette perpendicolari il prodotto dei coefficienti angolari deve essere $-1$, ovvero il coefficiente angolare di una deve essere l&amp;rsquo;inverso (L&amp;rsquo;inverso, o reciproco, di un numero $n$ è definito come $\dfrac{1}{n}$.) opposto (L&amp;rsquo;opposto di un numero $m$ è definito come $-m$.) dell&amp;rsquo;altra.&lt;/p&gt;
+&lt;p&gt;$$ m_r m_s = - 1 $$&lt;/p&gt;
+&lt;p&gt;$$ m_r = -\dfrac{1}{m_s} $$&lt;/p&gt;
+&lt;h2&gt;Intersezione tra due rette&lt;/h2&gt;
+&lt;p&gt;Il punto di intersezione tra due rette è quel punto, salvo il caso di due rette parallele non coincidenti, che appartiene sia alla prima che alla seconda retta.&lt;/p&gt;
+&lt;p&gt;La ricerca di questo punto richiede quindi lo studio di un sistema di due equazioni, le equazioni delle due rette, in due incognite, le due coordinate del punto $P$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+y = m_r x + q_r \newline \newline
+y = m_s x + q_s
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Risulta ancora più evidente tramite lo studio delle rette in forma implicita, infatti:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+a_r x + b_r y + c_r = 0 \newline \newline
+a_s x + b_s y + c_s = 0
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Sappiamo infatti dallo studio dei sistemi lineari che il rapporto dei coefficienti $a$, $b$ e $c$ dà luogo a casi differenti:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;per $\dfrac{a_r}{a_s} \neq \dfrac{b_r}{b_s}$ il sistema è determinato.&lt;/li&gt;
+&lt;li&gt;per $\dfrac{a_r}{a_s} = \dfrac{b_r}{b_s}$ il sistema è indeterminato o impossibile:
+&lt;ul&gt;
+&lt;li&gt;per $\dfrac{a_r}{a_s} = \dfrac{b_r}{b_s} = \dfrac{c_r}{c_s} $ il sistema è indeterminato;&lt;/li&gt;
+&lt;li&gt;per $\dfrac{a_r}{a_s} = \dfrac{b_r}{b_s} \neq \dfrac{c_r}{c_s} $ il sistema è impossibile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ricordando che abbiamo definito la relazione $m = -\dfrac{b}{a}$ e che possiamo invertire le condizioni precedenti in $ \dfrac{a_r}{b_r} = \dfrac{a_s}{b_s} $ e $ \dfrac{a_r}{b_r} \neq \dfrac{a_s}{b_s} $ otteniamo proprio quanto detto pocanzi.&lt;/p&gt;
+&lt;p&gt;Nel caso di coefficienti angolari uguali le rette risultano parallele ovvero non si incontrano mai (impossibili) o coincidono (soluzione indeterminata).&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>Componenti cartesiane di un vettore</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</link>
       <pubDate>Wed, 20 Mar 2024 10:38:42 +0100</pubDate>
@@ -319,208 +532,6 @@ Questo concetto viene generalizzato nel caso di spazi $N$ dimensionali con l&amp
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Relazioni tra funzioni goniometriche</title>
-      <link>http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/</link>
-      <pubDate>Wed, 20 Mar 2024 10:38:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/</guid>
-      
-      <description>&lt;h3&gt;Relazioni tra funzioni&lt;/h3&gt;
-&lt;h4&gt;Somma dei quadrati&lt;/h4&gt;
-&lt;p&gt;Il teorema di Pitagora ci permette di scrivere la relazione tra ipotenusa e cateti.&lt;/p&gt;
-&lt;p&gt;$$ I^2 = c_1^2 + c_2^2 $$&lt;/p&gt;
-&lt;p&gt;Andando quindi a sostituire le definizioni di $c_1$ e $c_2$ possiamo facilmente ottenere che.&lt;/p&gt;
-&lt;p&gt;$$ I^2 = (I cos \theta)^2 + (I sin \theta)^2 $$&lt;/p&gt;
-&lt;p&gt;$$ I^2 = I ^2 (cos \theta)^2 + I^2 (sin \theta)^2 $$&lt;/p&gt;
-&lt;p&gt;$$ I^2 = I ^2 [(cos \theta)^2 + (sin \theta)^2] $$&lt;/p&gt;
-&lt;p&gt;$$ 1 = (cos \theta)^2 + (sin \theta)^2 $$&lt;/p&gt;
-&lt;p&gt;Cioè la somma del quadrato dei valori di seno e coseno, per lo stesso angolo $\theta$ è uguale a 1.&lt;/p&gt;
-&lt;h4&gt;Angoli complementari&lt;/h4&gt;
-&lt;p&gt;Due angoli sono detti complementari se, sommati, compongono un angolo retto $\pi/2$.&lt;/p&gt;
-&lt;p&gt;$$ \theta + \gamma = \dfrac{\pi}{2}$$&lt;/p&gt;
-&lt;p&gt;Riprendendo le relazioni precedenti, e ricordando che stiamo trattando triangoli rettangoli, possiamo notare che:&lt;/p&gt;
-&lt;p&gt;$$ c_1 = I cos\theta \leftrightarrow c_1 = I sin \gamma $$&lt;/p&gt;
-&lt;p&gt;$$ \dfrac{c_1}{I} = cos\theta \leftrightarrow \dfrac{c_1}{I} = I sin \gamma $$&lt;/p&gt;
-&lt;p&gt;Per la proprietà transitiva &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;$$ cos \theta = sin \gamma $$&lt;/p&gt;
-&lt;p&gt;Ricordando che $\theta$ e $\gamma$ sono complementari.&lt;/p&gt;
-&lt;p&gt;$$ cos \theta = sin \left( \dfrac{\pi}{2} - \gamma \right) $$&lt;/p&gt;
-&lt;p&gt;Questo ci permette di utilizzare, con grande disinvoltura, gli angoli più comodi nello studio delle relazioni vettoriali.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Se $A = B$ e $B = C$ allora $A = C$.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Equilibrio di un corpo</title>
-      <link>http://localhost:1313/pages/pyphysics/eq_prova/</link>
-      <pubDate>Fri, 08 Mar 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/eq_prova/</guid>
-      
-      <description>&lt;p&gt;prova&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Equilibrio delle forze</title>
-      <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</link>
-      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</guid>
-      
-      <description>&lt;p&gt;L&amp;rsquo;equilibrio delle forze, in dinamica e in statica, è la condizione per cui la risultante delle forze agenti su un corpo è nulla.&lt;/p&gt;
-&lt;p&gt;Una forza è una grandezza vettoriale, quindi caraterizzata da un modulo, direzione e verso. (Si rimanda ai capitoli &lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/intro_vec/&#34; title=&#34;Introduzione ai vettori&#34;&gt;Introduzione ai vettori&lt;/a&gt; e &lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt; per maggiori informazioni).&lt;/p&gt;
-&lt;p&gt;Possiamo distinguere tra due tipi di equilibrio:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Equilibrio statico&lt;/strong&gt;: nel caso in cui il corpo dovesse mantenere velocità nulla (ovvero rimane fermo)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Equilibrio dinamico&lt;/strong&gt;: nel caso in cui il corpo dovesse muoversi con velocità costante (ovvero che si muove per inerzia)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Queste due definizioni permettono di introdurre il primo principio della dinamica, o &lt;em&gt;prima legge di Newton&lt;/em&gt;:&lt;/p&gt;
-&lt;center&gt;&lt;em&gt;Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus à viribus impressis cogitur statum illum mutare.&lt;/em&gt;&lt;/center&gt;
-&lt;p&gt;Dunque, la condizione per cui un corpo sia in equilibrio è che la risultante delle forze, agenti su di esso, sia nulla, ovvero:&lt;/p&gt;
-&lt;p&gt;$$ \vec{F}_{ris} = 0 $$&lt;/p&gt;
-&lt;p&gt;Ricordando la definizione di forza risultante, cioè data dalla somma vettoriale delle forze agenti su un corpo, possiamo anche scrivere:&lt;/p&gt;
-&lt;p&gt;$$ \sum_i \vec F_i = 0 $$&lt;/p&gt;
-&lt;p&gt;Il simbolo $ \sum $ si legge come &amp;ldquo;sommatoria&amp;rdquo; ovver la somma di tutte le possibili forze.&lt;/p&gt;
-&lt;p&gt;Noto che la condizione di equilibrio necessita lo studio delle forze, può essere utile ricordare come si definisce una forza.&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Introduzione alle forze</title>
-      <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/</link>
-      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/</guid>
-      
-      <description>&lt;p&gt;In meccanica una forza è una grandezza vettoriale in grado di indurre una variazione allo stato di quiete o di moto di un corpo o di applicarne una distorsione.&lt;/p&gt;
-&lt;p&gt;La forza viene definita matematicamente dal secondo principio della dinamica, o &lt;em&gt;seconda legge di Newton&lt;/em&gt;.&lt;/p&gt;
-&lt;center&gt;&lt;em&gt;Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.&lt;/em&gt;&lt;/center&gt;
-&lt;p&gt;L&amp;rsquo;unità di misura della forza, nel SI, è il Newton ed è definito come la forza necessaria per imporre ad una massa di un $\text{kg}$ una accelerazione di un $\dfrac{\text{m}}{\text{s}^2}$, cioè:&lt;/p&gt;
-&lt;p&gt;$$ N = \dfrac{\text{kg} \cdot \text{m}}{\text{s}^2} $$&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Risoluzione guidata di un esercizio di equilibrio</title>
-      <link>http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/</link>
-      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
-      <guid>http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/</guid>
-      
-      <description>&lt;h2&gt;Testo del problema&lt;/h2&gt;
-&lt;p&gt;Uno sciatore è appoggiato ad una pista inclinata tale che in una lunghezza di $1255 $ m supera un dislivello di $448 $m.&lt;/p&gt;
-&lt;p&gt;Ipotizzando che la pista risulti con una pendenza uniforme, studiare il caso di uno sciatore di massa $m = 80$ kg in equilibrio. Calcolare il valore della forza svolta dallo sciatore per evitare di scivolare sul piano inclinato.&lt;/p&gt;
-&lt;h2&gt;Impostazione&lt;/h2&gt;
-&lt;p&gt;Per impostare il problema dobbiamo prima capire i dati.&lt;/p&gt;
-&lt;h3&gt;Dati e incognite&lt;/h3&gt;
-&lt;p&gt;I dati del problema sono riferiti alle specifiche del piano inclinato (lunghezza e dislivello) e alla massa dello sciatore.&lt;/p&gt;
-&lt;h5&gt;Dati&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;Lunghezza $l = 1255$ m&lt;/li&gt;
-&lt;li&gt;Dislivello $h = 448$ m&lt;/li&gt;
-&lt;li&gt;Massa dello sciatore $m = 80$ kg&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5&gt;Incognite&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;Forza esercitata dallo sciatore per mantenere l&amp;rsquo;equilibrio $\vec F$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Disegno&lt;/h3&gt;
-&lt;p&gt;Per tracciare il disegno vogliamo inizialmente capire come è composto il sistema studiato.&lt;/p&gt;
-&lt;p&gt;Sappiamo che la pista è approssimabile ad uniforme, cioè possiamo ipotizzare che non ci siano variazioni di pendenza in tutto il suo percorso.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_triangle.png&#34; alt=&#34;eq_triangle&#34; title=&#34;Piano inclinato&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Vogliamo quindi studiare le forze agenti sullo sciatore, rappresentato da un puntino sul piano inclinato.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier.png&#34; alt=&#34;eq_skier&#34; title=&#34;Sciatore&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Lo sciatore ha modo di esercitare una forza parallela alla pendenza e, logicamente, con verso opposto alla discesa.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier_1.png&#34; alt=&#34;eq_skier_1&#34; title=&#34;Sciatore frena&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Osservando queste immagini possiamo subito notare che, per come sono disegnate e rappresentate le forze in questo momento, lo sciatore non risulta in equilibrio.&lt;/p&gt;
-&lt;p&gt;L&amp;rsquo;equilibrio statico necessita infatti che la risultante delle forze, cioè la somma, vettoriale, di tutte le forze agenti su un oggetto sia nulla.&lt;/p&gt;
-&lt;p&gt;Sommando le due forze presenti sul grafico non otteniamo un vettore nullo! Manca infatti la forza normale, una delle forze vincolari più conosciute, che impedisce allo sciatore di sprofondare nel pendio!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier_2.png&#34; alt=&#34;eq_skier_2&#34; title=&#34;Sciatore frena e normale&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Adottando l&amp;rsquo;approssimazione di punto materiale andiamo a disegnare le forze in gioco, agenti sullo sciatore, in uno schema ad hoc.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema.png&#34; alt=&#34;eq_schema&#34; title=&#34;Schema di corpo libero&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Per poter terminare l&amp;rsquo;impostazione del problema dobbiamo riportare, vettorialmente, la condizione di equilibrio: ovvero che la somma di tutte le forze sia nulla.&lt;/p&gt;
-&lt;p&gt;$$ \vec R = \vec F + \vec N + \vec P = \vec 0 $$&lt;/p&gt;
-&lt;h2&gt;Risoluzione&lt;/h2&gt;
-&lt;p&gt;La parte fisica del problema è praticamente terminata. Ogni prossimo passo richiede infatti di fare considerazioni di tipo geometrico o algebrico.&lt;/p&gt;
-&lt;p&gt;Prima di tutto dobbiamo studiare la condizione di equilibrio: abbiamo informazioni vettoriali, difficili da gestire perché non allineate.&lt;/p&gt;
-&lt;p&gt;Il primo passo è quello di scegliere un sistema di riferimento di assi $x$ e $y$ e disegnare le componenti delle forze studiate finora.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema_xy.png&#34; alt=&#34;eq_schema_xy&#34; title=&#34;Schema di corpo libero componenti&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Sfruttando le conoscenze di goniometria e di relazioni tra angoli e funzioni goniometriche, troviamo facilmente che le componenti di $\vec F$ e $\vec N$ risultano essere:&lt;/p&gt;
-&lt;p&gt;$$ F_x =  F \cos \alpha $$
-$$ F_y =  F \sin \alpha $$&lt;/p&gt;
-&lt;p&gt;$$ N_x =  N \cos \left(\dfrac{\pi}{2} - \alpha \right) =  N \sin \alpha $$
-$$ N_y =  N \sin \left(\dfrac{\pi}{2} - \alpha \right) =  N \cos \alpha $$&lt;/p&gt;
-&lt;p&gt;Dobbiamo fare particolarmente attenzione a quale angolo stiamo usando, infatti nel caso della forza normale l&amp;rsquo;angolo $\alpha$ non è adiacente a $\vec F$ e $\vec F_x$ imponendo quindi il cambio di funzione goniometrica.&lt;/p&gt;
-&lt;p&gt;Per quanto concerne $\vec P$ invece sappiamo che &amp;ldquo;cade a filo a piombo&amp;rdquo;, cioè la sua componente $x$, per questo sistema di riferimento, è nulla.&lt;/p&gt;
-&lt;p&gt;Risulta molto comodo quindi riconsiderare la condizione di equilibrio lungo le due direzioni $x$ e $y$.&lt;/p&gt;
-&lt;p&gt;$$ \vec R_x = \vec F_x + \vec N_x = \vec 0 $$
-$$ \vec R_y = \vec F_y + \vec N_y + \vec P = \vec 0 $$&lt;/p&gt;
-&lt;p&gt;Passando quindi a considerare le intensità delle forze sull&amp;rsquo;asse y.&lt;/p&gt;
-&lt;p&gt;$$ R_y = F_y + N_y - P = 0 $$&lt;/p&gt;
-&lt;p&gt;Sostituendo le informazioni ottenute in precedenza.&lt;/p&gt;
-&lt;p&gt;$$ F \sin \alpha + N \cos \alpha - P = 0 $$&lt;/p&gt;
-&lt;p&gt;Ricordiamo che la forza peso $\vec P$ è data dalla moltiplicazione della massa del corpo per l&amp;rsquo;accelerazione di gravità.&lt;/p&gt;
-&lt;p&gt;$$ F \sin \alpha + N \cos \alpha - mg = 0 $$&lt;/p&gt;
-&lt;p&gt;Questa risulta ancora essere un&amp;rsquo;equazione in due incognite ($ F$ e $N$), è quindi necessario trovare un modo per identificare il valore di $N$.&lt;/p&gt;
-&lt;p&gt;Prendendo la condizione di equilibrio sull&amp;rsquo;asse x possiamo notare che:&lt;/p&gt;
-&lt;p&gt;$$ \vec R_x = \vec F_x + \vec N_x = \vec 0 $$&lt;/p&gt;
-&lt;p&gt;$$ F \cos \alpha = N \sin \alpha $$&lt;/p&gt;
-&lt;p&gt;$$ N = F \dfrac{\cos \alpha}{\sin \alpha} $$&lt;/p&gt;
-&lt;p&gt;Sostituendo nella prima:&lt;/p&gt;
-&lt;p&gt;$$ F \sin \alpha + (F \dfrac{\cos \alpha}{\sin \alpha}) \cos \alpha - mg = 0 $$&lt;/p&gt;
-&lt;p&gt;$$ F (\sin \alpha)^2 + F(\cos \alpha)^2 - mg (\sin \alpha) = 0 $$&lt;/p&gt;
-&lt;p&gt;$$ F [(\sin \alpha)^2 +(\cos \alpha)^2] = mg (\sin \alpha) $$&lt;/p&gt;
-&lt;p&gt;$$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 + (\cos \alpha)^2]} = mg \dfrac{(\sin \alpha)}{1} =  mg \sin \alpha $$&lt;/p&gt;
-&lt;p&gt;Manca solo da conoscere il valore di $\alpha$, ma questo può essere facilmente ottenuto dalle relazioni goniometriche sfruttando la lunghezza ed il dislivello della pista:&lt;/p&gt;
-&lt;p&gt;$$ \sin \alpha = \dfrac{h}{l} $$&lt;/p&gt;
-&lt;p&gt;Quindi.&lt;/p&gt;
-&lt;p&gt;$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$&lt;/p&gt;
-&lt;h2&gt;Risoluzione con diverso Sistema di Riferimento&lt;/h2&gt;
-&lt;p&gt;Possiamo affrontare il problema adoperando una scelta &amp;ldquo;più furba&amp;rdquo; per quanto riguarda il sistema di riferimento.&lt;/p&gt;
-&lt;p&gt;Osservando un piano inclinato possiamo infatti valutarlo, come fatto nel caso precedente, rispetto a due assi $x$ e $y$, perpendicolari tra loro, in cui l&amp;rsquo;$y$ è solidale alla direzione del &amp;ldquo;filo a piombo&amp;rdquo; (cioè diretto verso il centro della terra). Come abbiamo visto questa scelta comporta la scomposizione su questi assi di tutte le forze che non risultano essere orientate come $x$ e $y$: rispettivamente la forza normale e la forza con cui lo sciatore frena.&lt;/p&gt;
-&lt;p&gt;Questa scelta, seppur corretta, potrebbe comportare però calcoli più complicati qualora le forze in gioco non dovessero essere solo tre (per esempio presenza di attrito, di una tensione o il carico dovuto alla presenza di uno zaino).&lt;/p&gt;
-&lt;p&gt;Possiamo quindi fare una scelta più &amp;ldquo;consapevole&amp;rdquo; e decidere che, per lo studio del problema, il sistema di riferimento $x&amp;rsquo;$ e $y&amp;rsquo;$ siano orientati perpendicolarmente e lungo la pendenza.
-Questa scelta comporterebbe il dover scomporre la forza peso lungo i due assi solidali alla pendenza, ma le altre forze saranno già utilizzabili.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema_alt.png&#34; alt=&#34;eq_alt&#34; title=&#34;Schema alternativo&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Studiando questo schema la lettura fisica rimane invariata rispetto a prima: tre forze che agiscono su uno stesso corpo, tre forze la cui risultante è nulla.
-Cambia invece l&amp;rsquo;analisi matematica del problema, rendendo necessario scomporre un solo vettore lungo le due direzioni.&lt;/p&gt;
-&lt;p&gt;In prima battuta possiamo notare che l&amp;rsquo;unico angolo a nostra disposizione non è più $\alpha$ ma, con un po&amp;rsquo; di trigonometria, riconosciamo facilmente che&lt;/p&gt;
-&lt;p&gt;$$\beta = \dfrac{\pi}{2} - \alpha$$&lt;/p&gt;
-&lt;p&gt;Per cui, le due componenti risultano essere.&lt;/p&gt;
-&lt;p&gt;$$ P_{x&amp;rsquo;} = P \cos \beta = P \cos \left( \dfrac{\pi}{2} - \alpha \right) = P \sin \alpha $$
-$$ P_{y&amp;rsquo;} = P \sin \beta = P \sin \left( \dfrac{\pi}{2} - \alpha \right) = P \cos \alpha $$&lt;/p&gt;
-&lt;p&gt;Studiando le condizioni di equilibrio lungo i due assi otteniamo che:&lt;/p&gt;
-&lt;p&gt;$$ \vec R_x = \vec F + \vec P_{x&amp;rsquo;} = \vec 0 $$
-$$ \vec R_y = \vec N + \vec P_{y&amp;rsquo;} = \vec 0 $$&lt;/p&gt;
-&lt;p&gt;Ovvero&lt;/p&gt;
-&lt;p&gt;$$ R_x = - F + \vec P_{x&amp;rsquo;} = 0 $$
-$$ R_y = N - P_{y&amp;rsquo;} = 0 $$&lt;/p&gt;
-&lt;p&gt;Per cui possiamo ricalcolare sostituendo i valori ottenuti prima&lt;/p&gt;
-&lt;p&gt;$$ - F + P \sin \alpha = 0 $$
-$$ N - P \cos \alpha = 0 $$&lt;/p&gt;
-&lt;p&gt;Possiamo notare immediatamente che non è, in questo caso, necessario risolvere le due equazioni in quanto abbiamo immediatamente una relazione risolubile per via numerica:&lt;/p&gt;
-&lt;p&gt;$$ F = m g \sin \alpha = m g \dfrac{h}{l} $$&lt;/p&gt;
-&lt;p&gt;Esattamente come ottenuto, con calcoli più complicati, in precedenza.
-Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
-&lt;p&gt;$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/equilibrium_slope.jpg&#34; alt=&#34;gran_risa&#34; title=&#34;Gran Risa&#34;&gt;&lt;/p&gt;
 </description>
       
     </item>

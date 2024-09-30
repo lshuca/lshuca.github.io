@@ -13,6 +13,19 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 
 <h3>Punti, segmenti e rette</h3>
 
-[Introduzione al piano cartesiano]({{< ref "/pages/pymath/cartesian/intro_cart" >}}  "Introduzione al piano cartesiano")
+[Rette]({{< ref "/pages/pymath/cartesian/rette/rette_intro" >}}  "Rette")
 
-[Rette]({{< ref "/pages/pymath/cartesian/rette" >}}  "Rette")
+[Relazione tra forma esplicita ed implicita]({{< ref "/pages/pymath/cartesian/rette/rette_impl_espl" >}}  "Relazione tra forma esplicita ed implicita")
+
+[Operazioni con rette]({{< ref "/pages/pymath/cartesian/rette/rette_eser" >}}  "Operazioni con rette")
+
+[Fasci di rette]({{< ref "/pages/pymath/cartesian/rette/rette_fasci" >}}  "Fasci di rette")
+
+[Formulario]({{< ref "/pages/pymath/cartesian/rette/rette_form" >}}  "Formulario")
+
+<h3>Parabola</h3>
+
+<h3>Circonferenza</h3>
+
+[Circonferenza]({{< ref "/pages/pymath/cartesian/circonferenza/circ_intro" >}}  "Circonferenza")
+
