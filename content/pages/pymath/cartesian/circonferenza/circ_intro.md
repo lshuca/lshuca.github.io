@@ -1,6 +1,6 @@
 +++
 menus = ['cartesiano']
-title = 'Rette'
+title = 'Introduzione alla circonferenza'
 date = 2024-09-29T22:56:42+01:00
 +++
 
@@ -12,7 +12,7 @@ In geometria analitica significa poter definire l'insieme dei punti che rispetta
 
 L'equazione della circonferenza deriva dalla definizione di distanza tra due punti, uno generico $P(x, y)$ ed uno specifico detto centro $C(x_c, y_c)$.
 
-$$ d_{PC} = | \sqrt{(x - x_c)^2 + (y - y_c)^2}  |$$
+$$ d_{PC} = \sqrt{(x - x_c)^2 + (y - y_c)^2} $$
 
 Definendo $d_{PC} = r$ e elevando al quadrato:
 

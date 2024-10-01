@@ -25,6 +25,8 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 
 <h3>Parabola</h3>
 
+[Parabola]({{< ref "/pages/pymath/cartesian/parabola/par_intro" >}}  "Parabola")
+
 <h3>Circonferenza</h3>
 
 [Circonferenza]({{< ref "/pages/pymath/cartesian/circonferenza/circ_intro" >}}  "Circonferenza")
