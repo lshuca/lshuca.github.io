@@ -23,16 +23,18 @@ Il significato tangibile del prodotto scalare è la lunghezza della proiezione g
 
 $$ \vec v \cdot \vec w = (v_x  v_y) + (w_x  w_y) $$
 
-Si può subito evincere che il prodotto scalare gode di simmetria, infatti:
+Si può subito notare che il prodotto scalare è simmetrico, infatti:
 
 $$ \vec v \cdot \vec w = \vec w \cdot \vec w = (v_x v_y) + (w_x w_y) = (v_y v_x) + (w_y w_x) $$
 
-Il prodotto scalare è stato già introdotto nella scomposizione di un vettore, infatti la componente $x$ di un vettore è data dalla proiezione del vettore $\vec v$ sul versore $\hat i$. Ricordando dunque le funzioni goniometriche possiamo scrivere che:
+Il prodotto scalare è stato già introdotto nella scomposizione di un vettore, infatti la componente $x$ di un vettore è data dalla proiezione del vettore $\vec v$ sul versore $\hat i$, analogamente possiamo ricavare l'interpretazione geometrica su $y$ con il versore $\hat j$. Ricordando dunque le funzioni goniometriche possiamo scrivere che:
 
 $$ \vec v \cdot \vec w = |v| |w| cos (\alpha) = (v_x v_y) + (w_x w_y) $$
 
 Tramite questa relazione è facile trovare che l'angolo tra due vettori risulta essere:
 
-$$ \alpha = \dfrac{v_x v_y + w_x w_y}{|v| |w|} $$
+$$ \alpha = cos^{-1}\left(\dfrac{v_x v_y + w_x w_y}{|v| |w|}\right) $$
 
 <h2>Prodotto vettoriale</h2>
+
+TBA.
