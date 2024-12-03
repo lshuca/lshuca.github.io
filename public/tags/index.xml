@@ -5,8 +5,6 @@
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>it</language>
-    <managingEditor>barbierid@msis002003.onmicrosoft.com (barbierid)</managingEditor>
-    <webMaster>barbierid@msis002003.onmicrosoft.com (barbierid)</webMaster><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>it</language><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

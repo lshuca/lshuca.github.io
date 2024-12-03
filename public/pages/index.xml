@@ -6,14 +6,12 @@
     <description>Recent content in Pages on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <managingEditor>barbierid@msis002003.onmicrosoft.com (barbierid)</managingEditor>
-    <webMaster>barbierid@msis002003.onmicrosoft.com (barbierid)</webMaster>
-    <lastBuildDate>Mon, 30 Sep 2024 10:52:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Dec 2024 15:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Componenti cartesiane di un vettore</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</link>
       <pubDate>Wed, 20 Mar 2024 10:38:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</guid>
       
       <description>&lt;p&gt;Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).&lt;/p&gt;
@@ -56,7 +54,7 @@
       <title>Relazioni tra funzioni goniometriche</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/</link>
       <pubDate>Wed, 20 Mar 2024 10:38:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/</guid>
       
       <description>&lt;h3&gt;Relazioni tra funzioni&lt;/h3&gt;
@@ -96,7 +94,7 @@
       <title>Equilibrio di un corpo</title>
       <link>http://localhost:1313/pages/pyphysics/eq_prova/</link>
       <pubDate>Fri, 08 Mar 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/eq_prova/</guid>
       
       <description>&lt;p&gt;prova&lt;/p&gt;
@@ -108,7 +106,7 @@
       <title>Equilibrio delle forze</title>
       <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</link>
       <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</guid>
       
       <description>&lt;p&gt;L&amp;rsquo;equilibrio delle forze, in dinamica e in statica, è la condizione per cui la risultante delle forze agenti su un corpo è nulla.&lt;/p&gt;
@@ -134,7 +132,7 @@
       <title>Introduzione alle forze</title>
       <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/</link>
       <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/</guid>
       
       <description>&lt;p&gt;In meccanica una forza è una grandezza vettoriale in grado di indurre una variazione allo stato di quiete o di moto di un corpo o di applicarne una distorsione.&lt;/p&gt;
@@ -150,7 +148,7 @@
       <title>Risoluzione guidata di un esercizio di equilibrio</title>
       <link>http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/</link>
       <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/</guid>
       
       <description>&lt;h2&gt;Testo del problema&lt;/h2&gt;
@@ -258,7 +256,7 @@ Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
       <title>Appunti di Fisica</title>
       <link>http://localhost:1313/pages/pyphysics/pyphysics/</link>
       <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/pyphysics/</guid>
       
       <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della fisica.&lt;/p&gt;
@@ -277,7 +275,7 @@ Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
       <title>Differenza di vettori</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/</link>
       <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/</guid>
       
       <description>&lt;p&gt;$$\vec d = \vec v_1 - \vec v_2$$&lt;/p&gt;
@@ -458,7 +456,7 @@ $$\vec v_2 = \vec{OV_2}$$&lt;/p&gt;
       <title>Introduzione ai vettori</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/intro_vec/</link>
       <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/vectors/intro_vec/</guid>
       
       <description>&lt;p&gt;I vettori rappresentano uno degli strumenti matematici fondamentali in fisica. I vettori vengono infatti utilizzati per descrivere spostamenti, forze e altre grandezze fisiche dove &lt;em&gt;un numero&lt;/em&gt; (ovver uno scalare) non è sufficiente.&lt;/p&gt;
@@ -498,7 +496,7 @@ Il vettore nullo è un elemento necessario per poter definire uno spazio vettori
       <title>Somma di vettori</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/</link>
       <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/</guid>
       
       <description>&lt;p&gt;$$\vec s = \vec v_1 + \vec v_2$$&lt;/p&gt;

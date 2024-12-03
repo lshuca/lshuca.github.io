@@ -6,14 +6,12 @@
     <description>Recent content on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <managingEditor>barbierid@msis002003.onmicrosoft.com (barbierid)</managingEditor>
-    <webMaster>barbierid@msis002003.onmicrosoft.com (barbierid)</webMaster>
-    <lastBuildDate>Mon, 30 Sep 2024 10:52:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Dec 2024 15:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rimaneggiamenti algebrici</title>
       <link>http://localhost:1313/pages/pymath/cartesian/parabola/par_general/</link>
       <pubDate>Mon, 30 Sep 2024 10:52:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/parabola/par_general/</guid>
       
       <description>&lt;p&gt;$$ \sqrt{(x - x_f)^2 + (y - y_f)^2} = \dfrac{|a x + b y + c|}{\sqrt{a^2 + b^2}} $$&lt;/p&gt;
@@ -31,7 +29,7 @@
       <title>Parabola con direttrice parallela a x</title>
       <link>http://localhost:1313/pages/pymath/cartesian/parabola/par_dirx/</link>
       <pubDate>Sun, 29 Sep 2024 23:57:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/parabola/par_dirx/</guid>
       
       <description>&lt;p&gt;Nel caso in cui si dovesse lavorare con una parabola con asse di simmetria parallelo all&amp;rsquo;asse $x$, ovvero della forma $by + c = 0$, l&amp;rsquo;equazione della parabola risulta molto semplificata.&lt;/p&gt;
@@ -65,7 +63,7 @@
       <title>Introduzione alla parabola</title>
       <link>http://localhost:1313/pages/pymath/cartesian/parabola/par_intro/</link>
       <pubDate>Sun, 29 Sep 2024 23:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/parabola/par_intro/</guid>
       
       <description>&lt;p&gt;Una parabola è definita come il luogo geometrico dei punti equidistanti da un punto detto &lt;em&gt;fuoco&lt;/em&gt; ed una retta detta &lt;em&gt;direttrice&lt;/em&gt;.&lt;/p&gt;
@@ -95,7 +93,7 @@ Ad ogni punto P non appartenente ad esso è associato un punto P’ tale che l�
       <title>Introduzione alla circonferenza</title>
       <link>http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/</link>
       <pubDate>Sun, 29 Sep 2024 22:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/</guid>
       
       <description>&lt;p&gt;Una circonferenza è definita come il luogo geometrico dei punti equidistanti da un punto detto &lt;em&gt;centro&lt;/em&gt; e la cui distanza è denominata &lt;em&gt;raggio&lt;/em&gt;.&lt;/p&gt;
@@ -164,7 +162,7 @@ $$&lt;/p&gt;
       <title>Relazione tra forma esplicita ed implicita</title>
       <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/</link>
       <pubDate>Sun, 29 Sep 2024 18:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/</guid>
       
       <description>&lt;p&gt;La stessa retta può essere rappresentata in entrambe le forme indifferentemente e possiamo trovare relazioni che leghino i vari parametri.&lt;/p&gt;
@@ -197,7 +195,7 @@ $$&lt;/p&gt;
       <title>Rette</title>
       <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/</link>
       <pubDate>Sun, 29 Sep 2024 17:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/</guid>
       
       <description>&lt;p&gt;Una retta è definita come il luogo geometrico dei punti allineati lungo una specifica direzione.&lt;/p&gt;
@@ -222,7 +220,7 @@ $$&lt;/p&gt;
       <title>Appunti di Matematica</title>
       <link>http://localhost:1313/pages/pymath/pymath/</link>
       <pubDate>Sat, 28 Sep 2024 15:55:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/pymath/</guid>
       
       <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della matematica.&lt;/p&gt;
@@ -246,7 +244,7 @@ $$&lt;/p&gt;
       <title>Punti e segmenti</title>
       <link>http://localhost:1313/pages/pymath/cartesian/points_segments/</link>
       <pubDate>Fri, 27 Sep 2024 17:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/points_segments/</guid>
       
       <description>&lt;p&gt;Ogni punto sul piano cartesiano è determinato dalle sue coordinate, relativamente all&amp;rsquo;asse delle &lt;em&gt;ascisse&lt;/em&gt; $x$ e a quello delle &lt;em&gt;ordinate&lt;/em&gt; $y$.&lt;/p&gt;
@@ -459,7 +457,7 @@ $$ M \left(\dfrac{x_A + x_B}{2}, : \dfrac{y_A + y_B}{2} \right) $$&lt;/p&gt;
       <title>Introduzione al piano cartesiano</title>
       <link>http://localhost:1313/pages/pymath/cartesian/intro_cart/</link>
       <pubDate>Fri, 27 Sep 2024 15:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/intro_cart/</guid>
       
       <description>&lt;p&gt;Il piano cartesiano, caso particolare dei più generici &amp;ldquo;sistemi di riferimento cartesiani&amp;rdquo;, è uno strumento matematico fondamentale per rappresentare graficamente relazioni e funzioni.&lt;/p&gt;
@@ -475,7 +473,7 @@ Questo concetto viene generalizzato nel caso di spazi $N$ dimensionali con l&amp
       <title>Fasci di rette</title>
       <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_form/</link>
       <pubDate>Thu, 12 Sep 2024 22:56:42 +0100</pubDate>
-      <author>barbierid@msis002003.onmicrosoft.com (barbierid)</author>
+      
       <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_form/</guid>
       
       <description>&lt;p&gt;Tutte le informazioni precedenti sono sufficienti per poter affrontare quasi qualsiasi problema di geometria analitica che riguardi rette o punti.&lt;/p&gt;

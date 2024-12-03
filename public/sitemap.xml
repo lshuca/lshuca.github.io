@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-30T10:52:42+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pages/pymath/</loc>
-    <lastmod>2024-09-30T10:52:42+01:00</lastmod>
+    <lastmod>2024-12-03T15:55:42+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/</loc>
+    <lastmod>2024-12-03T15:55:42+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/pymath/</loc>
     <lastmod>2024-09-30T10:52:42+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/pymath/cartesian/parabola/par_general/</loc>
