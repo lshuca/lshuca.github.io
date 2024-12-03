@@ -11,14 +11,20 @@
 
   
   
-  <meta name="description" content="Dati due vettori $\vec v$ e $\vec w$ è possibile definire la somma algebrica in $\vec t = \vec v \pm \vec w = (v_x \pm v_y) \hat i &#43; ( v_x \pm v_y) \hat j$ ma non è altrettanto semplice definire il prodotto tra due vettori.
-Il prodotto tra due vettori è infatti differenziato sulla base del risultato che si vuole ottenere:
+  <meta name="description" content="Prodotto scalare
+Il prodotto scalare tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:
+$$\vec{v} \cdot \vec{w} = v_x w_x &#43; v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha) $$
+Proprietà principali:
 
-Prodotto Scalare
-Prodotto Vettoriale
+Simmetria: $\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}$.
+Risultato scalare: il prodotto scalare restituisce un numero puro (non un vettore).
+Significato geometrico: rappresenta la lunghezza della proiezione di $\vec{v}$ lungo $\vec{w}$, moltiplicata per la lunghezza di $\vec{w}$.
 
-Prodotto scalare
-Il prodotto scalare è un&rsquo;operazione definita tra due vettori tali da avere come risultato uno scalare, ovvero un numero puro.">
+Casi particolari:
+
+
+Vettori paralleli:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli (angolo $\alpha = 0^\circ$ o $\alpha = 180^\circ$):">
   
 
   
@@ -60,9 +66,9 @@ Il prodotto scalare è un&rsquo;operazione definita tra due vettori tali da aver
   <meta property="og:url" content="http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/">
   <meta property="og:site_name" content="La scienza ha un cuore antico">
   <meta property="og:title" content="Prodotto tra vettori">
-  <meta property="og:description" content="Dati due vettori $\vec v$ e $\vec w$ è possibile definire la somma algebrica in $\vec t = \vec v \pm \vec w = (v_x \pm v_y) \hat i &#43; ( v_x \pm v_y) \hat j$ ma non è altrettanto semplice definire il prodotto tra due vettori.
-Il prodotto tra due vettori è infatti differenziato sulla base del risultato che si vuole ottenere:
-Prodotto Scalare Prodotto Vettoriale Prodotto scalare Il prodotto scalare è un’operazione definita tra due vettori tali da avere come risultato uno scalare, ovvero un numero puro.">
+  <meta property="og:description" content="Prodotto scalare Il prodotto scalare tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:
+$$\vec{v} \cdot \vec{w} = v_x w_x &#43; v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha) $$
+Proprietà principali: Simmetria: $\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}$. Risultato scalare: il prodotto scalare restituisce un numero puro (non un vettore). Significato geometrico: rappresenta la lunghezza della proiezione di $\vec{v}$ lungo $\vec{w}$, moltiplicata per la lunghezza di $\vec{w}$. Casi particolari: Vettori paralleli: Se $\vec{v}$ e $\vec{w}$ sono paralleli (angolo $\alpha = 0^\circ$ o $\alpha = 180^\circ$):">
   <meta property="og:locale" content="it">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -77,12 +83,12 @@ Prodotto Scalare Prodotto Vettoriale Prodotto scalare Il prodotto scalare è un�
   
   
   <meta itemprop="name" content="Prodotto tra vettori">
-  <meta itemprop="description" content="Dati due vettori $\vec v$ e $\vec w$ è possibile definire la somma algebrica in $\vec t = \vec v \pm \vec w = (v_x \pm v_y) \hat i &#43; ( v_x \pm v_y) \hat j$ ma non è altrettanto semplice definire il prodotto tra due vettori.
-Il prodotto tra due vettori è infatti differenziato sulla base del risultato che si vuole ottenere:
-Prodotto Scalare Prodotto Vettoriale Prodotto scalare Il prodotto scalare è un’operazione definita tra due vettori tali da avere come risultato uno scalare, ovvero un numero puro.">
+  <meta itemprop="description" content="Prodotto scalare Il prodotto scalare tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:
+$$\vec{v} \cdot \vec{w} = v_x w_x &#43; v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha) $$
+Proprietà principali: Simmetria: $\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}$. Risultato scalare: il prodotto scalare restituisce un numero puro (non un vettore). Significato geometrico: rappresenta la lunghezza della proiezione di $\vec{v}$ lungo $\vec{w}$, moltiplicata per la lunghezza di $\vec{w}$. Casi particolari: Vettori paralleli: Se $\vec{v}$ e $\vec{w}$ sono paralleli (angolo $\alpha = 0^\circ$ o $\alpha = 180^\circ$):">
   <meta itemprop="datePublished" content="2024-12-03T12:55:42+01:00">
   <meta itemprop="dateModified" content="2024-12-03T12:55:42+01:00">
-  <meta itemprop="wordCount" content="278">
+  <meta itemprop="wordCount" content="655">
 
   
   <link media="screen" rel="stylesheet" href='http://localhost:1313/css/common.css'>
@@ -97,9 +103,9 @@ Prodotto Scalare Prodotto Vettoriale Prodotto scalare Il prodotto scalare è un�
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Prodotto tra vettori">
-  <meta name="twitter:description" content="Dati due vettori $\vec v$ e $\vec w$ è possibile definire la somma algebrica in $\vec t = \vec v \pm \vec w = (v_x \pm v_y) \hat i &#43; ( v_x \pm v_y) \hat j$ ma non è altrettanto semplice definire il prodotto tra due vettori.
-Il prodotto tra due vettori è infatti differenziato sulla base del risultato che si vuole ottenere:
-Prodotto Scalare Prodotto Vettoriale Prodotto scalare Il prodotto scalare è un’operazione definita tra due vettori tali da avere come risultato uno scalare, ovvero un numero puro.">
+  <meta name="twitter:description" content="Prodotto scalare Il prodotto scalare tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:
+$$\vec{v} \cdot \vec{w} = v_x w_x &#43; v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha) $$
+Proprietà principali: Simmetria: $\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}$. Risultato scalare: il prodotto scalare restituisce un numero puro (non un vettore). Significato geometrico: rappresenta la lunghezza della proiezione di $\vec{v}$ lungo $\vec{w}$, moltiplicata per la lunghezza di $\vec{w}$. Casi particolari: Vettori paralleli: Se $\vec{v}$ e $\vec{w}$ sono paralleli (angolo $\alpha = 0^\circ$ o $\alpha = 180^\circ$):">
 
 
   
@@ -135,25 +141,154 @@ Prodotto Scalare Prodotto Vettoriale Prodotto scalare Il prodotto scalare è un�
 <main id="main" class="post">
   
   <article class="content">
-    <p>Dati due vettori $\vec v$ e $\vec w$ è possibile definire la somma algebrica in $\vec t = \vec v \pm \vec w = (v_x \pm v_y) \hat i + ( v_x \pm v_y) \hat j$ ma non è altrettanto semplice definire il prodotto tra due vettori.</p>
-<p>Il prodotto tra due vettori è infatti differenziato sulla base del risultato che si vuole ottenere:</p>
+    <h3 id="prodotto-scalare">Prodotto scalare</h3>
+<p>Il prodotto scalare tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:</p>
+<p>$$\vec{v} \cdot \vec{w} = v_x w_x + v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha) $$</p>
+<h4 id="proprietà-principali">Proprietà principali:</h4>
+<ol>
+<li><strong>Simmetria</strong>: $\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}$.</li>
+<li><strong>Risultato scalare</strong>: il prodotto scalare restituisce un numero puro (non un vettore).</li>
+<li><strong>Significato geometrico</strong>: rappresenta la lunghezza della proiezione di $\vec{v}$ lungo $\vec{w}$, moltiplicata per la lunghezza di $\vec{w}$.</li>
+</ol>
+<h4 id="casi-particolari"><strong>Casi particolari</strong>:</h4>
+<ol>
+<li>
+<p><strong>Vettori paralleli</strong>:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli (angolo $\alpha = 0^\circ$ o $\alpha = 180^\circ$):</p>
 <ul>
-<li><strong>Prodotto Scalare</strong></li>
-<li><strong>Prodotto Vettoriale</strong></li>
+<li>Per $\alpha = 0^\circ$ ($v$ e $w$ hanno la stessa direzione):
+$$      \cos(0^\circ ) = 1 \quad \implies \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}|$$</li>
+<li>Per $\alpha = 180^\circ$ ($v$ e $w$ hanno direzioni opposte):
+$$      \cos(180^\circ ) = -1 \quad \implies \quad \vec{v} \cdot \vec{w} = -|\vec{v}| |\vec{w}|$$</li>
 </ul>
-<h2>Prodotto scalare</h2>
-<p>Il prodotto scalare è un&rsquo;operazione definita tra due vettori tali da avere come risultato uno scalare, ovvero un numero puro.</p>
-<p>Dati due vettori $\vec v$ e $\vec w$ è possibile definire il prodotto scalare come segue:</p>
-<p>$$ \vec v \cdot \vec w = n = (\vec v, \vec w)$$</p>
-<p>Il significato tangibile del prodotto scalare è la lunghezza della proiezione geometrica del vettore $\vec v$ sul vettore $\vec w$. È possibile calcolare il prodotto scalare come segue:</p>
-<p>$$ \vec v \cdot \vec w = (v_x  v_y) + (w_x  w_y) $$</p>
-<p>Si può subito evincere che il prodotto scalare gode di simmetria, infatti:</p>
-<p>$$ \vec v \cdot \vec w = \vec w \cdot \vec w = (v_x v_y) + (w_x w_y) = (v_y v_x) + (w_y w_x) $$</p>
-<p>Il prodotto scalare è stato già introdotto nella scomposizione di un vettore, infatti la componente $x$ di un vettore è data dalla proiezione del vettore $\vec v$ sul versore $\hat i$. Ricordando dunque le funzioni goniometriche possiamo scrivere che:</p>
-<p>$$ \vec v \cdot \vec w = |v| |w| cos (\alpha) = (v_x v_y) + (w_x w_y) $$</p>
-<p>Tramite questa relazione è facile trovare che l&rsquo;angolo tra due vettori risulta essere:</p>
-<p>$$ \alpha = \dfrac{v_x v_y + w_x w_y}{|v| |w|} $$</p>
-<h2>Prodotto vettoriale</h2>
+<p>Quindi, il prodotto scalare fornisce un valore massimo (positivo o negativo) quando i vettori sono paralleli.</p>
+</li>
+<li>
+<p><strong>Vettori ortogonali</strong>:
+Se $\vec{v}$ e $\vec{w}$ sono ortogonali (angolo $\alpha = 90^\circ$):</p>
+<ul>
+<li>$\cos(90^\circ) = 0$, quindi:
+$$      \vec{v} \cdot \vec{w} = 0$$
+Questo significa che il prodotto scalare tra vettori perpendicolari è sempre nullo.</li>
+</ul>
+<hr>
+</li>
+</ol>
+<h3 id="prodotto-vettoriale">Prodotto vettoriale</h3>
+<p>Il prodotto vettoriale tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:</p>
+<p>$$ \vec{u} = \vec{v} \times \vec{w} $$</p>
+<p>Dove il risultato è un vettore $\vec{u}$ ortogonale sia a $\vec{v}$ che a $\vec{w}$. Il modulo è dato da:</p>
+<p>$$ |\vec{u}| = |\vec{v}| |\vec{w}| \sin(\alpha )$$</p>
+<h4 id="proprietà-principali-1">Proprietà principali:</h4>
+<ol>
+<li><strong>Antisimmetria</strong>: $\vec{v} \times \vec{w} = -(\vec{w} \times \vec{v})$.</li>
+<li><strong>Ortogonalità del risultato</strong>: il vettore risultante $\vec{u}$ è perpendicolare al piano definito da $\vec{v}$ e $\vec{w}$.</li>
+<li><strong>Modulo nullo per vettori paralleli</strong>.</li>
+</ol>
+<h4 id="casi-particolari-1"><strong>Casi particolari</strong>:</h4>
+<ol>
+<li>
+<p><strong>Vettori paralleli</strong>:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli ($\alpha = 0^\circ$ o $\alpha = 180^\circ$):</p>
+<ul>
+<li>$\sin(0^\circ) = \sin(180^\circ) = 0$, quindi:
+$$      |\vec{v} \times \vec{w}| = 0$$
+Il prodotto vettoriale è nullo quando i vettori sono paralleli (non c&rsquo;è &ldquo;area&rdquo; tra di essi).</li>
+</ul>
+</li>
+<li>
+<p><strong>Vettori ortogonali</strong>:
+Se $\vec{v}$ e $\vec{w}$ sono ortogonali ($\alpha = 90^\circ$):</p>
+<ul>
+<li>$\sin(90^\circ) = 1$, quindi:
+$$      |\vec{v} \times \vec{w}| = |\vec{v}| |\vec{w}|$$
+In questo caso, il modulo del prodotto vettoriale è massimo e rappresenta l&rsquo;area del parallelogramma definito dai due vettori.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="calcolo-del-prodotto-vettoriale-con-il-determinante">Calcolo del prodotto vettoriale con il determinante</h3>
+<p>Per calcolare il prodotto vettoriale $\vec{v} \times \vec{w}$ di due vettori $\vec{v}$ e $\vec{w}$ nello spazio tridimensionale ($ \mathbb{R}^3 $), possiamo utilizzare il <strong>determinante di una matrice</strong>. Questo metodo è pratico e diretto. Ecco come fare passo passo:</p>
+<h4 id="metodo">Metodo:</h4>
+<ol>
+<li>
+<p><strong>Scrivere la matrice</strong>:
+Organizza la matrice $3 \times 3$ come segue:</p>
+<ul>
+<li>La <strong>prima riga</strong> contiene i versori $\hat{i}$, $\hat{j}$, $\hat{k}$ (che rappresentano le direzioni dei tre assi $x$, $y$, $z$).</li>
+<li>La <strong>seconda riga</strong> contiene le componenti del primo vettore $\vec{v} = (v_x, v_y, v_z)$.</li>
+<li>La <strong>terza riga</strong> contiene le componenti del secondo vettore $\vec{w} = (w_x, w_y, w_z)$.</li>
+</ul>
+<p>Quindi:</p>
+<table>
+  <thead>
+      <tr>
+          <th>$\hat{i}$</th>
+          <th>$\hat{j}$</th>
+          <th>$\hat{k}$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$v_x$</td>
+          <td>$v_y$</td>
+          <td>$v_z$</td>
+      </tr>
+      <tr>
+          <td>$w_x$</td>
+          <td>$w_y$</td>
+          <td>$w_z$</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p><strong>Calcolare il determinante</strong>:
+Il determinante si espande lungo la prima riga (quella dei versori). Procedi come segue:</p>
+<ul>
+<li>Moltiplica ogni versore per il determinante della <strong>sottomatrice</strong> che rimane eliminando la riga e la colonna del versore stesso.</li>
+<li>Usa i segni alternati $+,-,+$ per i versori $\hat{i}$, $\hat{j}$, $\hat{k}$.</li>
+</ul>
+<p>Scrivendo il calcolo espanso:</p>
+<p>$$ \vec v \times \vec w = \hat i A_{1,1} + \hat j A_{2,1} + \hat k A_{3,1} $$</p>
+</li>
+<li>
+<p><strong>Calcolare i minori</strong>:
+Ogni <strong>sottomatrice</strong> è una matrice $2 \times 2$, e il suo determinante si calcola con la formula:</p>
+<table>
+  <thead>
+      <tr>
+          <th>$a$</th>
+          <th>$b$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$c$</td>
+          <td>$d$</td>
+      </tr>
+  </tbody>
+</table>
+<p>$$ ad - bc $$</p>
+<p>Applica questa formula per ciascun minore:</p>
+<ul>
+<li>Per $\hat{i}$: usa la sottomatrice $((v_y, v_z), (w_y, w_z))$.</li>
+<li>Per $\hat{j}$: usa la sottomatrice $((v_x, v_z), (w_x, w_z))$.</li>
+<li>Per $\hat{k}$: usa la sottomatrice $((v_x, v_y), (w_x, w_y))$.</li>
+</ul>
+</li>
+<li>
+<p><strong>Comporre il risultato</strong>:
+Sostituisci i determinanti calcolati nei rispettivi termini per ottenere il vettore risultante:
+$$
+\vec{v} \times \vec{w} =
+\left[(v_y w_z - v_z w_y)\right] \hat{i} -
+\left[(v_x w_z - v_z w_x)\right] \hat{j} +
+\left[(v_x w_y - v_y w_x)\right] \hat{k}
+$$</p>
+</li>
+</ol>
+<p>Questi casi particolari evidenziano i legami geometrici fondamentali tra i due tipi di prodotto.</p>
 
   </article>
   

@@ -6,7 +6,103 @@
     <description>Recent content in Pages on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Tue, 03 Dec 2024 15:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Dec 2024 12:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prodotto tra vettori</title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</link>
+      <pubDate>Tue, 03 Dec 2024 12:55:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</guid>
+      
+      <description>&lt;p&gt;Certamente! Ecco una versione ampliata che include i casi di &lt;strong&gt;parallelismo&lt;/strong&gt; e &lt;strong&gt;ortogonalità&lt;/strong&gt; anche per il prodotto scalare.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;prodotto-scalare&#34;&gt;Prodotto scalare&lt;/h3&gt;
+&lt;p&gt;Il prodotto scalare tra due vettori (\vec{v}) e (\vec{w}) è definito come:&lt;/p&gt;
+&lt;p&gt;[
+\vec{v} \cdot \vec{w} = v_x w_x + v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha)
+]&lt;/p&gt;
+&lt;h4 id=&#34;proprietà-principali&#34;&gt;Proprietà principali:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Simmetria&lt;/strong&gt;: (\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Risultato scalare&lt;/strong&gt;: il prodotto scalare restituisce un numero puro (non un vettore).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Significato geometrico&lt;/strong&gt;: rappresenta la lunghezza della proiezione di (\vec{v}) lungo (\vec{w}), moltiplicata per la lunghezza di (\vec{w}).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;casi-particolari&#34;&gt;&lt;strong&gt;Casi particolari&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori paralleli&lt;/strong&gt;:
+Se (\vec{v}) e (\vec{w}) sono paralleli (angolo (\alpha = 0^\circ) o (\alpha = 180^\circ)):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per (\alpha = 0^\circ) ((v) e (w) hanno la stessa direzione):
+[
+\cos(0^\circ) = 1 \quad \implies \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}|
+]&lt;/li&gt;
+&lt;li&gt;Per (\alpha = 180^\circ) ((v) e (w) hanno direzioni opposte):
+[
+\cos(180^\circ) = -1 \quad \implies \quad \vec{v} \cdot \vec{w} = -|\vec{v}| |\vec{w}|
+]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quindi, il prodotto scalare fornisce un valore massimo (positivo o negativo) quando i vettori sono paralleli.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori ortogonali&lt;/strong&gt;:
+Se (\vec{v}) e (\vec{w}) sono ortogonali (angolo (\alpha = 90^\circ)):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(\cos(90^\circ) = 0), quindi:
+[
+\vec{v} \cdot \vec{w} = 0
+]
+Questo significa che il prodotto scalare tra vettori perpendicolari è sempre nullo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;prodotto-vettoriale&#34;&gt;Prodotto vettoriale&lt;/h3&gt;
+&lt;p&gt;Il prodotto vettoriale tra due vettori (\vec{v}) e (\vec{w}) è definito come:&lt;/p&gt;
+&lt;p&gt;[
+\vec{u} = \vec{v} \times \vec{w}
+]&lt;/p&gt;
+&lt;p&gt;Dove il risultato è un vettore (\vec{u}) ortogonale sia a (\vec{v}) che a (\vec{w}). Il modulo è dato da:&lt;/p&gt;
+&lt;p&gt;[
+|\vec{u}| = |\vec{v}| |\vec{w}| \sin(\alpha)
+]&lt;/p&gt;
+&lt;h4 id=&#34;proprietà-principali-1&#34;&gt;Proprietà principali:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Antisimmetria&lt;/strong&gt;: (\vec{v} \times \vec{w} = -(\vec{w} \times \vec{v})).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ortogonalità del risultato&lt;/strong&gt;: il vettore risultante (\vec{u}) è perpendicolare al piano definito da (\vec{v}) e (\vec{w}).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modulo nullo per vettori paralleli&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;casi-particolari-1&#34;&gt;&lt;strong&gt;Casi particolari&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori paralleli&lt;/strong&gt;:
+Se (\vec{v}) e (\vec{w}) sono paralleli ((\alpha = 0^\circ) o (\alpha = 180^\circ)):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(\sin(0^\circ) = \sin(180^\circ) = 0), quindi:
+[
+|\vec{v} \times \vec{w}| = 0
+]
+Il prodotto vettoriale è nullo quando i vettori sono paralleli (non c&amp;rsquo;è &amp;ldquo;area&amp;rdquo; tra di essi).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori ortogonali&lt;/strong&gt;:
+Se (\vec{v}) e (\vec{w}) sono ortogonali ((\alpha = 90^\circ)):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(\sin(90^\circ) = 1), quindi:
+[
+|\vec{v} \times \vec{w}| = |\vec{v}| |\vec{w}|
+]
+In questo caso, il modulo del prodotto vettoriale è massimo e rappresenta l&amp;rsquo;area del parallelogramma definito dai due vettori.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;Questi casi particolari evidenziano i legami geometrici fondamentali tra i due tipi di prodotto.&lt;/p&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Componenti cartesiane di un vettore</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</link>
@@ -488,186 +584,6 @@ Il vettore nullo è un elemento necessario per poter definire uno spazio vettori
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Spazio vettoriale&#34;&gt;Spazio vettoriale&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Somma di vettori</title>
-      <link>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/</link>
-      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      
-      <guid>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/</guid>
-      
-      <description>&lt;p&gt;$$\vec s = \vec v_1 + \vec v_2$$&lt;/p&gt;
-&lt;p&gt;
-
-
-	&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34;&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-    &lt;title&gt;Random Vectors Plot&lt;/title&gt;
-    &lt;style&gt;
-        canvas {
-            border: 1px solid #000;
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;canvas id=&#34;plotCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
-
-    &lt;script&gt;
-        // Function to generate a random vector with modulus 1 starting from the origin
-        function generateUnitVector() {
-            return {
-                x: Math.round(Math.random()*20 - 10)/10,
-                y: Math.round(Math.random()*20 - 10)/10
-            };
-        }
-
-        // Function to add two vectors
-        function addVectors(vector1, vector2) {
-            return {
-                x: Math.round((vector1.x + vector2.x)*1000)/1000,
-                y: Math.round((vector1.y + vector2.y)*1000)/1000
-            };
-        }
-
-        function subtractVectors(vector1, vector2) {
-            return {
-                x: Math.round((vector1.x - vector2.x)*1000)/1000,
-                y: Math.round((vector1.y - vector2.y)*1000)/1000
-            };
-        }
-
-        // Function to plot a vector as an arrow on the canvas
-        function plotVector(context, vector, color, name) {
-            context.strokeStyle = color;
-            context.fillStyle = color;
-
-            // Arrow properties
-            const arrowLength = 100;
-            const arrowWidth = 15;
-            const textSpacing = 1.2;
-            const arrowThickness = 0.85;
-
-            // Calculate arrowhead points
-            const arrowHead1 = {
-                x: arrowLength * vector.x * arrowThickness - arrowWidth * vector.y * arrowThickness,
-                y: arrowLength * vector.y * arrowThickness + arrowWidth * vector.x * arrowThickness
-            };
-
-            const arrowHead2 = {
-                x: arrowLength * vector.x * arrowThickness + arrowWidth * vector.y * arrowThickness,
-                y: arrowLength * vector.y * arrowThickness - arrowWidth * vector.x * arrowThickness
-            };
-
-            // Draw arrow line
-            context.beginPath();
-            context.moveTo(canvas.width / 2, canvas.height / 2);
-            context.lineTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineWidth = 2;
-
-            context.stroke();
-
-            // Draw arrowhead
-            context.beginPath();
-            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineTo(canvas.width / 2 + arrowHead1.x, canvas.height / 2 + arrowHead1.y);
-            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
-            context.lineTo(canvas.width / 2 + arrowHead2.x, canvas.height / 2 + arrowHead2.y);
-            context.lineWidth = 2;
-            context.stroke();
-
-            context.fillText(name, canvas.width / 2 + arrowHead2.x * textSpacing, canvas.height / 2 + arrowHead2.y * textSpacing); 
-        }
-
-        // Function to draw x and y axes
-        function drawAxes(context, canvasWidth, canvasHeight) {
-            // Draw x-axis
-            context.beginPath();
-            context.moveTo(0, canvasHeight / 2);
-            context.lineTo(canvasWidth, canvasHeight / 2);
-            context.stroke();
-
-            // Draw y-axis
-            context.beginPath();
-            context.moveTo(canvasWidth / 2, 0);
-            context.lineTo(canvasWidth / 2, canvasHeight);
-            context.stroke();
-
-
-            // Draw horizontal grid lines
-            for (let y = 0; y &lt; canvasHeight; y += 10) {
-                context.beginPath();
-                context.moveTo(0, y);
-                context.lineTo(canvasWidth, y);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-
-            // Draw vertical grid lines
-            for (let x = 0; x &lt; canvasWidth; x += 10) {
-                context.beginPath();
-                context.moveTo(x, 0);
-                context.lineTo(x, canvasHeight);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-        }
-
-        // Get the canvas and its 2d rendering context
-        var canvas = document.getElementById(&#39;plotCanvas&#39;);
-        var context = canvas.getContext(&#39;2d&#39;);
-
-        // Draw x and y axes
-        drawAxes(context, canvas.width, canvas.height, );
-
-        // Generate two random vectors as arrows with modulus 1 starting from the center
-        var vector1 = generateUnitVector();
-        var vector2 = generateUnitVector();
-
-        // Calculate the sum and sub vector
-        var sumVector = addVectors(vector1, vector2);
-
-        // Plot the vectors
-        plotVector(context, vector1, &#39;red&#39;, &#34;v1&#34;);
-        plotVector(context, vector2, &#39;blue&#39;, &#34;v2&#34;);
-        plotVector(context, sumVector, &#39;green&#39;, &#34;s&#34;);
-
-        context.font = &#34;12px Arial&#34;;
-        context.fillStyle = &#34;red&#34;;
-        context.fillText(&#34;v1 = &#34; + vector1.x*10 + &#34; i &#34; + -vector1.y*10 + &#34; j&#34;, 10, 30); 
-        
-        context.fillStyle = &#34;blue&#34;;
-        context.fillText(&#34;v2 = &#34; + vector2.x*10 + &#34; i &#34; + -vector2.y*10 + &#34; j&#34;, 10, 50); 
-        
-        context.fillStyle = &#34;green&#34;;
-        context.fillText(&#34;s = &#34; + sumVector.x*10 + &#34; i &#34; + -sumVector.y*10 + &#34; j&#34;, 10, 390); 
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-
-
-&lt;/p&gt;
-&lt;p&gt;Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali.
-I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati agli estremi dall&amp;rsquo;origine e dai punti $V_1$ e $V_2$.&lt;/p&gt;
-&lt;p&gt;$$\vec v_1 = \vec{OV_1}$$
-$$\vec v_2 = \vec{OV_2}$$&lt;/p&gt;
-&lt;p&gt;Ogni vettore è infatti rappresentato da un modulo (lunghezza), una direzione (la retta su cui poggia) ed un verso.&lt;/p&gt;
-&lt;p&gt;È inoltre presente una terza freccia, vettore, di colore viola. Questo vettore $\vec s$ è dato dalla somma dei due precedenti vettori, ovvero:&lt;/p&gt;
-&lt;p&gt;$$\vec s = \vec v_1 + \vec v_2$$&lt;/p&gt;
-&lt;p&gt;Si può notare come il vettore $\vec s$ sia delimitato dal&amp;rsquo;origine e il punto $S$ identificato dalla somma delle coordinate di $V_1$ e $V_2$.&lt;/p&gt;
-&lt;p&gt;$$\vec s = \vec {OS}$$&lt;/p&gt;
-&lt;p&gt;Esercitati, ricaricando la pagina, a calcolare le somme tra vari vettori.&lt;/p&gt;
 </description>
       
     </item>

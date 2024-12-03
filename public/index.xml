@@ -6,7 +6,166 @@
     <description>Recent content on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Tue, 03 Dec 2024 15:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Dec 2024 12:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prodotto tra vettori</title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</link>
+      <pubDate>Tue, 03 Dec 2024 12:55:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</guid>
+      
+      <description>&lt;h3 id=&#34;prodotto-scalare&#34;&gt;Prodotto scalare&lt;/h3&gt;
+&lt;p&gt;Il prodotto scalare tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:&lt;/p&gt;
+&lt;p&gt;$$\vec{v} \cdot \vec{w} = v_x w_x + v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha) $$&lt;/p&gt;
+&lt;h4 id=&#34;proprietà-principali&#34;&gt;Proprietà principali:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Simmetria&lt;/strong&gt;: $\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Risultato scalare&lt;/strong&gt;: il prodotto scalare restituisce un numero puro (non un vettore).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Significato geometrico&lt;/strong&gt;: rappresenta la lunghezza della proiezione di $\vec{v}$ lungo $\vec{w}$, moltiplicata per la lunghezza di $\vec{w}$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;casi-particolari&#34;&gt;&lt;strong&gt;Casi particolari&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori paralleli&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli (angolo $\alpha = 0^\circ$ o $\alpha = 180^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $\alpha = 0^\circ$ ($v$ e $w$ hanno la stessa direzione):
+$$      \cos(0^\circ ) = 1 \quad \implies \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}|$$&lt;/li&gt;
+&lt;li&gt;Per $\alpha = 180^\circ$ ($v$ e $w$ hanno direzioni opposte):
+$$      \cos(180^\circ ) = -1 \quad \implies \quad \vec{v} \cdot \vec{w} = -|\vec{v}| |\vec{w}|$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quindi, il prodotto scalare fornisce un valore massimo (positivo o negativo) quando i vettori sono paralleli.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori ortogonali&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono ortogonali (angolo $\alpha = 90^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\cos(90^\circ) = 0$, quindi:
+$$      \vec{v} \cdot \vec{w} = 0$$
+Questo significa che il prodotto scalare tra vettori perpendicolari è sempre nullo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;prodotto-vettoriale&#34;&gt;Prodotto vettoriale&lt;/h3&gt;
+&lt;p&gt;Il prodotto vettoriale tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:&lt;/p&gt;
+&lt;p&gt;$$ \vec{u} = \vec{v} \times \vec{w} $$&lt;/p&gt;
+&lt;p&gt;Dove il risultato è un vettore $\vec{u}$ ortogonale sia a $\vec{v}$ che a $\vec{w}$. Il modulo è dato da:&lt;/p&gt;
+&lt;p&gt;$$ |\vec{u}| = |\vec{v}| |\vec{w}| \sin(\alpha )$$&lt;/p&gt;
+&lt;h4 id=&#34;proprietà-principali-1&#34;&gt;Proprietà principali:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Antisimmetria&lt;/strong&gt;: $\vec{v} \times \vec{w} = -(\vec{w} \times \vec{v})$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ortogonalità del risultato&lt;/strong&gt;: il vettore risultante $\vec{u}$ è perpendicolare al piano definito da $\vec{v}$ e $\vec{w}$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modulo nullo per vettori paralleli&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;casi-particolari-1&#34;&gt;&lt;strong&gt;Casi particolari&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori paralleli&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli ($\alpha = 0^\circ$ o $\alpha = 180^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sin(0^\circ) = \sin(180^\circ) = 0$, quindi:
+$$      |\vec{v} \times \vec{w}| = 0$$
+Il prodotto vettoriale è nullo quando i vettori sono paralleli (non c&amp;rsquo;è &amp;ldquo;area&amp;rdquo; tra di essi).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori ortogonali&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono ortogonali ($\alpha = 90^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sin(90^\circ) = 1$, quindi:
+$$      |\vec{v} \times \vec{w}| = |\vec{v}| |\vec{w}|$$
+In questo caso, il modulo del prodotto vettoriale è massimo e rappresenta l&amp;rsquo;area del parallelogramma definito dai due vettori.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;calcolo-del-prodotto-vettoriale-con-il-determinante&#34;&gt;Calcolo del prodotto vettoriale con il determinante&lt;/h3&gt;
+&lt;p&gt;Per calcolare il prodotto vettoriale $\vec{v} \times \vec{w}$ di due vettori $\vec{v}$ e $\vec{w}$ nello spazio tridimensionale ($ \mathbb{R}^3 $), possiamo utilizzare il &lt;strong&gt;determinante di una matrice&lt;/strong&gt;. Questo metodo è pratico e diretto. Ecco come fare passo passo:&lt;/p&gt;
+&lt;h4 id=&#34;metodo&#34;&gt;Metodo:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scrivere la matrice&lt;/strong&gt;:
+Organizza la matrice $3 \times 3$ come segue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La &lt;strong&gt;prima riga&lt;/strong&gt; contiene i versori $\hat{i}$, $\hat{j}$, $\hat{k}$ (che rappresentano le direzioni dei tre assi $x$, $y$, $z$).&lt;/li&gt;
+&lt;li&gt;La &lt;strong&gt;seconda riga&lt;/strong&gt; contiene le componenti del primo vettore $\vec{v} = (v_x, v_y, v_z)$.&lt;/li&gt;
+&lt;li&gt;La &lt;strong&gt;terza riga&lt;/strong&gt; contiene le componenti del secondo vettore $\vec{w} = (w_x, w_y, w_z)$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quindi:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;$\hat{i}$&lt;/th&gt;
+          &lt;th&gt;$\hat{j}$&lt;/th&gt;
+          &lt;th&gt;$\hat{k}$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$v_x$&lt;/td&gt;
+          &lt;td&gt;$v_y$&lt;/td&gt;
+          &lt;td&gt;$v_z$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$w_x$&lt;/td&gt;
+          &lt;td&gt;$w_y$&lt;/td&gt;
+          &lt;td&gt;$w_z$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Calcolare il determinante&lt;/strong&gt;:
+Il determinante si espande lungo la prima riga (quella dei versori). Procedi come segue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Moltiplica ogni versore per il determinante della &lt;strong&gt;sottomatrice&lt;/strong&gt; che rimane eliminando la riga e la colonna del versore stesso.&lt;/li&gt;
+&lt;li&gt;Usa i segni alternati $+,-,+$ per i versori $\hat{i}$, $\hat{j}$, $\hat{k}$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scrivendo il calcolo espanso:&lt;/p&gt;
+&lt;p&gt;$$ \vec v \times \vec w = \hat i A_{1,1} + \hat j A_{2,1} + \hat k A_{3,1} $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Calcolare i minori&lt;/strong&gt;:
+Ogni &lt;strong&gt;sottomatrice&lt;/strong&gt; è una matrice $2 \times 2$, e il suo determinante si calcola con la formula:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;$a$&lt;/th&gt;
+          &lt;th&gt;$b$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$c$&lt;/td&gt;
+          &lt;td&gt;$d$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;$$ ad - bc $$&lt;/p&gt;
+&lt;p&gt;Applica questa formula per ciascun minore:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $\hat{i}$: usa la sottomatrice $((v_y, v_z), (w_y, w_z))$.&lt;/li&gt;
+&lt;li&gt;Per $\hat{j}$: usa la sottomatrice $((v_x, v_z), (w_x, w_z))$.&lt;/li&gt;
+&lt;li&gt;Per $\hat{k}$: usa la sottomatrice $((v_x, v_y), (w_x, w_y))$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Comporre il risultato&lt;/strong&gt;:
+Sostituisci i determinanti calcolati nei rispettivi termini per ottenere il vettore risultante:
+$$
+\vec{v} \times \vec{w} =
+\left[(v_y w_z - v_z w_y)\right] \hat{i} -
+\left[(v_x w_z - v_z w_x)\right] \hat{j} +
+\left[(v_x w_y - v_y w_x)\right] \hat{k}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Questi casi particolari evidenziano i legami geometrici fondamentali tra i due tipi di prodotto.&lt;/p&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Rimaneggiamenti algebrici</title>
       <link>http://localhost:1313/pages/pymath/cartesian/parabola/par_general/</link>
@@ -465,35 +624,6 @@ $$ M \left(\dfrac{x_A + x_B}{2}, : \dfrac{y_A + y_B}{2} \right) $$&lt;/p&gt;
 Questo concetto viene generalizzato nel caso di spazi $N$ dimensionali con l&amp;rsquo;utilizzo di $N$ rette ortogonali.&lt;/p&gt;
 &lt;!-- &lt;center&gt;&lt;em&gt;Quoties duo numeri cognoscuntur, potest eorum locus in plano definiri per intersectionem duarum rectarum.&lt;/em&gt;&lt;/center&gt; --&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/points_segments/&#34; title=&#34;Punti e segmenti&#34;&gt;Punti e segmenti&lt;/a&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Fasci di rette</title>
-      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_form/</link>
-      <pubDate>Thu, 12 Sep 2024 22:56:42 +0100</pubDate>
-      
-      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_form/</guid>
-      
-      <description>&lt;p&gt;Tutte le informazioni precedenti sono sufficienti per poter affrontare quasi qualsiasi problema di geometria analitica che riguardi rette o punti.&lt;/p&gt;
-&lt;p&gt;Esistono tuttavia alcune scorciatoie per agevolarci nella risoluzione e risparmiare tempo prezioso.&lt;/p&gt;
-&lt;h2&gt;Coefficiente angolare della retta passante per due punti&lt;/h2&gt;
-&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolare il coefficiente angolare della retta che li unisce.&lt;/p&gt;
-&lt;p&gt;$$ m_{AB} = \dfrac{y_A - y_B}{x_A - x_B}$$&lt;/p&gt;
-&lt;p&gt;Come nel caso del punto medio o della distanza tra due punti, la scelta del punto $A$ o $B$ come primo o secondo termine è indifferente. È invece importante mantenere lo stesso ordine al numeratore ed al denominatore (prima $A$ poi $B$ o viceversa).&lt;/p&gt;
-&lt;h2&gt;Retta passante per due punti&lt;/h2&gt;
-&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolare immediatamente la retta che li unisce.&lt;/p&gt;
-&lt;p&gt;$$ \dfrac{y - y_A}{y_B - y_A} = \dfrac{x - x_A}{x_B - x_A} $$&lt;/p&gt;
-&lt;p&gt;Questa equazione deriva dalla risoluzione del sistema contenente il fascio di rette passante per il primo e il secondo punto, oppure del fascio di rette avente il coefficiente angolare della retta passante per $\overline{AB}$ forzandolo per $A$ o $B$.&lt;/p&gt;
-&lt;h2&gt;Distanza punto retta&lt;/h2&gt;
-&lt;p&gt;Dato un punto $P$ ed una retta $r$ possiamo definire la distanza tra i due enti come la lunghezza del segmento minimo che li unisce. Questa definizione porta a identificare la distanza nella lunghezza del segmento con estremi il punto $P$ ed il punto $H$, intersezione della retta che cade perpendicolarmente alla retta $r$ e passa per il punto $P$.&lt;/p&gt;
-&lt;p&gt;$$ P( \bm{X_p}, : \bm{Y_p}) $$&lt;/p&gt;
-&lt;p&gt;$$ r: : y= m_r x + q_r \rightarrow a_r x + b_r y + c_r = 0$$&lt;/p&gt;
-&lt;p&gt;Anche in questo caso esiste una formula molto comoda che richiede tuttavia di scrivere la retta $r$ in forma implicita.&lt;/p&gt;
-&lt;p&gt;$$ d = \dfrac{\left| a_r \bm{X_p} + b_r \bm{Y_p} + c_r \right|}{\sqrt{a_r^2 + b_r^2}} $$&lt;/p&gt;
-&lt;p&gt;Si può facilmente notare come la distanza dipenda sia dai &lt;em&gt;parametri&lt;/em&gt; della retta che dalle &lt;b&gt;COORDINATE&lt;/b&gt; del punto.&lt;/p&gt;
-&lt;p&gt;Tramite questa utile formula è facile calcolare i lati di un poligono regolare o la distanza tra due rette parallele.&lt;/p&gt;
 </description>
       
     </item>
