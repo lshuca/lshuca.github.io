@@ -38,6 +38,7 @@ Per maggiori info sui vettori:
 * [Somma di vettori]({{< ref "/pages/pyphysics/vectors/gen_vec_sum" >}}  "Somma di vettori")
 * [Differenza di vettori]({{< ref "/pages/pyphysics/vectors/gen_vec_sub" >}}  "Differenza di vettori")
 * [Componenti cartesiane di un vettore]({{< ref "/pages/pyphysics/vectors/vec_cartesian" >}}  "Componenti cartesiane di un vettore")
+* [Prodotto tra vettori]({{< ref "/pages/pyphysics/vectors/vec_product_scalar" >}}  "Prodotto tra vettori")
 
 
 

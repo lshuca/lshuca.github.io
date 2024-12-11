@@ -589,7 +589,7 @@ Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
         context.fillText(&#34;v2 = &#34; + vector2.x*10 + &#34; i &#34; + -vector2.y*10 + &#34; j&#34;, 10, 50); 
         
         context.fillStyle = &#34;purple&#34;;
-        context.fillText(&#34;s = &#34; + subVector21.x*10 + &#34; i &#34; + -subVector21.y*10 + &#34; j&#34;, 10, 390); 
+        context.fillText(&#34;d = &#34; + subVector12.x*10 + &#34; i &#34; + -subVector12.y*10 + &#34; j&#34;, 10, 390); 
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
@@ -642,6 +642,7 @@ Il vettore nullo è un elemento necessario per poter definire uno spazio vettori
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/&#34; title=&#34;Somma di vettori&#34;&gt;Somma di vettori&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/&#34; title=&#34;Differenza di vettori&#34;&gt;Differenza di vettori&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/&#34; title=&#34;Componenti cartesiane di un vettore&#34;&gt;Componenti cartesiane di un vettore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/&#34; title=&#34;Prodotto tra vettori&#34;&gt;Prodotto tra vettori&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Approfondimenti:&lt;/p&gt;
 &lt;ul&gt;
