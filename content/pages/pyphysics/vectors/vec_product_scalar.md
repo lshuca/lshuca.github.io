@@ -30,6 +30,14 @@ $$\vec{v} \cdot \vec{w} = v_x w_x + v_y w_y \quad \text{oppure} \quad \vec{v} \c
      $$      \vec{v} \cdot \vec{w} = 0$$
    Questo significa che il prodotto scalare tra vettori perpendicolari è sempre nullo.
 
+3. **Angolo tra due vettori**:
+   Note le relazioni per cui $ \vec{v} \cdot \vec{w} = v_x w_x + v_y w_y = |\vec{v}| |\vec{w}| \cos(\alpha)$ possiamo facilmente invertire la relazione per ottenere il $cos(\alpha)$:
+
+   $$ cos(\alpha) = \dfrac{v_x w_x + v_y w_y}{|\vec{v}| |\vec{w}|}$$
+
+
+
+
    ---
 
 ### Prodotto vettoriale

@@ -44,6 +44,10 @@ Se $\vec{v}$ e $\vec{w}$ sono ortogonali (angolo $\alpha = 90^\circ$):&lt;/p&gt;
 $$      \vec{v} \cdot \vec{w} = 0$$
 Questo significa che il prodotto scalare tra vettori perpendicolari è sempre nullo.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Angolo tra due vettori&lt;/strong&gt;:
+Note le relazioni per cui $ \vec{v} \cdot \vec{w} = v_x w_x + v_y w_y = |\vec{v}| |\vec{w}| \cos(\alpha)$&lt;/p&gt;
 &lt;hr&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
