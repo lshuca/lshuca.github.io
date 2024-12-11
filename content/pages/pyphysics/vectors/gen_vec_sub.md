@@ -158,7 +158,7 @@ $$\vec d = \vec v_1 - \vec v_2$$
         context.fillText("v2 = " + vector2.x*10 + " i " + -vector2.y*10 + " j", 10, 50); 
         
         context.fillStyle = "purple";
-        context.fillText("s = " + subVector21.x*10 + " i " + -subVector21.y*10 + " j", 10, 390); 
+        context.fillText("d = " + subVector12.x*10 + " i " + -subVector12.y*10 + " j", 10, 390); 
     </script>
 </body>
 </html>

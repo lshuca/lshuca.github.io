@@ -172,7 +172,7 @@ Lo sturmento in calce permette di visualizzare immediatamente le componenti $x$ 
         
         context.font = "12px Arial";
         context.fillStyle = "blue";
-        context.fillText("ay = " + 0 + " i " + vector.y*10 + " j", 10, 70); 
+        context.fillText("ay = " + 0 + " i " + -vector.y*10 + " j", 10, 70); 
 
         context.font = "12px Arial";
         context.fillStyle = "purple";
