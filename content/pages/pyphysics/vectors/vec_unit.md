@@ -13,6 +13,10 @@ Nel piano cartesiano $(x, y)$ sono definiti due versori, la cui direzione e vers
 * $\hat i$ è il vettore unitario posto nell'origine degli assi e con direzione e verso lungo l'asse orientato $x$;
 * $\hat j$ è il vettore unitario posto nell'origine degli assi e con direzione e verso lungo l'asse orientato $y$.
 
+Per questo motivo possiamo definire un vettore tramite i moduli delle sue componenti moltiplicate per il versore dei deu assi privilegiati $x$ e $y$. 
+
+$$ \vec v = v_x \hat i + v_y \hat j $$
+
 In generale è possibile definire il versore, a partire da un generico vettore, semplicemente dividendo il vettore originale per il suo modulo.
 
 $$ \hat v = \frac{\vec v}{|| \vec v ||}$$

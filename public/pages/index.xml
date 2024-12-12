@@ -47,7 +47,8 @@ Questo significa che il prodotto scalare tra vettori perpendicolari è sempre nu
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Angolo tra due vettori&lt;/strong&gt;:
-Note le relazioni per cui $ \vec{v} \cdot \vec{w} = v_x w_x + v_y w_y = |\vec{v}| |\vec{w}| \cos(\alpha)$&lt;/p&gt;
+Note le relazioni per cui $ \vec{v} \cdot \vec{w} = v_x w_x + v_y w_y = |\vec{v}| |\vec{w}| \cos(\alpha)$ possiamo facilmente invertire la relazione per ottenere il $cos(\alpha)$:&lt;/p&gt;
+&lt;p&gt;$$ cos(\alpha) = \dfrac{v_x w_x + v_y w_y}{|\vec{v}| |\vec{w}|}$$&lt;/p&gt;
 &lt;hr&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
