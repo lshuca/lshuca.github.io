@@ -24,11 +24,11 @@ Sulla base del parametro $a$ è facile riconoscere la <em>concavità</em> della 
 
 <h4>Parametro $b$</h4>
 
-Sulla base del parametro $b$, rispetto al parametro $a$ è facile intuire la coordinata x del vertice e dell'asse di simmetria della parabola.
+Sulla base del parametro $b$, rispetto al parametro $a$, è facile intuire qualitativamente la coordinata $x$ del vertice (e dunque del fuoco e dell'asse di simmetria).
 
-* $b > 0$ l'asse di simmetria sarà spostato verso sinistra;
-* $b < 0$ l'asse di simmetria sarà spostato verso destra;
-* $b = 0$ il vertice si troverà sull'asse $y$ e quest'ultimo coinciderà con l'asse di simmetria.
+* per valori di $a$ e $b$ concordi l'asse di simmetria sarà spostato verso sinistra rispetto all'asse $y$;
+* per valori di $a$ e $b$ discordi l'asse di simmetria sarà spostato verso destra;
+* per $b = 0$ il vertice si troverà sull'asse $y$ e quest'ultimo coinciderà con l'asse di simmetria.
 
 In caso di $a < 0$ il comportamento si inverte. Ovvero possiamo sostituire le considerazioni dal puro valore di $b$ nei termini $a$ e $b$ discordi e concordi.
 
