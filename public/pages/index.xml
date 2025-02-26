@@ -425,8 +425,14 @@ Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
       
       <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della fisica.&lt;/p&gt;
 &lt;h2&gt;Vettori&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/intro_vec/&#34; title=&#34;Introduzione ai  vettori&#34;&gt;Introduzione ai vettori&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/&#34; title=&#34;Scomposizione di un vettore con funzioni goniometriche&#34;&gt;Scomposizione di un vettore con funzioni goniometriche&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_unit/&#34; title=&#34;Versori&#34;&gt;Versori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_scomp/&#34; title=&#34;Scomposizione di un vettore&#34;&gt;Scomposizione di un vettore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/&#34; title=&#34;Somma di vettori&#34;&gt;Somma di vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/&#34; title=&#34;Differenza di vettori&#34;&gt;Differenza di vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/&#34; title=&#34;Componenti cartesiane di un vettore&#34;&gt;Componenti cartesiane di un vettore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/&#34; title=&#34;Prodotto tra vettori&#34;&gt;Prodotto tra vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Approfondimenti:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Spazio vettoriale&#34;&gt;Spazio vettoriale&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Equilibrio&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/&#34; title=&#34;Introduzione all&#39;equilibrio&#34;&gt;Introduzione all&amp;rsquo;equilibrio&lt;/a&gt;&lt;/p&gt;
