@@ -8,9 +8,21 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 
 <h2>Vettori</h2>
 
-[Introduzione ai vettori]({{< ref "/pages/pyphysics/vectors/intro_vec" >}}  "Introduzione ai  vettori")
+[Versori]({{< ref "/pages/pyphysics/vectors/vec_unit" >}}  "Versori")
 
-[Scomposizione di un vettore con funzioni goniometriche]({{< ref "/pages/pyphysics/vectors/vec_cartesian" >}}  "Scomposizione di un vettore con funzioni goniometriche")
+[Scomposizione di un vettore]({{< ref "/pages/pyphysics/vectors/vec_scomp" >}}  "Scomposizione di un vettore")
+
+[Somma di vettori]({{< ref "/pages/pyphysics/vectors/gen_vec_sum" >}}  "Somma di vettori")
+
+[Differenza di vettori]({{< ref "/pages/pyphysics/vectors/gen_vec_sub" >}}  "Differenza di vettori")
+
+[Componenti cartesiane di un vettore]({{< ref "/pages/pyphysics/vectors/vec_cartesian" >}}  "Componenti cartesiane di un vettore")
+
+[Prodotto tra vettori]({{< ref "/pages/pyphysics/vectors/vec_product_scalar" >}}  "Prodotto tra vettori")
+
+Approfondimenti:
+
+[Spazio vettoriale]({{< ref "/pages/pyphysics/vectors/vec_space" >}}  "Spazio vettoriale")
 
 <h2>Equilibrio</h2>
 
@@ -19,5 +31,3 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 [Introduzione all'equilibrio]({{< ref "/pages/pyphysics/equilibrium/intro_eq" >}}  "Introduzione all'equilibrio")
 
 [Risoluzione guidata di un esercizio di equilibrio]({{< ref "/pages/pyphysics/equilibrium/eq_guided" >}}  "Risoluzione guidata di un esercizio di equilibrio")
-
-
