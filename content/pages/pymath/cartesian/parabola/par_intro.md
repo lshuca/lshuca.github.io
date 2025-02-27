@@ -8,7 +8,7 @@ Una parabola è definita come il luogo geometrico dei punti equidistanti da un p
 
 <h2>Equazione della parabola</h2>
 
-L'equazione della parabola deriva dalle relazioni della distanza tra due punti e la distanza punto retta eguagliate.
+L'equazione della parabola deriva dalle relazioni della distanza tra due punti e la distanza punto retta.
 
 Ponendo infatti la distanza tra due punti $P(x, y)$ e $F(x_f, y_f)$ possiamo confrontarla con la distanza del punto $P$ dalla retta, riportata in forma implicita, $r:$ $ax + by + c$.
 
