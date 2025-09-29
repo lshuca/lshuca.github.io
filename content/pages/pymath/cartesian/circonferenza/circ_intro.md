@@ -44,7 +44,7 @@ L'ultima condizione rende necessario analizzare la condizione di esistenza della
 
 * $x_c^2 + y_c^2 - c = 0$ la circonferenza esiste ma si dice degenere, ovvero "degenera" in un singolo punto;
 
-* $x_c^2 + y_c^2 - c < 0$ la circonferenza non esiste in quanto non esiste un $r \in \mathbb{R}$ 
+* $x_c^2 + y_c^2 - c < 0$ la circonferenza non esiste in quanto non esiste il valore di $r \in \mathbb{R}$ 
 
 <h2>Esempi</h2>
 
