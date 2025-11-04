@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta name="author" content="">
+
+  
+  
+  <meta name="description" content="La scomposizione di un vettore è, in un certo senso, l&rsquo;operazione inversa della somma: l&rsquo;obiettivo della scomposizione è infatti quello di trovare due vettori tali che, ognuno con una sua direzione sommati, possano risultare il vettore di partenza.
+Dato un vettore $\vec d$ e due rette $s$ e $r$ non parallele, vogliamo ottenere le componenti $\vec d_s$ e $\vec d_r$ tali che:
+$$ \vec d = \vec d_s &#43; \vec d_r $$">
+  
+
+  
+  <link rel="icon" href="http://localhost:1313/favicon.ico">
+
+  
+  
+  <meta name="keywords" content=" hugo  latex  theme  physics  math ">
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"
+  integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+  integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"
+  integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+      throwOnError: false
+    });
+  });
+</script>
+
+
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/pages/pyphysics/vectors/vec_scomp/">
+  <meta property="og:site_name" content="La scienza ha un cuore antico">
+  <meta property="og:title" content="La scienza ha un cuore antico">
+  <meta property="og:description" content="La scomposizione di un vettore è, in un certo senso, l’operazione inversa della somma: l’obiettivo della scomposizione è infatti quello di trovare due vettori tali che, ognuno con una sua direzione sommati, possano risultare il vettore di partenza.
+Dato un vettore $\vec d$ e due rette $s$ e $r$ non parallele, vogliamo ottenere le componenti $\vec d_s$ e $\vec d_r$ tali che:
+$$ \vec d = \vec d_s &#43; \vec d_r $$">
+  <meta property="og:locale" content="it">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="pages">
+
+
+  
+  <link rel="canonical" href="http://localhost:1313/pages/pyphysics/vectors/vec_scomp/">
+
+  
+  
+  
+  <meta itemprop="name" content="La scienza ha un cuore antico">
+  <meta itemprop="description" content="La scomposizione di un vettore è, in un certo senso, l’operazione inversa della somma: l’obiettivo della scomposizione è infatti quello di trovare due vettori tali che, ognuno con una sua direzione sommati, possano risultare il vettore di partenza.
+Dato un vettore $\vec d$ e due rette $s$ e $r$ non parallele, vogliamo ottenere le componenti $\vec d_s$ e $\vec d_r$ tali che:
+$$ \vec d = \vec d_s &#43; \vec d_r $$">
+  <meta itemprop="wordCount" content="258">
+
+  
+  <link media="screen" rel="stylesheet" href='http://localhost:1313/css/common.css'>
+  <link media="screen" rel="stylesheet" href='http://localhost:1313/css/content.css'>
+
+  
+  
+  <title> - La scienza ha un cuore antico</title>
+  
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="La scienza ha un cuore antico">
+  <meta name="twitter:description" content="La scomposizione di un vettore è, in un certo senso, l’operazione inversa della somma: l’obiettivo della scomposizione è infatti quello di trovare due vettori tali che, ognuno con una sua direzione sommati, possano risultare il vettore di partenza.
+Dato un vettore $\vec d$ e due rette $s$ e $r$ non parallele, vogliamo ottenere le componenti $\vec d_s$ e $\vec d_r$ tali che:
+$$ \vec d = \vec d_s &#43; \vec d_r $$">
+
+
+  
+<link rel="stylesheet" href='http://localhost:1313/css/single.css'>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+  <h1>
+    <a href="http://localhost:1313/">La scienza ha un cuore antico</a>
+  </h1>
+
+  <nav>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/">Home</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/pages/pyphysics/pyphysics/">Appunti di Fisica</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/pages/pymath/pymath/">Appunti di Matematica</a>
+    </span>
+    
+  </nav>
+</header>
+
+    
+<main id="main" class="post">
+  
+  <article class="content">
+    <p>La scomposizione di un vettore è, in un certo senso, l&rsquo;operazione inversa della somma: l&rsquo;obiettivo della scomposizione è infatti quello di trovare due vettori tali che, ognuno con una sua direzione sommati, possano risultare il vettore di partenza.</p>
+<p>Dato un vettore $\vec d$ e due rette $s$ e $r$ non parallele, vogliamo ottenere le componenti $\vec d_s$ e $\vec d_r$ tali che:</p>
+<p>$$ \vec d = \vec d_s + \vec d_r $$</p>
+<p>Graficamente possiamo facilmente notare che le componenti $\vec d_s$ e $\vec d_r$ rappresentano le proiezioni del vettore $\vec d$ rispettivamente sulle rette $s$ e $r$.</p>
+<p>Finora non abbiamo, in nessun modo, posto alcuna condizione sull&rsquo;angolo tra le due rette: è infatti possibile scomporre un vettore lungo due direzioni generiche.</p>
+<p>Molto spesso è utile proiettare un vettore su due rette perpendicolari tra loro: l&rsquo;esempio più evidente è il caso delle rette $x$ e $y$ costituenti il piano cartesiano.</p>
+<p>Dato un vettore $\vec a$ che unisce l&rsquo;origine $O$ e il punto $A$ possiamo facilmente definirne le componenti $\vec a_x$ e $\vec a_y$ come i vettori proiettati rispettivamente su $x$ e $y$.</p>
+<p>Possiamo, altrettanto facilmente, ricavare il modulo del vettore $||\vec a||$ sfruttando il teorema di Pitagora (i triangoli $\overset{\triangle}{OAA_x}$ e $\overset{\triangle}{OAA_y}$ sono infatti rettangoli per definizione).</p>
+<p>$$ ||\vec a|| = \sqrt{ OA_x ^ 2 + OA_y ^ 2} = \sqrt{ || \vec a_x || ^ 2 + || \vec a_y || ^ 2}$$</p>
+<p>Lo sturmento in calce permette di visualizzare immediatamente le componenti $x$ e $y$ di un generico vettore $v$ generato casualmente.</p>
+
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scomposizione di vettore</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="plotCanvas" width="400" height="400"></canvas>
+
+    <script>
+        // Function to generate a random vector with modulus 1 starting from the origin
+        function generateUnitVector() {
+            return {
+                x: Math.round(Math.random()*20 - 10)/10,
+                y: Math.round(Math.random()*20 - 10)/10
+            };
+        }
+
+        // Function to plot a vector as an arrow on the canvas
+        function plotVector(context, vector, color, name) {
+            context.strokeStyle = color;
+            context.fillStyle = color;
+
+            // Arrow properties
+            const arrowLength = 100;
+            const arrowWidth = 15;
+            const textSpacing = 1.2;
+            const arrowThickness = 0.85;
+
+            // Calculate arrowhead points
+            const arrowHead1 = {
+                x: arrowLength * vector.x * arrowThickness - arrowWidth * vector.y * arrowThickness,
+                y: arrowLength * vector.y * arrowThickness + arrowWidth * vector.x * arrowThickness
+            };
+
+            const arrowHead2 = {
+                x: arrowLength * vector.x * arrowThickness + arrowWidth * vector.y * arrowThickness,
+                y: arrowLength * vector.y * arrowThickness - arrowWidth * vector.x * arrowThickness
+            };
+
+            // Draw arrow line
+            context.beginPath();
+            context.moveTo(canvas.width / 2, canvas.height / 2);
+            context.lineTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineWidth = 2;
+
+            context.stroke();
+
+            // Draw arrowhead
+            context.beginPath();
+            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineTo(canvas.width / 2 + arrowHead1.x, canvas.height / 2 + arrowHead1.y);
+            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineTo(canvas.width / 2 + arrowHead2.x, canvas.height / 2 + arrowHead2.y);
+            context.lineWidth = 2;
+            context.stroke();
+
+            context.fillText(name, canvas.width / 2 + arrowHead2.x * textSpacing, canvas.height / 2 + arrowHead2.y * textSpacing); 
+        }
+
+        // Function to draw x and y axes
+        function drawAxes(context, canvasWidth, canvasHeight) {
+            // Draw x-axis
+            context.beginPath();
+            context.moveTo(0, canvasHeight / 2);
+            context.lineTo(canvasWidth, canvasHeight / 2);
+            context.stroke();
+
+            // Draw y-axis
+            context.beginPath();
+            context.moveTo(canvasWidth / 2, 0);
+            context.lineTo(canvasWidth / 2, canvasHeight);
+            context.stroke();
+
+
+            // Draw horizontal grid lines
+            for (let y = 0; y < canvasHeight; y += 10) {
+                context.beginPath();
+                context.moveTo(0, y);
+                context.lineTo(canvasWidth, y);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+
+            // Draw vertical grid lines
+            for (let x = 0; x < canvasWidth; x += 10) {
+                context.beginPath();
+                context.moveTo(x, 0);
+                context.lineTo(x, canvasHeight);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+        }
+
+        // Get the canvas and its 2d rendering context
+        var canvas = document.getElementById('plotCanvas');
+        var context = canvas.getContext('2d');
+
+        // Draw x and y axes
+        drawAxes(context, canvas.width, canvas.height, );
+
+        // Generate two random vectors as arrows with modulus 1 starting from the center
+        var vector = generateUnitVector();
+
+        // Plot the vectors
+        plotVector(context, vector, 'purple', "a");
+
+        // Function to add two vectors
+        function yComponent(vector_in) {
+            return {
+                x: 0,
+                y: Math.round((vector.y)*1000)/1000
+            };
+        }
+
+        yVector = yComponent(vector)
+        plotVector(context, yVector, 'blue', "ay");
+
+        // Function to add two vectors
+        function xComponent(vector_in) {
+            return {
+                x: Math.round((vector.x)*1000)/1000,
+                y: 0
+            };
+        }
+
+        xVector = xComponent(vector)
+        plotVector(context, xVector, 'red', "ax");
+
+
+
+        context.font = "12px Arial";
+        context.fillStyle = "purple";
+        context.fillText("a = " + vector.x*10 + " i " + -vector.y*10 + " j", 10, 30); 
+        
+        context.font = "12px Arial";
+        context.fillStyle = "red";
+        context.fillText("ax = " + vector.x*10 + " i " + 0 + " j", 10, 50); 
+        
+        context.font = "12px Arial";
+        context.fillStyle = "blue";
+        context.fillText("ay = " + 0 + " i " + -vector.y*10 + " j", 10, 70); 
+
+        context.font = "12px Arial";
+        context.fillStyle = "purple";
+        context.fillText("a = " + Math.round(((vector.x * 10)**2 + (vector.y * 10)**2)**(1/2)*100)/100 , 10, 350); 
+    </script>
+</body>
+</html>
+
+
+
+
+  </article>
+  
+</main>
+
+    <footer id="footer">
+  <div>
+    <span>© 2023</span> - <span>2025</span>
+  </div>
+
+  
+
+  <div class="footnote">
+    <span>IIS Montessori Repetti</span>
+  </div>
+</footer>
+
+  </div>
+
+  
+  
+
+  
+  
+
+  
+  
+
+</body>
+
+</html>

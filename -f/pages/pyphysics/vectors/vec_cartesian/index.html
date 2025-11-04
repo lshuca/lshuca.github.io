@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta name="author" content="">
+
+  
+  
+  <meta name="description" content="Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).
+
+Possiamo facilmente identificare l&rsquo;angolo $\theta$ come l&rsquo;angolo opposto alla componente $y$ del vettore, il terzo angolo risulterà quindi $\gamma = \dfrac{\pi}{2} - \theta$ per il teorema della somma degli angoli interni di un triangolo1.">
+  
+
+  
+  <link rel="icon" href="http://localhost:1313/favicon.ico">
+
+  
+  
+  <meta name="keywords" content=" hugo  latex  theme  physics  math ">
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"
+  integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+  integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"
+  integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+      throwOnError: false
+    });
+  });
+</script>
+
+
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/">
+  <meta property="og:site_name" content="La scienza ha un cuore antico">
+  <meta property="og:title" content="Componenti cartesiane di un vettore">
+  <meta property="og:description" content="Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).
+Possiamo facilmente identificare l’angolo $\theta$ come l’angolo opposto alla componente $y$ del vettore, il terzo angolo risulterà quindi $\gamma = \dfrac{\pi}{2} - \theta$ per il teorema della somma degli angoli interni di un triangolo1.">
+  <meta property="og:locale" content="it">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="pages">
+    <meta property="article:published_time" content="2024-03-20T10:38:42+01:00">
+    <meta property="article:modified_time" content="2024-03-20T10:38:42+01:00">
+
+
+  
+  <link rel="canonical" href="http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/">
+
+  
+  
+  
+  <meta itemprop="name" content="Componenti cartesiane di un vettore">
+  <meta itemprop="description" content="Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).
+Possiamo facilmente identificare l’angolo $\theta$ come l’angolo opposto alla componente $y$ del vettore, il terzo angolo risulterà quindi $\gamma = \dfrac{\pi}{2} - \theta$ per il teorema della somma degli angoli interni di un triangolo1.">
+  <meta itemprop="datePublished" content="2024-03-20T10:38:42+01:00">
+  <meta itemprop="dateModified" content="2024-03-20T10:38:42+01:00">
+  <meta itemprop="wordCount" content="305">
+
+  
+  <link media="screen" rel="stylesheet" href='http://localhost:1313/css/common.css'>
+  <link media="screen" rel="stylesheet" href='http://localhost:1313/css/content.css'>
+
+  
+  
+  <title>Componenti cartesiane di un vettore - La scienza ha un cuore antico</title>
+  
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Componenti cartesiane di un vettore">
+  <meta name="twitter:description" content="Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).
+Possiamo facilmente identificare l’angolo $\theta$ come l’angolo opposto alla componente $y$ del vettore, il terzo angolo risulterà quindi $\gamma = \dfrac{\pi}{2} - \theta$ per il teorema della somma degli angoli interni di un triangolo1.">
+
+
+  
+<link rel="stylesheet" href='http://localhost:1313/css/single.css'>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+  <h1>
+    <a href="http://localhost:1313/">La scienza ha un cuore antico</a>
+  </h1>
+
+  <nav>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/">Home</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/pages/pyphysics/pyphysics/">Appunti di Fisica</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/pages/pymath/pymath/">Appunti di Matematica</a>
+    </span>
+    
+  </nav>
+</header>
+
+    
+<main id="main" class="post">
+  
+  <article class="content">
+    <p>Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).</p>
+<p><img src="/static/img/vec_rectangle.png" alt="vec_rectangle" title="Triangolo rettangolo"></p>
+<p>Possiamo facilmente identificare l&rsquo;angolo $\theta$ come l&rsquo;angolo opposto alla componente $y$ del vettore, il terzo angolo risulterà quindi $\gamma = \dfrac{\pi}{2} - \theta$ per il teorema della somma degli angoli interni di un triangolo<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h2>Funzioni goniometriche</h2>
+<p>Le funzioni goniometriche sono delle funzioni matematiche che ci permettono, tramite la loro definizione, di calcolare le lunghezze dei vari lati e quindi delle componenti del vettore.</p>
+<h3>Coseno</h3>
+<p>La funzione coseno di un angolo $\theta$ (simbolo $cos\theta$) è definita come il rapporto tra la lunghezza del cateto adiacente all&rsquo;angolo e la lunghezza dell&rsquo;ipotenusa.</p>
+<p>$$ cos \theta = \dfrac{c_1}{I} \rightarrow c_1 = I cos \theta $$</p>
+<p>Analogamente possiamo vedere che.</p>
+<p>$$ cos \gamma = \dfrac{c_2}{I} $$</p>
+<h3>Seno</h3>
+<p>La funzione seno di un angolo $\theta$ (simbolo $sin\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&rsquo;angolo e la lunghezza dell&rsquo;ipotenusa.</p>
+<p>$$ sin \theta = \dfrac{c_2}{I} \rightarrow c_2 = I sin \theta$$</p>
+<p>Analogamente possiamo vedere che.</p>
+<p>$$ sin \theta = \dfrac{c_1}{I} $$</p>
+<h3>Tangente</h3>
+<p>La funzione tangente di un angolo $\theta$ (simbolo $tan\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&rsquo;angolo e la lunghezza del cateto adiacente.</p>
+<p>$$ tan \theta = \dfrac{c_2}{c_1} \rightarrow c_2 = c_1 tan \theta$$</p>
+<p>Analogamente possiamo vedere che.</p>
+<p>$$ tan \theta = \dfrac{c_2}{c_1} $$</p>
+<p>Possiamo fare riferimento alle definizioni di $\sin$ e $\cos$ per notare che</p>
+<p>$$ tan \theta = \dfrac{c_2}{c_1} = \dfrac{I \sin \theta}{I \cos \theta} = \dfrac{\sin \theta}{\cos \theta} $$</p>
+<p>Per maggiori informazioni tra le funzioni goniometriche rifarsi al link in calce.</p>
+<p><a href="http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/" title="Relazioni tra funzioni goniometriche">Relazioni tra funzioni goniometriche</a></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>La somma degli angoli di un triangolo è congruente a un angolo piatto (180°).&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </article>
+  
+</main>
+
+    <footer id="footer">
+  <div>
+    <span>© 2023</span> - <span>2025</span>
+  </div>
+
+  
+
+  <div class="footnote">
+    <span>IIS Montessori Repetti</span>
+  </div>
+</footer>
+
+  </div>
+
+  
+  
+
+  
+  
+
+  
+  
+
+</body>
+
+</html>

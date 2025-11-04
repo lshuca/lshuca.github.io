@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on La scienza ha un cuore antico</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on La scienza ha un cuore antico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Tue, 04 Nov 2025 10:30:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Campo Elettrico di un Filo Infinito con Legge di Gauss</title>
+      <link>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</link>
+      <pubDate>Tue, 04 Nov 2025 10:30:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</guid>
+      
+      <description>&lt;h2&gt;Obiettivo della Trattazione&lt;/h2&gt;
+&lt;p&gt;Abbiamo già studiato il caso di un filo carico di lunghezza infinita e abbiamo visto che il campo è dato da:
+$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
+dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo ricavare di nuovo il campo elettrico $\vec E$ utilizzando la &lt;strong&gt;legge di Gauss&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Impostazione del Problema&lt;/h2&gt;
+&lt;p&gt;Questo è il nostro filo uniformemente carico di lunghezza infinita. $P$ è il punto dove vogliamo andare a valutare il campo elettrico $\vec E$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/filo_gauss/filo_infinito.png&#34; alt=&#34;Filo carico infinito e punto P&#34; title=&#34;Filo carico e punto P&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;Scelta della Superficie di Gauss&lt;/h3&gt;
+&lt;p&gt;Come prima cosa dobbiamo scegliere la superficie $\Sigma$ di Gauss (quella tratteggiata). Scegliamo un &lt;strong&gt;cilindro concentrico&lt;/strong&gt; al filo e passante per il punto $P$.&lt;/p&gt;
+&lt;p&gt;$\Sigma$ è un cilindro di raggio $r$ e altezza $h$. La legge di Gauss impone che la superficie attraverso la quale valutare il flusso del campo elettrico sia chiusa. Il nostro cilindro lo è.&lt;/p&gt;
+&lt;p&gt;Conviene vedere questo cilindro come costituito dall’unione delle superfici di base $S_A$ e $S_B$ e di quella laterale $S_L$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/filo_gauss/cilindro_gauss.png&#34; alt=&#34;Superficie di Gauss cilindrica&#34; title=&#34;Cilindro di Gauss e sue componenti&#34;&gt;&lt;/p&gt;
+&lt;h2&gt;Risoluzione&lt;/h2&gt;
+&lt;h3&gt;Analisi del Flusso&lt;/h3&gt;
+&lt;p&gt;Facciamo questo perchè, in tal modo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $S_A$ e $S_B$ la normale $\vec n$ alle superfici risulta perpendicolare al vettore campo elettrico $\vec E$. Di conseguenza il loro prodotto scalare è nullo ($\cos(90^\circ) = 0$). Il flusso è nullo su $S_A$ e $S_B$.&lt;/li&gt;
+&lt;li&gt;Per la superficie laterale $S_L$ invece, essendo la normale $\vec n$ ad essa parallela al vettore campo elettrico $\vec E$, il flusso risulta massimo ($\cos(0^\circ) = 1$).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Calcoliamo il flusso $\Phi(\vec{E})$ del vettore campo elettrico attraverso la superficie di Gauss $\Sigma$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = \oint_{\Sigma} \vec{E} \cdot d\vec{S}$$&lt;/p&gt;
+&lt;p&gt;Scomponiamo l&amp;rsquo;integrale sulle tre superfici che compongono $\Sigma$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = \int_{S_A} \vec{E} \cdot d\vec{S} + \int_{S_B} \vec{E} \cdot d\vec{S} + \int_{S_L} \vec{E} \cdot d\vec{S}$$&lt;/p&gt;
+&lt;p&gt;Come visto, i primi due integrali (sulle basi) sono nulli. Ci rimane solo il flusso attraverso la superficie laterale $S_L$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = \int_{S_L} \vec{E} \cdot d\vec{S} = \int_{S_L} E , dS$$&lt;/p&gt;
+&lt;p&gt;Dobbiamo notare che lungo tutta la superficie laterale $S_L$ il campo elettrico $E$ (in modulo) è sempre lo stesso, perché la distanza $r$ dal filo è costante. Portiamo allora $E$ fuori dall’integrale:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = E \int_{S_L} dS$$&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;integrale $\int_{S_L} dS$ non è altro che l&amp;rsquo;area della superficie laterale del cilindro, che vale $A_{lat} = 2 \pi r h$.&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = E (2 \pi r h)$$&lt;/p&gt;
+&lt;h3&gt;Applicazione della Legge di Gauss&lt;/h3&gt;
+&lt;p&gt;Ora applichiamo la legge di Gauss, che ci dice che il flusso attraverso la superficie è pari alla carica interna ($q_{int}$) alla superficie, diviso la costante $\varepsilon_0$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = \frac{q_{int}}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;$q_{int}$ è la carica interna al cilindro. Utilizzando la densità lineare di carica $\lambda$ (carica per unità di lunghezza) si ha:&lt;/p&gt;
+&lt;p&gt;$$q_{int} = \lambda \cdot h$$&lt;/p&gt;
+&lt;p&gt;Adesso sostituiamo, eguagliando le due espressioni trovate per il flusso $\Phi_{\Sigma}(\vec{E})$:&lt;/p&gt;
+&lt;p&gt;$$E (2 \pi r h) = \frac{\lambda h}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;Da questa ricaviamo il campo elettrico $E$. Possiamo semplificare l&amp;rsquo;altezza $h$ da entrambi i lati:&lt;/p&gt;
+&lt;p&gt;$$E (2 \pi r) = \frac{\lambda}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;Si ottiene infine:&lt;/p&gt;
+&lt;p&gt;$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$&lt;/p&gt;
+&lt;p&gt;Il campo elettrico non dipende dalla lunghezza $h$ del cilindro scelto.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Prodotto tra vettori</title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</link>
+      <pubDate>Tue, 03 Dec 2024 12:55:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</guid>
+      
+      <description>&lt;h3 id=&#34;prodotto-scalare&#34;&gt;Prodotto scalare&lt;/h3&gt;
+&lt;p&gt;Il prodotto scalare tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:&lt;/p&gt;
+&lt;p&gt;$$\vec{v} \cdot \vec{w} = v_x w_x + v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha) $$&lt;/p&gt;
+&lt;h4 id=&#34;proprietà-principali&#34;&gt;Proprietà principali:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Simmetria&lt;/strong&gt;: $\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Risultato scalare&lt;/strong&gt;: il prodotto scalare restituisce un numero puro (non un vettore).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Significato geometrico&lt;/strong&gt;: rappresenta la lunghezza della proiezione di $\vec{v}$ lungo $\vec{w}$, moltiplicata per la lunghezza di $\vec{w}$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;casi-particolari&#34;&gt;&lt;strong&gt;Casi particolari&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori paralleli&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli (angolo $\alpha = 0^\circ$ o $\alpha = 180^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $\alpha = 0^\circ$ ($v$ e $w$ hanno la stessa direzione):
+$$      \cos(0^\circ ) = 1 \quad \implies \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}|$$&lt;/li&gt;
+&lt;li&gt;Per $\alpha = 180^\circ$ ($v$ e $w$ hanno direzioni opposte):
+$$      \cos(180^\circ ) = -1 \quad \implies \quad \vec{v} \cdot \vec{w} = -|\vec{v}| |\vec{w}|$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quindi, il prodotto scalare fornisce un valore massimo (positivo o negativo) quando i vettori sono paralleli.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori ortogonali&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono ortogonali (angolo $\alpha = 90^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\cos(90^\circ) = 0$, quindi:
+$$      \vec{v} \cdot \vec{w} = 0$$
+Questo significa che il prodotto scalare tra vettori perpendicolari è sempre nullo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Angolo tra due vettori&lt;/strong&gt;:
+Note le relazioni per cui $ \vec{v} \cdot \vec{w} = v_x w_x + v_y w_y = |\vec{v}| |\vec{w}| \cos(\alpha)$ possiamo facilmente invertire la relazione per ottenere il $cos(\alpha)$:&lt;/p&gt;
+&lt;p&gt;$$ cos(\alpha) = \dfrac{v_x w_x + v_y w_y}{|\vec{v}| |\vec{w}|}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;prodotto-vettoriale&#34;&gt;Prodotto vettoriale&lt;/h3&gt;
+&lt;p&gt;Il prodotto vettoriale tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:&lt;/p&gt;
+&lt;p&gt;$$ \vec{u} = \vec{v} \times \vec{w} $$&lt;/p&gt;
+&lt;p&gt;Dove il risultato è un vettore $\vec{u}$ ortogonale sia a $\vec{v}$ che a $\vec{w}$. Il modulo è dato da:&lt;/p&gt;
+&lt;p&gt;$$ |\vec{u}| = |\vec{v}| |\vec{w}| \sin(\alpha )$$&lt;/p&gt;
+&lt;h4 id=&#34;proprietà-principali-1&#34;&gt;Proprietà principali:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Antisimmetria&lt;/strong&gt;: $\vec{v} \times \vec{w} = -(\vec{w} \times \vec{v})$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ortogonalità del risultato&lt;/strong&gt;: il vettore risultante $\vec{u}$ è perpendicolare al piano definito da $\vec{v}$ e $\vec{w}$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modulo nullo per vettori paralleli&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;casi-particolari-1&#34;&gt;&lt;strong&gt;Casi particolari&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori paralleli&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli ($\alpha = 0^\circ$ o $\alpha = 180^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sin(0^\circ) = \sin(180^\circ) = 0$, quindi:
+$$      |\vec{v} \times \vec{w}| = 0$$
+Il prodotto vettoriale è nullo quando i vettori sono paralleli (non c&amp;rsquo;è &amp;ldquo;area&amp;rdquo; tra di essi).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori ortogonali&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono ortogonali ($\alpha = 90^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sin(90^\circ) = 1$, quindi:
+$$      |\vec{v} \times \vec{w}| = |\vec{v}| |\vec{w}|$$
+In questo caso, il modulo del prodotto vettoriale è massimo e rappresenta l&amp;rsquo;area del parallelogramma definito dai due vettori.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;calcolo-del-prodotto-vettoriale-con-il-determinante&#34;&gt;Calcolo del prodotto vettoriale con il determinante&lt;/h3&gt;
+&lt;p&gt;Per calcolare il prodotto vettoriale $\vec{v} \times \vec{w}$ di due vettori $\vec{v}$ e $\vec{w}$ nello spazio tridimensionale ($ \mathbb{R}^3 $), possiamo utilizzare il &lt;strong&gt;determinante di una matrice&lt;/strong&gt;. Questo metodo è pratico e diretto. Ecco come fare passo passo:&lt;/p&gt;
+&lt;h4 id=&#34;metodo&#34;&gt;Metodo:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scrivere la matrice&lt;/strong&gt;:
+Organizza la matrice $3 \times 3$ come segue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La &lt;strong&gt;prima riga&lt;/strong&gt; contiene i versori $\hat{i}$, $\hat{j}$, $\hat{k}$ (che rappresentano le direzioni dei tre assi $x$, $y$, $z$).&lt;/li&gt;
+&lt;li&gt;La &lt;strong&gt;seconda riga&lt;/strong&gt; contiene le componenti del primo vettore $\vec{v} = (v_x, v_y, v_z)$.&lt;/li&gt;
+&lt;li&gt;La &lt;strong&gt;terza riga&lt;/strong&gt; contiene le componenti del secondo vettore $\vec{w} = (w_x, w_y, w_z)$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quindi:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;$\hat{i}$&lt;/th&gt;
+          &lt;th&gt;$\hat{j}$&lt;/th&gt;
+          &lt;th&gt;$\hat{k}$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$v_x$&lt;/td&gt;
+          &lt;td&gt;$v_y$&lt;/td&gt;
+          &lt;td&gt;$v_z$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$w_x$&lt;/td&gt;
+          &lt;td&gt;$w_y$&lt;/td&gt;
+          &lt;td&gt;$w_z$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Calcolare il determinante&lt;/strong&gt;:
+Il determinante si espande lungo la prima riga (quella dei versori). Procedi come segue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Moltiplica ogni versore per il determinante della &lt;strong&gt;sottomatrice&lt;/strong&gt; che rimane eliminando la riga e la colonna del versore stesso.&lt;/li&gt;
+&lt;li&gt;Usa i segni alternati $+,-,+$ per i versori $\hat{i}$, $\hat{j}$, $\hat{k}$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scrivendo il calcolo espanso:&lt;/p&gt;
+&lt;p&gt;$$ \vec v \times \vec w = \hat i A_{1,1} + \hat j A_{2,1} + \hat k A_{3,1} $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Calcolare i minori&lt;/strong&gt;:
+Ogni &lt;strong&gt;sottomatrice&lt;/strong&gt; è una matrice $2 \times 2$, e il suo determinante si calcola con la formula:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;$a$&lt;/th&gt;
+          &lt;th&gt;$b$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$c$&lt;/td&gt;
+          &lt;td&gt;$d$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;$$ ad - bc $$&lt;/p&gt;
+&lt;p&gt;Applica questa formula per ciascun minore:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $\hat{i}$: usa la sottomatrice $((v_y, v_z), (w_y, w_z))$.&lt;/li&gt;
+&lt;li&gt;Per $\hat{j}$: usa la sottomatrice $((v_x, v_z), (w_x, w_z))$.&lt;/li&gt;
+&lt;li&gt;Per $\hat{k}$: usa la sottomatrice $((v_x, v_y), (w_x, w_y))$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Comporre il risultato&lt;/strong&gt;:
+Sostituisci i determinanti calcolati nei rispettivi termini per ottenere il vettore risultante:
+$$
+\vec{v} \times \vec{w} =
+\left[(v_y w_z - v_z w_y)\right] \hat{i} -
+\left[(v_x w_z - v_z w_x)\right] \hat{j} +
+\left[(v_x w_y - v_y w_x)\right] \hat{k}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Questi casi particolari evidenziano i legami geometrici fondamentali tra i due tipi di prodotto.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Componenti cartesiane di un vettore</title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</link>
+      <pubDate>Wed, 20 Mar 2024 10:38:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/</guid>
+      
+      <description>&lt;p&gt;Analizzando le coordinate cartesiane di un vettore possiamo notare che queste compongono un triangolo rettangolo, cioè un triangolo che presenta un angolo retto ($\pi/2$) opposto al lato definito come ipotenusa ($I$) e compreso tra i due cateti ($c_1$ e $c_2$).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vec_rectangle.png&#34; alt=&#34;vec_rectangle&#34; title=&#34;Triangolo rettangolo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Possiamo facilmente identificare l&amp;rsquo;angolo $\theta$ come l&amp;rsquo;angolo opposto alla componente $y$ del vettore, il terzo angolo risulterà quindi $\gamma = \dfrac{\pi}{2} - \theta$ per il teorema della somma degli angoli interni di un triangolo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2&gt;Funzioni goniometriche&lt;/h2&gt;
+&lt;p&gt;Le funzioni goniometriche sono delle funzioni matematiche che ci permettono, tramite la loro definizione, di calcolare le lunghezze dei vari lati e quindi delle componenti del vettore.&lt;/p&gt;
+&lt;h3&gt;Coseno&lt;/h3&gt;
+&lt;p&gt;La funzione coseno di un angolo $\theta$ (simbolo $cos\theta$) è definita come il rapporto tra la lunghezza del cateto adiacente all&amp;rsquo;angolo e la lunghezza dell&amp;rsquo;ipotenusa.&lt;/p&gt;
+&lt;p&gt;$$ cos \theta = \dfrac{c_1}{I} \rightarrow c_1 = I cos \theta $$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ cos \gamma = \dfrac{c_2}{I} $$&lt;/p&gt;
+&lt;h3&gt;Seno&lt;/h3&gt;
+&lt;p&gt;La funzione seno di un angolo $\theta$ (simbolo $sin\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&amp;rsquo;angolo e la lunghezza dell&amp;rsquo;ipotenusa.&lt;/p&gt;
+&lt;p&gt;$$ sin \theta = \dfrac{c_2}{I} \rightarrow c_2 = I sin \theta$$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ sin \theta = \dfrac{c_1}{I} $$&lt;/p&gt;
+&lt;h3&gt;Tangente&lt;/h3&gt;
+&lt;p&gt;La funzione tangente di un angolo $\theta$ (simbolo $tan\theta$) è definita come il rapporto tra la lunghezza del cateto opposto all&amp;rsquo;angolo e la lunghezza del cateto adiacente.&lt;/p&gt;
+&lt;p&gt;$$ tan \theta = \dfrac{c_2}{c_1} \rightarrow c_2 = c_1 tan \theta$$&lt;/p&gt;
+&lt;p&gt;Analogamente possiamo vedere che.&lt;/p&gt;
+&lt;p&gt;$$ tan \theta = \dfrac{c_2}{c_1} $$&lt;/p&gt;
+&lt;p&gt;Possiamo fare riferimento alle definizioni di $\sin$ e $\cos$ per notare che&lt;/p&gt;
+&lt;p&gt;$$ tan \theta = \dfrac{c_2}{c_1} = \dfrac{I \sin \theta}{I \cos \theta} = \dfrac{\sin \theta}{\cos \theta} $$&lt;/p&gt;
+&lt;p&gt;Per maggiori informazioni tra le funzioni goniometriche rifarsi al link in calce.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/&#34; title=&#34;Relazioni tra funzioni goniometriche&#34;&gt;Relazioni tra funzioni goniometriche&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;La somma degli angoli di un triangolo è congruente a un angolo piatto (180°).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Relazioni tra funzioni goniometriche</title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/</link>
+      <pubDate>Wed, 20 Mar 2024 10:38:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_goniometry/</guid>
+      
+      <description>&lt;h3&gt;Relazioni tra funzioni&lt;/h3&gt;
+&lt;h4&gt;Somma dei quadrati&lt;/h4&gt;
+&lt;p&gt;Il teorema di Pitagora ci permette di scrivere la relazione tra ipotenusa e cateti.&lt;/p&gt;
+&lt;p&gt;$$ I^2 = c_1^2 + c_2^2 $$&lt;/p&gt;
+&lt;p&gt;Andando quindi a sostituire le definizioni di $c_1$ e $c_2$ possiamo facilmente ottenere che.&lt;/p&gt;
+&lt;p&gt;$$ I^2 = (I cos \theta)^2 + (I sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;$$ I^2 = I ^2 (cos \theta)^2 + I^2 (sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;$$ I^2 = I ^2 [(cos \theta)^2 + (sin \theta)^2] $$&lt;/p&gt;
+&lt;p&gt;$$ 1 = (cos \theta)^2 + (sin \theta)^2 $$&lt;/p&gt;
+&lt;p&gt;Cioè la somma del quadrato dei valori di seno e coseno, per lo stesso angolo $\theta$ è uguale a 1.&lt;/p&gt;
+&lt;h4&gt;Angoli complementari&lt;/h4&gt;
+&lt;p&gt;Due angoli sono detti complementari se, sommati, compongono un angolo retto $\pi/2$.&lt;/p&gt;
+&lt;p&gt;$$ \theta + \gamma = \dfrac{\pi}{2}$$&lt;/p&gt;
+&lt;p&gt;Riprendendo le relazioni precedenti, e ricordando che stiamo trattando triangoli rettangoli, possiamo notare che:&lt;/p&gt;
+&lt;p&gt;$$ c_1 = I cos\theta \leftrightarrow c_1 = I sin \gamma $$&lt;/p&gt;
+&lt;p&gt;$$ \dfrac{c_1}{I} = cos\theta \leftrightarrow \dfrac{c_1}{I} = I sin \gamma $$&lt;/p&gt;
+&lt;p&gt;Per la proprietà transitiva &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;$$ cos \theta = sin \gamma $$&lt;/p&gt;
+&lt;p&gt;Ricordando che $\theta$ e $\gamma$ sono complementari.&lt;/p&gt;
+&lt;p&gt;$$ cos \theta = sin \left( \dfrac{\pi}{2} - \gamma \right) $$&lt;/p&gt;
+&lt;p&gt;Questo ci permette di utilizzare, con grande disinvoltura, gli angoli più comodi nello studio delle relazioni vettoriali.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Se $A = B$ e $B = C$ allora $A = C$.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Equilibrio di un corpo</title>
+      <link>http://localhost:1313/pages/pyphysics/eq_prova/</link>
+      <pubDate>Fri, 08 Mar 2024 15:55:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/eq_prova/</guid>
+      
+      <description>&lt;p&gt;prova&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Equilibrio delle forze</title>
+      <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</link>
+      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/</guid>
+      
+      <description>&lt;p&gt;L&amp;rsquo;equilibrio delle forze, in dinamica e in statica, è la condizione per cui la risultante delle forze agenti su un corpo è nulla.&lt;/p&gt;
+&lt;p&gt;Una forza è una grandezza vettoriale, quindi caraterizzata da un modulo, direzione e verso. (Si rimanda ai capitoli &lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/intro_vec/&#34; title=&#34;Introduzione ai vettori&#34;&gt;Introduzione ai vettori&lt;/a&gt; e &lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt; per maggiori informazioni).&lt;/p&gt;
+&lt;p&gt;Possiamo distinguere tra due tipi di equilibrio:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Equilibrio statico&lt;/strong&gt;: nel caso in cui il corpo dovesse mantenere velocità nulla (ovvero rimane fermo)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equilibrio dinamico&lt;/strong&gt;: nel caso in cui il corpo dovesse muoversi con velocità costante (ovvero che si muove per inerzia)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Queste due definizioni permettono di introdurre il primo principio della dinamica, o &lt;em&gt;prima legge di Newton&lt;/em&gt;:&lt;/p&gt;
+&lt;center&gt;&lt;em&gt;Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus à viribus impressis cogitur statum illum mutare.&lt;/em&gt;&lt;/center&gt;
+&lt;p&gt;Dunque, la condizione per cui un corpo sia in equilibrio è che la risultante delle forze, agenti su di esso, sia nulla, ovvero:&lt;/p&gt;
+&lt;p&gt;$$ \vec{F}_{ris} = 0 $$&lt;/p&gt;
+&lt;p&gt;Ricordando la definizione di forza risultante, cioè data dalla somma vettoriale delle forze agenti su un corpo, possiamo anche scrivere:&lt;/p&gt;
+&lt;p&gt;$$ \sum_i \vec F_i = 0 $$&lt;/p&gt;
+&lt;p&gt;Il simbolo $ \sum $ si legge come &amp;ldquo;sommatoria&amp;rdquo; ovver la somma di tutte le possibili forze.&lt;/p&gt;
+&lt;p&gt;Noto che la condizione di equilibrio necessita lo studio delle forze, può essere utile ricordare come si definisce una forza.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Introduzione alle forze</title>
+      <link>http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/</link>
+      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/</guid>
+      
+      <description>&lt;p&gt;In meccanica una forza è una grandezza vettoriale in grado di indurre una variazione allo stato di quiete o di moto di un corpo o di applicarne una distorsione.&lt;/p&gt;
+&lt;p&gt;La forza viene definita matematicamente dal secondo principio della dinamica, o &lt;em&gt;seconda legge di Newton&lt;/em&gt;.&lt;/p&gt;
+&lt;center&gt;&lt;em&gt;Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.&lt;/em&gt;&lt;/center&gt;
+&lt;p&gt;L&amp;rsquo;unità di misura della forza, nel SI, è il Newton ed è definito come la forza necessaria per imporre ad una massa di un $\text{kg}$ una accelerazione di un $\dfrac{\text{m}}{\text{s}^2}$, cioè:&lt;/p&gt;
+&lt;p&gt;$$ N = \dfrac{\text{kg} \cdot \text{m}}{\text{s}^2} $$&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Risoluzione guidata di un esercizio di equilibrio</title>
+      <link>http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/</link>
+      <pubDate>Tue, 09 Jan 2024 15:56:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/</guid>
+      
+      <description>&lt;h2&gt;Testo del problema&lt;/h2&gt;
+&lt;p&gt;Uno sciatore è appoggiato ad una pista inclinata tale che in una lunghezza di $1255 $ m supera un dislivello di $448 $m.&lt;/p&gt;
+&lt;p&gt;Ipotizzando che la pista risulti con una pendenza uniforme, studiare il caso di uno sciatore di massa $m = 80$ kg in equilibrio. Calcolare il valore della forza svolta dallo sciatore per evitare di scivolare sul piano inclinato.&lt;/p&gt;
+&lt;h2&gt;Impostazione&lt;/h2&gt;
+&lt;p&gt;Per impostare il problema dobbiamo prima capire i dati.&lt;/p&gt;
+&lt;h3&gt;Dati e incognite&lt;/h3&gt;
+&lt;p&gt;I dati del problema sono riferiti alle specifiche del piano inclinato (lunghezza e dislivello) e alla massa dello sciatore.&lt;/p&gt;
+&lt;h5&gt;Dati&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Lunghezza $l = 1255$ m&lt;/li&gt;
+&lt;li&gt;Dislivello $h = 448$ m&lt;/li&gt;
+&lt;li&gt;Massa dello sciatore $m = 80$ kg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Incognite&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Forza esercitata dallo sciatore per mantenere l&amp;rsquo;equilibrio $\vec F$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Disegno&lt;/h3&gt;
+&lt;p&gt;Per tracciare il disegno vogliamo inizialmente capire come è composto il sistema studiato.&lt;/p&gt;
+&lt;p&gt;Sappiamo che la pista è approssimabile ad uniforme, cioè possiamo ipotizzare che non ci siano variazioni di pendenza in tutto il suo percorso.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_triangle.png&#34; alt=&#34;eq_triangle&#34; title=&#34;Piano inclinato&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Vogliamo quindi studiare le forze agenti sullo sciatore, rappresentato da un puntino sul piano inclinato.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier.png&#34; alt=&#34;eq_skier&#34; title=&#34;Sciatore&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Lo sciatore ha modo di esercitare una forza parallela alla pendenza e, logicamente, con verso opposto alla discesa.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier_1.png&#34; alt=&#34;eq_skier_1&#34; title=&#34;Sciatore frena&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Osservando queste immagini possiamo subito notare che, per come sono disegnate e rappresentate le forze in questo momento, lo sciatore non risulta in equilibrio.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;equilibrio statico necessita infatti che la risultante delle forze, cioè la somma, vettoriale, di tutte le forze agenti su un oggetto sia nulla.&lt;/p&gt;
+&lt;p&gt;Sommando le due forze presenti sul grafico non otteniamo un vettore nullo! Manca infatti la forza normale, una delle forze vincolari più conosciute, che impedisce allo sciatore di sprofondare nel pendio!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_skier_2.png&#34; alt=&#34;eq_skier_2&#34; title=&#34;Sciatore frena e normale&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Adottando l&amp;rsquo;approssimazione di punto materiale andiamo a disegnare le forze in gioco, agenti sullo sciatore, in uno schema ad hoc.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema.png&#34; alt=&#34;eq_schema&#34; title=&#34;Schema di corpo libero&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Per poter terminare l&amp;rsquo;impostazione del problema dobbiamo riportare, vettorialmente, la condizione di equilibrio: ovvero che la somma di tutte le forze sia nulla.&lt;/p&gt;
+&lt;p&gt;$$ \vec R = \vec F + \vec N + \vec P = \vec 0 $$&lt;/p&gt;
+&lt;h2&gt;Risoluzione&lt;/h2&gt;
+&lt;p&gt;La parte fisica del problema è praticamente terminata. Ogni prossimo passo richiede infatti di fare considerazioni di tipo geometrico o algebrico.&lt;/p&gt;
+&lt;p&gt;Prima di tutto dobbiamo studiare la condizione di equilibrio: abbiamo informazioni vettoriali, difficili da gestire perché non allineate.&lt;/p&gt;
+&lt;p&gt;Il primo passo è quello di scegliere un sistema di riferimento di assi $x$ e $y$ e disegnare le componenti delle forze studiate finora.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema_xy.png&#34; alt=&#34;eq_schema_xy&#34; title=&#34;Schema di corpo libero componenti&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sfruttando le conoscenze di goniometria e di relazioni tra angoli e funzioni goniometriche, troviamo facilmente che le componenti di $\vec F$ e $\vec N$ risultano essere:&lt;/p&gt;
+&lt;p&gt;$$ F_x =  F \cos \alpha $$
+$$ F_y =  F \sin \alpha $$&lt;/p&gt;
+&lt;p&gt;$$ N_x =  N \cos \left(\dfrac{\pi}{2} - \alpha \right) =  N \sin \alpha $$
+$$ N_y =  N \sin \left(\dfrac{\pi}{2} - \alpha \right) =  N \cos \alpha $$&lt;/p&gt;
+&lt;p&gt;Dobbiamo fare particolarmente attenzione a quale angolo stiamo usando, infatti nel caso della forza normale l&amp;rsquo;angolo $\alpha$ non è adiacente a $\vec F$ e $\vec F_x$ imponendo quindi il cambio di funzione goniometrica.&lt;/p&gt;
+&lt;p&gt;Per quanto concerne $\vec P$ invece sappiamo che &amp;ldquo;cade a filo a piombo&amp;rdquo;, cioè la sua componente $x$, per questo sistema di riferimento, è nulla.&lt;/p&gt;
+&lt;p&gt;Risulta molto comodo quindi riconsiderare la condizione di equilibrio lungo le due direzioni $x$ e $y$.&lt;/p&gt;
+&lt;p&gt;$$ \vec R_x = \vec F_x + \vec N_x = \vec 0 $$
+$$ \vec R_y = \vec F_y + \vec N_y + \vec P = \vec 0 $$&lt;/p&gt;
+&lt;p&gt;Passando quindi a considerare le intensità delle forze sull&amp;rsquo;asse y.&lt;/p&gt;
+&lt;p&gt;$$ R_y = F_y + N_y - P = 0 $$&lt;/p&gt;
+&lt;p&gt;Sostituendo le informazioni ottenute in precedenza.&lt;/p&gt;
+&lt;p&gt;$$ F \sin \alpha + N \cos \alpha - P = 0 $$&lt;/p&gt;
+&lt;p&gt;Ricordiamo che la forza peso $\vec P$ è data dalla moltiplicazione della massa del corpo per l&amp;rsquo;accelerazione di gravità.&lt;/p&gt;
+&lt;p&gt;$$ F \sin \alpha + N \cos \alpha - mg = 0 $$&lt;/p&gt;
+&lt;p&gt;Questa risulta ancora essere un&amp;rsquo;equazione in due incognite ($ F$ e $N$), è quindi necessario trovare un modo per identificare il valore di $N$.&lt;/p&gt;
+&lt;p&gt;Prendendo la condizione di equilibrio sull&amp;rsquo;asse x possiamo notare che:&lt;/p&gt;
+&lt;p&gt;$$ \vec R_x = \vec F_x + \vec N_x = \vec 0 $$&lt;/p&gt;
+&lt;p&gt;$$ F \cos \alpha = N \sin \alpha $$&lt;/p&gt;
+&lt;p&gt;$$ N = F \dfrac{\cos \alpha}{\sin \alpha} $$&lt;/p&gt;
+&lt;p&gt;Sostituendo nella prima:&lt;/p&gt;
+&lt;p&gt;$$ F \sin \alpha + (F \dfrac{\cos \alpha}{\sin \alpha}) \cos \alpha - mg = 0 $$&lt;/p&gt;
+&lt;p&gt;$$ F (\sin \alpha)^2 + F(\cos \alpha)^2 - mg (\sin \alpha) = 0 $$&lt;/p&gt;
+&lt;p&gt;$$ F [(\sin \alpha)^2 +(\cos \alpha)^2] = mg (\sin \alpha) $$&lt;/p&gt;
+&lt;p&gt;$$ F = mg \dfrac{(\sin \alpha)}{[(\sin \alpha)^2 + (\cos \alpha)^2]} = mg \dfrac{(\sin \alpha)}{1} =  mg \sin \alpha $$&lt;/p&gt;
+&lt;p&gt;Manca solo da conoscere il valore di $\alpha$, ma questo può essere facilmente ottenuto dalle relazioni goniometriche sfruttando la lunghezza ed il dislivello della pista:&lt;/p&gt;
+&lt;p&gt;$$ \sin \alpha = \dfrac{h}{l} $$&lt;/p&gt;
+&lt;p&gt;Quindi.&lt;/p&gt;
+&lt;p&gt;$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$&lt;/p&gt;
+&lt;h2&gt;Risoluzione con diverso Sistema di Riferimento&lt;/h2&gt;
+&lt;p&gt;Possiamo affrontare il problema adoperando una scelta &amp;ldquo;più furba&amp;rdquo; per quanto riguarda il sistema di riferimento.&lt;/p&gt;
+&lt;p&gt;Osservando un piano inclinato possiamo infatti valutarlo, come fatto nel caso precedente, rispetto a due assi $x$ e $y$, perpendicolari tra loro, in cui l&amp;rsquo;$y$ è solidale alla direzione del &amp;ldquo;filo a piombo&amp;rdquo; (cioè diretto verso il centro della terra). Come abbiamo visto questa scelta comporta la scomposizione su questi assi di tutte le forze che non risultano essere orientate come $x$ e $y$: rispettivamente la forza normale e la forza con cui lo sciatore frena.&lt;/p&gt;
+&lt;p&gt;Questa scelta, seppur corretta, potrebbe comportare però calcoli più complicati qualora le forze in gioco non dovessero essere solo tre (per esempio presenza di attrito, di una tensione o il carico dovuto alla presenza di uno zaino).&lt;/p&gt;
+&lt;p&gt;Possiamo quindi fare una scelta più &amp;ldquo;consapevole&amp;rdquo; e decidere che, per lo studio del problema, il sistema di riferimento $x&amp;rsquo;$ e $y&amp;rsquo;$ siano orientati perpendicolarmente e lungo la pendenza.
+Questa scelta comporterebbe il dover scomporre la forza peso lungo i due assi solidali alla pendenza, ma le altre forze saranno già utilizzabili.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/eq_schema_alt.png&#34; alt=&#34;eq_alt&#34; title=&#34;Schema alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Studiando questo schema la lettura fisica rimane invariata rispetto a prima: tre forze che agiscono su uno stesso corpo, tre forze la cui risultante è nulla.
+Cambia invece l&amp;rsquo;analisi matematica del problema, rendendo necessario scomporre un solo vettore lungo le due direzioni.&lt;/p&gt;
+&lt;p&gt;In prima battuta possiamo notare che l&amp;rsquo;unico angolo a nostra disposizione non è più $\alpha$ ma, con un po&amp;rsquo; di trigonometria, riconosciamo facilmente che&lt;/p&gt;
+&lt;p&gt;$$\beta = \dfrac{\pi}{2} - \alpha$$&lt;/p&gt;
+&lt;p&gt;Per cui, le due componenti risultano essere.&lt;/p&gt;
+&lt;p&gt;$$ P_{x&amp;rsquo;} = P \cos \beta = P \cos \left( \dfrac{\pi}{2} - \alpha \right) = P \sin \alpha $$
+$$ P_{y&amp;rsquo;} = P \sin \beta = P \sin \left( \dfrac{\pi}{2} - \alpha \right) = P \cos \alpha $$&lt;/p&gt;
+&lt;p&gt;Studiando le condizioni di equilibrio lungo i due assi otteniamo che:&lt;/p&gt;
+&lt;p&gt;$$ \vec R_x = \vec F + \vec P_{x&amp;rsquo;} = \vec 0 $$
+$$ \vec R_y = \vec N + \vec P_{y&amp;rsquo;} = \vec 0 $$&lt;/p&gt;
+&lt;p&gt;Ovvero&lt;/p&gt;
+&lt;p&gt;$$ R_x = - F + \vec P_{x&amp;rsquo;} = 0 $$
+$$ R_y = N - P_{y&amp;rsquo;} = 0 $$&lt;/p&gt;
+&lt;p&gt;Per cui possiamo ricalcolare sostituendo i valori ottenuti prima&lt;/p&gt;
+&lt;p&gt;$$ - F + P \sin \alpha = 0 $$
+$$ N - P \cos \alpha = 0 $$&lt;/p&gt;
+&lt;p&gt;Possiamo notare immediatamente che non è, in questo caso, necessario risolvere le due equazioni in quanto abbiamo immediatamente una relazione risolubile per via numerica:&lt;/p&gt;
+&lt;p&gt;$$ F = m g \sin \alpha = m g \dfrac{h}{l} $$&lt;/p&gt;
+&lt;p&gt;Esattamente come ottenuto, con calcoli più complicati, in precedenza.
+Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
+&lt;p&gt;$$ F \approx 80 \cdot 9.81 \dfrac{448}{1255}\text{N} \approx 280 N $$&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/equilibrium_guided/equilibrium_slope.jpg&#34; alt=&#34;gran_risa&#34; title=&#34;Gran Risa&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Appunti di Fisica</title>
+      <link>http://localhost:1313/pages/pyphysics/pyphysics/</link>
+      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/pyphysics/</guid>
+      
+      <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della fisica.&lt;/p&gt;
+&lt;h2&gt;Vettori&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_unit/&#34; title=&#34;Versori&#34;&gt;Versori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_scomp/&#34; title=&#34;Scomposizione di un vettore&#34;&gt;Scomposizione di un vettore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/&#34; title=&#34;Somma di vettori&#34;&gt;Somma di vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/&#34; title=&#34;Differenza di vettori&#34;&gt;Differenza di vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/&#34; title=&#34;Componenti cartesiane di un vettore&#34;&gt;Componenti cartesiane di un vettore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/&#34; title=&#34;Prodotto tra vettori&#34;&gt;Prodotto tra vettori&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Approfondimenti:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Spazio vettoriale&#34;&gt;Spazio vettoriale&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Equilibrio&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/&#34; title=&#34;Introduzione all&#39;equilibrio&#34;&gt;Introduzione all&amp;rsquo;equilibrio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/&#34; title=&#34;Risoluzione guidata di un esercizio di equilibrio&#34;&gt;Risoluzione guidata di un esercizio di equilibrio&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Differenza di vettori</title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/</link>
+      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/</guid>
+      
+      <description>&lt;p&gt;$$\vec d = \vec v_1 - \vec v_2$$&lt;/p&gt;
+&lt;p&gt;
+
+
+    &lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;Random Vectors Plot&lt;/title&gt;
+    &lt;style&gt;
+        canvas {
+            border: 1px solid #000;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id=&#34;plotCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
+
+    &lt;script&gt;
+        // Function to generate a random vector with modulus 1 starting from the origin
+        function generateUnitVector() {
+            return {
+                x: Math.round(Math.random()*20 - 10)/10,
+                y: Math.round(Math.random()*20 - 10)/10
+            };
+        }
+
+        // Function to add two vectors
+        function addVectors(vector1, vector2) {
+            return {
+                x: Math.round((vector1.x + vector2.x)*1000)/1000,
+                y: Math.round((vector1.y + vector2.y)*1000)/1000
+            };
+        }
+
+        function subtractVectors(vector1, vector2) {
+            return {
+                x: Math.round((vector1.x - vector2.x)*1000)/1000,
+                y: Math.round((vector1.y - vector2.y)*1000)/1000
+            };
+        }
+
+        // Function to plot a vector as an arrow on the canvas
+        function plotVector(context, vector, color, name) {
+            context.strokeStyle = color;
+            context.fillStyle = color;
+
+            // Arrow properties
+            const arrowLength = 100;
+            const arrowWidth = 15;
+            const textSpacing = 1.2;
+            const arrowThickness = 0.85;
+
+            // Calculate arrowhead points
+            const arrowHead1 = {
+                x: arrowLength * vector.x * arrowThickness - arrowWidth * vector.y * arrowThickness,
+                y: arrowLength * vector.y * arrowThickness + arrowWidth * vector.x * arrowThickness
+            };
+
+            const arrowHead2 = {
+                x: arrowLength * vector.x * arrowThickness + arrowWidth * vector.y * arrowThickness,
+                y: arrowLength * vector.y * arrowThickness - arrowWidth * vector.x * arrowThickness
+            };
+
+            // Draw arrow line
+            context.beginPath();
+            context.moveTo(canvas.width / 2, canvas.height / 2);
+            context.lineTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineWidth = 2;
+
+            context.stroke();
+
+            // Draw arrowhead
+            context.beginPath();
+            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineTo(canvas.width / 2 + arrowHead1.x, canvas.height / 2 + arrowHead1.y);
+            context.moveTo(canvas.width / 2 + arrowLength * vector.x, canvas.height / 2 + arrowLength * vector.y);
+            context.lineTo(canvas.width / 2 + arrowHead2.x, canvas.height / 2 + arrowHead2.y);
+            context.lineWidth = 2;
+            context.stroke();
+
+            context.fillText(name, canvas.width / 2 + arrowHead2.x * textSpacing, canvas.height / 2 + arrowHead2.y * textSpacing); 
+        }
+
+        // Function to draw x and y axes
+        function drawAxes(context, canvasWidth, canvasHeight) {
+            // Draw x-axis
+            context.beginPath();
+            context.moveTo(0, canvasHeight / 2);
+            context.lineTo(canvasWidth, canvasHeight / 2);
+            context.stroke();
+
+            // Draw y-axis
+            context.beginPath();
+            context.moveTo(canvasWidth / 2, 0);
+            context.lineTo(canvasWidth / 2, canvasHeight);
+            context.stroke();
+
+
+            // Draw horizontal grid lines
+            for (let y = 0; y &lt; canvasHeight; y += 10) {
+                context.beginPath();
+                context.moveTo(0, y);
+                context.lineTo(canvasWidth, y);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+
+            // Draw vertical grid lines
+            for (let x = 0; x &lt; canvasWidth; x += 10) {
+                context.beginPath();
+                context.moveTo(x, 0);
+                context.lineTo(x, canvasHeight);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+        }
+
+        // Get the canvas and its 2d rendering context
+        var canvas = document.getElementById(&#39;plotCanvas&#39;);
+        var context = canvas.getContext(&#39;2d&#39;);
+
+        // Draw x and y axes
+        drawAxes(context, canvas.width, canvas.height, );
+
+        // Generate two random vectors as arrows with modulus 1 starting from the center
+        var vector1 = generateUnitVector();
+        var vector2 = generateUnitVector();
+
+        // Calculate the sum and sub vector
+        var subVector12 = subtractVectors(vector1, vector2);
+        var subVector21 = subtractVectors(vector2, vector1);
+
+        // Plot the vectors
+        plotVector(context, vector1, &#39;red&#39;, &#34;v1&#34;);
+        plotVector(context, vector2, &#39;blue&#39;, &#34;v2&#34;);
+        plotVector(context, subVector12, &#39;purple&#39;, &#34;d&#34;);
+
+        context.font = &#34;12px Arial&#34;;
+        context.fillStyle = &#34;red&#34;;
+        context.fillText(&#34;v1 = &#34; + vector1.x*10 + &#34; i &#34; + -vector1.y*10 + &#34; j&#34;, 10, 30); 
+        
+        context.fillStyle = &#34;blue&#34;;
+        context.fillText(&#34;v2 = &#34; + vector2.x*10 + &#34; i &#34; + -vector2.y*10 + &#34; j&#34;, 10, 50); 
+        
+        context.fillStyle = &#34;purple&#34;;
+        context.fillText(&#34;d = &#34; + subVector12.x*10 + &#34; i &#34; + -subVector12.y*10 + &#34; j&#34;, 10, 390); 
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+&lt;/p&gt;
+&lt;p&gt;Il grafico in sovraimpressione mostra un piano cartesiano con frecce colorate che rappresentano vettori bidimensionali.
+I vettori rossi e blu, rispettivamente $\vec v_1$ e $\vec v_2$, sono delimitati agli estremi dall&amp;rsquo;origine e dai punti $V_1$ e $V_2$.&lt;/p&gt;
+&lt;p&gt;$$\vec v_1 = \vec{OV_1}$$
+$$\vec v_2 = \vec{OV_2}$$&lt;/p&gt;
+&lt;p&gt;Ogni vettore è infatti rappresentato da un modulo (lunghezza), una direzione (la retta su cui poggia) ed un verso.&lt;/p&gt;
+&lt;p&gt;È inoltre presente una terza freccia, vettore, di colore viola. Questo vettore $\vec d$ è dato dalla differenza dei due precedenti vettori, ovvero:&lt;/p&gt;
+&lt;p&gt;$$\vec d = \vec v_1 - \vec v_2$$&lt;/p&gt;
+&lt;p&gt;Si può notare come il vettore $\vec d$ sia delimitato dal&amp;rsquo;origine e il punto $D$ identificato dalla differenza delle coordinate di $V_1$ e $V_2$.&lt;/p&gt;
+&lt;p&gt;$$\vec d = \vec {OD}$$&lt;/p&gt;
+&lt;p&gt;Esercitati, ricaricando la pagina, a calcolare le somme tra vari vettori.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -31,3 +31,7 @@ Approfondimenti:
 [Introduzione all'equilibrio]({{< ref "/pages/pyphysics/equilibrium/intro_eq" >}}  "Introduzione all'equilibrio")
 
 [Risoluzione guidata di un esercizio di equilibrio]({{< ref "/pages/pyphysics/equilibrium/eq_guided" >}}  "Risoluzione guidata di un esercizio di equilibrio")
+
+<h2>Elettro-Magnetismo</h2>
+
+[Campo elettrico di un filo carico infinito]({{< ref "/pages/pyphysics/electromagnetism/efield_filo" >}}  "Campo elettrico di un filo carico infinito")

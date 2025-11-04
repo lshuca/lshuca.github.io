@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta name="author" content="">
+
+  
+  
+  <meta name="description" content="A volte risulta utile non pensare ad una retta singola ma ragionare su tutte le rette che possano soddisfare una specifica condizione: per esempio che risultino parallele ad una retta data o che passino per uno stesso punto.
+Fascio proprio
+Il fascio proprio di rette ci permette di identificare velocemente tutte le possibili rette che passino per un punto $P$ tramite l&rsquo;equazione.
+$$ y - y_P = m (x - x_P) $$">
+  
+
+  
+  <link rel="icon" href="http://localhost:1313/favicon.ico">
+
+  
+  
+  <meta name="keywords" content=" hugo  latex  theme  physics  math ">
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"
+  integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+  integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"
+  integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+      throwOnError: false
+    });
+  });
+</script>
+
+
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/pages/pymath/cartesian/rette/rette_fasci/">
+  <meta property="og:site_name" content="La scienza ha un cuore antico">
+  <meta property="og:title" content="Fasci di rette">
+  <meta property="og:description" content="A volte risulta utile non pensare ad una retta singola ma ragionare su tutte le rette che possano soddisfare una specifica condizione: per esempio che risultino parallele ad una retta data o che passino per uno stesso punto.
+Fascio proprio Il fascio proprio di rette ci permette di identificare velocemente tutte le possibili rette che passino per un punto $P$ tramite l’equazione.
+$$ y - y_P = m (x - x_P) $$">
+  <meta property="og:locale" content="it">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="pages">
+    <meta property="article:published_time" content="2024-09-12T21:56:42+01:00">
+    <meta property="article:modified_time" content="2024-09-12T21:56:42+01:00">
+
+
+  
+  <link rel="canonical" href="http://localhost:1313/pages/pymath/cartesian/rette/rette_fasci/">
+
+  
+  
+  
+  <meta itemprop="name" content="Fasci di rette">
+  <meta itemprop="description" content="A volte risulta utile non pensare ad una retta singola ma ragionare su tutte le rette che possano soddisfare una specifica condizione: per esempio che risultino parallele ad una retta data o che passino per uno stesso punto.
+Fascio proprio Il fascio proprio di rette ci permette di identificare velocemente tutte le possibili rette che passino per un punto $P$ tramite l’equazione.
+$$ y - y_P = m (x - x_P) $$">
+  <meta itemprop="datePublished" content="2024-09-12T21:56:42+01:00">
+  <meta itemprop="dateModified" content="2024-09-12T21:56:42+01:00">
+  <meta itemprop="wordCount" content="140">
+
+  
+  <link media="screen" rel="stylesheet" href='http://localhost:1313/css/common.css'>
+  <link media="screen" rel="stylesheet" href='http://localhost:1313/css/content.css'>
+
+  
+  
+  <title>Fasci di rette - La scienza ha un cuore antico</title>
+  
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fasci di rette">
+  <meta name="twitter:description" content="A volte risulta utile non pensare ad una retta singola ma ragionare su tutte le rette che possano soddisfare una specifica condizione: per esempio che risultino parallele ad una retta data o che passino per uno stesso punto.
+Fascio proprio Il fascio proprio di rette ci permette di identificare velocemente tutte le possibili rette che passino per un punto $P$ tramite l’equazione.
+$$ y - y_P = m (x - x_P) $$">
+
+
+  
+<link rel="stylesheet" href='http://localhost:1313/css/single.css'>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+  <h1>
+    <a href="http://localhost:1313/">La scienza ha un cuore antico</a>
+  </h1>
+
+  <nav>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/">Home</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/pages/pyphysics/pyphysics/">Appunti di Fisica</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/pages/pymath/pymath/">Appunti di Matematica</a>
+    </span>
+    
+  </nav>
+</header>
+
+    
+<main id="main" class="post">
+  
+  <article class="content">
+    <p>A volte risulta utile non pensare ad una retta singola ma ragionare su tutte le rette che possano soddisfare una specifica condizione: per esempio che risultino parallele ad una retta data o che passino per uno stesso punto.</p>
+<h2>Fascio proprio</h2>
+<p>Il fascio proprio di rette ci permette di identificare velocemente tutte le possibili rette che passino per un punto $P$ tramite l&rsquo;equazione.</p>
+<p>$$ y - y_P = m (x - x_P) $$</p>
+<p>Al variare del parametro $m$ possiamo identificare le varie soluzioni (che si incontrano nel punto $P$).</p>
+<h2>Fascio improprio</h2>
+<p>Il fascio improprio di rette ci permette di identificare velocemente tutte le possibili rette che risultino parallele ad una retta data, ovvero che presentino lo stesso $m_r$.</p>
+<p>$$ y = m_r x + q $$</p>
+<p>Al variare del parametro $q$ possiamo identificare le varie soluzioni (che hanno lo stesso $m_r$).</p>
+
+  </article>
+  
+</main>
+
+    <footer id="footer">
+  <div>
+    <span>© 2023</span> - <span>2025</span>
+  </div>
+
+  
+
+  <div class="footnote">
+    <span>IIS Montessori Repetti</span>
+  </div>
+</footer>
+
+  </div>
+
+  
+  
+
+  
+  
+
+  
+  
+
+</body>
+
+</html>

@@ -10,7 +10,7 @@ enableRobotsTXT = false                          # /robots.txt
 googleAnalytics = ""                            # google analytics id
 hasCJKLanguage = false                           # Chinese/Japanese/Korean
 languageCode = "it"                             # content language
-paginate = 5                                    # number of posts each page
+pagerSize = 10
 rssLimit = 10                                   # maximum items in rss feeds
 theme = ["hugo-chart-master", "hugo-theme-texify"]     # theme directory name
 title = "La scienza ha un cuore antico"                                  # website title
@@ -18,7 +18,7 @@ title = "La scienza ha un cuore antico"                                  # websi
 
 
 # [author]
-#     email = "barbierid@msis002003.onmicrosoft.com" # your email
+#     email = "barbierid@montessori-repetti.edu.it" # your email
 #     name = "barbierid"          # your name
 
 # https://gohugo.io/getting-started/configuration-markup

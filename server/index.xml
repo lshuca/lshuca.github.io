@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>La scienza ha un cuore antico</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on La scienza ha un cuore antico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Tue, 04 Nov 2025 10:30:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Campo Elettrico di un Filo Infinito con Legge di Gauss</title>
+      <link>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</link>
+      <pubDate>Tue, 04 Nov 2025 10:30:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</guid>
+      
+      <description>&lt;h2&gt;Obiettivo della Trattazione&lt;/h2&gt;
+&lt;p&gt;Abbiamo già studiato il caso di un filo carico di lunghezza infinita e abbiamo visto che il campo è dato da:
+$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
+dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo ricavare di nuovo il campo elettrico $\vec E$ utilizzando la &lt;strong&gt;legge di Gauss&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Impostazione del Problema&lt;/h2&gt;
+&lt;p&gt;Questo è il nostro filo uniformemente carico di lunghezza infinita. $P$ è il punto dove vogliamo andare a valutare il campo elettrico $\vec E$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/filo_gauss/filo_infinito.png&#34; alt=&#34;Filo carico infinito e punto P&#34; title=&#34;Filo carico e punto P&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;Scelta della Superficie di Gauss&lt;/h3&gt;
+&lt;p&gt;Come prima cosa dobbiamo scegliere la superficie $\Sigma$ di Gauss (quella tratteggiata). Scegliamo un &lt;strong&gt;cilindro concentrico&lt;/strong&gt; al filo e passante per il punto $P$.&lt;/p&gt;
+&lt;p&gt;$\Sigma$ è un cilindro di raggio $r$ e altezza $h$. La legge di Gauss impone che la superficie attraverso la quale valutare il flusso del campo elettrico sia chiusa. Il nostro cilindro lo è.&lt;/p&gt;
+&lt;p&gt;Conviene vedere questo cilindro come costituito dall’unione delle superfici di base $S_A$ e $S_B$ e di quella laterale $S_L$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/filo_gauss/cilindro_gauss.png&#34; alt=&#34;Superficie di Gauss cilindrica&#34; title=&#34;Cilindro di Gauss e sue componenti&#34;&gt;&lt;/p&gt;
+&lt;h2&gt;Risoluzione&lt;/h2&gt;
+&lt;h3&gt;Analisi del Flusso&lt;/h3&gt;
+&lt;p&gt;Facciamo questo perchè, in tal modo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $S_A$ e $S_B$ la normale $\vec n$ alle superfici risulta perpendicolare al vettore campo elettrico $\vec E$. Di conseguenza il loro prodotto scalare è nullo ($\cos(90^\circ) = 0$). Il flusso è nullo su $S_A$ e $S_B$.&lt;/li&gt;
+&lt;li&gt;Per la superficie laterale $S_L$ invece, essendo la normale $\vec n$ ad essa parallela al vettore campo elettrico $\vec E$, il flusso risulta massimo ($\cos(0^\circ) = 1$).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Calcoliamo il flusso $\Phi(\vec{E})$ del vettore campo elettrico attraverso la superficie di Gauss $\Sigma$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = \oint_{\Sigma} \vec{E} \cdot d\vec{S}$$&lt;/p&gt;
+&lt;p&gt;Scomponiamo l&amp;rsquo;integrale sulle tre superfici che compongono $\Sigma$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = \int_{S_A} \vec{E} \cdot d\vec{S} + \int_{S_B} \vec{E} \cdot d\vec{S} + \int_{S_L} \vec{E} \cdot d\vec{S}$$&lt;/p&gt;
+&lt;p&gt;Come visto, i primi due integrali (sulle basi) sono nulli. Ci rimane solo il flusso attraverso la superficie laterale $S_L$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = \int_{S_L} \vec{E} \cdot d\vec{S} = \int_{S_L} E , dS$$&lt;/p&gt;
+&lt;p&gt;Dobbiamo notare che lungo tutta la superficie laterale $S_L$ il campo elettrico $E$ (in modulo) è sempre lo stesso, perché la distanza $r$ dal filo è costante. Portiamo allora $E$ fuori dall’integrale:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = E \int_{S_L} dS$$&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;integrale $\int_{S_L} dS$ non è altro che l&amp;rsquo;area della superficie laterale del cilindro, che vale $A_{lat} = 2 \pi r h$.&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = E (2 \pi r h)$$&lt;/p&gt;
+&lt;h3&gt;Applicazione della Legge di Gauss&lt;/h3&gt;
+&lt;p&gt;Ora applichiamo la legge di Gauss, che ci dice che il flusso attraverso la superficie è pari alla carica interna ($q_{int}$) alla superficie, diviso la costante $\varepsilon_0$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{\Sigma}(\vec{E}) = \frac{q_{int}}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;$q_{int}$ è la carica interna al cilindro. Utilizzando la densità lineare di carica $\lambda$ (carica per unità di lunghezza) si ha:&lt;/p&gt;
+&lt;p&gt;$$q_{int} = \lambda \cdot h$$&lt;/p&gt;
+&lt;p&gt;Adesso sostituiamo, eguagliando le due espressioni trovate per il flusso $\Phi_{\Sigma}(\vec{E})$:&lt;/p&gt;
+&lt;p&gt;$$E (2 \pi r h) = \frac{\lambda h}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;Da questa ricaviamo il campo elettrico $E$. Possiamo semplificare l&amp;rsquo;altezza $h$ da entrambi i lati:&lt;/p&gt;
+&lt;p&gt;$$E (2 \pi r) = \frac{\lambda}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;Si ottiene infine:&lt;/p&gt;
+&lt;p&gt;$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$&lt;/p&gt;
+&lt;p&gt;Il campo elettrico non dipende dalla lunghezza $h$ del cilindro scelto.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Prodotto tra vettori</title>
+      <link>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</link>
+      <pubDate>Tue, 03 Dec 2024 12:55:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</guid>
+      
+      <description>&lt;h3 id=&#34;prodotto-scalare&#34;&gt;Prodotto scalare&lt;/h3&gt;
+&lt;p&gt;Il prodotto scalare tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:&lt;/p&gt;
+&lt;p&gt;$$\vec{v} \cdot \vec{w} = v_x w_x + v_y w_y \quad \text{oppure} \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos(\alpha) $$&lt;/p&gt;
+&lt;h4 id=&#34;proprietà-principali&#34;&gt;Proprietà principali:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Simmetria&lt;/strong&gt;: $\vec{v} \cdot \vec{w} = \vec{w} \cdot \vec{v}$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Risultato scalare&lt;/strong&gt;: il prodotto scalare restituisce un numero puro (non un vettore).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Significato geometrico&lt;/strong&gt;: rappresenta la lunghezza della proiezione di $\vec{v}$ lungo $\vec{w}$, moltiplicata per la lunghezza di $\vec{w}$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;casi-particolari&#34;&gt;&lt;strong&gt;Casi particolari&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori paralleli&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli (angolo $\alpha = 0^\circ$ o $\alpha = 180^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $\alpha = 0^\circ$ ($v$ e $w$ hanno la stessa direzione):
+$$      \cos(0^\circ ) = 1 \quad \implies \quad \vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}|$$&lt;/li&gt;
+&lt;li&gt;Per $\alpha = 180^\circ$ ($v$ e $w$ hanno direzioni opposte):
+$$      \cos(180^\circ ) = -1 \quad \implies \quad \vec{v} \cdot \vec{w} = -|\vec{v}| |\vec{w}|$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quindi, il prodotto scalare fornisce un valore massimo (positivo o negativo) quando i vettori sono paralleli.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori ortogonali&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono ortogonali (angolo $\alpha = 90^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\cos(90^\circ) = 0$, quindi:
+$$      \vec{v} \cdot \vec{w} = 0$$
+Questo significa che il prodotto scalare tra vettori perpendicolari è sempre nullo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Angolo tra due vettori&lt;/strong&gt;:
+Note le relazioni per cui $ \vec{v} \cdot \vec{w} = v_x w_x + v_y w_y = |\vec{v}| |\vec{w}| \cos(\alpha)$ possiamo facilmente invertire la relazione per ottenere il $cos(\alpha)$:&lt;/p&gt;
+&lt;p&gt;$$ cos(\alpha) = \dfrac{v_x w_x + v_y w_y}{|\vec{v}| |\vec{w}|}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;prodotto-vettoriale&#34;&gt;Prodotto vettoriale&lt;/h3&gt;
+&lt;p&gt;Il prodotto vettoriale tra due vettori $\vec{v}$ e $\vec{w}$ è definito come:&lt;/p&gt;
+&lt;p&gt;$$ \vec{u} = \vec{v} \times \vec{w} $$&lt;/p&gt;
+&lt;p&gt;Dove il risultato è un vettore $\vec{u}$ ortogonale sia a $\vec{v}$ che a $\vec{w}$. Il modulo è dato da:&lt;/p&gt;
+&lt;p&gt;$$ |\vec{u}| = |\vec{v}| |\vec{w}| \sin(\alpha )$$&lt;/p&gt;
+&lt;h4 id=&#34;proprietà-principali-1&#34;&gt;Proprietà principali:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Antisimmetria&lt;/strong&gt;: $\vec{v} \times \vec{w} = -(\vec{w} \times \vec{v})$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ortogonalità del risultato&lt;/strong&gt;: il vettore risultante $\vec{u}$ è perpendicolare al piano definito da $\vec{v}$ e $\vec{w}$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modulo nullo per vettori paralleli&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;casi-particolari-1&#34;&gt;&lt;strong&gt;Casi particolari&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori paralleli&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono paralleli ($\alpha = 0^\circ$ o $\alpha = 180^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sin(0^\circ) = \sin(180^\circ) = 0$, quindi:
+$$      |\vec{v} \times \vec{w}| = 0$$
+Il prodotto vettoriale è nullo quando i vettori sono paralleli (non c&amp;rsquo;è &amp;ldquo;area&amp;rdquo; tra di essi).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vettori ortogonali&lt;/strong&gt;:
+Se $\vec{v}$ e $\vec{w}$ sono ortogonali ($\alpha = 90^\circ$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sin(90^\circ) = 1$, quindi:
+$$      |\vec{v} \times \vec{w}| = |\vec{v}| |\vec{w}|$$
+In questo caso, il modulo del prodotto vettoriale è massimo e rappresenta l&amp;rsquo;area del parallelogramma definito dai due vettori.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;calcolo-del-prodotto-vettoriale-con-il-determinante&#34;&gt;Calcolo del prodotto vettoriale con il determinante&lt;/h3&gt;
+&lt;p&gt;Per calcolare il prodotto vettoriale $\vec{v} \times \vec{w}$ di due vettori $\vec{v}$ e $\vec{w}$ nello spazio tridimensionale ($ \mathbb{R}^3 $), possiamo utilizzare il &lt;strong&gt;determinante di una matrice&lt;/strong&gt;. Questo metodo è pratico e diretto. Ecco come fare passo passo:&lt;/p&gt;
+&lt;h4 id=&#34;metodo&#34;&gt;Metodo:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scrivere la matrice&lt;/strong&gt;:
+Organizza la matrice $3 \times 3$ come segue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La &lt;strong&gt;prima riga&lt;/strong&gt; contiene i versori $\hat{i}$, $\hat{j}$, $\hat{k}$ (che rappresentano le direzioni dei tre assi $x$, $y$, $z$).&lt;/li&gt;
+&lt;li&gt;La &lt;strong&gt;seconda riga&lt;/strong&gt; contiene le componenti del primo vettore $\vec{v} = (v_x, v_y, v_z)$.&lt;/li&gt;
+&lt;li&gt;La &lt;strong&gt;terza riga&lt;/strong&gt; contiene le componenti del secondo vettore $\vec{w} = (w_x, w_y, w_z)$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quindi:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;$\hat{i}$&lt;/th&gt;
+          &lt;th&gt;$\hat{j}$&lt;/th&gt;
+          &lt;th&gt;$\hat{k}$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$v_x$&lt;/td&gt;
+          &lt;td&gt;$v_y$&lt;/td&gt;
+          &lt;td&gt;$v_z$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$w_x$&lt;/td&gt;
+          &lt;td&gt;$w_y$&lt;/td&gt;
+          &lt;td&gt;$w_z$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Calcolare il determinante&lt;/strong&gt;:
+Il determinante si espande lungo la prima riga (quella dei versori). Procedi come segue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Moltiplica ogni versore per il determinante della &lt;strong&gt;sottomatrice&lt;/strong&gt; che rimane eliminando la riga e la colonna del versore stesso.&lt;/li&gt;
+&lt;li&gt;Usa i segni alternati $+,-,+$ per i versori $\hat{i}$, $\hat{j}$, $\hat{k}$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scrivendo il calcolo espanso:&lt;/p&gt;
+&lt;p&gt;$$ \vec v \times \vec w = \hat i A_{1,1} + \hat j A_{2,1} + \hat k A_{3,1} $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Calcolare i minori&lt;/strong&gt;:
+Ogni &lt;strong&gt;sottomatrice&lt;/strong&gt; è una matrice $2 \times 2$, e il suo determinante si calcola con la formula:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;$a$&lt;/th&gt;
+          &lt;th&gt;$b$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;$c$&lt;/td&gt;
+          &lt;td&gt;$d$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;$$ ad - bc $$&lt;/p&gt;
+&lt;p&gt;Applica questa formula per ciascun minore:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $\hat{i}$: usa la sottomatrice $((v_y, v_z), (w_y, w_z))$.&lt;/li&gt;
+&lt;li&gt;Per $\hat{j}$: usa la sottomatrice $((v_x, v_z), (w_x, w_z))$.&lt;/li&gt;
+&lt;li&gt;Per $\hat{k}$: usa la sottomatrice $((v_x, v_y), (w_x, w_y))$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Comporre il risultato&lt;/strong&gt;:
+Sostituisci i determinanti calcolati nei rispettivi termini per ottenere il vettore risultante:
+$$
+\vec{v} \times \vec{w} =
+\left[(v_y w_z - v_z w_y)\right] \hat{i} -
+\left[(v_x w_z - v_z w_x)\right] \hat{j} +
+\left[(v_x w_y - v_y w_x)\right] \hat{k}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Questi casi particolari evidenziano i legami geometrici fondamentali tra i due tipi di prodotto.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Rimaneggiamenti algebrici</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/parabola/par_general/</link>
+      <pubDate>Mon, 30 Sep 2024 10:52:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/cartesian/parabola/par_general/</guid>
+      
+      <description>&lt;p&gt;$$ \sqrt{(x - x_f)^2 + (y - y_f)^2} = \dfrac{|a x + b y + c|}{\sqrt{a^2 + b^2}} $$&lt;/p&gt;
+&lt;p&gt;Elevo alla seconda a destra e a sinistra e sviluppo i quadrati.&lt;/p&gt;
+&lt;p&gt;$$ {(x - x_f)^2 + (y - y_f)^2} = \dfrac{(a x + b y + c)^2}{{a^2 + b^2}} $$&lt;/p&gt;
+&lt;p&gt;$$ (x^2 - 2x x_f + x_f^2 + y^2 - 2y y_f + y_f^2) = \dfrac{a^2 x^2 + b^2 y^2 + c^2 + 2 ab xy + 2 ac x + 2 bc y}{({a^2 + b^2})} $$&lt;/p&gt;
+&lt;p&gt;Ottengo un termine con parametri che moltiplicano i termini in $x$ ed $y$.&lt;/p&gt;
+&lt;p&gt;$$ \dfrac{b^2}{a^2 + b^2} x^2 - \left( \dfrac{2ab}{a^2 + b^2} \right) xy + \dfrac{a^2}{a^2 + b^2} y^2 -2\left(x_0+\dfrac{ac}{a^2 + b^2}\right)x -2\left(y_0+\dfrac{bc}{a^2 + b^2}\right)y + \left(x_0^2 + y_0^2-\frac{c^2}{a^2 + b^2}\right) = 0 $$&lt;/p&gt;
+&lt;p&gt;Ovvero i termini che abbiamo precedentemente identificati nelle lettere $A$, $B$, $C$, $D$, $E$ ed $F$.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Parabola con direttrice parallela a x</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/parabola/par_dirx/</link>
+      <pubDate>Sun, 29 Sep 2024 23:57:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/cartesian/parabola/par_dirx/</guid>
+      
+      <description>&lt;p&gt;Nel caso in cui si dovesse lavorare con una parabola con asse di simmetria parallelo all&amp;rsquo;asse $x$, ovvero della forma $by + c = 0$, l&amp;rsquo;equazione della parabola risulta molto semplificata.&lt;/p&gt;
+&lt;p&gt;$$ y = \alpha x^2 + \beta x + \gamma $$&lt;/p&gt;
+&lt;p&gt;I parametri $\alpha$, $\beta$ e $\gamma$ vengono spesso indicati con $a$, $b$ e $c$, analogamente al formalismo delle equazioni di secondo grado.&lt;/p&gt;
+&lt;h3&gt;Proprietà della parabola&lt;/h3&gt;
+&lt;p&gt;Sulla base dei parametri $a$, $b$ e $c$ è facile intuire informazioni geometriche della parabola.&lt;/p&gt;
+&lt;h4&gt;Parametro $a$&lt;/h4&gt;
+&lt;p&gt;Sulla base del parametro $a$ è facile riconoscere la &lt;em&gt;concavità&lt;/em&gt; della parabola, ovvero il verso della sua &amp;ldquo;gobba&amp;rdquo;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$a &amp;gt; 0$ la parabola ha concavità rivolta verso l&amp;rsquo;alto, cioè presenta un valore minimo nel vertice e tende a $\infty$;&lt;/li&gt;
+&lt;li&gt;$a &amp;lt; 0$ la parabola ha concavità rivolta verso il basso, cioè presenta un valore massimo nel vertice e tende a $-\infty$;&lt;/li&gt;
+&lt;li&gt;$a = 0$ in questo caso la parabola viene detta &amp;ldquo;degenere&amp;rdquo; e degenera in una retta.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Parametro $b$&lt;/h4&gt;
+&lt;p&gt;Sulla base del parametro $b$, rispetto al parametro $a$, è facile intuire qualitativamente la coordinata $x$ del vertice (e dunque del fuoco e dell&amp;rsquo;asse di simmetria).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;per valori di $a$ e $b$ concordi l&amp;rsquo;asse di simmetria sarà spostato verso sinistra rispetto all&amp;rsquo;asse $y$;&lt;/li&gt;
+&lt;li&gt;per valori di $a$ e $b$ discordi l&amp;rsquo;asse di simmetria sarà spostato verso destra;&lt;/li&gt;
+&lt;li&gt;per $b = 0$ il vertice si troverà sull&amp;rsquo;asse $y$ e quest&amp;rsquo;ultimo coinciderà con l&amp;rsquo;asse di simmetria.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In caso di $a &amp;lt; 0$ il comportamento si inverte. Ovvero possiamo sostituire le considerazioni dal puro valore di $b$ nei termini $a$ e $b$ discordi e concordi.&lt;/p&gt;
+&lt;h4&gt;Parametro $c$&lt;/h4&gt;
+&lt;p&gt;Il parametro $c$ assume la stessa funzione svolta dal parametro $q$ nel caso della retta, ovvero rappresenta il valore della coordinata $y$ del punto di intersezione della parabola con l&amp;rsquo;asse $y$.&lt;/p&gt;
+&lt;p&gt;In caso di $c = 0$ l&amp;rsquo;origine appartiene alla parabola.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Introduzione alla parabola</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/parabola/par_intro/</link>
+      <pubDate>Sun, 29 Sep 2024 23:56:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/cartesian/parabola/par_intro/</guid>
+      
+      <description>&lt;p&gt;Una parabola è definita come il luogo geometrico dei punti equidistanti da un punto detto &lt;em&gt;fuoco&lt;/em&gt; ed una retta detta &lt;em&gt;direttrice&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Equazione della parabola&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;equazione della parabola deriva dalle relazioni della distanza tra due punti e la distanza punto retta.&lt;/p&gt;
+&lt;p&gt;Ponendo infatti la distanza tra due punti $P(x, y)$ e $F(x_f, y_f)$ possiamo confrontarla con la distanza del punto $P$ dalla retta, riportata in forma implicita, $r:$ $ax + by + c$.&lt;/p&gt;
+&lt;p&gt;$$ d_{PF} = d_{Pr} $$&lt;/p&gt;
+&lt;p&gt;$$ d_{PF} = \sqrt{(x - x_f)^2 + (y - y_f)^2}  $$&lt;/p&gt;
+&lt;p&gt;$$ d_{Pr} = \dfrac{|a x + b y + c|}{\sqrt{a^2 + b^2}} $$&lt;/p&gt;
+&lt;p&gt;$$ \sqrt{(x - x_f)^2 + (y - y_f)^2} = \dfrac{|a x + b y + c|}{\sqrt{a^2 + b^2}} $$&lt;/p&gt;
+&lt;p&gt;Tramite alcuni &lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/parabola/par_general/&#34; title=&#34;rimaneggiamenti algebrici&#34;&gt;rimaneggiamenti algebrici&lt;/a&gt; possiamo riscrivere l&amp;rsquo;ultima equazione come:&lt;/p&gt;
+&lt;p&gt;$$ A x^2 + B xy + C y^2 + Dx + Ey + F = 0 $$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/parabola/par_dirx/&#34; title=&#34;Parabola con direttrice parallela all&#39;asse x&#34;&gt;Parabola con direttrice parallela all&amp;rsquo;asse x&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Proprietà della parabola&lt;/h3&gt;
+&lt;h4&gt;Fuoco&lt;/h4&gt;
+&lt;p&gt;Punto necessario per la definizione della parabola.&lt;/p&gt;
+&lt;h4&gt;Direttrice&lt;/h4&gt;
+&lt;p&gt;Retta necessaria per la definizione della parabola.&lt;/p&gt;
+&lt;h4&gt;Asse di simmetria&lt;/h4&gt;
+&lt;p&gt;Con asse di simmetria di una parabola ci si riferisce alla retta che divide la figura in due parti &amp;ldquo;uguali&amp;rdquo;, ovvero la parabola gode di una simmetria assiale, dunque:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Ad ogni punto dell’asse corrisponde lo stesso punto
+Ad ogni punto P non appartenente ad esso è associato un punto P’ tale che l’asse diviene anche asse del segmento PP’.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;asse di simmetria risulta sempre essere perpendicolare alla direttrice e, per questo motivo, sarà parallela all&amp;rsquo;asse $x$ qualora la direttrice dovesse essere parallela alle ordinate e viceversa.&lt;/p&gt;
+&lt;h4&gt;Vertice&lt;/h4&gt;
+&lt;p&gt;Il vertice è definito come il punto di intersezione tra l&amp;rsquo;asse di simmetria e la parabola stessa.&lt;/p&gt;
+&lt;p&gt;Il vertice risulta, per le parabole con asse di simmetria parallelo all&amp;rsquo;asse $y$, il punto di massimo o minimo assunto dalla parabola stessa.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Introduzione alla circonferenza</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/</link>
+      <pubDate>Sun, 29 Sep 2024 22:56:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/</guid>
+      
+      <description>&lt;p&gt;Una circonferenza è definita come il luogo geometrico dei punti equidistanti da un punto detto &lt;em&gt;centro&lt;/em&gt; e la cui distanza è denominata &lt;em&gt;raggio&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In geometria analitica significa poter definire l&amp;rsquo;insieme dei punti che rispettano una determinata condizione che ne lega le coordinate, nel caso del piano cartesiano allora $y$ a $x$, rispettivamente ordinata e ascissa generiche.&lt;/p&gt;
+&lt;h2&gt;Equazione della circonferenza&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;equazione della circonferenza deriva dalla definizione di distanza tra due punti, uno generico $P(x, y)$ ed uno specifico detto centro $C(x_c, y_c)$.&lt;/p&gt;
+&lt;p&gt;$$ d_{PC} = \sqrt{(x - x_c)^2 + (y - y_c)^2} $$&lt;/p&gt;
+&lt;p&gt;Definendo $d_{PC} = r$ e elevando al quadrato:&lt;/p&gt;
+&lt;p&gt;$$ (x - x_c)^2 + (y - y_c)^2 = r^2 $$&lt;/p&gt;
+&lt;p&gt;Sviluppandone i binomi possiamo riscrivere una seconda formulazione della circonferenza più compatta.&lt;/p&gt;
+&lt;p&gt;$$ x^2 - 2x_c x + x_c^2 + y^2 - 2y_c y + y_c^2 = r^2 $$&lt;/p&gt;
+&lt;p&gt;$$ x^2 + y^2 - 2x_c x - 2y_c y + x_c^2 + y_c^2 - r^2 = 0 $$&lt;/p&gt;
+&lt;p&gt;Utilizzando tre parametri $a$, $b$ e $c$ possiamo definire, quasi sempre, una circonferenza come riportato in calce.&lt;/p&gt;
+&lt;p&gt;$$  x^2 + y^2 + ax + by + c = 0 $$&lt;/p&gt;
+&lt;p&gt;Da cui risulta evidente come sia possibile legare i parametri $a$, $b$ e $c$ alle coordinate del centro ed il raggio.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+a = -2 x_c \rightarrow x_c = -\dfrac{a}{2} \newline \newline
+b = -2 y_c \rightarrow y_c = -\dfrac{b}{2} \newline \newline
+c = x_c^2 + y_c^2 - r^2 = \rightarrow r = \sqrt{x_c^2 + y_c^2 - c}
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;ultima condizione rende necessario analizzare la condizione di esistenza della figura, infatti:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c &amp;gt; 0$ la circonferenza esiste;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c = 0$ la circonferenza esiste ma si dice degenere, ovvero &amp;ldquo;degenera&amp;rdquo; in un singolo punto;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c &amp;lt; 0$ la circonferenza non esiste in quanto non esiste il valore di $r \in \mathbb{R}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Esempi&lt;/h2&gt;
+&lt;h3&gt;Determina l&#39;equazione della circonferenza&lt;/h3&gt;
+&lt;p&gt;Determina l&amp;rsquo;equazione della circonferenza di raggio $3$ e centro $C(1, 1)$.&lt;/p&gt;
+&lt;h4&gt;Utilizzando la definizione&lt;/h4&gt;
+&lt;p&gt;$$ (x - 1)^2 + (y - 1)^2 = 9 $$&lt;/p&gt;
+&lt;p&gt;Risolvendo&lt;/p&gt;
+&lt;p&gt;$$ x^2 - 2x + 1 + y^2 - 2y +1 = 9 $$&lt;/p&gt;
+&lt;p&gt;$$ x^2 + y^2 - 2x - 2y - 7 = 0 $$&lt;/p&gt;
+&lt;h4&gt;Utilizzando i parametri&lt;/h4&gt;
+&lt;p&gt;$$
+\begin{cases}
+a = -2 x_c \rightarrow a = -2 \cdot 1 = -2 \newline \newline
+b = -2 y_c \rightarrow b = -2 \cdot 1 = -2 \newline \newline
+c = x_c^2 + y_c^2 - r^2 = \rightarrow c = 1 + 1 - 9 = -7
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;equazione della circonferenza risulta essere:&lt;/p&gt;
+&lt;p&gt;$$ x^2 + y^2 - 2x - 2y - 7 = 0 $$&lt;/p&gt;
+&lt;h3&gt;Ricava i parametri della circonferenza&lt;/h3&gt;
+&lt;p&gt;Determina le coordinate del centro ed il raggio della circonferenza di equazione $ x^2 + y^2 + 25 = 0 $.&lt;/p&gt;
+&lt;h4&gt;Utilizzando i parametri&lt;/h4&gt;
+&lt;p&gt;Possiamo immediatamente notare come la circonferenza in oggetto non abbia centro nell&amp;rsquo;origine, infatti non presenta termini in $x$ ed $y$, ovvero i parametri $a$ e $b$ sono nulli.&lt;/p&gt;
+&lt;p&gt;Possiamo quindi calcolarne il raggio tramite l&amp;rsquo;apposita relazione:&lt;/p&gt;
+&lt;p&gt;$$ r = \sqrt{x_c^2 + y_c^2 - c} $$&lt;/p&gt;
+&lt;p&gt;$$ r = \sqrt{0^2 + 0^2 - (25)} = \sqrt{- 25}$$&lt;/p&gt;
+&lt;p&gt;Otteniamo un radicale pari con argomento negativo, questa relazione non ha soluzione nei numeri reali dunque non può esistere una circonferenza di equazione $ x^2 + y^2 + 25 = 0 $.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Relazione tra forma esplicita ed implicita</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/</link>
+      <pubDate>Sun, 29 Sep 2024 18:56:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/</guid>
+      
+      <description>&lt;p&gt;La stessa retta può essere rappresentata in entrambe le forme indifferentemente e possiamo trovare relazioni che leghino i vari parametri.&lt;/p&gt;
+&lt;p&gt;$$ ax + by + c = 0 $$
+$$ by = -ax - c $$
+$$ y = \dfrac{-ax - c}{b} $$
+$$ y = -\dfrac{a}{b}x -\dfrac{c}{b} $$&lt;/p&gt;
+&lt;p&gt;Ovvero è possibile notare che, escluso il caso di $b = 0$ come già anticipato una retta parallela all&amp;rsquo;asse $y$, i parametri $m$ e $q$ possono essere letti come rapporti di $a$, $b$ e $c$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+m = -\dfrac{a}{b} \newline \newline
+q = -\dfrac{c}{b}
+\end{cases}
+$$&lt;/p&gt;
+&lt;h2&gt;Esempio&lt;/h2&gt;
+&lt;p&gt;La retta, riportata in forma implicita, $ 2x - y + 1 = 0 $ può essere facilmente analizzata notando che:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+m = -\dfrac{2}{-1} = 2 \newline \newline
+q = -\dfrac{1}{-1} = 1
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;ovvero&lt;/p&gt;
+&lt;p&gt;$$ y = 2x + 1 $$&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Rette</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/</link>
+      <pubDate>Sun, 29 Sep 2024 17:56:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/</guid>
+      
+      <description>&lt;p&gt;Una retta è definita come il luogo geometrico dei punti allineati lungo una specifica direzione.&lt;/p&gt;
+&lt;p&gt;In geometria analitica significa poter definire l&amp;rsquo;insieme dei punti che rispettano una determinata condizione che ne lega le coordinate, nel caso del piano cartesiano allora $y$ a $x$, rispettivamente ordinata e ascissa generiche.&lt;/p&gt;
+&lt;h2&gt;Forma implicita&lt;/h2&gt;
+&lt;p&gt;La forma implicita della retta è rappresentata e determinata da tre parametri $a$, $b$ e $c$.&lt;/p&gt;
+&lt;p&gt;$$ ax + by + c = 0 $$&lt;/p&gt;
+&lt;h2&gt;Forma esplicita&lt;/h2&gt;
+&lt;p&gt;La forma esplicita della retta permette di ricavare immediatamente il valore della coordinata $y$ (variabile dipendente) in funzione della $x$ (variabile indipendente).&lt;/p&gt;
+&lt;p&gt;$$ y = mx + q $$&lt;/p&gt;
+&lt;p&gt;Nel caso della forma esplicita sono di immediato riconoscimento i parametri $m$ e $q$, tuttavia le rette parallele all&amp;rsquo;asse $y$ non possono essere rappresentate in questa forma.&lt;/p&gt;
+&lt;h3&gt;Termine noto&lt;/h3&gt;
+&lt;p&gt;Il termine noto o quota $q$ rappresenta la coordinata $y$ che la retta assume nel punto di ascissa $0$. Questa informazione è utile per poter ricavare immediatamente un&amp;rsquo;informazione geometrica del punto $(0, y_p)$ appartenente alla retta.&lt;/p&gt;
+&lt;iframe src=&#34;https://www.desmos.com/calculator/nmadjgzbgv?embed&#34; width=&#34;500&#34; height=&#34;500&#34; style=&#34;border: 1px solid #ccc&#34; frameborder=0&gt;&lt;/iframe&gt;
+&lt;h3&gt;Coefficiente angolare&lt;/h3&gt;
+&lt;p&gt;Il coefficiente angolare $m$ è un parametro associato alla pendenza della retta studiata. Maggiore è $m$ maggiore sarà il divario, date due rette $r$ e $s$, tra le coordinate $y$ a parità di $x$.&lt;/p&gt;
+&lt;iframe src=&#34;https://www.desmos.com/calculator/1dnackvxu8?embed&#34; width=&#34;500&#34; height=&#34;500&#34; style=&#34;border: 1px solid #ccc&#34; frameborder=0&gt;&lt;/iframe&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Appunti di Matematica</title>
+      <link>http://localhost:1313/pages/pymath/pymath/</link>
+      <pubDate>Sat, 28 Sep 2024 15:55:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/pymath/</guid>
+      
+      <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della matematica.&lt;/p&gt;
+&lt;h2&gt;Geometria analitica&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/intro_cart/&#34; title=&#34;Introduzione al piano cartesiano&#34;&gt;Introduzione al piano cartesiano&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Punti, segmenti e rette&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/&#34; title=&#34;Rette&#34;&gt;Rette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/&#34; title=&#34;Relazione tra forma esplicita ed implicita&#34;&gt;Relazione tra forma esplicita ed implicita&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_eser/&#34; title=&#34;Operazioni con rette&#34;&gt;Operazioni con rette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_fasci/&#34; title=&#34;Fasci di rette&#34;&gt;Fasci di rette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_form/&#34; title=&#34;Formulario&#34;&gt;Formulario&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Parabola&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/parabola/par_intro/&#34; title=&#34;Parabola&#34;&gt;Parabola&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Circonferenza&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/&#34; title=&#34;Circonferenza&#34;&gt;Circonferenza&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Punti e segmenti</title>
+      <link>http://localhost:1313/pages/pymath/cartesian/points_segments/</link>
+      <pubDate>Fri, 27 Sep 2024 17:56:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/cartesian/points_segments/</guid>
+      
+      <description>&lt;p&gt;Ogni punto sul piano cartesiano è determinato dalle sue coordinate, relativamente all&amp;rsquo;asse delle &lt;em&gt;ascisse&lt;/em&gt; $x$ e a quello delle &lt;em&gt;ordinate&lt;/em&gt; $y$.&lt;/p&gt;
+&lt;p&gt;$$ P(x_p, y_p) $$&lt;/p&gt;
+&lt;h3&gt;Punto medio&lt;/h3&gt;
+&lt;p&gt;Dati due punti $A$ e $B$, identificati da due set di coordinate $(x_a, y_a)$ e $(x_b, y_b)$, è possibile calcolarne il punto medio $M$, ovver il punto che suddivide il segmento $\overline{AB}$ in due segmenti congruenti $\overline{AM}$ $\overline{MB}$.
+$$ M \left(\dfrac{x_A + x_B}{2}, : \dfrac{y_A + y_B}{2} \right) $$&lt;/p&gt;
+&lt;h3&gt;Distanza tra due punti&lt;/h3&gt;
+&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolarne la distanza, ovvero la lunghezza del segmento che ha come estremi $A$ e $B$, sfruttando applicando il teorema di Pitagora su sul triangolo avente come cateti le differenze di coordinate sulle ascisse e ordinate dei due punti.&lt;/p&gt;
+&lt;p&gt;$$ d = \left| \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2} \right| $$&lt;/p&gt;
+&lt;p&gt;Si può notare come la distanza tra due punti sia indifferentemente calcolata a partire da $A$ o da $B$ e che sarà sempre definita positiva dalla presenza del valore assoluto.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;it&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;Segmento con Punto Medio&lt;/title&gt;
+    &lt;style&gt;
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 20px auto;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;canvas id=&#34;segmentCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
+
+    &lt;script&gt;
+
+    // Function to draw x and y axes
+        function drawAxes(context, canvasWidth, canvasHeight) {
+            // Draw x-axis
+            context.beginPath();
+            context.moveTo(0, canvasHeight / 2);
+            context.lineTo(canvasWidth, canvasHeight / 2);
+            context.stroke();
+
+            // Draw y-axis
+            context.beginPath();
+            context.moveTo(canvasWidth / 2, 0);
+            context.lineTo(canvasWidth / 2, canvasHeight);
+            context.stroke();
+
+
+            // Draw horizontal grid lines
+            for (let y = 0; y &lt; canvasHeight; y += 10) {
+                context.beginPath();
+                context.moveTo(0, y);
+                context.lineTo(canvasWidth, y);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+
+            // Draw vertical grid lines
+            for (let x = 0; x &lt; canvasWidth; x += 10) {
+                context.beginPath();
+                context.moveTo(x, 0);
+                context.lineTo(x, canvasHeight);
+                context.lineWidth = 0.1;
+                context.stroke();
+            }
+        }
+
+        // Funzione per generare un punto casuale sul canvas
+        function generateRandomPoint() {
+		    return {
+		        x: Math.floor(Math.random() * 41) - 20,  // Intervallo [-20, 20]
+		        y: Math.floor(Math.random() * 41) - 20   // Intervallo [-20, 20]
+		    };
+		}
+
+		// Funzione per convertire le coordinate matematiche [-20, 20] in coordinate pixel del canvas [0, 400]
+		function mapToCanvasCoordinates(point, canvasWidth, canvasHeight) {
+		    return {
+		        x: (point.x + 20) * (canvasWidth / 40),  // Mappa da [-20, 20] a [0, canvasWidth]
+		        y: canvasHeight - ((point.y + 20) * (canvasHeight / 40))  // Mappa da [-20, 20] a [0, canvasHeight] e inverte y
+		    };
+		}
+
+        // Funzione per calcolare il punto medio tra due punti
+        // Funzione per calcolare il punto medio tra due punti, restituendo una frazione
+		function calculateMidPoint(A, B) {
+		    return {
+		        x: { num: A.x + B.x, den: 2 },  // Punto medio in forma di frazione
+		        y: { num: A.y + B.y, den: 2 }
+		    };
+		}
+
+		// Funzione per mostrare il risultato del punto medio come frazione
+		function displayFraction(fraction) {
+		    // Se il numeratore è divisibile per il denominatore, restituisci il numero intero
+		    if (fraction.num % fraction.den === 0) {
+		        return (fraction.num / fraction.den).toString();
+		    } else {
+		        // Altrimenti, restituisci la frazione
+		        return fraction.num + &#34;/&#34; + fraction.den;
+		    }
+		}
+
+
+		// Funzione per calcolare la distanza tra due punti e restituire la rappresentazione con radice
+		function calculateDistance(A, B) {
+		    const deltaX = B.x - A.x;
+		    const deltaY = B.y - A.y;
+
+		    // Calcola il quadrato della distanza
+		    const distanceSquared = deltaX * deltaX + deltaY * deltaY;
+
+		    // Calcola la radice quadrata approssimata
+		    const sqrtDistance = Math.sqrt(distanceSquared);
+
+		    // Se la radice quadrata è un numero intero, restituiscilo come tale
+		    if (Number.isInteger(sqrtDistance)) {
+		        return sqrtDistance.toString();
+		    } else {
+		        // Altrimenti, restituisci la rappresentazione con la radice quadrata
+		        return &#34;√(&#34; + distanceSquared + &#34;)&#34;;
+		    }
+		}
+
+
+
+        // Funzione per disegnare un segmento e i punti sul canvas
+        function drawSegment(context, A, B, M, canvasWidth, canvasHeight) {
+		    // Mappiamo i punti A, B, M alle coordinate del canvas
+		    const ACanvas = mapToCanvasCoordinates(A, canvasWidth, canvasHeight);
+		    const BCanvas = mapToCanvasCoordinates(B, canvasWidth, canvasHeight);
+		    const MCanvas = mapToCanvasCoordinates(M, canvasWidth, canvasHeight);
+
+		    // Disegna il segmento tra A e B
+		    context.beginPath();
+		    context.moveTo(ACanvas.x, ACanvas.y);
+		    context.lineTo(BCanvas.x, BCanvas.y);
+		    context.strokeStyle = &#39;black&#39;;
+		    context.lineWidth = 2;
+		    context.stroke();
+
+		    // Disegna il punto A
+		    context.beginPath();
+		    context.arc(ACanvas.x, ACanvas.y, 5, 0, 2 * Math.PI);
+		    context.fillStyle = &#39;red&#39;;
+		    context.fill();
+		    context.fillText(&#34;A (&#34; + A.x + &#34;, &#34; + A.y + &#34;)&#34;, ACanvas.x + 10, ACanvas.y - 10);
+
+		    // Disegna il punto B
+		    context.beginPath();
+		    context.arc(BCanvas.x, BCanvas.y, 5, 0, 2 * Math.PI);
+		    context.fillStyle = &#39;blue&#39;;
+		    context.fill();
+		    context.fillText(&#34;B (&#34; + B.x + &#34;, &#34; + B.y + &#34;)&#34;, BCanvas.x + 10, BCanvas.y - 10);
+
+		    // Disegna il punto medio M
+		    context.beginPath();
+		    context.arc(MCanvas.x, MCanvas.y, 5, 0, 2 * Math.PI);
+		    context.fillStyle = &#39;green&#39;;
+		    context.fill();
+		    context.fillText(&#34;M (&#34; + M.x.toFixed(2) + &#34;, &#34; + M.y.toFixed(2) + &#34;)&#34;, MCanvas.x + 10, MCanvas.y + 10);
+		}
+
+        // Funzione principale per eseguire il disegno
+        function main() {
+            var canvas = document.getElementById(&#39;segmentCanvas&#39;);
+            var context = canvas.getContext(&#39;2d&#39;);
+
+        	drawAxes(context, canvas.width, canvas.height, );
+
+            // Genera due punti casuali A e B
+            var A = generateRandomPoint(canvas.width, canvas.height);
+            var B = generateRandomPoint(canvas.width, canvas.height);
+
+            // Calcola il punto medio M
+            var M = calculateMidPoint(A, B);
+
+            // Calcola la distanza tra A e B
+            var distance = calculateDistance(A, B);
+
+            // Ad esempio, per visualizzare il punto medio M nel disegno:
+			// context.fillText(&#34;M (&#34; + displayFraction(M.x) + &#34;, &#34; + displayFraction(M.y) + &#34;)&#34;, M.x.num / M.x.den + 10, M.y.num / M.y.den + 10);
+
+			// Per visualizzare la distanza sotto il canvas
+			context.fillText(&#34;Distanza tra A e B: &#34; + calculateDistance(A, B), 10, canvas.height - 10);
+
+		    // Disegna il segmento e i punti sul canvas
+		    drawSegment(context, A, B, M, canvas.width, canvas.height);
+
+            // Mostra la distanza sotto il canvas
+            context.font = &#34;16px Arial&#34;;
+            context.fillStyle = &#34;black&#34;;
+            context.fillText(&#34;Distanza tra A e B: &#34; + distance.toFixed(2), 10, canvas.height - 10);
+        }
+
+        // Esegui la funzione principale quando la pagina viene caricata
+        window.onload = main;
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>
