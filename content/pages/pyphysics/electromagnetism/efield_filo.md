@@ -35,17 +35,19 @@ L'obiettivo era quello di avere una superficie chiusa: il cilindro offre una sup
 ![efield_norm](/static/img/electromagnetism/efield_norm.png "Normali alla superficie")
 
 
-Il flusso $ \Phi(\vec{E})|_{S} $ del vettore campo elettrico attraverso la superficie di Gauss $S$ può essere scomposto nello studio di tanti contributi che possono, per ragioni geometriche, riportati in tre casistiche:
+Il flusso $ \Phi(\vec{E})|_{S} $ del vettore campo elettrico attraverso la superficie di Gauss $S$ può essere scomposto nello studio di tanti contributi che possono, per ragioni geometriche, essere come segue.
 
 $$ \left. \Phi(\vec{E}) \right\rvert_{S} = \Phi_{S}(\vec{E}) = \Phi_{S_{\uparrow}}(\vec{E}) + \Phi_{S_{L}}(\vec{E}) + \Phi_{S_{\downarrow}}(\vec{E}) $$
 
-Come visto, i contributi delle superfici $up$ e $down$ sono nulli. Ci rimane solo il flusso attraverso la superficie laterale $S_L$:
-
-$$\Phi_{S}(\vec{E}) = \vec{E} \cdot \vec{S_L} = E \cdot S_L$$
+Come visto, i contributi delle superfici $up$ e $down$ sono nulli. Ci rimane solo il flusso attraverso la superficie laterale $S_L$.
 
 Dobbiamo notare che lungo tutta la superficie laterale $S_L$ il campo elettrico $E$ (in modulo) è sempre lo stesso, perché la distanza $r$ dal filo è costante e perché il contributo parallelo al filo è nullo come indicato in figura.
 
 ![efield_radial](/static/img/electromagnetism/efield_radial.png "Componenti radiali e tangenziali alla superficie")
+
+Questo permette di studiare il prodotto scalare tra campo elettrico e superficie come un semplice prodotto di scalari.
+
+$$\Phi_{S}(\vec{E}) = \vec{E} \cdot \vec{S_L} = E \cdot S_L$$
 
 La superficie laterale del cilindro varrà banalmente $S_{L} = 2 \pi r h$.
 
