@@ -4,7 +4,7 @@ title = 'Campo Elettrico di un Filo Infinito con Legge di Gauss'
 date = 2025-11-04T10:30:00+01:00
 +++
 
-Abbiamo già studiato il caso di un filo carico di lunghezza infinita e abbiamo visto che il campo è dato da:
+Spesso il campo generato da un filo infinito carico viene subito associato ad una formula:
 
 $$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
 
