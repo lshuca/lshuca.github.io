@@ -6,7 +6,142 @@
     <description>Recent content on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Tue, 04 Nov 2025 10:30:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Nov 2025 16:43:28 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Equazioni con valore assoluto</title>
+      <link>http://localhost:1313/pages/pymath/algebra/absval_eq/</link>
+      <pubDate>Thu, 13 Nov 2025 16:43:28 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/algebra/absval_eq/</guid>
+      
+      <description>&lt;p&gt;Un&amp;rsquo;equazione con &lt;strong&gt;valore assoluto&lt;/strong&gt; è un&amp;rsquo;equazione in cui l&amp;rsquo;incognita $x$ appare all&amp;rsquo;interno del simbolo di valore assoluto $| A(x) |$.&lt;/p&gt;
+&lt;p&gt;Il valore assoluto di un numero $a$, indicato come $|a|$, rappresenta il suo modulo, in parole più semplici la sua &amp;ldquo;distanza dall&amp;rsquo;origine&amp;rdquo; sulla retta numerica. Di conseguenza, $|a|$ è sempre un valore non negativo ($|a| \ge 0$).&lt;/p&gt;
+&lt;p&gt;Possiamo anche definire il valore assoluto tramite una semplice considerazione:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Se l&amp;rsquo;argomento è positivo o nullo il suo valore assoluto rimane tale;&lt;/li&gt;
+&lt;li&gt;Se l&amp;rsquo;argomento è negativo allora il valore assoluto assume il valore dell&amp;rsquo;opposto dell&amp;rsquo;argomento.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+|A| = \begin{cases}
+A &amp;amp; \text{se } A \ge 0 \newline1
+-A &amp;amp; \text{se } A &amp;lt; 0
+\end{cases}
+$$&lt;/p&gt;
+&lt;h2&gt;Equazioni con valore assoluto&lt;/h2&gt;
+&lt;h3&gt;$| A(x) | = k$&lt;/h3&gt;
+&lt;p&gt;Per risolvere un&amp;rsquo;equazione della forma base $|A(x)| = k$, dove $k$ è una costante positiva ($k \ge 0$), dobbiamo riscrivere il valore assoluto come unione di due sistemi.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+A(x) = k \newline
+A(x) \ge 0
+\end{cases}
+\quad \cup \quad
+\begin{cases}
+-A(x) = k \newline
+A(x) &amp;lt; 0
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;La soluzione dell&amp;rsquo;equazione è data dall&amp;rsquo;&lt;strong&gt;unione&lt;/strong&gt; delle soluzioni trovate in questi due casi.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;Esempi &lt;/h4&gt;
+&lt;p&gt;$$|x| = 9$$&lt;/p&gt;
+&lt;p&gt;Applicando la regola generale possiamo riscrivere la condizione come&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x = 9 &amp;amp; \text{se } x \ge 0 \newline
+-x = 9 &amp;amp; \text{se } x &amp;lt; 0
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Riscrivendo in maniera più leggibile dovremo risolvere l&amp;rsquo;unione di due sistemi così definiti.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x = 9 \newline
+x \ge 0
+\end{cases}
+\quad \cup \quad
+\begin{cases}
+-x = 9 \newline
+x &amp;lt; 0
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Risolvendo entrambi i sistemi risulta che le soluzioni sono immediate e accettabili:&lt;/p&gt;
+&lt;p&gt;$$
+x = 9
+\quad \cup \quad
+x = -9
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;$$ |x + 3| = 7 $$&lt;/p&gt;
+&lt;p&gt;Applicando la definizione possiamo notare che questa equazione è in realtà equivalente ad una coppia di equazioni condizionate.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x + 3= 7 &amp;amp; \text{se } x + 3\ge 0 \newline
+-(x + 3)= 7 &amp;amp; \text{se } x + 3&amp;lt; 0
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Possiamo notare come il segno del valore assoluto risulta essere in questo caso leggermente più scomodo, per questo motivo in casi più complicati si procede con lo studio del valore assoluto prima della definizione del sistema.&lt;/p&gt;
+&lt;p&gt;Procedendo come già visto otteniamo:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x + 3 = 7 \newline
+x \ge -3
+\end{cases}
+\quad \cup \quad
+\begin{cases}
+-(x + 3) = 7 \newline
+x &amp;lt; -3
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x = 4 \newline
+x \ge -3
+\end{cases}
+\quad \cup \quad
+\begin{cases}
+x = -10 \newline
+x &amp;lt; -3
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Anche in questo caso entrambe le soluzioni sono accettabili ma non simmetriche come invece erano nel primo caso:&lt;/p&gt;
+&lt;p&gt;$$
+x = 7
+\quad \cup \quad
+x = -10
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;$$ | x + 1 | + 3 = $$&lt;/p&gt;
+&lt;p&gt;In questo caso dobbiamo in prima battuta riportare l&amp;rsquo;equazione nella forma standard, ovvero $|A(x)| = k$&lt;/p&gt;
+&lt;p&gt;$$ | x + 1 | = - 3 $$&lt;/p&gt;
+&lt;p&gt;Possiamo subito notare che il primo membro, un numero mai negativo per definizione del valore assoluto, deve essere confrontato con un valore negativo $-3$.
+Si evince immediatamente che questa equazione non ha nessuna soluzione. Risolvendo possiamo comunque notare che:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x + 1 = -3 \newline
+x \ge -3
+\end{cases}
+\quad \cup \quad
+\begin{cases}
+-(x + 1) = -3 \newline
+x &amp;lt; -3
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x = -4 \newline
+x \ge -3
+\end{cases}
+\quad \cup \quad
+\begin{cases}
+x = 2 \newline
+x &amp;lt; -3
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Come già dedotto intuitivamente possiamo verificare che nessuna delle due soluzione sarebbe accettabile.&lt;/p&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Campo Elettrico di un Filo Infinito con Legge di Gauss</title>
       <link>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</link>
@@ -455,219 +590,8 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/parabola/par_intro/&#34; title=&#34;Parabola&#34;&gt;Parabola&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Circonferenza&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/&#34; title=&#34;Circonferenza&#34;&gt;Circonferenza&lt;/a&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Punti e segmenti</title>
-      <link>http://localhost:1313/pages/pymath/cartesian/points_segments/</link>
-      <pubDate>Fri, 27 Sep 2024 17:56:42 +0100</pubDate>
-      
-      <guid>http://localhost:1313/pages/pymath/cartesian/points_segments/</guid>
-      
-      <description>&lt;p&gt;Ogni punto sul piano cartesiano è determinato dalle sue coordinate, relativamente all&amp;rsquo;asse delle &lt;em&gt;ascisse&lt;/em&gt; $x$ e a quello delle &lt;em&gt;ordinate&lt;/em&gt; $y$.&lt;/p&gt;
-&lt;p&gt;$$ P(x_p, y_p) $$&lt;/p&gt;
-&lt;h3&gt;Punto medio&lt;/h3&gt;
-&lt;p&gt;Dati due punti $A$ e $B$, identificati da due set di coordinate $(x_a, y_a)$ e $(x_b, y_b)$, è possibile calcolarne il punto medio $M$, ovver il punto che suddivide il segmento $\overline{AB}$ in due segmenti congruenti $\overline{AM}$ $\overline{MB}$.
-$$ M \left(\dfrac{x_A + x_B}{2}, : \dfrac{y_A + y_B}{2} \right) $$&lt;/p&gt;
-&lt;h3&gt;Distanza tra due punti&lt;/h3&gt;
-&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolarne la distanza, ovvero la lunghezza del segmento che ha come estremi $A$ e $B$, sfruttando applicando il teorema di Pitagora su sul triangolo avente come cateti le differenze di coordinate sulle ascisse e ordinate dei due punti.&lt;/p&gt;
-&lt;p&gt;$$ d = \left| \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2} \right| $$&lt;/p&gt;
-&lt;p&gt;Si può notare come la distanza tra due punti sia indifferentemente calcolata a partire da $A$ o da $B$ e che sarà sempre definita positiva dalla presenza del valore assoluto.&lt;/p&gt;
-&lt;p&gt;
-
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;it&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34;&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-    &lt;title&gt;Segmento con Punto Medio&lt;/title&gt;
-    &lt;style&gt;
-        canvas {
-            border: 1px solid #000;
-            display: block;
-            margin: 20px auto;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-    &lt;canvas id=&#34;segmentCanvas&#34; width=&#34;400&#34; height=&#34;400&#34;&gt;&lt;/canvas&gt;
-
-    &lt;script&gt;
-
-    // Function to draw x and y axes
-        function drawAxes(context, canvasWidth, canvasHeight) {
-            // Draw x-axis
-            context.beginPath();
-            context.moveTo(0, canvasHeight / 2);
-            context.lineTo(canvasWidth, canvasHeight / 2);
-            context.stroke();
-
-            // Draw y-axis
-            context.beginPath();
-            context.moveTo(canvasWidth / 2, 0);
-            context.lineTo(canvasWidth / 2, canvasHeight);
-            context.stroke();
-
-
-            // Draw horizontal grid lines
-            for (let y = 0; y &lt; canvasHeight; y += 10) {
-                context.beginPath();
-                context.moveTo(0, y);
-                context.lineTo(canvasWidth, y);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-
-            // Draw vertical grid lines
-            for (let x = 0; x &lt; canvasWidth; x += 10) {
-                context.beginPath();
-                context.moveTo(x, 0);
-                context.lineTo(x, canvasHeight);
-                context.lineWidth = 0.1;
-                context.stroke();
-            }
-        }
-
-        // Funzione per generare un punto casuale sul canvas
-        function generateRandomPoint() {
-		    return {
-		        x: Math.floor(Math.random() * 41) - 20,  // Intervallo [-20, 20]
-		        y: Math.floor(Math.random() * 41) - 20   // Intervallo [-20, 20]
-		    };
-		}
-
-		// Funzione per convertire le coordinate matematiche [-20, 20] in coordinate pixel del canvas [0, 400]
-		function mapToCanvasCoordinates(point, canvasWidth, canvasHeight) {
-		    return {
-		        x: (point.x + 20) * (canvasWidth / 40),  // Mappa da [-20, 20] a [0, canvasWidth]
-		        y: canvasHeight - ((point.y + 20) * (canvasHeight / 40))  // Mappa da [-20, 20] a [0, canvasHeight] e inverte y
-		    };
-		}
-
-        // Funzione per calcolare il punto medio tra due punti
-        // Funzione per calcolare il punto medio tra due punti, restituendo una frazione
-		function calculateMidPoint(A, B) {
-		    return {
-		        x: { num: A.x + B.x, den: 2 },  // Punto medio in forma di frazione
-		        y: { num: A.y + B.y, den: 2 }
-		    };
-		}
-
-		// Funzione per mostrare il risultato del punto medio come frazione
-		function displayFraction(fraction) {
-		    // Se il numeratore è divisibile per il denominatore, restituisci il numero intero
-		    if (fraction.num % fraction.den === 0) {
-		        return (fraction.num / fraction.den).toString();
-		    } else {
-		        // Altrimenti, restituisci la frazione
-		        return fraction.num + &#34;/&#34; + fraction.den;
-		    }
-		}
-
-
-		// Funzione per calcolare la distanza tra due punti e restituire la rappresentazione con radice
-		function calculateDistance(A, B) {
-		    const deltaX = B.x - A.x;
-		    const deltaY = B.y - A.y;
-
-		    // Calcola il quadrato della distanza
-		    const distanceSquared = deltaX * deltaX + deltaY * deltaY;
-
-		    // Calcola la radice quadrata approssimata
-		    const sqrtDistance = Math.sqrt(distanceSquared);
-
-		    // Se la radice quadrata è un numero intero, restituiscilo come tale
-		    if (Number.isInteger(sqrtDistance)) {
-		        return sqrtDistance.toString();
-		    } else {
-		        // Altrimenti, restituisci la rappresentazione con la radice quadrata
-		        return &#34;√(&#34; + distanceSquared + &#34;)&#34;;
-		    }
-		}
-
-
-
-        // Funzione per disegnare un segmento e i punti sul canvas
-        function drawSegment(context, A, B, M, canvasWidth, canvasHeight) {
-		    // Mappiamo i punti A, B, M alle coordinate del canvas
-		    const ACanvas = mapToCanvasCoordinates(A, canvasWidth, canvasHeight);
-		    const BCanvas = mapToCanvasCoordinates(B, canvasWidth, canvasHeight);
-		    const MCanvas = mapToCanvasCoordinates(M, canvasWidth, canvasHeight);
-
-		    // Disegna il segmento tra A e B
-		    context.beginPath();
-		    context.moveTo(ACanvas.x, ACanvas.y);
-		    context.lineTo(BCanvas.x, BCanvas.y);
-		    context.strokeStyle = &#39;black&#39;;
-		    context.lineWidth = 2;
-		    context.stroke();
-
-		    // Disegna il punto A
-		    context.beginPath();
-		    context.arc(ACanvas.x, ACanvas.y, 5, 0, 2 * Math.PI);
-		    context.fillStyle = &#39;red&#39;;
-		    context.fill();
-		    context.fillText(&#34;A (&#34; + A.x + &#34;, &#34; + A.y + &#34;)&#34;, ACanvas.x + 10, ACanvas.y - 10);
-
-		    // Disegna il punto B
-		    context.beginPath();
-		    context.arc(BCanvas.x, BCanvas.y, 5, 0, 2 * Math.PI);
-		    context.fillStyle = &#39;blue&#39;;
-		    context.fill();
-		    context.fillText(&#34;B (&#34; + B.x + &#34;, &#34; + B.y + &#34;)&#34;, BCanvas.x + 10, BCanvas.y - 10);
-
-		    // Disegna il punto medio M
-		    context.beginPath();
-		    context.arc(MCanvas.x, MCanvas.y, 5, 0, 2 * Math.PI);
-		    context.fillStyle = &#39;green&#39;;
-		    context.fill();
-		    context.fillText(&#34;M (&#34; + M.x.toFixed(2) + &#34;, &#34; + M.y.toFixed(2) + &#34;)&#34;, MCanvas.x + 10, MCanvas.y + 10);
-		}
-
-        // Funzione principale per eseguire il disegno
-        function main() {
-            var canvas = document.getElementById(&#39;segmentCanvas&#39;);
-            var context = canvas.getContext(&#39;2d&#39;);
-
-        	drawAxes(context, canvas.width, canvas.height, );
-
-            // Genera due punti casuali A e B
-            var A = generateRandomPoint(canvas.width, canvas.height);
-            var B = generateRandomPoint(canvas.width, canvas.height);
-
-            // Calcola il punto medio M
-            var M = calculateMidPoint(A, B);
-
-            // Calcola la distanza tra A e B
-            var distance = calculateDistance(A, B);
-
-            // Ad esempio, per visualizzare il punto medio M nel disegno:
-			// context.fillText(&#34;M (&#34; + displayFraction(M.x) + &#34;, &#34; + displayFraction(M.y) + &#34;)&#34;, M.x.num / M.x.den + 10, M.y.num / M.y.den + 10);
-
-			// Per visualizzare la distanza sotto il canvas
-			context.fillText(&#34;Distanza tra A e B: &#34; + calculateDistance(A, B), 10, canvas.height - 10);
-
-		    // Disegna il segmento e i punti sul canvas
-		    drawSegment(context, A, B, M, canvas.width, canvas.height);
-
-            // Mostra la distanza sotto il canvas
-            context.font = &#34;16px Arial&#34;;
-            context.fillStyle = &#34;black&#34;;
-            context.fillText(&#34;Distanza tra A e B: &#34; + distance.toFixed(2), 10, canvas.height - 10);
-        }
-
-        // Esegui la funzione principale quando la pagina viene caricata
-        window.onload = main;
-    &lt;/script&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-
-
-&lt;/p&gt;
+&lt;h2&gt;Complementi di Algebra&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/algebra/absval_eq/&#34; title=&#34;Equazioni con valore assoluto&#34;&gt;Equazioni con valore assoluto&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>

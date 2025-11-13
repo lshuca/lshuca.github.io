@@ -31,3 +31,8 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 
 [Circonferenza]({{< ref "/pages/pymath/cartesian/circonferenza/circ_intro" >}}  "Circonferenza")
 
+
+<h2>Complementi di Algebra</h2>
+
+[Equazioni con valore assoluto]({{< ref "/pages/pymath/algebra/absval_eq" >}}  "Equazioni con valore assoluto")
+

@@ -6,7 +6,19 @@
     <description>Recent content on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Mon, 30 Sep 2024 10:52:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/pymath/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Nov 2025 16:43:28 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/pymath/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Equazioni con valore assoluto</title>
+      <link>http://localhost:1313/pages/pymath/algebra/absval_eq/</link>
+      <pubDate>Thu, 13 Nov 2025 16:43:28 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/algebra/absval_eq/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/points_segments/&#34; title=&#34;Punti e segmenti&#34;&gt;Punti e segmenti&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Rimaneggiamenti algebrici</title>
       <link>http://localhost:1313/pages/pymath/cartesian/parabola/par_general/</link>
@@ -241,6 +253,8 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/parabola/par_intro/&#34; title=&#34;Parabola&#34;&gt;Parabola&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Circonferenza&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/&#34; title=&#34;Circonferenza&#34;&gt;Circonferenza&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Complementi di Algebra&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/algebra/absval_eq/&#34; title=&#34;absval_eq&#34;&gt;absval_eq&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -470,35 +484,6 @@ $$ M \left(\dfrac{x_A + x_B}{2}, : \dfrac{y_A + y_B}{2} \right) $$&lt;/p&gt;
 Questo concetto viene generalizzato nel caso di spazi $N$ dimensionali con l&amp;rsquo;utilizzo di $N$ rette ortogonali.&lt;/p&gt;
 &lt;!-- &lt;center&gt;&lt;em&gt;Quoties duo numeri cognoscuntur, potest eorum locus in plano definiri per intersectionem duarum rectarum.&lt;/em&gt;&lt;/center&gt; --&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/points_segments/&#34; title=&#34;Punti e segmenti&#34;&gt;Punti e segmenti&lt;/a&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Fasci di rette</title>
-      <link>http://localhost:1313/pages/pymath/cartesian/rette/rette_form/</link>
-      <pubDate>Thu, 12 Sep 2024 22:56:42 +0100</pubDate>
-      
-      <guid>http://localhost:1313/pages/pymath/cartesian/rette/rette_form/</guid>
-      
-      <description>&lt;p&gt;Tutte le informazioni precedenti sono sufficienti per poter affrontare quasi qualsiasi problema di geometria analitica che riguardi rette o punti.&lt;/p&gt;
-&lt;p&gt;Esistono tuttavia alcune scorciatoie per agevolarci nella risoluzione e risparmiare tempo prezioso.&lt;/p&gt;
-&lt;h2&gt;Coefficiente angolare della retta passante per due punti&lt;/h2&gt;
-&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolare il coefficiente angolare della retta che li unisce.&lt;/p&gt;
-&lt;p&gt;$$ m_{AB} = \dfrac{y_A - y_B}{x_A - x_B}$$&lt;/p&gt;
-&lt;p&gt;Come nel caso del punto medio o della distanza tra due punti, la scelta del punto $A$ o $B$ come primo o secondo termine è indifferente. È invece importante mantenere lo stesso ordine al numeratore ed al denominatore (prima $A$ poi $B$ o viceversa).&lt;/p&gt;
-&lt;h2&gt;Retta passante per due punti&lt;/h2&gt;
-&lt;p&gt;Dati due punti $A$ e $B$ è possibile calcolare immediatamente la retta che li unisce.&lt;/p&gt;
-&lt;p&gt;$$ \dfrac{y - y_A}{y_B - y_A} = \dfrac{x - x_A}{x_B - x_A} $$&lt;/p&gt;
-&lt;p&gt;Questa equazione deriva dalla risoluzione del sistema contenente il fascio di rette passante per il primo e il secondo punto, oppure del fascio di rette avente il coefficiente angolare della retta passante per $\overline{AB}$ forzandolo per $A$ o $B$.&lt;/p&gt;
-&lt;h2&gt;Distanza punto retta&lt;/h2&gt;
-&lt;p&gt;Dato un punto $P$ ed una retta $r$ possiamo definire la distanza tra i due enti come la lunghezza del segmento minimo che li unisce. Questa definizione porta a identificare la distanza nella lunghezza del segmento con estremi il punto $P$ ed il punto $H$, intersezione della retta che cade perpendicolarmente alla retta $r$ e passa per il punto $P$.&lt;/p&gt;
-&lt;p&gt;$$ P( \bm{X_p}, : \bm{Y_p}) $$&lt;/p&gt;
-&lt;p&gt;$$ r: : y= m_r x + q_r \rightarrow a_r x + b_r y + c_r = 0$$&lt;/p&gt;
-&lt;p&gt;Anche in questo caso esiste una formula molto comoda che richiede tuttavia di scrivere la retta $r$ in forma implicita.&lt;/p&gt;
-&lt;p&gt;$$ d = \dfrac{\left| a_r \bm{X_p} + b_r \bm{Y_p} + c_r \right|}{\sqrt{a_r^2 + b_r^2}} $$&lt;/p&gt;
-&lt;p&gt;Si può facilmente notare come la distanza dipenda sia dai &lt;em&gt;parametri&lt;/em&gt; della retta che dalle &lt;b&gt;COORDINATE&lt;/b&gt; del punto.&lt;/p&gt;
-&lt;p&gt;Tramite questa utile formula è facile calcolare i lati di un poligono regolare o la distanza tra due rette parallele.&lt;/p&gt;
 </description>
       
     </item>
