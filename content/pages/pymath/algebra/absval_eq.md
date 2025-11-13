@@ -14,7 +14,7 @@ Possiamo anche definire il valore assoluto tramite una semplice considerazione:
 
 $$
 |A| = \begin{cases}
-A & \text{se } A \ge 0 \newline1
+A & \text{se } A \ge 0 \newline
 -A & \text{se } A < 0
 \end{cases}
 $$
@@ -131,7 +131,7 @@ $$
 
 ---
 
-$$ | x + 1 | + 3 = $$
+$$ | x + 1 | + 3 = 0 $$
 
 In questo caso dobbiamo in prima battuta riportare l'equazione nella forma standard, ovvero $|A(x)| = k$
 
