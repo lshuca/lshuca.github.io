@@ -45,11 +45,11 @@
 &lt;li&gt;$a = 0$ in questo caso la parabola viene detta &amp;ldquo;degenere&amp;rdquo; e degenera in una retta.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Parametro $b$&lt;/h4&gt;
-&lt;p&gt;Sulla base del parametro $b$, rispetto al parametro $a$ è facile intuire la coordinata x del vertice e dell&amp;rsquo;asse di simmetria della parabola.&lt;/p&gt;
+&lt;p&gt;Sulla base del parametro $b$, rispetto al parametro $a$, è facile intuire qualitativamente la coordinata $x$ del vertice (e dunque del fuoco e dell&amp;rsquo;asse di simmetria).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$b &amp;gt; 0$ l&amp;rsquo;asse di simmetria sarà spostato verso sinistra;&lt;/li&gt;
-&lt;li&gt;$b &amp;lt; 0$ l&amp;rsquo;asse di simmetria sarà spostato verso destra;&lt;/li&gt;
-&lt;li&gt;$b = 0$ il vertice si troverà sull&amp;rsquo;asse $y$ e quest&amp;rsquo;ultimo coinciderà con l&amp;rsquo;asse di simmetria.&lt;/li&gt;
+&lt;li&gt;per valori di $a$ e $b$ concordi l&amp;rsquo;asse di simmetria sarà spostato verso sinistra rispetto all&amp;rsquo;asse $y$;&lt;/li&gt;
+&lt;li&gt;per valori di $a$ e $b$ discordi l&amp;rsquo;asse di simmetria sarà spostato verso destra;&lt;/li&gt;
+&lt;li&gt;per $b = 0$ il vertice si troverà sull&amp;rsquo;asse $y$ e quest&amp;rsquo;ultimo coinciderà con l&amp;rsquo;asse di simmetria.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In caso di $a &amp;lt; 0$ il comportamento si inverte. Ovvero possiamo sostituire le considerazioni dal puro valore di $b$ nei termini $a$ e $b$ discordi e concordi.&lt;/p&gt;
 &lt;h4&gt;Parametro $c$&lt;/h4&gt;
@@ -68,8 +68,8 @@
       
       <description>&lt;p&gt;Una parabola è definita come il luogo geometrico dei punti equidistanti da un punto detto &lt;em&gt;fuoco&lt;/em&gt; ed una retta detta &lt;em&gt;direttrice&lt;/em&gt;.&lt;/p&gt;
 &lt;h2&gt;Equazione della parabola&lt;/h2&gt;
-&lt;p&gt;L&amp;rsquo;equazione della circonferenza deriva dalla combinazione della distanza tra due punti e la distanza punto retta.&lt;/p&gt;
-&lt;p&gt;Ponendo infatti la distanza tra due punti $P(x, y)$ e $F(x_f, y_f)$ possiamo confrontarla con la distanza del punto $P$ dalla retta $r:$ $ax + by + c$.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;equazione della parabola deriva dalle relazioni della distanza tra due punti e la distanza punto retta.&lt;/p&gt;
+&lt;p&gt;Ponendo infatti la distanza tra due punti $P(x, y)$ e $F(x_f, y_f)$ possiamo confrontarla con la distanza del punto $P$ dalla retta, riportata in forma implicita, $r:$ $ax + by + c$.&lt;/p&gt;
 &lt;p&gt;$$ d_{PF} = d_{Pr} $$&lt;/p&gt;
 &lt;p&gt;$$ d_{PF} = \sqrt{(x - x_f)^2 + (y - y_f)^2}  $$&lt;/p&gt;
 &lt;p&gt;$$ d_{Pr} = \dfrac{|a x + b y + c|}{\sqrt{a^2 + b^2}} $$&lt;/p&gt;
@@ -78,13 +78,18 @@
 &lt;p&gt;$$ A x^2 + B xy + C y^2 + Dx + Ey + F = 0 $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/parabola/par_dirx/&#34; title=&#34;Parabola con direttrice parallela all&#39;asse x&#34;&gt;Parabola con direttrice parallela all&amp;rsquo;asse x&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Proprietà della parabola&lt;/h3&gt;
+&lt;h4&gt;Fuoco&lt;/h4&gt;
+&lt;p&gt;Punto necessario per la definizione della parabola.&lt;/p&gt;
+&lt;h4&gt;Direttrice&lt;/h4&gt;
+&lt;p&gt;Retta necessaria per la definizione della parabola.&lt;/p&gt;
 &lt;h4&gt;Asse di simmetria&lt;/h4&gt;
-&lt;p&gt;Con asse di simmetria di una parabola ci si riferisce alla retta che divide la figura in due parti &amp;ldquo;uguali&amp;rdquo;, ovvero la parabola gode di una simmetria assiale, ovvero:&lt;/p&gt;
+&lt;p&gt;Con asse di simmetria di una parabola ci si riferisce alla retta che divide la figura in due parti &amp;ldquo;uguali&amp;rdquo;, ovvero la parabola gode di una simmetria assiale, dunque:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Ad ogni punto dell’asse corrisponde lo stesso punto
 Ad ogni punto P non appartenente ad esso è associato un punto P’ tale che l’asse diviene anche asse del segmento PP’.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;asse di simmetria risulta sempre essere perpendicolare alla direttrice e, per questo motivo, sarà parallela all&amp;rsquo;asse $x$ qualora la direttrice dovesse essere parallela alle ordinate e viceversa.&lt;/p&gt;
 &lt;h4&gt;Vertice&lt;/h4&gt;
 &lt;p&gt;Il vertice è definito come il punto di intersezione tra l&amp;rsquo;asse di simmetria e la parabola stessa.&lt;/p&gt;
+&lt;p&gt;Il vertice risulta, per le parabole con asse di simmetria parallelo all&amp;rsquo;asse $y$, il punto di massimo o minimo assunto dalla parabola stessa.&lt;/p&gt;
 </description>
       
     </item>
@@ -119,13 +124,13 @@ $$&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;ultima condizione rende necessario analizzare la condizione di esistenza della figura, infatti:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} &amp;gt; 0$ la circonferenza esiste;&lt;/p&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c &amp;gt; 0$ la circonferenza esiste;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} = 0$ la circonferenza esiste ma si dice degenere, ovvero &amp;ldquo;degenera&amp;rdquo; in un singolo punto;&lt;/p&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c = 0$ la circonferenza esiste ma si dice degenere, ovvero &amp;ldquo;degenera&amp;rdquo; in un singolo punto;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} &amp;lt; 0$ la circonferenza non esiste in quanto non esiste un $r \in \mathbb{R}$&lt;/p&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c &amp;lt; 0$ la circonferenza non esiste in quanto non esiste il valore di $r \in \mathbb{R}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Esempi&lt;/h2&gt;

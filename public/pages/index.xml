@@ -6,7 +6,57 @@
     <description>Recent content in Pages on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Tue, 03 Dec 2024 12:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Nov 2025 10:30:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Campo Elettrico di un Filo Infinito con Legge di Gauss</title>
+      <link>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</link>
+      <pubDate>Tue, 04 Nov 2025 10:30:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</guid>
+      
+      <description>&lt;p&gt;Spesso il campo generato da un filo infinito carico viene subito associato ad una formula:&lt;/p&gt;
+&lt;p&gt;$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$&lt;/p&gt;
+&lt;p&gt;dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo però ricavare di nuovo il campo elettrico $\vec E$ utilizzando la &lt;strong&gt;legge di Gauss&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Impostazione del Problema&lt;/h2&gt;
+&lt;p&gt;Consideriamo un filo di lunghezza infinita rappresentato in figura. $P$ è il punto dove vogliamo calcolare il campo elettrico $\vec E$.&lt;/p&gt;
+&lt;h3&gt;Scelta della Superficie di Gauss&lt;/h3&gt;
+&lt;p&gt;Come prima cosa dobbiamo scegliere la superficie $S$ di Gauss (quella rappresentata in verde nell&amp;rsquo;immagine sottostante). Scegliamo un &lt;strong&gt;cilindro concentrico&lt;/strong&gt; al filo e passante per il punto $P$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/electromagnetism/efield_all.png&#34; alt=&#34;efield_all&#34; title=&#34;Filo carico e punto P&#34;&gt;&lt;/p&gt;
+&lt;p&gt;$S$ è un cilindro di raggio $r$ e altezza $h$. La legge di Gauss impone che la superficie attraverso la quale valutare il flusso del campo elettrico sia chiusa.&lt;/p&gt;
+&lt;p&gt;Conviene vedere questo cilindro come costituito dall’unione delle superfici di base $S_{\uparrow}$ e $S_{\downarrow}$ e di quella laterale $S_L$.&lt;/p&gt;
+&lt;h2&gt;Risoluzione&lt;/h2&gt;
+&lt;h3&gt;Analisi del Flusso&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;obiettivo era quello di avere una superficie chiusa: il cilindro offre una superficie chiusa con due componenti perpendicolari al filo e quella laterale. Infatti:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $S_{\uparrow}$ e $S_{\downarrow}$ le normali $\vec n_{\uparrow}$ $\vec n_{\downarrow}$ alle superfici risultano perpendicolari al vettore campo elettrico $\vec E$. Di conseguenza il loro prodotto scalare è nullo ($\cos(90^\circ) = 0$). Il flusso è nullo su $S_{\uparrow}$ e $S_{\downarrow}$.&lt;/li&gt;
+&lt;li&gt;Per la superficie laterale $S_L$ invece, essendo la normale $\vec n_L$ ad essa parallela al vettore campo elettrico $\vec E$, il flusso risulta massimo ($\cos(0^\circ) = 1$).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/electromagnetism/efield_norm.png&#34; alt=&#34;efield_norm&#34; title=&#34;Normali alla superficie&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Il flusso $ \Phi(\vec{E})|_{S} $ del vettore campo elettrico attraverso la superficie di Gauss $S$ può essere scomposto nello studio di tanti contributi che possono, per ragioni geometriche, essere come segue.&lt;/p&gt;
+&lt;p&gt;$$ \left. \Phi(\vec{E}) \right\rvert_{S} = \Phi_{S}(\vec{E}) = \Phi_{S_{\uparrow}}(\vec{E}) + \Phi_{S_{L}}(\vec{E}) + \Phi_{S_{\downarrow}}(\vec{E}) $$&lt;/p&gt;
+&lt;p&gt;Come visto, i contributi delle superfici $up$ e $down$ sono nulli. Ci rimane solo il flusso attraverso la superficie laterale $S_L$.&lt;/p&gt;
+&lt;p&gt;Dobbiamo notare che lungo tutta la superficie laterale $S_L$ il campo elettrico $E$ (in modulo) è sempre lo stesso, perché la distanza $r$ dal filo è costante e perché il contributo parallelo al filo è nullo come indicato in figura.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/electromagnetism/efield_radial.png&#34; alt=&#34;efield_radial&#34; title=&#34;Componenti radiali e tangenziali alla superficie&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Questo permette di studiare il prodotto scalare tra campo elettrico e superficie come un semplice prodotto di scalari.&lt;/p&gt;
+&lt;p&gt;$$\Phi_{S}(\vec{E}) = \vec{E} \cdot \vec{S_L} = E \cdot S_L$$&lt;/p&gt;
+&lt;p&gt;La superficie laterale del cilindro varrà banalmente $S_{L} = 2 \pi r h$.&lt;/p&gt;
+&lt;p&gt;$$\Phi_{S}(\vec{E}) = E (2 \pi r h)$$&lt;/p&gt;
+&lt;h3&gt;Applicazione della Legge di Gauss&lt;/h3&gt;
+&lt;p&gt;Ora applichiamo la legge di Gauss, che ci dice che il flusso attraverso la superficie è pari alla carica interna ($q_{int}$) alla superficie, diviso la costante $\varepsilon_0$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{S}(\vec{E}) = \frac{q_{int}}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;$q_{int}$ è la carica interna al cilindro. Utilizzando la densità lineare di carica $\lambda$ (carica per unità di lunghezza) si ha:&lt;/p&gt;
+&lt;p&gt;$$q_{int} = \lambda \cdot h$$&lt;/p&gt;
+&lt;p&gt;Adesso sostituiamo, eguagliando le due espressioni trovate per il flusso $\Phi_{S}(\vec{E})$:&lt;/p&gt;
+&lt;p&gt;$$E (2 \pi r h) = \frac{\lambda h}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;Da questa ricaviamo il campo elettrico $E$. Possiamo semplificare l&amp;rsquo;altezza $h$ da entrambi i lati:&lt;/p&gt;
+&lt;p&gt;$$E (2 \pi r) = \frac{\lambda}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;Si ottiene infine:&lt;/p&gt;
+&lt;p&gt;$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$&lt;/p&gt;
+&lt;p&gt;Il campo elettrico non dipende dalla lunghezza $h$ del cilindro scelto.&lt;/p&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Prodotto tra vettori</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</link>
@@ -437,6 +487,8 @@ Sostituendo dunque i valori numerici si ottiene lo stesso risultato.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_forces/&#34; title=&#34;Introduzione alle forze&#34;&gt;Introduzione alle forze&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/intro_eq/&#34; title=&#34;Introduzione all&#39;equilibrio&#34;&gt;Introduzione all&amp;rsquo;equilibrio&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/equilibrium/eq_guided/&#34; title=&#34;Risoluzione guidata di un esercizio di equilibrio&#34;&gt;Risoluzione guidata di un esercizio di equilibrio&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Elettro-Magnetismo&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/&#34; title=&#34;Campo elettrico di un filo carico infinito&#34;&gt;Campo elettrico di un filo carico infinito&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -618,47 +670,6 @@ $$\vec v_2 = \vec{OV_2}$$&lt;/p&gt;
 &lt;p&gt;Si può notare come il vettore $\vec d$ sia delimitato dal&amp;rsquo;origine e il punto $D$ identificato dalla differenza delle coordinate di $V_1$ e $V_2$.&lt;/p&gt;
 &lt;p&gt;$$\vec d = \vec {OD}$$&lt;/p&gt;
 &lt;p&gt;Esercitati, ricaricando la pagina, a calcolare le somme tra vari vettori.&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Introduzione ai vettori</title>
-      <link>http://localhost:1313/pages/pyphysics/vectors/intro_vec/</link>
-      <pubDate>Tue, 09 Jan 2024 15:55:42 +0100</pubDate>
-      
-      <guid>http://localhost:1313/pages/pyphysics/vectors/intro_vec/</guid>
-      
-      <description>&lt;p&gt;I vettori rappresentano uno degli strumenti matematici fondamentali in fisica. I vettori vengono infatti utilizzati per descrivere spostamenti, forze e altre grandezze fisiche dove &lt;em&gt;un numero&lt;/em&gt; (ovver uno scalare) non è sufficiente.&lt;/p&gt;
-&lt;p&gt;In matematica e fisica, un &lt;em&gt;vettore&lt;/em&gt; è un concetto che rappresenta una quantità caratterizzata non solo dalla sua &lt;em&gt;magnitudine&lt;/em&gt; (o grandezza), ma anche dai suoi &lt;em&gt;direzione&lt;/em&gt; e &lt;em&gt;verso&lt;/em&gt;. In altre parole, un vettore è un oggetto matematico che ha un &lt;strong&gt;modulo&lt;/strong&gt; (o lunghezza), una &lt;strong&gt;direzione&lt;/strong&gt; e un &lt;strong&gt;verso&lt;/strong&gt; specifici.&lt;/p&gt;
-&lt;p&gt;Possiamo quindi facilmente identificare un vettore sul foglio come un segmento orientato, ovvero una linea che unisce due punti identificandone uno come primo (punto di applicazione).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vector_def.jpg&#34; alt=&#34;vettore_def&#34; title=&#34;Definizione grafica di vettore&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Dal grafico si possono visualizzare facilmente tutte e tre le proprietà del vettore:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;modulo&lt;/strong&gt;: $|| \vec v || = v$, il valore (scalare) che rappresenta la lunghezza del vettore.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;direzione&lt;/strong&gt;: lungo la retta $r$&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;verso&lt;/strong&gt;: uscente dal punto di applicazione&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I vettori, e quindi anche le grandezze vettoriali, possono essere riconosciute immediatamente anche senza l&amp;rsquo;ausilio di un supporto grafico, vengono riportati in corsivo o tramite l&amp;rsquo;ausilio di una piccola freccia che sovrasta il simbolo.&lt;/p&gt;
-&lt;p&gt;$$ \vec v \neq \text{v} , v \neq \text{v}$$&lt;/p&gt;
-&lt;p&gt;È importante notare che un vettore non è equivalente ad un segmento generico: il vettore che unisce i punti $A$ a $B$ è opposto al vettore che unisce $B$ ad $A$. Ciò significa che fare un passo verso destra o uno verso sinistra sono due operazioni distinte: in questo caso opposte.&lt;/p&gt;
-&lt;p&gt;$$ \vec {AB} = - \vec {BA} \rightarrow \vec {AB} + \vec {BA} = \vec {0} $$&lt;/p&gt;
-&lt;p&gt;Con $\vec 0$ abbiamo potuto introdurre il concetto di &lt;strong&gt;vettore nullo&lt;/strong&gt;: l&amp;rsquo;elemento neutro dell&amp;rsquo;operazione di addizione tra vettori.
-Il vettore nullo è un elemento necessario per poter definire uno spazio vettoriale, una struttura algebrica meglio descritta nell&amp;rsquo;approfondimento specifico &lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Struttura algebrica&#34;&gt;spazio vettoriale&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/vec_null.gif#center&#34; alt=&#34;vettore_null&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Per maggiori info sui vettori:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_unit/&#34; title=&#34;Versori&#34;&gt;Versori&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_scomp/&#34; title=&#34;Scomposizione di un vettore&#34;&gt;Scomposizione di un vettore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sum/&#34; title=&#34;Somma di vettori&#34;&gt;Somma di vettori&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/gen_vec_sub/&#34; title=&#34;Differenza di vettori&#34;&gt;Differenza di vettori&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_cartesian/&#34; title=&#34;Componenti cartesiane di un vettore&#34;&gt;Componenti cartesiane di un vettore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/&#34; title=&#34;Prodotto tra vettori&#34;&gt;Prodotto tra vettori&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Approfondimenti:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/pyphysics/vectors/vec_space/&#34; title=&#34;Spazio vettoriale&#34;&gt;Spazio vettoriale&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
       
     </item>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta name="author" content="">
+
+  
+  
+  <meta name="description" content="Spesso il campo generato da un filo infinito carico viene subito associato ad una formula:
+$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
+dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo però ricavare di nuovo il campo elettrico $\vec E$ utilizzando la legge di Gauss.
+Impostazione del Problema
+Consideriamo un filo di lunghezza infinita rappresentato in figura. $P$ è il punto dove vogliamo calcolare il campo elettrico $\vec E$.">
+  
+
+  
+  <link rel="icon" href="http://localhost:1313/favicon.ico">
+
+  
+  
+  <meta name="keywords" content=" hugo  latex  theme  physics  math ">
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"
+  integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+  integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"
+  integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+      throwOnError: false
+    });
+  });
+</script>
+
+
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/">
+  <meta property="og:site_name" content="La scienza ha un cuore antico">
+  <meta property="og:title" content="Campo Elettrico di un Filo Infinito con Legge di Gauss">
+  <meta property="og:description" content="Spesso il campo generato da un filo infinito carico viene subito associato ad una formula:
+$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
+dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo però ricavare di nuovo il campo elettrico $\vec E$ utilizzando la legge di Gauss.
+Impostazione del Problema Consideriamo un filo di lunghezza infinita rappresentato in figura. $P$ è il punto dove vogliamo calcolare il campo elettrico $\vec E$.">
+  <meta property="og:locale" content="it">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="pages">
+    <meta property="article:published_time" content="2025-11-04T10:30:00+01:00">
+    <meta property="article:modified_time" content="2025-11-04T10:30:00+01:00">
+
+
+  
+  <link rel="canonical" href="http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/">
+
+  
+  
+  
+  <meta itemprop="name" content="Campo Elettrico di un Filo Infinito con Legge di Gauss">
+  <meta itemprop="description" content="Spesso il campo generato da un filo infinito carico viene subito associato ad una formula:
+$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
+dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo però ricavare di nuovo il campo elettrico $\vec E$ utilizzando la legge di Gauss.
+Impostazione del Problema Consideriamo un filo di lunghezza infinita rappresentato in figura. $P$ è il punto dove vogliamo calcolare il campo elettrico $\vec E$.">
+  <meta itemprop="datePublished" content="2025-11-04T10:30:00+01:00">
+  <meta itemprop="dateModified" content="2025-11-04T10:30:00+01:00">
+  <meta itemprop="wordCount" content="528">
+
+  
+  <link media="screen" rel="stylesheet" href='http://localhost:1313/css/common.css'>
+  <link media="screen" rel="stylesheet" href='http://localhost:1313/css/content.css'>
+
+  
+  
+  <title>Campo Elettrico di un Filo Infinito con Legge di Gauss - La scienza ha un cuore antico</title>
+  
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Campo Elettrico di un Filo Infinito con Legge di Gauss">
+  <meta name="twitter:description" content="Spesso il campo generato da un filo infinito carico viene subito associato ad una formula:
+$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
+dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo però ricavare di nuovo il campo elettrico $\vec E$ utilizzando la legge di Gauss.
+Impostazione del Problema Consideriamo un filo di lunghezza infinita rappresentato in figura. $P$ è il punto dove vogliamo calcolare il campo elettrico $\vec E$.">
+
+
+  
+<link rel="stylesheet" href='http://localhost:1313/css/single.css'>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+  <h1>
+    <a href="http://localhost:1313/">La scienza ha un cuore antico</a>
+  </h1>
+
+  <nav>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/">Home</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/pages/pyphysics/pyphysics/">Appunti di Fisica</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/pages/pymath/pymath/">Appunti di Matematica</a>
+    </span>
+    
+  </nav>
+</header>
+
+    
+<main id="main" class="post">
+  
+  <article class="content">
+    <p>Spesso il campo generato da un filo infinito carico viene subito associato ad una formula:</p>
+<p>$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$</p>
+<p>dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo però ricavare di nuovo il campo elettrico $\vec E$ utilizzando la <strong>legge di Gauss</strong>.</p>
+<h2>Impostazione del Problema</h2>
+<p>Consideriamo un filo di lunghezza infinita rappresentato in figura. $P$ è il punto dove vogliamo calcolare il campo elettrico $\vec E$.</p>
+<h3>Scelta della Superficie di Gauss</h3>
+<p>Come prima cosa dobbiamo scegliere la superficie $S$ di Gauss (quella rappresentata in verde nell&rsquo;immagine sottostante). Scegliamo un <strong>cilindro concentrico</strong> al filo e passante per il punto $P$.</p>
+<p><img src="/static/img/electromagnetism/efield_all.png" alt="efield_all" title="Filo carico e punto P"></p>
+<p>$S$ è un cilindro di raggio $r$ e altezza $h$. La legge di Gauss impone che la superficie attraverso la quale valutare il flusso del campo elettrico sia chiusa.</p>
+<p>Conviene vedere questo cilindro come costituito dall’unione delle superfici di base $S_{\uparrow}$ e $S_{\downarrow}$ e di quella laterale $S_L$.</p>
+<h2>Risoluzione</h2>
+<h3>Analisi del Flusso</h3>
+<p>L&rsquo;obiettivo era quello di avere una superficie chiusa: il cilindro offre una superficie chiusa con due componenti perpendicolari al filo e quella laterale. Infatti:</p>
+<ul>
+<li>Per $S_{\uparrow}$ e $S_{\downarrow}$ le normali $\vec n_{\uparrow}$ $\vec n_{\downarrow}$ alle superfici risultano perpendicolari al vettore campo elettrico $\vec E$. Di conseguenza il loro prodotto scalare è nullo ($\cos(90^\circ) = 0$). Il flusso è nullo su $S_{\uparrow}$ e $S_{\downarrow}$.</li>
+<li>Per la superficie laterale $S_L$ invece, essendo la normale $\vec n_L$ ad essa parallela al vettore campo elettrico $\vec E$, il flusso risulta massimo ($\cos(0^\circ) = 1$).</li>
+</ul>
+<p><img src="/static/img/electromagnetism/efield_norm.png" alt="efield_norm" title="Normali alla superficie"></p>
+<p>Il flusso $ \Phi(\vec{E})|_{S} $ del vettore campo elettrico attraverso la superficie di Gauss $S$ può essere scomposto nello studio di tanti contributi che possono, per ragioni geometriche, essere come segue.</p>
+<p>$$ \left. \Phi(\vec{E}) \right\rvert_{S} = \Phi_{S}(\vec{E}) = \Phi_{S_{\uparrow}}(\vec{E}) + \Phi_{S_{L}}(\vec{E}) + \Phi_{S_{\downarrow}}(\vec{E}) $$</p>
+<p>Come visto, i contributi delle superfici $up$ e $down$ sono nulli. Ci rimane solo il flusso attraverso la superficie laterale $S_L$.</p>
+<p>Dobbiamo notare che lungo tutta la superficie laterale $S_L$ il campo elettrico $E$ (in modulo) è sempre lo stesso, perché la distanza $r$ dal filo è costante e perché il contributo parallelo al filo è nullo come indicato in figura.</p>
+<p><img src="/static/img/electromagnetism/efield_radial.png" alt="efield_radial" title="Componenti radiali e tangenziali alla superficie"></p>
+<p>Questo permette di studiare il prodotto scalare tra campo elettrico e superficie come un semplice prodotto di scalari.</p>
+<p>$$\Phi_{S}(\vec{E}) = \vec{E} \cdot \vec{S_L} = E \cdot S_L$$</p>
+<p>La superficie laterale del cilindro varrà banalmente $S_{L} = 2 \pi r h$.</p>
+<p>$$\Phi_{S}(\vec{E}) = E (2 \pi r h)$$</p>
+<h3>Applicazione della Legge di Gauss</h3>
+<p>Ora applichiamo la legge di Gauss, che ci dice che il flusso attraverso la superficie è pari alla carica interna ($q_{int}$) alla superficie, diviso la costante $\varepsilon_0$:</p>
+<p>$$\Phi_{S}(\vec{E}) = \frac{q_{int}}{\varepsilon_0}$$</p>
+<p>$q_{int}$ è la carica interna al cilindro. Utilizzando la densità lineare di carica $\lambda$ (carica per unità di lunghezza) si ha:</p>
+<p>$$q_{int} = \lambda \cdot h$$</p>
+<p>Adesso sostituiamo, eguagliando le due espressioni trovate per il flusso $\Phi_{S}(\vec{E})$:</p>
+<p>$$E (2 \pi r h) = \frac{\lambda h}{\varepsilon_0}$$</p>
+<p>Da questa ricaviamo il campo elettrico $E$. Possiamo semplificare l&rsquo;altezza $h$ da entrambi i lati:</p>
+<p>$$E (2 \pi r) = \frac{\lambda}{\varepsilon_0}$$</p>
+<p>Si ottiene infine:</p>
+<p>$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$</p>
+<p>Il campo elettrico non dipende dalla lunghezza $h$ del cilindro scelto.</p>
+
+  </article>
+  
+</main>
+
+    <footer id="footer">
+  <div>
+    <span>© 2023</span> - <span>2025</span>
+  </div>
+
+  
+
+  <div class="footnote">
+    <span>IIS Montessori Repetti</span>
+  </div>
+</footer>
+
+  </div>
+
+  
+  
+
+  
+  
+
+  
+  
+
+</body>
+
+</html>

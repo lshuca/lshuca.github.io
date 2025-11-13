@@ -6,7 +6,57 @@
     <description>Recent content on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Tue, 03 Dec 2024 12:55:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Nov 2025 10:30:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Campo Elettrico di un Filo Infinito con Legge di Gauss</title>
+      <link>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</link>
+      <pubDate>Tue, 04 Nov 2025 10:30:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pyphysics/electromagnetism/efield_filo/</guid>
+      
+      <description>&lt;p&gt;Spesso il campo generato da un filo infinito carico viene subito associato ad una formula:&lt;/p&gt;
+&lt;p&gt;$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$&lt;/p&gt;
+&lt;p&gt;dove $\lambda$ è la distribuzione lineare di carica ed $r$ è la distanza del punto $P$ di osservazione dal filo. Vogliamo però ricavare di nuovo il campo elettrico $\vec E$ utilizzando la &lt;strong&gt;legge di Gauss&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Impostazione del Problema&lt;/h2&gt;
+&lt;p&gt;Consideriamo un filo di lunghezza infinita rappresentato in figura. $P$ è il punto dove vogliamo calcolare il campo elettrico $\vec E$.&lt;/p&gt;
+&lt;h3&gt;Scelta della Superficie di Gauss&lt;/h3&gt;
+&lt;p&gt;Come prima cosa dobbiamo scegliere la superficie $S$ di Gauss (quella rappresentata in verde nell&amp;rsquo;immagine sottostante). Scegliamo un &lt;strong&gt;cilindro concentrico&lt;/strong&gt; al filo e passante per il punto $P$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/electromagnetism/efield_all.png&#34; alt=&#34;efield_all&#34; title=&#34;Filo carico e punto P&#34;&gt;&lt;/p&gt;
+&lt;p&gt;$S$ è un cilindro di raggio $r$ e altezza $h$. La legge di Gauss impone che la superficie attraverso la quale valutare il flusso del campo elettrico sia chiusa.&lt;/p&gt;
+&lt;p&gt;Conviene vedere questo cilindro come costituito dall’unione delle superfici di base $S_{\uparrow}$ e $S_{\downarrow}$ e di quella laterale $S_L$.&lt;/p&gt;
+&lt;h2&gt;Risoluzione&lt;/h2&gt;
+&lt;h3&gt;Analisi del Flusso&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;obiettivo era quello di avere una superficie chiusa: il cilindro offre una superficie chiusa con due componenti perpendicolari al filo e quella laterale. Infatti:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per $S_{\uparrow}$ e $S_{\downarrow}$ le normali $\vec n_{\uparrow}$ $\vec n_{\downarrow}$ alle superfici risultano perpendicolari al vettore campo elettrico $\vec E$. Di conseguenza il loro prodotto scalare è nullo ($\cos(90^\circ) = 0$). Il flusso è nullo su $S_{\uparrow}$ e $S_{\downarrow}$.&lt;/li&gt;
+&lt;li&gt;Per la superficie laterale $S_L$ invece, essendo la normale $\vec n_L$ ad essa parallela al vettore campo elettrico $\vec E$, il flusso risulta massimo ($\cos(0^\circ) = 1$).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/electromagnetism/efield_norm.png&#34; alt=&#34;efield_norm&#34; title=&#34;Normali alla superficie&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Il flusso $ \Phi(\vec{E})|_{S} $ del vettore campo elettrico attraverso la superficie di Gauss $S$ può essere scomposto nello studio di tanti contributi che possono, per ragioni geometriche, essere come segue.&lt;/p&gt;
+&lt;p&gt;$$ \left. \Phi(\vec{E}) \right\rvert_{S} = \Phi_{S}(\vec{E}) = \Phi_{S_{\uparrow}}(\vec{E}) + \Phi_{S_{L}}(\vec{E}) + \Phi_{S_{\downarrow}}(\vec{E}) $$&lt;/p&gt;
+&lt;p&gt;Come visto, i contributi delle superfici $up$ e $down$ sono nulli. Ci rimane solo il flusso attraverso la superficie laterale $S_L$.&lt;/p&gt;
+&lt;p&gt;Dobbiamo notare che lungo tutta la superficie laterale $S_L$ il campo elettrico $E$ (in modulo) è sempre lo stesso, perché la distanza $r$ dal filo è costante e perché il contributo parallelo al filo è nullo come indicato in figura.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/electromagnetism/efield_radial.png&#34; alt=&#34;efield_radial&#34; title=&#34;Componenti radiali e tangenziali alla superficie&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Questo permette di studiare il prodotto scalare tra campo elettrico e superficie come un semplice prodotto di scalari.&lt;/p&gt;
+&lt;p&gt;$$\Phi_{S}(\vec{E}) = \vec{E} \cdot \vec{S_L} = E \cdot S_L$$&lt;/p&gt;
+&lt;p&gt;La superficie laterale del cilindro varrà banalmente $S_{L} = 2 \pi r h$.&lt;/p&gt;
+&lt;p&gt;$$\Phi_{S}(\vec{E}) = E (2 \pi r h)$$&lt;/p&gt;
+&lt;h3&gt;Applicazione della Legge di Gauss&lt;/h3&gt;
+&lt;p&gt;Ora applichiamo la legge di Gauss, che ci dice che il flusso attraverso la superficie è pari alla carica interna ($q_{int}$) alla superficie, diviso la costante $\varepsilon_0$:&lt;/p&gt;
+&lt;p&gt;$$\Phi_{S}(\vec{E}) = \frac{q_{int}}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;$q_{int}$ è la carica interna al cilindro. Utilizzando la densità lineare di carica $\lambda$ (carica per unità di lunghezza) si ha:&lt;/p&gt;
+&lt;p&gt;$$q_{int} = \lambda \cdot h$$&lt;/p&gt;
+&lt;p&gt;Adesso sostituiamo, eguagliando le due espressioni trovate per il flusso $\Phi_{S}(\vec{E})$:&lt;/p&gt;
+&lt;p&gt;$$E (2 \pi r h) = \frac{\lambda h}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;Da questa ricaviamo il campo elettrico $E$. Possiamo semplificare l&amp;rsquo;altezza $h$ da entrambi i lati:&lt;/p&gt;
+&lt;p&gt;$$E (2 \pi r) = \frac{\lambda}{\varepsilon_0}$$&lt;/p&gt;
+&lt;p&gt;Si ottiene infine:&lt;/p&gt;
+&lt;p&gt;$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$&lt;/p&gt;
+&lt;p&gt;Il campo elettrico non dipende dalla lunghezza $h$ del cilindro scelto.&lt;/p&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Prodotto tra vettori</title>
       <link>http://localhost:1313/pages/pyphysics/vectors/vec_product_scalar/</link>
@@ -209,11 +259,11 @@ $$&lt;/p&gt;
 &lt;li&gt;$a = 0$ in questo caso la parabola viene detta &amp;ldquo;degenere&amp;rdquo; e degenera in una retta.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Parametro $b$&lt;/h4&gt;
-&lt;p&gt;Sulla base del parametro $b$, rispetto al parametro $a$ è facile intuire la coordinata x del vertice e dell&amp;rsquo;asse di simmetria della parabola.&lt;/p&gt;
+&lt;p&gt;Sulla base del parametro $b$, rispetto al parametro $a$, è facile intuire qualitativamente la coordinata $x$ del vertice (e dunque del fuoco e dell&amp;rsquo;asse di simmetria).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$b &amp;gt; 0$ l&amp;rsquo;asse di simmetria sarà spostato verso sinistra;&lt;/li&gt;
-&lt;li&gt;$b &amp;lt; 0$ l&amp;rsquo;asse di simmetria sarà spostato verso destra;&lt;/li&gt;
-&lt;li&gt;$b = 0$ il vertice si troverà sull&amp;rsquo;asse $y$ e quest&amp;rsquo;ultimo coinciderà con l&amp;rsquo;asse di simmetria.&lt;/li&gt;
+&lt;li&gt;per valori di $a$ e $b$ concordi l&amp;rsquo;asse di simmetria sarà spostato verso sinistra rispetto all&amp;rsquo;asse $y$;&lt;/li&gt;
+&lt;li&gt;per valori di $a$ e $b$ discordi l&amp;rsquo;asse di simmetria sarà spostato verso destra;&lt;/li&gt;
+&lt;li&gt;per $b = 0$ il vertice si troverà sull&amp;rsquo;asse $y$ e quest&amp;rsquo;ultimo coinciderà con l&amp;rsquo;asse di simmetria.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In caso di $a &amp;lt; 0$ il comportamento si inverte. Ovvero possiamo sostituire le considerazioni dal puro valore di $b$ nei termini $a$ e $b$ discordi e concordi.&lt;/p&gt;
 &lt;h4&gt;Parametro $c$&lt;/h4&gt;
@@ -232,8 +282,8 @@ $$&lt;/p&gt;
       
       <description>&lt;p&gt;Una parabola è definita come il luogo geometrico dei punti equidistanti da un punto detto &lt;em&gt;fuoco&lt;/em&gt; ed una retta detta &lt;em&gt;direttrice&lt;/em&gt;.&lt;/p&gt;
 &lt;h2&gt;Equazione della parabola&lt;/h2&gt;
-&lt;p&gt;L&amp;rsquo;equazione della circonferenza deriva dalla combinazione della distanza tra due punti e la distanza punto retta.&lt;/p&gt;
-&lt;p&gt;Ponendo infatti la distanza tra due punti $P(x, y)$ e $F(x_f, y_f)$ possiamo confrontarla con la distanza del punto $P$ dalla retta $r:$ $ax + by + c$.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;equazione della parabola deriva dalle relazioni della distanza tra due punti e la distanza punto retta.&lt;/p&gt;
+&lt;p&gt;Ponendo infatti la distanza tra due punti $P(x, y)$ e $F(x_f, y_f)$ possiamo confrontarla con la distanza del punto $P$ dalla retta, riportata in forma implicita, $r:$ $ax + by + c$.&lt;/p&gt;
 &lt;p&gt;$$ d_{PF} = d_{Pr} $$&lt;/p&gt;
 &lt;p&gt;$$ d_{PF} = \sqrt{(x - x_f)^2 + (y - y_f)^2}  $$&lt;/p&gt;
 &lt;p&gt;$$ d_{Pr} = \dfrac{|a x + b y + c|}{\sqrt{a^2 + b^2}} $$&lt;/p&gt;
@@ -242,13 +292,18 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ A x^2 + B xy + C y^2 + Dx + Ey + F = 0 $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/parabola/par_dirx/&#34; title=&#34;Parabola con direttrice parallela all&#39;asse x&#34;&gt;Parabola con direttrice parallela all&amp;rsquo;asse x&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Proprietà della parabola&lt;/h3&gt;
+&lt;h4&gt;Fuoco&lt;/h4&gt;
+&lt;p&gt;Punto necessario per la definizione della parabola.&lt;/p&gt;
+&lt;h4&gt;Direttrice&lt;/h4&gt;
+&lt;p&gt;Retta necessaria per la definizione della parabola.&lt;/p&gt;
 &lt;h4&gt;Asse di simmetria&lt;/h4&gt;
-&lt;p&gt;Con asse di simmetria di una parabola ci si riferisce alla retta che divide la figura in due parti &amp;ldquo;uguali&amp;rdquo;, ovvero la parabola gode di una simmetria assiale, ovvero:&lt;/p&gt;
+&lt;p&gt;Con asse di simmetria di una parabola ci si riferisce alla retta che divide la figura in due parti &amp;ldquo;uguali&amp;rdquo;, ovvero la parabola gode di una simmetria assiale, dunque:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Ad ogni punto dell’asse corrisponde lo stesso punto
 Ad ogni punto P non appartenente ad esso è associato un punto P’ tale che l’asse diviene anche asse del segmento PP’.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;asse di simmetria risulta sempre essere perpendicolare alla direttrice e, per questo motivo, sarà parallela all&amp;rsquo;asse $x$ qualora la direttrice dovesse essere parallela alle ordinate e viceversa.&lt;/p&gt;
 &lt;h4&gt;Vertice&lt;/h4&gt;
 &lt;p&gt;Il vertice è definito come il punto di intersezione tra l&amp;rsquo;asse di simmetria e la parabola stessa.&lt;/p&gt;
+&lt;p&gt;Il vertice risulta, per le parabole con asse di simmetria parallelo all&amp;rsquo;asse $y$, il punto di massimo o minimo assunto dalla parabola stessa.&lt;/p&gt;
 </description>
       
     </item>
@@ -283,13 +338,13 @@ $$&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;ultima condizione rende necessario analizzare la condizione di esistenza della figura, infatti:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} &amp;gt; 0$ la circonferenza esiste;&lt;/p&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c &amp;gt; 0$ la circonferenza esiste;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} = 0$ la circonferenza esiste ma si dice degenere, ovvero &amp;ldquo;degenera&amp;rdquo; in un singolo punto;&lt;/p&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c = 0$ la circonferenza esiste ma si dice degenere, ovvero &amp;ldquo;degenera&amp;rdquo; in un singolo punto;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;$\sqrt{x_c^2 + y_c^2 - c} &amp;lt; 0$ la circonferenza non esiste in quanto non esiste un $r \in \mathbb{R}$&lt;/p&gt;
+&lt;p&gt;$x_c^2 + y_c^2 - c &amp;lt; 0$ la circonferenza non esiste in quanto non esiste il valore di $r \in \mathbb{R}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Esempi&lt;/h2&gt;
@@ -613,22 +668,6 @@ $$ M \left(\dfrac{x_A + x_B}{2}, : \dfrac{y_A + y_B}{2} \right) $$&lt;/p&gt;
 
 
 &lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Introduzione al piano cartesiano</title>
-      <link>http://localhost:1313/pages/pymath/cartesian/intro_cart/</link>
-      <pubDate>Fri, 27 Sep 2024 15:56:42 +0100</pubDate>
-      
-      <guid>http://localhost:1313/pages/pymath/cartesian/intro_cart/</guid>
-      
-      <description>&lt;p&gt;Il piano cartesiano, caso particolare dei più generici &amp;ldquo;sistemi di riferimento cartesiani&amp;rdquo;, è uno strumento matematico fondamentale per rappresentare graficamente relazioni e funzioni.&lt;/p&gt;
-&lt;p&gt;Introdotto da René Descartes (italianizzato in Renato Cartesio), il piano cartesiano permette di descrivere la posizione di punti nello spazio attraverso due coordinate: l&amp;rsquo;ascissa $x$ e l&amp;rsquo;ordinata $y$ intersecatisi in un punto detto origine $O$.
-Questo concetto viene generalizzato nel caso di spazi $N$ dimensionali con l&amp;rsquo;utilizzo di $N$ rette ortogonali.&lt;/p&gt;
-&lt;!-- &lt;center&gt;&lt;em&gt;Quoties duo numeri cognoscuntur, potest eorum locus in plano definiri per intersectionem duarum rectarum.&lt;/em&gt;&lt;/center&gt; --&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/points_segments/&#34; title=&#34;Punti e segmenti&#34;&gt;Punti e segmenti&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
