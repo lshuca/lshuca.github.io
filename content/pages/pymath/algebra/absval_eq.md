@@ -24,7 +24,7 @@ $$
 
 <h3>$| A(x) | = k$</h3>
 
-Per risolvere un'equazione della forma base $|A(x)| = k$, dove $k$ è una costante positiva ($k \ge 0$), dobbiamo riscrivere il valore assoluto come unione di due sistemi.
+Per risolvere un'equazione della forma base $|A(x)| = k$, dove $k$ è una costante non negativa ($k \ge 0$), dobbiamo riscrivere il valore assoluto come unione di due sistemi.
 
 $$
 \begin{cases}
