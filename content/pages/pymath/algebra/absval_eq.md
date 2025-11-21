@@ -4,7 +4,7 @@ title = 'Equazioni con valore assoluto'
 date = 2025-11-13T16:43:28+01:00
 +++
 
-Un'equazione con **valore assoluto** è un'equazione in cui l'incognita $x$ appare all'interno del simbolo di valore assoluto $| A(x) |$.
+Un'**equazione con valore assoluto** è un'equazione in cui l'incognita $x$ appare all'interno del simbolo di valore assoluto $| A(x) |$.
 
 Il valore assoluto di un numero $a$, indicato come $|a|$, rappresenta il suo modulo, in parole più semplici la sua "distanza dall'origine" sulla retta numerica. Di conseguenza, $|a|$ è sempre un valore non negativo ($|a| \ge 0$).
 
