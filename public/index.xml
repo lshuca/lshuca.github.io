@@ -6,7 +6,91 @@
     <description>Recent content on La scienza ha un cuore antico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Thu, 13 Nov 2025 16:43:28 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Nov 2025 14:30:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disequazioni con valore assoluto</title>
+      <link>http://localhost:1313/pages/pymath/algebra/absval_diseq/</link>
+      <pubDate>Fri, 21 Nov 2025 14:30:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/pages/pymath/algebra/absval_diseq/</guid>
+      
+      <description>&lt;p&gt;Una &lt;strong&gt;disequazione con valore assoluto&lt;/strong&gt; è una disequazione in cui l&amp;rsquo;incognita $x$ appare all&amp;rsquo;interno del simbolo di valore assoluto $| A(x) |$.&lt;/p&gt;
+&lt;p&gt;Il valore assoluto di un numero $a$, indicato come $|a|$, rappresenta la sua distanza dall&amp;rsquo;origine sulla retta numerica. Essendo una distanza, $|a|$ è sempre un valore non negativo ($|a| \ge 0$).&lt;/p&gt;
+&lt;p&gt;Possiamo definire il comportamento del valore assoluto tramite la consueta considerazione:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Se l&amp;rsquo;argomento è positivo o nullo il valore assoluto rimane invariato;&lt;/li&gt;
+&lt;li&gt;Se l&amp;rsquo;argomento è negativo il valore assoluto inverte il segno.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+|A| = \begin{cases}
+A &amp;amp; \text{se } A \ge 0 \newline
+-A &amp;amp; \text{se } A &amp;lt; 0
+\end{cases}
+$$&lt;/p&gt;
+&lt;h2&gt;Disequazioni con valore assoluto&lt;/h2&gt;
+&lt;p&gt;Quando affrontiamo disequazioni della forma base $|A(x)| \lessgtr k$ con $k$ costante positiva ($k &amp;gt; 0$), distinguiamo due casi fondamentali che semplificano lo studio dei sistemi.&lt;/p&gt;
+&lt;h3&gt;1. Caso $| A(x) | &lt; k$&lt;/h3&gt;
+&lt;p&gt;Chiedersi quando il modulo di un argomento è &lt;strong&gt;minore&lt;/strong&gt; di una costante positiva significa cercare i valori la cui distanza dall&amp;rsquo;origine è inferiore a $k$. Questo corrisponde ai valori &amp;ldquo;interni&amp;rdquo; all&amp;rsquo;intervallo $(-k, k)$.&lt;/p&gt;
+&lt;p&gt;$$
+-k &amp;lt; A(x) &amp;lt; k
+$$&lt;/p&gt;
+&lt;p&gt;Che equivale al sistema:
+$$
+\begin{cases}
+A(x) &amp;lt; k \newline
+A(x) &amp;gt; -k
+\end{cases}
+$$&lt;/p&gt;
+&lt;h3&gt;2. Caso $| A(x) | &gt; k$&lt;/h3&gt;
+&lt;p&gt;Chiedersi quando il modulo è &lt;strong&gt;maggiore&lt;/strong&gt; di una costante positiva significa cercare i valori la cui distanza dall&amp;rsquo;origine è superiore a $k$. Questo corrisponde ai valori &amp;ldquo;esterni&amp;rdquo; all&amp;rsquo;intervallo.&lt;/p&gt;
+&lt;p&gt;$$
+A(x) &amp;lt; -k \quad \cup \quad A(x) &amp;gt; k
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;Esempi&lt;/h4&gt;
+&lt;p&gt;$$|x| &amp;lt; 9$$&lt;/p&gt;
+&lt;p&gt;Essendo una richiesta di valori &amp;ldquo;vicini&amp;rdquo; all&amp;rsquo;origine (minori di 9), applichiamo la regola dell&amp;rsquo;intervallo interno:&lt;/p&gt;
+&lt;p&gt;$$
+-9 &amp;lt; x &amp;lt; 9
+$$&lt;/p&gt;
+&lt;p&gt;Possiamo scriverlo anche come sistema:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x &amp;lt; 9 \newline
+x &amp;gt; -9
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Le soluzioni sono quindi tutti i valori compresi tra -9 e 9.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;$$|x + 3| \ge 7$$&lt;/p&gt;
+&lt;p&gt;In questo caso stiamo cercando i valori la cui distanza è &lt;strong&gt;maggiore o uguale&lt;/strong&gt; a 7. Corrisponde all&amp;rsquo;unione di due disuguaglianze (valori esterni).&lt;/p&gt;
+&lt;p&gt;$$
+x + 3 \le -7 \quad \cup \quad x + 3 \ge 7
+$$&lt;/p&gt;
+&lt;p&gt;Risolviamo le due disequazioni separatamente:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$x + 3 \le -7 \implies x \le -10$&lt;/li&gt;
+&lt;li&gt;$x + 3 \ge 7 \implies x \ge 4$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;La soluzione è l&amp;rsquo;unione degli intervalli:&lt;/p&gt;
+&lt;p&gt;$$
+x \le -10 \quad \cup \quad x \ge 4
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;$$| x + 1 | + 3 &amp;lt; 0$$&lt;/p&gt;
+&lt;p&gt;Riportiamo prima la disequazione nella forma standard isolando il valore assoluto:&lt;/p&gt;
+&lt;p&gt;$$| x + 1 | &amp;lt; - 3$$&lt;/p&gt;
+&lt;p&gt;Osserviamo il primo membro: un valore assoluto è per definizione sempre $\ge 0$.
+Ci viene chiesto quando questa quantità positiva (o nulla) sia &lt;strong&gt;minore&lt;/strong&gt; di un numero negativo ($-3$).&lt;/p&gt;
+&lt;p&gt;Si evince immediatamente che questo è impossibile. Non è necessario impostare alcun sistema o calcolo.&lt;/p&gt;
+&lt;p&gt;$$
+\text{Nessuna soluzione} \quad (\emptyset)
+$$&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Nota: Se la disequazione fosse stata $|x+1| &amp;gt; -3$, la soluzione sarebbe stata $\forall x \in \mathbb{R}$, poiché un valore assoluto è sempre maggiore di un numero negativo.&lt;/em&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
     <item>
       <title>Equazioni con valore assoluto</title>
       <link>http://localhost:1313/pages/pymath/algebra/absval_eq/</link>
@@ -23,13 +107,13 @@
 &lt;/ul&gt;
 &lt;p&gt;$$
 |A| = \begin{cases}
-A &amp;amp; \text{se } A \ge 0 \newline1
+A &amp;amp; \text{se } A \ge 0 \newline
 -A &amp;amp; \text{se } A &amp;lt; 0
 \end{cases}
 $$&lt;/p&gt;
 &lt;h2&gt;Equazioni con valore assoluto&lt;/h2&gt;
 &lt;h3&gt;$| A(x) | = k$&lt;/h3&gt;
-&lt;p&gt;Per risolvere un&amp;rsquo;equazione della forma base $|A(x)| = k$, dove $k$ è una costante positiva ($k \ge 0$), dobbiamo riscrivere il valore assoluto come unione di due sistemi.&lt;/p&gt;
+&lt;p&gt;Per risolvere un&amp;rsquo;equazione della forma base $|A(x)| = k$, dove $k$ è una costante non negativa ($k \ge 0$), dobbiamo riscrivere il valore assoluto come unione di due sistemi.&lt;/p&gt;
 &lt;p&gt;$$
 \begin{cases}
 A(x) = k \newline
@@ -110,7 +194,7 @@ x = 7
 x = -10
 $$&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;$$ | x + 1 | + 3 = $$&lt;/p&gt;
+&lt;p&gt;$$ | x + 1 | + 3 = 0 $$&lt;/p&gt;
 &lt;p&gt;In questo caso dobbiamo in prima battuta riportare l&amp;rsquo;equazione nella forma standard, ovvero $|A(x)| = k$&lt;/p&gt;
 &lt;p&gt;$$ | x + 1 | = - 3 $$&lt;/p&gt;
 &lt;p&gt;Possiamo subito notare che il primo membro, un numero mai negativo per definizione del valore assoluto, deve essere confrontato con un valore negativo $-3$.
@@ -567,32 +651,6 @@ $$&lt;/p&gt;
 &lt;h3&gt;Coefficiente angolare&lt;/h3&gt;
 &lt;p&gt;Il coefficiente angolare $m$ è un parametro associato alla pendenza della retta studiata. Maggiore è $m$ maggiore sarà il divario, date due rette $r$ e $s$, tra le coordinate $y$ a parità di $x$.&lt;/p&gt;
 &lt;iframe src=&#34;https://www.desmos.com/calculator/1dnackvxu8?embed&#34; width=&#34;500&#34; height=&#34;500&#34; style=&#34;border: 1px solid #ccc&#34; frameborder=0&gt;&lt;/iframe&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Appunti di Matematica</title>
-      <link>http://localhost:1313/pages/pymath/pymath/</link>
-      <pubDate>Sat, 28 Sep 2024 15:55:42 +0100</pubDate>
-      
-      <guid>http://localhost:1313/pages/pymath/pymath/</guid>
-      
-      <description>&lt;p&gt;Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della matematica.&lt;/p&gt;
-&lt;h2&gt;Geometria analitica&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/intro_cart/&#34; title=&#34;Introduzione al piano cartesiano&#34;&gt;Introduzione al piano cartesiano&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Punti, segmenti e rette&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_intro/&#34; title=&#34;Rette&#34;&gt;Rette&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_impl_espl/&#34; title=&#34;Relazione tra forma esplicita ed implicita&#34;&gt;Relazione tra forma esplicita ed implicita&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_eser/&#34; title=&#34;Operazioni con rette&#34;&gt;Operazioni con rette&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_fasci/&#34; title=&#34;Fasci di rette&#34;&gt;Fasci di rette&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/rette/rette_form/&#34; title=&#34;Formulario&#34;&gt;Formulario&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Parabola&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/parabola/par_intro/&#34; title=&#34;Parabola&#34;&gt;Parabola&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Circonferenza&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/cartesian/circonferenza/circ_intro/&#34; title=&#34;Circonferenza&#34;&gt;Circonferenza&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Complementi di Algebra&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pages/pymath/algebra/absval_eq/&#34; title=&#34;Equazioni con valore assoluto&#34;&gt;Equazioni con valore assoluto&lt;/a&gt;&lt;/p&gt;
-</description>
       
     </item>
     

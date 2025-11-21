@@ -36,3 +36,5 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 
 [Equazioni con valore assoluto]({{< ref "/pages/pymath/algebra/absval_eq" >}}  "Equazioni con valore assoluto")
 
+[Disequazioni con valore assoluto]({{< ref "/pages/pymath/algebra/absval_diseq" >}}  "Disequazioni con valore assoluto")
+
