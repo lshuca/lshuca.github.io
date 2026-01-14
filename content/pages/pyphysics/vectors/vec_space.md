@@ -26,4 +26,4 @@ Queste due operazioni devono rispettare le seguenti proprietà:
 7) $\forall a,b \in K,\forall \mathbf v \in V,(a b) \mathbf v = a (b \mathbf v)$ (proprietà associativa del prodotto per scalare)
 8) $ \exists 1 \in K \mid \forall \mathbf u \in V, 1\mathbf u = \mathbf u $ (esistenza dell'elemento neutro per il prodotto per scalare)
 
-Su questa definizione possiamo costruire molti spazi vettoriali, tra questi emergono gli spazi vettoriali composto da polinomi (con "+" identificato nella somma di polinomi e "\*" la moltiplicazoine per uno scalare), le matrici (uno strumento matematico molto utile) e gli spazi di funzioni.
+Su questa definizione possiamo costruire molti spazi vettoriali, tra questi emergono gli spazi vettoriali composti da polinomi (con "+" identificato nella somma di polinomi e "\*" la moltiplicazoine per uno scalare), le matrici (uno strumento matematico molto utile) e gli spazi di funzioni.
