@@ -67,12 +67,12 @@ Adesso sostituiamo, eguagliando le due espressioni trovate per il flusso $\Phi_{
 
 $$E (2 \pi r h) = \frac{\lambda h}{\varepsilon_0}$$
 
-Da questa ricaviamo il campo elettrico $E$. Possiamo semplificare l'altezza $h$ da entrambi i lati:
+Da questa ricaviamo il modulo campo elettrico $E(r)$ ad una distanza $r$ dal filo. Possiamo semplificare l'altezza $h$ da entrambi i lati:
 
-$$E (2 \pi r) = \frac{\lambda}{\varepsilon_0}$$
+$$E(r) (2 \pi r) = \frac{\lambda}{\varepsilon_0}$$
 
 Si ottiene infine:
 
-$$E = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
+$$E(r) = \frac{\lambda}{2 \pi \varepsilon_0 r}$$
 
 Il campo elettrico non dipende dalla lunghezza $h$ del cilindro scelto.

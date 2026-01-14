@@ -32,7 +32,7 @@ $$ sin \theta = \dfrac{c_2}{I} \rightarrow c_2 = I sin \theta$$
 
 Analogamente possiamo vedere che.
 
-$$ sin \theta = \dfrac{c_1}{I} $$
+$$ sin \gamma = \dfrac{c_1}{I} $$
 
 <h3>Tangente</h3>
 
@@ -42,7 +42,7 @@ $$ tan \theta = \dfrac{c_2}{c_1} \rightarrow c_2 = c_1 tan \theta$$
 
 Analogamente possiamo vedere che.
 
-$$ tan \theta = \dfrac{c_2}{c_1} $$
+$$ tan \gamma = \dfrac{c_2}{c_1} $$
 
 Possiamo fare riferimento alle definizioni di $\sin$ e $\cos$ per notare che
 
