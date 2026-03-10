@@ -27,6 +27,18 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 
 [Parabola]({{< ref "/pages/pymath/cartesian/parabola/par_intro" >}}  "Parabola")
 
+[Esercizi sulla parabola]({{< ref "/pages/pymath/cartesian/parabola/par_eser" >}}  "Esercizi sulla parabola")
+
+[Intersezioni parabola-retta]({{< ref "/pages/pymath/cartesian/parabola/par_intersezioni" >}}  "Intersezioni parabola-retta")
+
+<h3>Ellisse</h3>
+
+[Ellisse]({{< ref "/pages/pymath/cartesian/ellisse/ellisse_intro" >}}  "Ellisse")
+
+<h3>Iperbole</h3>
+
+[Iperbole]({{< ref "/pages/pymath/cartesian/iperbole/iperbole_intro" >}}  "Iperbole")
+
 <h3>Circonferenza</h3>
 
 [Circonferenza]({{< ref "/pages/pymath/cartesian/circonferenza/circ_intro" >}}  "Circonferenza")
@@ -37,4 +49,6 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 [Equazioni con valore assoluto]({{< ref "/pages/pymath/algebra/absval_eq" >}}  "Equazioni con valore assoluto")
 
 [Disequazioni con valore assoluto]({{< ref "/pages/pymath/algebra/absval_diseq" >}}  "Disequazioni con valore assoluto")
+
+[Rappresentazione grafica del valore assoluto]({{< ref "/pages/pymath/algebra/absval_graph" >}}  "Rappresentazione grafica del valore assoluto")
 

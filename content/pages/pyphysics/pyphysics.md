@@ -30,8 +30,20 @@ Approfondimenti:
 
 [Introduzione all'equilibrio]({{< ref "/pages/pyphysics/equilibrium/intro_eq" >}}  "Introduzione all'equilibrio")
 
+[Equilibrio statico]({{< ref "/pages/pyphysics/equilibrium/eq_statico" >}}  "Equilibrio statico")
+
+[Piano inclinato]({{< ref "/pages/pyphysics/equilibrium/eq_piano_inclinato" >}}  "Piano inclinato")
+
+[Momento di una forza]({{< ref "/pages/pyphysics/equilibrium/eq_momento" >}}  "Momento di una forza")
+
 [Risoluzione guidata di un esercizio di equilibrio]({{< ref "/pages/pyphysics/equilibrium/eq_guided" >}}  "Risoluzione guidata di un esercizio di equilibrio")
 
 <h2>Elettro-Magnetismo</h2>
 
+[Introduzione al campo elettrico]({{< ref "/pages/pyphysics/electromagnetism/efield_intro" >}}  "Introduzione al campo elettrico")
+
+[Campo elettrico di cariche puntiformi]({{< ref "/pages/pyphysics/electromagnetism/efield_punti" >}}  "Campo elettrico di cariche puntiformi")
+
 [Campo elettrico di un filo carico infinito]({{< ref "/pages/pyphysics/electromagnetism/efield_filo" >}}  "Campo elettrico di un filo carico infinito")
+
+[Introduzione al campo magnetico]({{< ref "/pages/pyphysics/electromagnetism/bfield_intro" >}}  "Introduzione al campo magnetico")
