@@ -1,5 +1,5 @@
 +++
-menus = ['algebra']
+menus = []
 title = 'Rappresentazione grafica del valore assoluto'
 date = 2026-03-10T10:00:00+01:00
 +++

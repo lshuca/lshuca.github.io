@@ -1,5 +1,5 @@
 +++
-menus = ['forze']
+menus = []
 title = 'Introduzione alle forze'
 date = 2024-01-09T15:56:42+01:00
 +++
@@ -13,3 +13,9 @@ La forza viene definita matematicamente dal secondo principio della dinamica, o 
 L'unità di misura della forza, nel SI, è il Newton ed è definito come la forza necessaria per imporre ad una massa di un $\text{kg}$ una accelerazione di un $\dfrac{\text{m}}{\text{s}^2}$, cioè:
 
 $$ N = \dfrac{\text{kg} \cdot \text{m}}{\text{s}^2} $$
+
+[Introduzione all'equilibrio]({{< ref "/pages/pyphysics/equilibrium/intro_eq" >}}  "Introduzione all'equilibrio")
+
+[Equilibrio statico]({{< ref "/pages/pyphysics/equilibrium/eq_statico" >}}  "Equilibrio statico")
+
+[Piano inclinato]({{< ref "/pages/pyphysics/equilibrium/eq_piano_inclinato" >}}  "Piano inclinato")

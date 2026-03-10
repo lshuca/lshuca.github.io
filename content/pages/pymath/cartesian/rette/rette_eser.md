@@ -1,5 +1,5 @@
 +++
-menus = ['cartesiano']
+menus = []
 title = 'Operazioni con rette'
 date = 2024-09-12T20:56:42+01:00
 +++

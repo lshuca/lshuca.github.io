@@ -1,5 +1,5 @@
 +++
-menus = ['forze']
+menus = []
 title = 'Risoluzione guidata di un esercizio di equilibrio'
 date = 2024-01-09T15:56:42+01:00
 +++

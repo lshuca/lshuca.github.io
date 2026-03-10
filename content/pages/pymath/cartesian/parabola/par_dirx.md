@@ -1,5 +1,5 @@
 +++
-menus = ['cartesiano']
+menus = []
 title = 'Parabola con direttrice parallela a x'
 date = 2024-09-29T23:57:42+01:00
 +++

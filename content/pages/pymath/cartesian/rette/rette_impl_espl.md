@@ -1,5 +1,5 @@
 +++
-menus = ['cartesiano']
+menus = []
 title = 'Relazione tra forma esplicita ed implicita'
 date = 2024-09-29T18:56:42+01:00
 +++

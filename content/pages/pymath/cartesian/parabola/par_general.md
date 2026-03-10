@@ -1,5 +1,5 @@
 +++
-menus = ['cartesiano']
+menus = []
 title = 'Rimaneggiamenti algebrici'
 date = 2024-09-30T10:52:42+01:00
 +++

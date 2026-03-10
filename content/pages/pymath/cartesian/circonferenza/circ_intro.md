@@ -1,5 +1,5 @@
 +++
-menus = ['cartesiano']
+menus = []
 title = 'Introduzione alla circonferenza'
 date = 2024-09-29T22:56:42+01:00
 +++

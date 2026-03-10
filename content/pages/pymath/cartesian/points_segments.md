@@ -1,5 +1,5 @@
 +++
-menus = ['cartesiano']
+menus = []
 title = 'Punti e segmenti'
 date = 2024-09-27T17:56:42+01:00
 +++

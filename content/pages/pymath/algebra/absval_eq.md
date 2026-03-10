@@ -1,5 +1,5 @@
 +++
-menus = ['algebra']
+menus = []
 title = 'Equazioni con valore assoluto'
 date = 2025-11-13T16:43:28+01:00
 +++

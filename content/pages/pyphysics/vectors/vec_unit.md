@@ -1,3 +1,9 @@
++++
+menus = []
+title = 'Versori'
+date = 2024-01-09T15:55:42+01:00
++++
+
 Un vettore è geometricamente rappresentato da un segmento orientato, ovvero un elemento caraterizzato da modulo, direzione e verso.
 
 Il modulo, ovvero la lunghezza del segmento, risulta essere un numero cioè uno scalare. Spesso risulta molto comodo, sfruttando l'operazione di moltiplicazione per uno scalare, ragionare su direzione e verso di un vettore ignorando, momentaneamente, il modulo.

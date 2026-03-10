@@ -1,5 +1,5 @@
 +++
-menus = ['forze']
+menus = []
 title = 'Equilibrio delle forze'
 date = 2024-01-09T15:56:42+01:00
 +++
@@ -28,3 +28,9 @@ $$ \sum_i \vec F_i = 0 $$
 Il simbolo $ \sum $ si legge come "sommatoria" ovver la somma di tutte le possibili forze.
 
 Noto che la condizione di equilibrio necessita lo studio delle forze, può essere utile ricordare come si definisce una forza.
+
+[Equilibrio statico]({{< ref "/pages/pyphysics/equilibrium/eq_statico" >}}  "Equilibrio statico")
+
+[Piano inclinato]({{< ref "/pages/pyphysics/equilibrium/eq_piano_inclinato" >}}  "Piano inclinato")
+
+[Momento di una forza]({{< ref "/pages/pyphysics/equilibrium/eq_momento" >}}  "Momento di una forza")

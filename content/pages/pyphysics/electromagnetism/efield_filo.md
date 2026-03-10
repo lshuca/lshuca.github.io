@@ -1,5 +1,5 @@
 +++
-menus = ['elettromagnetismo']
+menus = []
 title = 'Campo Elettrico di un Filo Infinito con Legge di Gauss'
 date = 2025-11-04T10:30:00+01:00
 +++
