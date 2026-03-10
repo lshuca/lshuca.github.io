@@ -2,7 +2,7 @@ Un vettore è geometricamente rappresentato da un segmento orientato, ovvero un 
 
 Il modulo, ovvero la lunghezza del segmento, risulta essere un numero cioè uno scalare. Spesso risulta molto comodo, sfruttando l'operazione di moltiplicazione per uno scalare, ragionare su direzione e verso di un vettore ignorando, momentaneamente, il modulo.
 
-Ricordiamo che un vettore può essere banalmente moltiplicato per uno scalare ricordando che $ \vec v = a \cdot \w $, ovvero il vettore $\vec v$ è un vettore il cui modulo è dato da $a$ volte quello di $\vec w$ mentre direzione e verso sono identici.
+Ricordiamo che un vettore può essere banalmente moltiplicato per uno scalare ricordando che $ \vec v = a \cdot \vec w $, ovvero il vettore $\vec v$ è un vettore il cui modulo è dato da $a$ volte quello di $\vec w$ mentre direzione e verso sono identici.
 
 Sulla base di questa considerazione può essere utile considerare un elemento il cui modulo è $1$ come indicatore delle sole componenti direzione e verso di un vettore.
 

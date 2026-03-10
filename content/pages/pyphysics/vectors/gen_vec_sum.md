@@ -175,7 +175,7 @@ $$\vec v_2 = \vec{OV_2}$$
 
 Ogni vettore è infatti rappresentato da un modulo (lunghezza), una direzione (la retta su cui poggia) ed un verso.
 
-È inoltre presente una terza freccia, vettore, di colore viola. Questo vettore $\vec s$ è dato dalla somma dei due precedenti vettori, ovvero:
+È inoltre presente una terza freccia, vettore, di colore verde. Questo vettore $\vec s$ è dato dalla somma dei due precedenti vettori, ovvero:
 
 $$\vec s = \vec v_1 + \vec v_2$$
 

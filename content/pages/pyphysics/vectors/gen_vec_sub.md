@@ -184,4 +184,4 @@ Si può notare come il vettore $\vec d$ sia delimitato dal'origine e il punto $D
 
 $$\vec d = \vec {OD}$$
 
-Esercitati, ricaricando la pagina, a calcolare le somme tra vari vettori.
+Esercitati, ricaricando la pagina, a calcolare le differenze tra vari vettori.

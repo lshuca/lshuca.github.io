@@ -16,7 +16,7 @@ Possiamo, altrettanto facilmente, ricavare il modulo del vettore $||\vec a||$ sf
 
 $$ ||\vec a|| = \sqrt{ OA_x ^ 2 + OA_y ^ 2} = \sqrt{ || \vec a_x || ^ 2 + || \vec a_y || ^ 2}$$
 
-Lo sturmento in calce permette di visualizzare immediatamente le componenti $x$ e $y$ di un generico vettore $v$ generato casualmente.
+Lo strumento in calce permette di visualizzare immediatamente le componenti $x$ e $y$ di un generico vettore $v$ generato casualmente.
 
 {{< rawhtml >}}
 

@@ -122,7 +122,7 @@ $$
 Anche in questo caso entrambe le soluzioni sono accettabili ma non simmetriche come invece erano nel primo caso:
 
 $$
-x = 7
+x = 4
 \quad \cup \quad
 x = -10
 $$
