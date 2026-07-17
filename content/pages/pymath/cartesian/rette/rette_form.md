@@ -24,6 +24,8 @@ $$ \dfrac{y - y_A}{y_B - y_A} = \dfrac{x - x_A}{x_B - x_A} $$
 
 Questa equazione deriva dalla risoluzione del sistema contenente il fascio di rette passante per il primo e il secondo punto, oppure del fascio di rette avente il coefficiente angolare della retta passante per $\overline{AB}$ forzandolo per $A$ o $B$.
 
+È evidente che questo tipo di approccio fallisce qualore $x_A = x_B$ oppure $y_A = y_B$. Per questo motivo è necessario saper applicare anche altri metodi, sviluppati maggiormente nelle altre sezioni.
+
 <h2>Distanza punto retta</h2>
 
 Dato un punto $P$ ed una retta $r$ possiamo definire la distanza tra i due enti come la lunghezza del segmento minimo che li unisce. Questa definizione porta a identificare la distanza nella lunghezza del segmento con estremi il punto $P$ ed il punto $H$, intersezione della retta che cade perpendicolarmente alla retta $r$ e passa per il punto $P$.
