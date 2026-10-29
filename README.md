@@ -1,69 +1,71 @@
-# Sito Web Didattico con Hugo
+# La scienza ha un cuore antico
 
-Questo repository contiene un sito web statico generato con [Hugo](https://gohugo.io), un framework per la creazione di siti web veloci e moderni. Il sito è progettato per ospitare materiali didattici, esercizi e risorse per l'insegnamento della matematica e della fisica.
+Sorgenti del sito [lshuca.github.io](https://lshuca.github.io): appunti, esercizi e strumenti di matematica e fisica per le classi dell'IIS Montessori Repetti.
 
-## Struttura del Repository
+Il sito è fatto con [Hugo](https://gohugo.io) e il tema [TeXify](https://github.com/queensferryme/hugo-theme-texify). Ogni push su `main` lo ricostruisce e lo pubblica tramite GitHub Actions (`.github/workflows/hugo.yaml`).
 
-### 1. **Archetypes**
-   - **default.md**: Template predefinito per la creazione di nuovi contenuti.
+## In locale
 
-### 2. **Assets**
-   - Contiene risorse statiche come immagini, fogli di stile e script.
+Serve Hugo extended, la stessa versione indicata nel workflow (0.165.0).
 
-### 3. **Content**
-   - **\_index.md**: Pagina principale del sito.
-   - **Pages**: Contiene le pagine del sito, suddivise in sezioni:
-     - **Post**: Articoli e post.
-     - **Pymath**: Materiali didattici per la matematica.
-       - **Cartesian**: Argomenti relativi al piano cartesiano, come circonferenze, parabole e rette.
-       - **Intro_cart.md**: Introduzione al piano cartesiano.
-       - **Parabola**: Teoria ed esercizi sulle parabole.
-       - **Rette**: Teoria ed esercizi sulle rette.
-     - **Pyphysics**: Materiali didattici per la fisica.
-       - **Equilibrium**: Equilibrio e forze.
-       - **Vectors**: Teoria ed esercizi sui vettori.
+```sh
+hugo server
+```
 
-### 4. **Data**
-   - Contiene dati strutturati utilizzati nel sito.
+e poi http://localhost:1313. La cartella `public/` è generata e non va committata.
 
-### 5. **Hugo.toml**
-   - File di configurazione principale per Hugo.
+## Struttura
 
-### 6. **I18n**
-   - File di traduzione per il supporto multilingue.
+```
+content/
+  _index.md              home
+  pages/pymath/          appunti di matematica (indice: pymath.md)
+  pages/pyphysics/       appunti di fisica (indice: pyphysics.md)
+  strumenti/             una pagina per ogni simulazione
+  nnlc/                  una pagina per ogni edizione della Notte Nazionale
+  compiti/               bozza, non pubblicata (draft = true)
+layouts/                 modifiche al tema, che resta intatto in themes/
+static/
+  css/sito.css           aggiunte allo stile del tema
+  js/strumenti/          codice delle simulazioni
+  nnlc/<anno>/           pdf delle varie edizioni
+  static/img/            immagini delle pagine
+```
 
-### 7. **Layouts**
-   - **index.html**: Layout della pagina principale.
-   - **Shortcodes**: Componenti riutilizzabili per l'inserimento di grafici, diagrammi e altro.
+## Aggiungere una pagina di appunti
 
-### 8. **Public**
-   - Contiene i file generati da Hugo, pronti per il deployment.
-   - **CSS**: Fogli di stile per il sito.
-   - **Font**: Font utilizzati nel sito.
-   - **JS**: Script JavaScript.
-   - **Pages**: Pagine generate.
-   - **Plotly**: File JSON per grafici Plotly.
-   - **Static**: Immagini e altre risorse statiche.
-   - **Tags**: Pagine per i tag.
+Si crea il file nella cartella dell'argomento, con titolo e data:
 
-### 9. **Resources**
-   - Risorse generate automaticamente da Hugo.
+```toml
++++
+title = 'Titolo'
+date = 2026-10-29T10:00:00+01:00
++++
+```
 
-### 10. **Static**
-   - Contiene risorse statiche come immagini, script e file JSON.
+e lo si collega dall'indice (`pymath.md` o `pyphysics.md`) con `{{< ref "/pages/..." >}}`. Le formule si scrivono tra `$...$` e `$$...$$`; per il codice html (canvas, script) si usa lo shortcode `rawhtml`.
 
-### 11. **Themes**
-   - **hugo-chart-master**: Tema per l'integrazione di grafici.
-   - **hugo-theme-texify**: Tema personalizzato per la visualizzazione di contenuti matematici.
+## Aggiungere uno strumento
 
-## Requisiti
+1. Il codice va in `static/js/strumenti/<nome>.js` e parte da
 
-Hugo: Versione estesa (con supporto per SCSS).
+   ```js
+   Strumenti.quando('strumento-<nome>', function (box) {
+       // ...
+   });
+   ```
 
-Node.js: Per l'utilizzo di strumenti come Plotly e Chart.js.
+   Le funzioni comuni (cursori, pulsanti, canvas, frecce) sono in `comune.js`.
+2. La pagina va in `content/strumenti/<nome>.md` con `title`, `description` e `weight` (ordine nell'elenco), e lo strumento si inserisce con `{{< strumento "<nome>" >}}`.
+
+## Aggiungere un'edizione della NNLC
+
+Si crea `content/nnlc/<anno>.md` (vedi le edizioni già presenti) e si mettono i pdf in `static/nnlc/<anno>/`. Il `weight` più basso va all'edizione più recente, che compare per prima.
+
+## Compiti degli anni passati
+
+La sezione `content/compiti/` è pronta ma non pubblicata: per pubblicarla basta togliere `draft = true` da `_index.md`, aggiungere le pagine come per la NNLC e la voce nel menu in `hugo.toml`.
 
 ## Licenza
 
-Questo repository è distribuito sotto la licenza MIT. Sentiti libero di utilizzare, modificare e distribuire il contenuto secondo i termini della licenza.
-Contatti
-
+GPL v3, vedi `LICENSE`.
