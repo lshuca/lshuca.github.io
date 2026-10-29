@@ -4,7 +4,7 @@ disciplina = 'matematica'
 anno = 3
 classi = [3]
 weight = 10
-ripasso = ['/strumenti/vademecum/matematica/prodotti-notevoli']
+ripasso = ['/vademecum/matematica/prodotti-notevoli']
 draft = true
 +++
 

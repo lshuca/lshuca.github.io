@@ -1,7 +1,6 @@
 +++
 title = 'Vademecum'
 description = 'Domande di autovalutazione per ogni argomento di matematica e fisica.'
-weight = 1
 [cascade]
     type = 'vademecum'
 +++

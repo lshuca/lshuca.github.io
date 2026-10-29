@@ -4,7 +4,7 @@ disciplina = 'fisica'
 anno = 4
 classi = [4]
 weight = 60
-ripasso = ['/strumenti/vademecum/fisica/termologia']
+ripasso = ['/vademecum/fisica/termologia']
 draft = true
 +++
 

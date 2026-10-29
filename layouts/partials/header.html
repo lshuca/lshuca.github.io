@@ -6,8 +6,19 @@
   <nav>
     {{ $page := . }}
     {{ range site.Menus.main }}
-    <span class="nav-bar-item">
-      <a class="link{{ if or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }} attivo{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+    {{ $voci := slice }}
+    {{ range .Children }}{{ $voci = $voci | append (dict "url" .URL "nome" .Name) }}{{ end }}
+    {{ if and .Params.tendina .Page }}
+    {{ range .Page.Pages.ByWeight }}{{ $voci = $voci | append (dict "url" .RelPermalink "nome" (.LinkTitle | replaceRE "^NNLC " "")) }}{{ end }}
+    {{ end }}
+    {{ $attivo := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) (and .Page (or (eq $page .Page) ($page.IsDescendant .Page)) (ne .Page site.Home)) }}
+    <span class="nav-bar-item{{ with $voci }} tendina{{ end }}">
+      <a class="link{{ if $attivo }} attivo{{ end }}" href="{{ .URL }}"{{ with $voci }} aria-haspopup="true"{{ end }}>{{ .Name }}</a>
+      {{ with $voci }}
+      <span class="sottomenu">
+        {{ range . }}<a class="link" href="{{ .url }}">{{ .nome }}</a>{{ end }}
+      </span>
+      {{ end }}
     </span>
     {{ end }}
   </nav>

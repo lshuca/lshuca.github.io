@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 <main id="main" class="post">
-  <nav class="briciole"><a class="link" href="{{ .Parent.RelPermalink }}">← Vademecum</a></nav>
+  <nav class="briciole"><a class="link" href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a></nav>
   <h1>{{ .Title }}</h1>
   <p class="sottotitolo">
     {{ .Params.disciplina | title }} -

@@ -4,7 +4,7 @@ disciplina = 'fisica'
 anno = 3
 classi = [3, 4]
 weight = 60
-ripasso = ['/strumenti/vademecum/fisica/vettori', '/strumenti/vademecum/fisica/cinematica']
+ripasso = ['/vademecum/fisica/vettori', '/vademecum/fisica/cinematica']
 draft = true
 +++
 

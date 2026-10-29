@@ -31,13 +31,39 @@ rssLimit = 10
     pageRef = "/"
     weight = 1
 [[menus.main]]
-    name = "Matematica"
-    pageRef = "/pages/pymath/pymath"
+    identifier = "dispense"
+    name = "Dispense"
+    pageRef = "/pages"
     weight = 2
 [[menus.main]]
+    identifier = "dispense-matematica"
+    parent = "dispense"
+    name = "Matematica"
+    pageRef = "/pages/pymath/pymath"
+    weight = 1
+[[menus.main]]
+    identifier = "dispense-fisica"
+    parent = "dispense"
     name = "Fisica"
     pageRef = "/pages/pyphysics/pyphysics"
+    weight = 2
+[[menus.main]]
+    identifier = "vademecum"
+    name = "Vademecum"
+    pageRef = "/vademecum"
     weight = 3
+[[menus.main]]
+    identifier = "vademecum-matematica"
+    parent = "vademecum"
+    name = "Matematica"
+    pageRef = "/vademecum/matematica"
+    weight = 1
+[[menus.main]]
+    identifier = "vademecum-fisica"
+    parent = "vademecum"
+    name = "Fisica"
+    pageRef = "/vademecum/fisica"
+    weight = 2
 [[menus.main]]
     name = "Strumenti"
     pageRef = "/strumenti"
@@ -46,6 +72,8 @@ rssLimit = 10
     name = "NNLC"
     pageRef = "/nnlc"
     weight = 5
+    [menus.main.params]
+        tendina = true # voci = pagine della sezione
 
 [params]
     author = "Davide Barbieri"

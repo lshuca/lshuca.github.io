@@ -4,7 +4,7 @@ disciplina = 'matematica'
 anno = 5
 classi = [5]
 weight = 30
-ripasso = ['/strumenti/vademecum/matematica/funzioni', '/strumenti/vademecum/matematica/limiti', '/strumenti/vademecum/matematica/derivate']
+ripasso = ['/vademecum/matematica/funzioni', '/vademecum/matematica/limiti', '/vademecum/matematica/derivate']
 draft = true
 +++
 

@@ -4,7 +4,7 @@ disciplina = 'fisica'
 anno = 4
 classi = [4]
 weight = 30
-ripasso = ['/strumenti/vademecum/fisica/forze-equilibrio']
+ripasso = ['/vademecum/fisica/forze-equilibrio']
 draft = true
 +++
 

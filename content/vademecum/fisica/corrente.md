@@ -4,7 +4,7 @@ disciplina = 'fisica'
 anno = 5
 classi = [5]
 weight = 30
-ripasso = ['/strumenti/vademecum/fisica/potenziale']
+ripasso = ['/vademecum/fisica/potenziale']
 draft = true
 +++
 

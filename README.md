@@ -22,6 +22,7 @@ content/
   pages/pymath/          appunti di matematica (indice: pymath.md)
   pages/pyphysics/       appunti di fisica (indice: pyphysics.md)
   strumenti/             una pagina per ogni simulazione
+  vademecum/             domande di autovalutazione (matematica/ e fisica/)
   nnlc/                  una pagina per ogni edizione della Notte Nazionale
   compiti/               bozza, non pubblicata (draft = true)
 layouts/                 modifiche al tema, che resta intatto in themes/
@@ -60,7 +61,7 @@ e lo si collega dall'indice (`pymath.md` o `pyphysics.md`) con `{{< ref "/pages/
 
 ## Vademecum
 
-Le domande di autovalutazione stanno in `content/strumenti/vademecum/`, una pagina per argomento divisa tra `matematica/` e `fisica/`. Nel front matter:
+Le domande di autovalutazione stanno in `content/vademecum/`, una pagina per argomento divisa tra `matematica/` e `fisica/`. Nel front matter:
 
 ```toml
 +++
@@ -78,11 +79,11 @@ Le domande sono un elenco numerato, con eventuali sottodomande puntate: accanto 
 
 ## Aggiungere un'edizione della NNLC
 
-Si crea `content/nnlc/<anno>.md` (vedi le edizioni già presenti) e si mettono i pdf in `static/nnlc/<anno>/`. Il `weight` più basso va all'edizione più recente, che compare per prima.
+Si crea `content/nnlc/<anno>.md` (vedi le edizioni già presenti) e si mettono i pdf in `static/nnlc/<anno>/`. Il `weight` più basso va all'edizione più recente, che compare per prima. La tendina NNLC del menu si aggiorna da sola.
 
 ## Compiti degli anni passati
 
-La sezione `content/compiti/` è pronta ma non pubblicata: per pubblicarla basta togliere `draft = true` da `_index.md`, aggiungere le pagine come per la NNLC e la voce nel menu in `hugo.toml`.
+La sezione `content/compiti/` è pronta ma non pubblicata: per pubblicarla basta togliere `draft = true` da `_index.md`, aggiungere le pagine come per la NNLC e la voce nel menu in `hugo.toml` (le tendine si fanno con `parent`, dando a ogni voce un `identifier` diverso).
 
 ## Licenza
 

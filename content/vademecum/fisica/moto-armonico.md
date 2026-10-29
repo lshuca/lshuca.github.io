@@ -4,7 +4,7 @@ disciplina = 'fisica'
 anno = 4
 classi = [4]
 weight = 20
-ripasso = ['/strumenti/vademecum/fisica/moto-piano', '/strumenti/vademecum/matematica/goniometria']
+ripasso = ['/vademecum/fisica/moto-piano', '/vademecum/matematica/goniometria']
 draft = true
 +++
 

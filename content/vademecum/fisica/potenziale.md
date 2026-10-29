@@ -4,7 +4,7 @@ disciplina = 'fisica'
 anno = 5
 classi = [5]
 weight = 20
-ripasso = ['/strumenti/vademecum/fisica/elettrostatica', '/strumenti/campo-elettrico']
+ripasso = ['/vademecum/fisica/elettrostatica', '/strumenti/campo-elettrico']
 draft = true
 +++
 
