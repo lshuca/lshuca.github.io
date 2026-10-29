@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Introduzione alle forze'
 date = 2024-01-09T15:56:42+01:00
 +++

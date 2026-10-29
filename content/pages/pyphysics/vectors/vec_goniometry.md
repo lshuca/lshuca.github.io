@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Relazioni tra funzioni goniometriche'
 date = 2024-03-20T10:38:42+01:00
 +++

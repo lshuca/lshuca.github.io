@@ -1,5 +1,4 @@
 +++
-menus = []
 title = "Introduzione all'ellisse"
 date = 2026-03-10T10:00:00+01:00
 +++
@@ -64,6 +63,6 @@ Vertici: $(\pm 5, 0)$ e $(0, \pm 3)$.
 
 Eccentricità: $e = \dfrac{4}{5} = 0{,}8$.
 
-<iframe src="https://www.desmos.com/calculator/azdmuqhlkr?embed" width="500" height="400" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe class="desmos" src="https://www.desmos.com/calculator/azdmuqhlkr?embed" title="Grafico interattivo Desmos" width="500" height="400" loading="lazy"></iframe>
 
 [Introduzione alla circonferenza]({{< ref "/pages/pymath/cartesian/circonferenza/circ_intro" >}} "Introduzione alla circonferenza")

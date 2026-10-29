@@ -1,5 +1,5 @@
 +++
-menus = []
+aliases = ['/pages/pyphysics/intro_vec/']
 title = 'Introduzione ai vettori'
 date = 2024-01-09T15:55:42+01:00
 +++

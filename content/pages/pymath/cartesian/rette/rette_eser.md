@@ -1,5 +1,5 @@
 +++
-menus = []
+aliases = ['/pages/pymath/cartesian/rette_eser/']
 title = 'Operazioni con rette'
 date = 2024-09-12T20:56:42+01:00
 +++

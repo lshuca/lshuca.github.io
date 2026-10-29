@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Rappresentazione grafica del valore assoluto'
 date = 2026-03-10T10:00:00+01:00
 +++
@@ -26,7 +25,7 @@ Il risultato è un grafico sempre non negativo ($y \ge 0$).
 
 La funzione $f(x) = x$ è una retta. La sua parte negativa (per $x < 0$) viene ribaltata verso l'alto, ottenendo la tipica forma a "V" centrata nell'origine.
 
-<iframe src="https://www.desmos.com/calculator/rrnqjblgjv?embed" width="500" height="400" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe class="desmos" src="https://www.desmos.com/calculator/rrnqjblgjv?embed" title="Grafico interattivo Desmos" width="500" height="400" loading="lazy"></iframe>
 
 <h3>Esempio: $y = |x - 2|$</h3>
 

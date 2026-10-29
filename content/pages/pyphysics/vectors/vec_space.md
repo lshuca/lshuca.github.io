@@ -1,3 +1,8 @@
++++
+title = 'Spazio vettoriale'
+date = 2024-02-08T10:56:19+01:00
++++
+
 Il vettore nullo, o elemento zero, è un vettore necessario per poter definire uno spazio vettoriale.
 
 Gli spazi vettoriali sono strutture matematiche, nello specifico strutture algebriche, in cui sono definiti:

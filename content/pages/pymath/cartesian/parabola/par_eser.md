@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Esercizi sulla parabola'
 date = 2026-03-10T10:00:00+01:00
 +++
@@ -46,7 +45,7 @@ Direttrice:
 
 $$y = -\dfrac{1+4}{4} = -\dfrac{5}{4}$$
 
-<iframe src="https://www.desmos.com/calculator/qtbhrbsoyj?embed" width="500" height="400" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe class="desmos" src="https://www.desmos.com/calculator/qtbhrbsoyj?embed" title="Grafico interattivo Desmos" width="500" height="400" loading="lazy"></iframe>
 
 ---
 

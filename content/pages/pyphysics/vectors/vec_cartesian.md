@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Componenti cartesiane di un vettore'
 date = 2024-03-20T10:38:42+01:00
 +++

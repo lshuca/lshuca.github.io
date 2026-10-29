@@ -1,5 +1,5 @@
 +++
-menus = []
+aliases = ['/pages/pymath/cartesian/rette_fasci/']
 title = 'Fasci di rette'
 date = 2024-09-12T21:56:42+01:00
 +++

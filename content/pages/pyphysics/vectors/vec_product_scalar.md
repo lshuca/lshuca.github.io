@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Prodotto tra vettori'
 date = 2024-12-03T12:55:42+01:00
 +++

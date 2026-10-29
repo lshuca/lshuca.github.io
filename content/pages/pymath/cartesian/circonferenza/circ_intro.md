@@ -1,5 +1,5 @@
 +++
-menus = []
+aliases = ['/pages/pymath/cartesian/circ_intro/']
 title = 'Introduzione alla circonferenza'
 date = 2024-09-29T22:56:42+01:00
 +++

@@ -1,5 +1,5 @@
 +++
-menus = []
+aliases = ['/pages/pyphysics/gen_vec_sum/']
 title = 'Somma di vettori'
 date = 2024-01-09T15:55:42+01:00
 +++
@@ -10,24 +10,6 @@ $$\vec s = \vec v_1 + \vec v_2$$
 
 {{< rawhtml >}}
 
-	<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Vectors Plot</title>
-    <style>
-        canvas {
-            border: 1px solid #000;
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-    </style>
-</head>
-<body>
     <canvas id="plotCanvas" width="400" height="400"></canvas>
 
     <script>
@@ -159,10 +141,6 @@ $$\vec s = \vec v_1 + \vec v_2$$
         context.fillStyle = "green";
         context.fillText("s = " + sumVector.x*10 + " i " + -sumVector.y*10 + " j", 10, 390); 
     </script>
-</body>
-</html>
-
-
 {{< /rawhtml >}}
 
 </p>

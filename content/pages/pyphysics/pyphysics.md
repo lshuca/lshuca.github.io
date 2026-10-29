@@ -1,5 +1,4 @@
 +++
-menus = ['main']
 title = 'Appunti di Fisica'
 date = 2024-01-09T15:55:42+01:00
 +++
@@ -7,6 +6,8 @@ date = 2024-01-09T15:55:42+01:00
 Qui potrete trovare una selezione accurata di risorse didattiche per approfondire i vari aspetti della fisica. 
 
 <h2>Vettori</h2>
+
+[Introduzione ai vettori]({{< ref "/pages/pyphysics/vectors/intro_vec" >}}  "Introduzione ai vettori")
 
 [Versori]({{< ref "/pages/pyphysics/vectors/vec_unit" >}}  "Versori")
 
@@ -23,6 +24,8 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 Approfondimenti:
 
 [Spazio vettoriale]({{< ref "/pages/pyphysics/vectors/vec_space" >}}  "Spazio vettoriale")
+
+[Relazioni tra funzioni goniometriche]({{< ref "/pages/pyphysics/vectors/vec_goniometry" >}}  "Relazioni tra funzioni goniometriche")
 
 <h2>Equilibrio</h2>
 
@@ -47,3 +50,5 @@ Approfondimenti:
 [Campo elettrico di un filo carico infinito]({{< ref "/pages/pyphysics/electromagnetism/efield_filo" >}}  "Campo elettrico di un filo carico infinito")
 
 [Introduzione al campo magnetico]({{< ref "/pages/pyphysics/electromagnetism/bfield_intro" >}}  "Introduzione al campo magnetico")
+
+Per provare: [simulatore di campo elettrico]({{< ref "/strumenti/campo-elettrico" >}}  "Simulatore di campo elettrico") e [forza di Lorentz]({{< ref "/strumenti/forza-lorentz" >}}  "Forza di Lorentz").

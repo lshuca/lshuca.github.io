@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Introduzione al piano cartesiano'
 date = 2024-09-27T15:56:42+01:00
 +++

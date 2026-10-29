@@ -1,5 +1,4 @@
 +++
-menus = ['main']
 title = 'Appunti di Matematica'
 date = 2024-09-28T15:55:42+01:00
 +++
@@ -12,6 +11,8 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 [Introduzione al piano cartesiano]({{< ref "/pages/pymath/cartesian/intro_cart" >}}  "Introduzione al piano cartesiano")
 
 <h3>Punti, segmenti e rette</h3>
+
+[Punti e segmenti]({{< ref "/pages/pymath/cartesian/points_segments" >}}  "Punti e segmenti")
 
 [Rette]({{< ref "/pages/pymath/cartesian/rette/rette_intro" >}}  "Rette")
 
@@ -26,6 +27,10 @@ Qui potrete trovare una selezione accurata di risorse didattiche per approfondir
 <h3>Parabola</h3>
 
 [Parabola]({{< ref "/pages/pymath/cartesian/parabola/par_intro" >}}  "Parabola")
+
+[Parabola con direttrice parallela a x]({{< ref "/pages/pymath/cartesian/parabola/par_dirx" >}}  "Parabola con direttrice parallela a x")
+
+[Rimaneggiamenti algebrici]({{< ref "/pages/pymath/cartesian/parabola/par_general" >}}  "Rimaneggiamenti algebrici")
 
 [Esercizi sulla parabola]({{< ref "/pages/pymath/cartesian/parabola/par_eser" >}}  "Esercizi sulla parabola")
 

@@ -1,3 +1,8 @@
++++
+title = 'Scomposizione di un vettore'
+date = 2024-02-01T17:44:20+01:00
++++
+
 La scomposizione di un vettore è, in un certo senso, l'operazione inversa della somma: l'obiettivo della scomposizione è infatti quello di trovare due vettori tali che, ognuno con una sua direzione sommati, possano risultare il vettore di partenza.
 
 Dato un vettore $\vec d$ e due rette $s$ e $r$ non parallele, vogliamo ottenere le componenti $\vec d_s$ e $\vec d_r$ tali che:
@@ -20,24 +25,6 @@ Lo strumento in calce permette di visualizzare immediatamente le componenti $x$ 
 
 {{< rawhtml >}}
 
-	<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scomposizione di vettore</title>
-    <style>
-        canvas {
-            border: 1px solid #000;
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-    </style>
-</head>
-<body>
     <canvas id="plotCanvas" width="400" height="400"></canvas>
 
     <script>
@@ -178,8 +165,4 @@ Lo strumento in calce permette di visualizzare immediatamente le componenti $x$ 
         context.fillStyle = "purple";
         context.fillText("a = " + Math.round(((vector.x * 10)**2 + (vector.y * 10)**2)**(1/2)*100)/100 , 10, 350); 
     </script>
-</body>
-</html>
-
-
 {{< /rawhtml >}}

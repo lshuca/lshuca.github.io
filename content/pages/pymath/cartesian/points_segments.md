@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Punti e segmenti'
 date = 2024-09-27T17:56:42+01:00
 +++
@@ -24,22 +23,6 @@ Si può notare come la distanza tra due punti sia indifferentemente calcolata a 
 <p>
 
 {{< rawhtml >}}
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segmento con Punto Medio</title>
-    <style>
-        canvas {
-            border: 1px solid #000;
-            display: block;
-            margin: 20px auto;
-        }
-    </style>
-</head>
-<body>
-
     <canvas id="segmentCanvas" width="400" height="400"></canvas>
 
     <script>
@@ -142,7 +125,7 @@ Si può notare come la distanza tra due punti sia indifferentemente calcolata a 
 		    // Mappiamo i punti A, B, M alle coordinate del canvas
 		    const ACanvas = mapToCanvasCoordinates(A, canvasWidth, canvasHeight);
 		    const BCanvas = mapToCanvasCoordinates(B, canvasWidth, canvasHeight);
-		    const MCanvas = mapToCanvasCoordinates(M, canvasWidth, canvasHeight);
+		    const MCanvas = mapToCanvasCoordinates({ x: M.x.num / M.x.den, y: M.y.num / M.y.den }, canvasWidth, canvasHeight);
 
 		    // Disegna il segmento tra A e B
 		    context.beginPath();
@@ -171,7 +154,7 @@ Si può notare come la distanza tra due punti sia indifferentemente calcolata a 
 		    context.arc(MCanvas.x, MCanvas.y, 5, 0, 2 * Math.PI);
 		    context.fillStyle = 'green';
 		    context.fill();
-		    context.fillText("M (" + M.x.toFixed(2) + ", " + M.y.toFixed(2) + ")", MCanvas.x + 10, MCanvas.y + 10);
+		    context.fillText("M (" + displayFraction(M.x) + ", " + displayFraction(M.y) + ")", MCanvas.x + 10, MCanvas.y + 10);
 		}
 
         // Funzione principale per eseguire il disegno
@@ -191,27 +174,18 @@ Si può notare come la distanza tra due punti sia indifferentemente calcolata a 
             // Calcola la distanza tra A e B
             var distance = calculateDistance(A, B);
 
-            // Ad esempio, per visualizzare il punto medio M nel disegno:
-			// context.fillText("M (" + displayFraction(M.x) + ", " + displayFraction(M.y) + ")", M.x.num / M.x.den + 10, M.y.num / M.y.den + 10);
-
-			// Per visualizzare la distanza sotto il canvas
-			context.fillText("Distanza tra A e B: " + calculateDistance(A, B), 10, canvas.height - 10);
-
 		    // Disegna il segmento e i punti sul canvas
 		    drawSegment(context, A, B, M, canvas.width, canvas.height);
 
             // Mostra la distanza sotto il canvas
             context.font = "16px Arial";
             context.fillStyle = "black";
-            context.fillText("Distanza tra A e B: " + distance.toFixed(2), 10, canvas.height - 10);
+            context.fillText("Distanza tra A e B: " + distance, 10, canvas.height - 10);
         }
 
         // Esegui la funzione principale quando la pagina viene caricata
         window.onload = main;
     </script>
-
-</body>
-</html>
 
 {{< /rawhtml >}}
 

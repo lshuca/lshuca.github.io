@@ -1,6 +1,6 @@
 +++
-menus = []
-title = 'Fasci di rette'
+aliases = ['/pages/pymath/cartesian/rette_form/']
+title = 'Formulario sulle rette'
 date = 2024-09-12T22:56:42+01:00
 +++
 

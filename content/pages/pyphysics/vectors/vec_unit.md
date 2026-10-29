@@ -1,5 +1,4 @@
 +++
-menus = []
 title = 'Versori'
 date = 2024-01-09T15:55:42+01:00
 +++
@@ -33,24 +32,6 @@ Le componenti del versore $\hat v$ sono troncate alla seconda cifra decimale, pe
 
 {{< rawhtml >}}
 
-	<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scomposizione di vettore</title>
-    <style>
-        canvas {
-            border: 1px solid #000;
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-    </style>
-</head>
-<body>
     <canvas id="plotCanvas" width="400" height="400"></canvas>
 
     <script>
@@ -157,8 +138,4 @@ Le componenti del versore $\hat v$ sono troncate alla seconda cifra decimale, pe
         context.fillText("|ver| = " + Math.round(versor.x/0.32*100)/100 + " i " + -Math.round(versor.y/0.32*100)/100 + " j", 10, 50); 
         
     </script>
-</body>
-</html>
-
-
 {{< /rawhtml >}}

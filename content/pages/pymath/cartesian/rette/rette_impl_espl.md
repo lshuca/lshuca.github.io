@@ -1,5 +1,5 @@
 +++
-menus = []
+aliases = ['/pages/pymath/cartesian/rette_impl_espl/']
 title = 'Relazione tra forma esplicita ed implicita'
 date = 2024-09-29T18:56:42+01:00
 +++
