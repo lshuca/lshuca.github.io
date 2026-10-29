@@ -77,7 +77,30 @@ Asintoti: $y = \pm \dfrac{3}{4} x$.
 
 Eccentricità: $e = \dfrac{5}{4} = 1{,}25$.
 
-<iframe class="desmos" src="https://www.desmos.com/calculator/mn6qfwkust?embed" title="Grafico interattivo Desmos" width="500" height="400" loading="lazy"></iframe>
+Con i cursori si possono cambiare $a$ e $b$: gli asintoti (tratteggiati) hanno sempre coefficiente angolare $\pm \dfrac{b}{a}$.
+
+{{< grafico >}}
+{
+  "x": [-10, 10], "y": [-7, 7],
+  "descrizione": "Iperbole con asintoti e fuochi",
+  "cursori": [
+    {"nome": "a", "min": 1, "max": 6, "passo": 0.5, "val": 4},
+    {"nome": "b", "min": 1, "max": 6, "passo": 0.5, "val": 3}
+  ],
+  "curve": [
+    {"x": "a * cosh(t)", "y": "b * sinh(t)", "t": [-3, 3], "colore": "#AA0000"},
+    {"x": "-a * cosh(t)", "y": "b * sinh(t)", "t": [-3, 3], "colore": "#AA0000"},
+    {"y": "b / a * x", "colore": "#888888", "tratteggio": true, "spessore": 1},
+    {"y": "-b / a * x", "colore": "#888888", "tratteggio": true, "spessore": 1}
+  ],
+  "punti": [
+    {"x": "sqrt(a*a + b*b)", "y": "0", "etichetta": "F₁", "colore": "#1F4FBF"},
+    {"x": "-sqrt(a*a + b*b)", "y": "0", "etichetta": "F₂", "colore": "#1F4FBF"},
+    {"x": "a", "y": "0"}, {"x": "-a", "y": "0"}
+  ],
+  "testi": ["x²/{a*a} − y²/{b*b} = 1", "asintoti y = ± {b/a} x   c = {sqrt(a*a + b*b)}   e = {sqrt(a*a + b*b) / a}"]
+}
+{{< /grafico >}}
 
 [Introduzione all'ellisse]({{< ref "/pages/pymath/cartesian/ellisse/ellisse_intro" >}} "Introduzione all'ellisse")
 

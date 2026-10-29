@@ -57,7 +57,29 @@ e lo si collega dall'indice (`pymath.md` o `pyphysics.md`) con `{{< ref "/pages/
    ```
 
    Le funzioni comuni (cursori, pulsanti, canvas, frecce) sono in `comune.js`.
-2. La pagina va in `content/strumenti/<nome>.md` con `title`, `description` e `weight` (ordine nell'elenco), e lo strumento si inserisce con `{{< strumento "<nome>" >}}`.
+2. La pagina va in `content/strumenti/<nome>.md` con `title`, `description`, `gruppo` (`'didattici'` o `'nnlc'`, la sezione in cui compare) e `weight` (ordine nell'elenco), e lo strumento si inserisce con `{{< strumento "<nome>" >}}`.
+
+## Grafici interattivi
+
+Per un grafico nel piano cartesiano non serve scrivere codice: basta lo shortcode `grafico` con la configurazione in JSON.
+
+```
+{{< grafico >}}
+{
+  "x": [-6, 6], "y": [-6, 6],
+  "cursori": [{"nome": "m", "min": -5, "max": 5, "passo": 0.1, "val": 2}],
+  "curve": [
+    {"y": "m * x + 1", "etichetta": "y = mx + 1"},
+    {"x": "3 * cos(t)", "y": "2 * sin(t)", "t": [0, 6.29]},
+    {"x": "2", "tratteggio": true}
+  ],
+  "punti": [{"x": "0", "y": "1", "etichetta": "(0, 1)"}],
+  "testi": ["coefficiente angolare: {m}"]
+}
+{{< /grafico >}}
+```
+
+Le curve possono essere `y = f(x)`, parametriche (`x` e `y` in funzione di `t`) o rette verticali (solo `x`). Nelle espressioni si possono usare i cursori e le funzioni `sin`, `cos`, `sqrt`, `abs`, `exp`, `log` (logaritmo naturale), `pow`, `pi`; nei testi le espressioni tra graffe vengono calcolate.
 
 ## Vademecum
 

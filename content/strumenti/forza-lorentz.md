@@ -2,6 +2,7 @@
 title = 'Forza di Lorentz su un filo'
 description = 'Corrente, campo magnetico e forza: il principio del treno magnetico.'
 date = 2026-10-29
+gruppo = 'nnlc'
 weight = 5
 +++
 

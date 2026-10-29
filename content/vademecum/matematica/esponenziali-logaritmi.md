@@ -4,6 +4,7 @@ disciplina = 'matematica'
 anno = 4
 classi = [4]
 weight = 30
+ripasso = ['/strumenti/esponenziali-logaritmi']
 draft = true
 +++
 

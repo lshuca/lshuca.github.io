@@ -2,6 +2,7 @@
 title = 'Stima di π con il metodo Monte Carlo'
 description = 'Punti casuali in un quadrato: quanti cadono nel cerchio?'
 date = 2026-10-29
+gruppo = 'nnlc'
 weight = 3
 +++
 

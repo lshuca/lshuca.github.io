@@ -4,7 +4,7 @@ disciplina = 'matematica'
 anno = 4
 classi = [4, 5]
 weight = 40
-ripasso = ['/pages/pyphysics/vectors/vec_goniometry']
+ripasso = ['/pages/pyphysics/vectors/vec_goniometry', '/strumenti/funzioni-goniometriche']
 draft = true
 +++
 

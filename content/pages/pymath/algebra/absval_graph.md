@@ -25,7 +25,29 @@ Il risultato è un grafico sempre non negativo ($y \ge 0$).
 
 La funzione $f(x) = x$ è una retta. La sua parte negativa (per $x < 0$) viene ribaltata verso l'alto, ottenendo la tipica forma a "V" centrata nell'origine.
 
-<iframe class="desmos" src="https://www.desmos.com/calculator/rrnqjblgjv?embed" title="Grafico interattivo Desmos" width="500" height="400" loading="lazy"></iframe>
+Nel grafico qui sotto si può spostare il vertice con il cursore $h$ (si ottiene $y = |x - h|$) e la retta orizzontale $y = k$: le intersezioni sono le soluzioni dell'equazione $|x - h| = k$.
+
+{{< grafico >}}
+{
+  "x": [-8, 8], "y": [-4, 8],
+  "descrizione": "Grafico di y = |x - h| e della retta y = k",
+  "cursori": [
+    {"nome": "h", "min": -5, "max": 5, "passo": 1, "val": 0},
+    {"nome": "k", "min": -2, "max": 6, "passo": 0.5, "val": 3}
+  ],
+  "curve": [
+    {"y": "x - h", "colore": "#AAAAAA", "tratteggio": true, "etichetta": "y = x − h", "xEtichetta": -3},
+    {"y": "abs(x - h)", "colore": "#AA0000", "etichetta": "y = |x − h|", "xEtichetta": -7.5},
+    {"y": "k", "colore": "#1F4FBF", "etichetta": "y = k", "xEtichetta": 5.5}
+  ],
+  "punti": [
+    {"x": "h", "y": "0", "etichetta": "V"},
+    {"x": "k >= 0 ? h - k : NaN", "y": "k", "colore": "#1F4FBF"},
+    {"x": "k >= 0 ? h + k : NaN", "y": "k", "colore": "#1F4FBF"}
+  ],
+  "testi": ["|x − ({h})| = {k}   →   {k > 0 ? 'x = ' + n(h - k) + ' oppure x = ' + n(h + k) : (k == 0 ? 'x = ' + n(h) : 'nessuna soluzione')}"]
+}
+{{< /grafico >}}
 
 <h3>Esempio: $y = |x - 2|$</h3>
 

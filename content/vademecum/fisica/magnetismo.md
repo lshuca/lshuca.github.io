@@ -4,7 +4,7 @@ disciplina = 'fisica'
 anno = 5
 classi = [5]
 weight = 40
-ripasso = ['/pages/pyphysics/electromagnetism/bfield_intro', '/strumenti/forza-lorentz']
+ripasso = ['/pages/pyphysics/electromagnetism/bfield_intro', '/strumenti/forza-lorentz', '/strumenti/carica-campo-magnetico']
 draft = true
 +++
 

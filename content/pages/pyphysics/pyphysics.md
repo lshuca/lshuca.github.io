@@ -51,4 +51,4 @@ Approfondimenti:
 
 [Introduzione al campo magnetico]({{< ref "/pages/pyphysics/electromagnetism/bfield_intro" >}}  "Introduzione al campo magnetico")
 
-Per provare: [simulatore di campo elettrico]({{< ref "/strumenti/campo-elettrico" >}}  "Simulatore di campo elettrico") e [forza di Lorentz]({{< ref "/strumenti/forza-lorentz" >}}  "Forza di Lorentz").
+Per provare: [simulatore di campo elettrico]({{< ref "/strumenti/campo-elettrico" >}}  "Simulatore di campo elettrico"), [carica in un campo magnetico]({{< ref "/strumenti/carica-campo-magnetico" >}}  "Carica in un campo magnetico") e [resistori in serie e in parallelo]({{< ref "/strumenti/circuiti" >}}  "Resistori in serie e in parallelo").

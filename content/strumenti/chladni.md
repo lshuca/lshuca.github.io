@@ -2,6 +2,7 @@
 title = 'Figure di Chladni'
 description = 'Onde stazionarie su una lastra quadrata: dove si ferma la sabbia.'
 date = 2026-10-29
+gruppo = 'nnlc'
 weight = 4
 +++
 

@@ -63,6 +63,26 @@ Vertici: $(\pm 5, 0)$ e $(0, \pm 3)$.
 
 Eccentricità: $e = \dfrac{4}{5} = 0{,}8$.
 
-<iframe class="desmos" src="https://www.desmos.com/calculator/azdmuqhlkr?embed" title="Grafico interattivo Desmos" width="500" height="400" loading="lazy"></iframe>
+Con i cursori si possono cambiare i semiassi $a$ e $b$: i fuochi si spostano di conseguenza e l'eccentricità cambia.
+
+{{< grafico >}}
+{
+  "x": [-8, 8], "y": [-6, 6],
+  "descrizione": "Ellisse con semiassi a e b, vertici e fuochi",
+  "cursori": [
+    {"nome": "a", "min": 1, "max": 7, "passo": 0.5, "val": 5},
+    {"nome": "b", "min": 1, "max": 5, "passo": 0.5, "val": 3}
+  ],
+  "curve": [
+    {"x": "a * cos(t)", "y": "b * sin(t)", "colore": "#AA0000"}
+  ],
+  "punti": [
+    {"x": "a >= b ? sqrt(a*a - b*b) : 0", "y": "a >= b ? 0 : sqrt(b*b - a*a)", "etichetta": "F₁", "colore": "#1F4FBF"},
+    {"x": "a >= b ? -sqrt(a*a - b*b) : 0", "y": "a >= b ? 0 : -sqrt(b*b - a*a)", "etichetta": "F₂", "colore": "#1F4FBF"},
+    {"x": "a", "y": "0"}, {"x": "-a", "y": "0"}, {"x": "0", "y": "b"}, {"x": "0", "y": "-b"}
+  ],
+  "testi": ["x²/{a*a} + y²/{b*b} = 1", "c = {sqrt(abs(a*a - b*b))}   e = {sqrt(abs(a*a - b*b)) / max(a, b)}"]
+}
+{{< /grafico >}}
 
 [Introduzione alla circonferenza]({{< ref "/pages/pymath/cartesian/circonferenza/circ_intro" >}} "Introduzione alla circonferenza")

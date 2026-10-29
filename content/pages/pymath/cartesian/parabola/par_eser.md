@@ -45,7 +45,22 @@ Direttrice:
 
 $$y = -\dfrac{1+4}{4} = -\dfrac{5}{4}$$
 
-<iframe class="desmos" src="https://www.desmos.com/calculator/qtbhrbsoyj?embed" title="Grafico interattivo Desmos" width="500" height="400" loading="lazy"></iframe>
+{{< grafico >}}
+{
+  "x": [-2, 6], "y": [-2, 6],
+  "descrizione": "Parabola y = x² − 4x + 3 con vertice, fuoco, asse e direttrice",
+  "curve": [
+    {"y": "x*x - 4*x + 3", "colore": "#AA0000", "etichetta": "y = x² − 4x + 3", "xEtichetta": 4.1},
+    {"x": "2", "colore": "#888888", "tratteggio": true, "spessore": 1},
+    {"y": "-5/4", "colore": "#1F4FBF", "tratteggio": true, "etichetta": "direttrice", "xEtichetta": 4.3}
+  ],
+  "punti": [
+    {"x": "2", "y": "-1", "etichetta": "V"},
+    {"x": "2", "y": "-3/4", "etichetta": "F", "colore": "#1F4FBF"},
+    {"x": "1", "y": "0"}, {"x": "3", "y": "0"}, {"x": "0", "y": "3"}
+  ]
+}
+{{< /grafico >}}
 
 ---
 

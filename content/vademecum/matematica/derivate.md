@@ -4,6 +4,7 @@ disciplina = 'matematica'
 anno = 5
 classi = [5]
 weight = 20
+ripasso = ['/strumenti/derivata']
 draft = true
 +++
 

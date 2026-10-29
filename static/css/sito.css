@@ -40,13 +40,6 @@
 
 /* contenuti */
 
-.content iframe.desmos {
-    border: 1px solid #CCCCCC;
-    display: block;
-    margin: 0 auto 1rem;
-    max-width: 100%;
-}
-
 .content canvas {
     border: 1px solid #000000;
     display: block;

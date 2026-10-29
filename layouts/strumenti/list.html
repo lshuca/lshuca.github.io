@@ -1,0 +1,29 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/single.css" | absURL }}'>
+<link rel="stylesheet" href='{{ "css/list.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="archive">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<article class="content">{{ . }}</article>{{ end }}
+  {{ range slice (dict "gruppo" "didattici" "titolo" "Simulatori didattici") (dict "gruppo" "nnlc" "titolo" "Simulatori NNLC") }}
+  {{ $titolo := .titolo }}
+  {{ with where $.Pages "Params.gruppo" .gruppo }}
+  <div class="post-group">
+    <h2>{{ $titolo }}</h2>
+    <ul>
+      {{ range .ByWeight }}
+      <li>
+        <span>
+          <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Description }}<br><small>{{ . }}</small>{{ end }}
+        </span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+  {{ end }}
+</main>
+{{ end }}

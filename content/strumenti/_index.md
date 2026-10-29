@@ -1,8 +1,7 @@
 +++
 title = 'Strumenti'
-senzaDate = true
 +++
 
-Piccole simulazioni da usare nel browser, senza installare nulla. Funzionano anche da telefono.
+Simulazioni da usare nel browser, senza installare nulla, anche da telefono.
 
-Sono nate come programmi in Python per le lezioni e per la Notte Nazionale del Liceo Classico; qui sono riscritte perché si possano aprire da qualsiasi dispositivo.
+I simulatori didattici accompagnano gli argomenti del programma; quelli della Notte Nazionale del Liceo Classico sono stati preparati per le serate e riscritti qui a partire dai programmi in Python usati in quelle occasioni.
