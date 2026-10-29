@@ -67,11 +67,11 @@ rssLimit = 10
 [[menus.main]]
     name = "Strumenti"
     pageRef = "/strumenti"
-    weight = 4
+    weight = 5
 [[menus.main]]
     name = "NNLC"
     pageRef = "/nnlc"
-    weight = 5
+    weight = 4
     [menus.main.params]
         tendina = true # voci = pagine della sezione
 
