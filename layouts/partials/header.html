@@ -1,0 +1,14 @@
+<header id="header">
+  <h1>
+    <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+  </h1>
+
+  <nav>
+    {{ $page := . }}
+    {{ range site.Menus.main }}
+    <span class="nav-bar-item">
+      <a class="link{{ if or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }} attivo{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+    </span>
+    {{ end }}
+  </nav>
+</header>

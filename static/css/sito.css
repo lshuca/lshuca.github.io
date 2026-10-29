@@ -1,0 +1,178 @@
+/* aggiunte al tema texify */
+
+#header > nav > span > a.attivo {
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+}
+
+.briciole {
+    font-size: .95rem;
+    margin-bottom: 1rem;
+}
+
+.sottotitolo {
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    margin-top: .3rem;
+}
+
+#main.archive > h1 {
+    text-align: center;
+}
+
+#main.archive > .content {
+    padding: 1rem 0;
+}
+
+#main.archive > .post-group > ul > li small {
+    color: #575C61;
+}
+
+/* home */
+
+#main.home > .copertina {
+    display: block;
+    height: auto;
+    margin: 0 auto 2rem;
+    max-width: min(100%, 480px);
+}
+
+/* contenuti */
+
+.content iframe.desmos {
+    border: 1px solid #CCCCCC;
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+}
+
+.content canvas {
+    border: 1px solid #000000;
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+}
+
+.content .allegati {
+    list-style: none;
+    margin-left: 0;
+}
+
+.content .allegati li {
+    margin-bottom: .5rem;
+}
+
+.content .allegati small {
+    color: gray;
+}
+
+/* strumenti interattivi */
+
+.strumento {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    margin: 1.5rem 0;
+    padding: .8rem;
+}
+
+.content .strumento canvas {
+    border: 1px solid #CCCCCC;
+    cursor: crosshair;
+    height: auto;
+    margin: 0 auto;
+    touch-action: none;
+    width: 100%;
+}
+
+.strumento .comandi {
+    display: grid;
+    gap: .4rem 1rem;
+    grid-template-columns: 1fr;
+    margin-top: .8rem;
+}
+
+@media screen and (min-width: 600px) {
+    .strumento .comandi {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.strumento label {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+}
+
+.strumento label > span:first-child {
+    min-width: 7rem;
+}
+
+.strumento input[type=range] {
+    accent-color: #AA0000;
+    flex-grow: 1;
+}
+
+.strumento output {
+    font-family: 'Latin Modern Mono', Courier, monospace;
+    min-width: 4.5rem;
+    text-align: right;
+}
+
+.strumento .pulsanti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    grid-column: 1 / -1;
+}
+
+.strumento button {
+    background-color: #FAFAFA;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .2rem .7rem;
+}
+
+.strumento button:hover {
+    color: #AA0000;
+    border-color: #AA0000;
+}
+
+.strumento button:disabled {
+    color: #AAAAAA;
+    border-color: #AAAAAA;
+    cursor: default;
+}
+
+.strumento button.premuto {
+    background-color: #000000;
+    color: #FAFAFA;
+}
+
+.strumento .lettura {
+    font-family: 'Latin Modern Mono', Courier, monospace;
+    font-size: .95rem;
+    grid-column: 1 / -1;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.strumento .affiancati {
+    display: grid;
+    gap: .8rem;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+    .strumento .affiancati {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.strumento noscript {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}

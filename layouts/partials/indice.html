@@ -1,0 +1,13 @@
+{{- /* indice di ritorno */ -}}
+{{- $indice := false -}}
+{{- $p := .RelPermalink -}}
+{{- if hasPrefix $p "/pages/pymath/" -}}
+  {{- $indice = dict "url" "/pages/pymath/pymath/" "nome" "Matematica" -}}
+{{- else if hasPrefix $p "/pages/pyphysics/" -}}
+  {{- $indice = dict "url" "/pages/pyphysics/pyphysics/" "nome" "Fisica" -}}
+{{- else if hasPrefix $p "/strumenti/" -}}
+  {{- $indice = dict "url" "/strumenti/" "nome" "Strumenti" -}}
+{{- else if hasPrefix $p "/nnlc/" -}}
+  {{- $indice = dict "url" "/nnlc/" "nome" "NNLC" -}}
+{{- end -}}
+{{- return $indice -}}

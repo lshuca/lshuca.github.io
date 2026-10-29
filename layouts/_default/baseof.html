@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+  {{ if .Description }}
+  <meta name="description" content="{{ .Description }}">
+  {{ else if and .IsPage .Summary }}
+  <meta name="description" content="{{ .Summary | plainify | truncate 160 }}">
+  {{ else }}
+  <meta name="description" content="{{ site.Params.description }}">
+  {{ end }}
+
+  <link rel="icon" href="{{ site.Params.favicon | absURL }}">
+
+  {{ with .Keywords }}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+  {{ else }}
+  <meta name="keywords" content="{{ delimit site.Params.keywords ", " }}">
+  {{ end }}
+
+  {{ if cond (ne .Params.math nil) .Params.math site.Params.math.enable }}
+  {{ partial "math.html" . }}
+  {{ end }}
+
+  {{ partial "opengraph.html" . }}
+  {{ partial "schema.html" . }}
+  {{ partial "twitter_cards.html" . }}
+
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{ range .AlternativeOutputFormats -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
+  {{ end -}}
+
+  <link media="screen" rel="stylesheet" href='{{ "css/common.css" | absURL }}'>
+  <link media="screen" rel="stylesheet" href='{{ "css/content.css" | absURL }}'>
+  {{ range site.Params.customCSS }}
+  <link media="screen" rel="stylesheet" href="{{ . | absURL }}">
+  {{ end }}
+
+  {{ if .IsHome }}
+  <title>{{ site.Title }}</title>
+  {{ else }}
+  <title>{{ .Title }} - {{ site.Title }}</title>
+  {{ end }}
+
+  {{ block "head" . }}{{ end }}
+</head>
+
+<body>
+  <div id="wrapper">
+    {{ partial "header.html" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </div>
+
+  {{ range site.Params.customJS }}
+  <script src="{{ . | absURL }}"></script>
+  {{ end }}
+</body>
+
+</html>

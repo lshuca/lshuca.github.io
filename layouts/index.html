@@ -3,10 +3,10 @@
 {{ end }}
 
 {{ define "main" }}
-<main id="main" class="index">
-<img src="/static/img/homepage.png">
- 
-
+<main id="main" class="index home">
+  <img class="copertina" src="{{ "static/img/homepage.png" | relURL }}" alt="{{ site.Title }}" width="908" height="907">
+  <article class="content">
+    {{ .Content }}
+  </article>
 </main>
 {{ end }}
-

@@ -1,0 +1,26 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/single.css" | absURL }}'>
+<link rel="stylesheet" href='{{ "css/list.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="archive">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<article class="content">{{ . }}</article>{{ end }}
+  {{ if not .Params.nascondiElenco }}
+  <div class="post-group">
+    <ul>
+      {{ range .Pages.ByWeight }}
+      <li>
+        <span>
+          <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Description }}<br><small>{{ . }}</small>{{ end }}
+        </span>
+        {{ if not $.Params.senzaDate }}<time>{{ .Date.Format site.Params.dateFormat }}</time>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</main>
+{{ end }}
