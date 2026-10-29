@@ -1,0 +1,9 @@
+{{- $nome := .Get 0 -}}
+<div class="strumento" id="strumento-{{ $nome }}">
+  <noscript>Per usare lo strumento serve JavaScript attivo nel browser.</noscript>
+</div>
+{{- if not (.Page.Store.Get "comune-strumenti") }}
+{{- .Page.Store.Set "comune-strumenti" true }}
+<script src="{{ "js/strumenti/comune.js" | relURL }}" defer></script>
+{{- end }}
+<script src="{{ printf "js/strumenti/%s.js" $nome | relURL }}" defer></script>
