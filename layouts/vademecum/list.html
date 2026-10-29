@@ -1,0 +1,33 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/single.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="post">
+  <nav class="briciole"><a class="link" href="{{ "strumenti/" | relURL }}">← Strumenti</a></nav>
+  <h1>{{ .Title }}</h1>
+  <article class="content">
+    {{ .Content }}
+
+    {{ $classi := slice "prima" "seconda" "terza" "quarta" "quinta" }}
+    {{ range $disc := slice "matematica" "fisica" }}
+    {{ $pagine := where $.RegularPages "Params.disciplina" $disc }}
+    {{ with $pagine }}
+    <h2>{{ $disc | title }}</h2>
+    {{ range $i, $nome := $classi }}
+    {{ $anno := add $i 1 }}
+    {{ with where $pagine "Params.anno" $anno }}
+    <h3>Classe {{ $nome }}</h3>
+    <ul class="vademecum-indice">
+      {{ range .ByWeight }}
+      <li><a href="{{ .RelPermalink }}" data-vademecum="{{ .RelPermalink }}">{{ .Title }}</a> <small class="vademecum-stato"></small></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+  </article>
+</main>
+<script src="{{ "js/vademecum.js" | relURL }}" defer></script>
+{{ end }}

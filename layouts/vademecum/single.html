@@ -1,0 +1,32 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/single.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="post">
+  <nav class="briciole"><a class="link" href="{{ .Parent.RelPermalink }}">← Vademecum</a></nav>
+  <h1>{{ .Title }}</h1>
+  <p class="sottotitolo">
+    {{ .Params.disciplina | title }} -
+    {{ $nomi := dict "1" "prima" "2" "seconda" "3" "terza" "4" "quarta" "5" "quinta" }}
+    {{ $c := slice }}{{ range .Params.classi | default (slice .Params.anno) }}{{ $c = $c | append (index $nomi (string .)) }}{{ end }}
+    classe {{ delimit $c ", " " e " }}
+  </p>
+  <article class="content vademecum" data-vademecum="{{ .RelPermalink }}">
+    {{ .Content }}
+  </article>
+
+  {{ $ripasso := slice }}
+  {{ range .Params.ripasso }}{{ with site.GetPage . }}{{ $ripasso = $ripasso | append . }}{{ end }}{{ end }}
+  {{ with $ripasso }}
+  <article class="content">
+    <h2>Per ripassare</h2>
+    <ul>
+      {{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+    </ul>
+  </article>
+  {{ end }}
+
+</main>
+<script src="{{ "js/vademecum.js" | relURL }}" defer></script>
+{{ end }}

@@ -2,7 +2,7 @@
 title = 'Simulatore di campo elettrico'
 description = 'Cariche fisse e mobili in un campo uniforme: linee di campo, equipotenziali, forze.'
 date = 2026-10-29
-weight = 1
+weight = 2
 +++
 
 Il simulatore mostra il campo elettrico generato da un campo uniforme esterno e da una o più cariche puntiformi, insieme alle linee equipotenziali (tratteggiate in verde).

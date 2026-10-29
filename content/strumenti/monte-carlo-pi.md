@@ -2,7 +2,7 @@
 title = 'Stima di π con il metodo Monte Carlo'
 description = 'Punti casuali in un quadrato: quanti cadono nel cerchio?'
 date = 2026-10-29
-weight = 2
+weight = 3
 +++
 
 Lanciamo a caso dei punti nel quadrato di lato $2$ e contiamo quanti cadono dentro il cerchio inscritto di raggio $1$. Il rapporto tra le aree è

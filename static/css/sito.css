@@ -176,3 +176,40 @@
     padding: 1rem;
     text-align: center;
 }
+
+/* vademecum */
+
+.content p.vademecum-riepilogo {
+    border: 1px solid #000000;
+    text-align: left;
+    font-size: .95rem;
+    padding: .4rem .8rem;
+}
+
+.vademecum-riepilogo button {
+    background-color: #FAFAFA;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .9rem;
+    margin-left: .5rem;
+    padding: 0 .5rem;
+}
+
+.content.vademecum > ol > li {
+    margin-bottom: .6rem;
+}
+
+.content.vademecum .vademecum-casella {
+    accent-color: #AA0000;
+    margin-right: .5rem;
+    transform: translateY(1px);
+}
+
+.content.vademecum > ol > li.saputa {
+    color: #575C61;
+}
+
+.vademecum-indice small {
+    color: gray;
+}

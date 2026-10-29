@@ -2,7 +2,7 @@
 title = 'Figure di Chladni'
 description = 'Onde stazionarie su una lastra quadrata: dove si ferma la sabbia.'
 date = 2026-10-29
-weight = 3
+weight = 4
 +++
 
 Una lastra metallica cosparsa di sabbia, messa in vibrazione alla frequenza giusta, si divide in zone che oscillano e linee che restano ferme: le **linee nodali**. La sabbia viene sbalzata via dalle zone in movimento e si raccoglie sulle linee nodali, disegnando le figure studiate da Ernst Chladni alla fine del Settecento.

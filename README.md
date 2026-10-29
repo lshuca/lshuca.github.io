@@ -58,6 +58,24 @@ e lo si collega dall'indice (`pymath.md` o `pyphysics.md`) con `{{< ref "/pages/
    Le funzioni comuni (cursori, pulsanti, canvas, frecce) sono in `comune.js`.
 2. La pagina va in `content/strumenti/<nome>.md` con `title`, `description` e `weight` (ordine nell'elenco), e lo strumento si inserisce con `{{< strumento "<nome>" >}}`.
 
+## Vademecum
+
+Le domande di autovalutazione stanno in `content/strumenti/vademecum/`, una pagina per argomento divisa tra `matematica/` e `fisica/`. Nel front matter:
+
+```toml
++++
+title = 'Parabola'
+disciplina = 'matematica'
+anno = 3            # classe sotto cui compare nell'indice
+classi = [3]        # classi indicate sotto il titolo
+weight = 40         # ordine dentro la classe
+ripasso = ['/pages/pymath/cartesian/parabola/par_intro']
+draft = true        # finché è in bozza non viene pubblicata
++++
+```
+
+Le domande sono un elenco numerato, con eventuali sottodomande puntate: accanto a ogni domanda numerata compare la casella "so rispondere". Le bozze si vedono in locale con `hugo server -D`.
+
 ## Aggiungere un'edizione della NNLC
 
 Si crea `content/nnlc/<anno>.md` (vedi le edizioni già presenti) e si mettono i pdf in `static/nnlc/<anno>/`. Il `weight` più basso va all'edizione più recente, che compare per prima.
